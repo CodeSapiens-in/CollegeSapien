@@ -525,6 +525,7 @@ class _HomeScreenState extends State<HomeScreen> {
             _loadingEvents = false;
           });
         }
+      }
     } catch (_) {
       if (mounted) setState(() => _loadingEvents = false);
     }
@@ -565,20 +566,9 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: AppColors.background,
       body: SafeArea(
-              if (_semester >= 4) ...[
-                const SizedBox(height: 24),
-                _sectionHeader('AI Features'),
-                const SizedBox(height: 12),
-                _resumeRoastCard(),
-              ],
-              const SizedBox(height: 80),
-            ],
-          ),
-=======
         child: ResponsiveLayout(
           mobile: (_) => _mobileBody(context),
           desktop: (_) => _desktopBody(context),
->>>>>>> origin/main
         ),
       ),
     );
