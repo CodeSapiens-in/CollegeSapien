@@ -3,7 +3,7 @@ import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import * as admin from 'firebase-admin';
 import swaggerUi from 'swagger-ui-express';
-import { specs } from './shared/docs/swagger';
+import { getSpecs } from './shared/docs/swagger';
 import { enforceAppCheck } from './shared/middlewares/app-check.middleware';
 import { requestLogger } from './shared/logger';
 import authRoutes from './app/auth/auth.route';
@@ -85,18 +85,19 @@ const swaggerOptions = {
 
 app.get('/api/docs/swagger.json', (req, res) => {
   res.setHeader('Content-Type', 'application/json');
-  res.send(specs);
+  res.send(getSpecs());
 });
 
 // Serve Swagger UI with specific paths to avoid emulator redirect issues
 app.use('/api/docs', swaggerUi.serve);
-app.get(
-  '/api/docs',
-  swaggerUi.setup(specs, {
+let swaggerUiHandler: ReturnType<typeof swaggerUi.setup> | undefined;
+app.get('/api/docs', (req, res, next) => {
+  swaggerUiHandler ??= swaggerUi.setup(getSpecs(), {
     ...swaggerOptions,
     customCss: '.swagger-ui .topbar { display: none }',
-  })
-);
+  });
+  swaggerUiHandler(req, res, next);
+});
 
 app.get('/api/v1/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'CodeSapiens API is healthy' });

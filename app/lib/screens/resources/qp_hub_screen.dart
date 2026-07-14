@@ -8,7 +8,6 @@ import '../../models/api_models.dart';
 import '../../providers/resources_cache_store.dart';
 import '../../services/app_capability_service.dart';
 import '../../services/resource_service.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 import '../../widgets/resource_grid_section.dart';

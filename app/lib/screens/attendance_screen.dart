@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../models/api_models.dart';
 import '../providers/app_state_notifier.dart';
 import '../services/attendance_service.dart';
-import '../utils/app_colors.dart';
 import '../utils/app_theme.dart';
 import '../utils/breakpoints.dart';
 import '../utils/app_spacing.dart';

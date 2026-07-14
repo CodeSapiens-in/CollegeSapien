@@ -4,7 +4,6 @@ import '../../models/api_models.dart';
 import '../../models/event_models.dart';
 import '../../services/admin_service.dart';
 import '../../services/app_capability_service.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 

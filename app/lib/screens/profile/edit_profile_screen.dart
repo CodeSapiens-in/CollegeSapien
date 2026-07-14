@@ -9,7 +9,6 @@ import '../../services/auth_service.dart';
 import '../../services/college_service.dart';
 import '../../services/syllabus_service.dart';
 import '../../providers/app_state_notifier.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/department_constants.dart';
 import '../../widgets/responsive_layout.dart';

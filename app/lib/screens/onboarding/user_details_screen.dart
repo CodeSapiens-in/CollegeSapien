@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../../models/api_models.dart';
 import '../../services/auth_service.dart';
 import '../../services/college_service.dart';
-import '../../utils/app_colors.dart';
+import '../../utils/app_theme.dart';
 import '../../utils/department_constants.dart';
 import '../../widgets/responsive_layout.dart';
 import '../../widgets/searchable_dropdown.dart';
