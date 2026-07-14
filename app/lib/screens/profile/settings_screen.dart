@@ -5,8 +5,7 @@ import '../../services/app_theme_notifier.dart';
 import '../../services/auth_service.dart';
 import '../../screens/auth/login_screen.dart';
 import '../../utils/app_theme.dart';
-import '../../utils/app_themes.dart';
-import '../../utils/app_colors.dart';
+import '../../utils/app_color_scheme.dart';
 import '../../widgets/responsive_layout.dart';
 
 class SettingsScreen extends StatefulWidget {

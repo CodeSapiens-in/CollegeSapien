@@ -7,7 +7,6 @@ import '../../models/cgpa_models.dart';
 import '../../services/auth_service.dart';
 import '../../services/resource_service.dart';
 import '../../providers/app_state_notifier.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_spacing.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';

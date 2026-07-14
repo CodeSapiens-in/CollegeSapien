@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../utils/app_theme.dart';
-import '../../utils/app_colors.dart';
 import '../../widgets/responsive_layout.dart';
 import 'user_details_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';

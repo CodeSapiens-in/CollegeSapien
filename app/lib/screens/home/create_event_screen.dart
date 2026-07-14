@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../../providers/app_state_notifier.dart';
 import '../../services/api_service.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 
 class CreateEventScreen extends StatefulWidget {

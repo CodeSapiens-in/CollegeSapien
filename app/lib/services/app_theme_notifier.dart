@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../utils/app_color_scheme.dart';
-import '../utils/app_colors.dart';
-import '../utils/app_themes.dart';
+import '../utils/app_theme.dart';
 
 class AppThemeNotifier extends ChangeNotifier {
   static final AppThemeNotifier instance = AppThemeNotifier._();
