@@ -112,6 +112,11 @@ export const rejectEvent = async (req: AuthRequest, res: Response) => {
     if (!uid) return res.status(401).json({ error: 'Unauthorized' });
 
     const id = req.params.id as string;
+    const reason =
+      typeof req.body?.reason === 'string' && req.body.reason.trim().length > 0
+        ? req.body.reason.trim()
+        : null;
+
     const docRef = firestore().collection('events').doc(id);
     const doc = await docRef.get();
 
@@ -126,6 +131,7 @@ export const rejectEvent = async (req: AuthRequest, res: Response) => {
       status: 'rejected',
       deletedAt: admin.firestore.FieldValue.serverTimestamp(),
       rejectedBy: uid,
+      rejectionReason: reason,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 

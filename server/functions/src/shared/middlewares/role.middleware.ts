@@ -20,3 +20,6 @@ export const checkRole = (roles: string[]) => {
 export const isModerator = checkRole(['moderator', 'admin', 'superadmin']);
 export const isAdmin = checkRole(['admin', 'superadmin']);
 export const isSuperAdmin = checkRole(['superadmin']);
+
+// Events moderation is additionally delegated to ambassadors.
+export const isEventModerator = checkRole(['ambassador', 'moderator', 'admin', 'superadmin']);

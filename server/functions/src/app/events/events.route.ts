@@ -7,7 +7,7 @@ import {
   rejectEvent,
 } from './events.controller';
 import { authenticate, requireVerifiedEmail } from '../../shared/middlewares/auth.middleware';
-import { isModerator } from '../../shared/middlewares/role.middleware';
+import { isEventModerator } from '../../shared/middlewares/role.middleware';
 
 const router = Router();
 
@@ -15,9 +15,9 @@ const router = Router();
 router.get('/', authenticate, requireVerifiedEmail, getApprovedEvents);
 router.post('/', authenticate, requireVerifiedEmail, createEvent);
 
-// Moderator / Admin endpoints
-router.get('/pending', authenticate, requireVerifiedEmail, isModerator, getPendingEvents);
-router.patch('/:id/approve', authenticate, requireVerifiedEmail, isModerator, approveEvent);
-router.patch('/:id/reject', authenticate, requireVerifiedEmail, isModerator, rejectEvent);
+// Moderator / Admin / Ambassador endpoints
+router.get('/pending', authenticate, requireVerifiedEmail, isEventModerator, getPendingEvents);
+router.patch('/:id/approve', authenticate, requireVerifiedEmail, isEventModerator, approveEvent);
+router.patch('/:id/reject', authenticate, requireVerifiedEmail, isEventModerator, rejectEvent);
 
 export default router;
