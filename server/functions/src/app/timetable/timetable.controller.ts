@@ -2,10 +2,19 @@ import { Response } from 'express';
 import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import { TimetableSchema } from './timetable.model';
 import * as admin from 'firebase-admin';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import type { GoogleGenerativeAI } from '@google/generative-ai';
 import { zodError } from '../../shared/zod-error';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+// parseTimetable (the only caller) is currently disabled — see its early 503 return below.
+// Defer loading @google/generative-ai (~700KB) so it doesn't cost every cold start of this route.
+let genAIPromise: Promise<GoogleGenerativeAI> | undefined;
+
+function getGenAI(): Promise<GoogleGenerativeAI> {
+  genAIPromise ??= import('@google/generative-ai').then(
+    ({ GoogleGenerativeAI }) => new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '')
+  );
+  return genAIPromise;
+}
 
 export const uploadTimetable = async (req: AuthRequest, res: Response) => {
   try {
@@ -107,6 +116,7 @@ export const parseTimetable = async (req: AuthRequest, res: Response) => {
     const { imageBase64 } = req.body;
     if (!imageBase64) return res.status(400).json({ error: 'Image data is required' });
 
+    const genAI = await getGenAI();
     const model = genAI.getGenerativeModel({ model: 'gemini-3.1-pro-preview' });
     const prompt =
       'Extract the college timetable from this image. Return ONLY a raw JSON object (no markdown, no code fences) matching this schema: { "subjects": [{ "id": "string", "name": "string", "code": "string", "classes": [{ "day": "MON|TUE|WED|THU|FRI|SAT|SUN", "startTime": "HH:MM", "endTime": "HH:MM", "room": "string", "type": "CORE|LAB|BREAK" }] }] }. Rules: (1) All field values must be strings. (2) Days must be MON, TUE, WED, THU, FRI, SAT, or SUN. (3) If a subject code is not visible in the image, derive one by taking the first letter of each significant word in the subject name (e.g. "Data Structures" → "DS"). (4) If a room or location is not shown, use an empty string "". (5) Use the subject code as the id if no separate id is present. (6) Do NOT include Lunch, Break, Free Period, Interval, or any non-academic time slots as subjects — skip them entirely. These are not subjects and must not appear in the subjects array.';

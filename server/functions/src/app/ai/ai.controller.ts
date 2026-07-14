@@ -1,10 +1,20 @@
 import { Response } from 'express';
 import { AuthRequest } from '../../shared/middlewares/auth.middleware';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import type { GoogleGenerativeAI } from '@google/generative-ai';
 import * as admin from 'firebase-admin';
 
-// API Key should be set in Firebase Config or env
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+// AI features are currently disabled (see roastResume/memeIt below and index.ts). Loading
+// @google/generative-ai costs ~700KB of eager parse/require on every cold start of this
+// function if imported at the top level, so defer it until something actually calls a
+// Gemini-backed code path.
+let genAIPromise: Promise<GoogleGenerativeAI> | undefined;
+
+function getGenAI(): Promise<GoogleGenerativeAI> {
+  genAIPromise ??= import('@google/generative-ai').then(
+    ({ GoogleGenerativeAI }) => new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '')
+  );
+  return genAIPromise;
+}
 
 export const roastResume = async (req: AuthRequest, res: Response) => {
   return res.status(503).json({ error: 'Resume roast is temporarily unavailable.' });
@@ -15,6 +25,7 @@ export const roastResume = async (req: AuthRequest, res: Response) => {
       return res.status(400).json({ error: 'resumeText, storagePath, or fileBase64 is required' });
     }
 
+    const genAI = await getGenAI();
     const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash' });
     const prompt = `Roast this student's resume in a funny way. Keep it light-hearted but savage. Use a bit of Tanglish (Tamil + English) for flavor.`;
 
@@ -79,6 +90,7 @@ export const processResourceDocument = async (
   const docRef = admin.firestore().collection('hub_resources').doc(resourceId);
 
   try {
+    const genAI = await getGenAI();
     const model = genAI.getGenerativeModel({ model: 'gemini-3.1-pro-preview' });
     const expectedCategory = data.category as string;
     const resourceName = (data.name as string) ?? '';
@@ -174,6 +186,7 @@ export const memeIt = async (req: AuthRequest, res: Response) => {
     const { content } = req.body;
     if (!content) return res.status(400).json({ error: 'Content is required' });
 
+    const genAI = await getGenAI();
     const model = genAI.getGenerativeModel({ model: 'gemini-3.5-flash' });
     const prompt = `Convert this student's profile or achievement into a funny Tamil Meme description. Be creative. Content: ${content}`;
 

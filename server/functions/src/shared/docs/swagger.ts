@@ -42,4 +42,13 @@ const options: swaggerJsdoc.Options = {
   apis: ['./src/app/**/*.route.ts', './src/app/**/*.openapi.ts', './src/**/*.model.ts'], // Path to the API docs
 };
 
-export const specs = swaggerJsdoc(options);
+// Building the spec globs and parses every route/model file, which is wasted work on every
+// cold start for the ~99% of requests that never hit /api/docs. Defer it to first access.
+let cachedSpecs: object | undefined;
+
+export function getSpecs(): object {
+  if (!cachedSpecs) {
+    cachedSpecs = swaggerJsdoc(options);
+  }
+  return cachedSpecs;
+}

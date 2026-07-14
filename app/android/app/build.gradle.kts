@@ -69,9 +69,21 @@ android {
             if (hasReleaseKeystore) {
                 signingConfig = signingConfigs.getByName("release")
             }
+            isMinifyEnabled = true
+            isShrinkResources = true
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
 }
+
+// ABI splitting for sideload/testing APKs is handled by Flutter's own tooling
+// (`flutter build apk --split-per-abi`), not a Gradle `splits {}` block — Flutter's Gradle
+// plugin configures per-ABI variants itself based on that flag. App Bundles (the format
+// Play Store expects, via `flutter build appbundle`) deliver per-device native libraries
+// automatically regardless.
 
 flutter {
     source = "../.."
