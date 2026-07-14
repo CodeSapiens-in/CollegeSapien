@@ -14,10 +14,19 @@ const nav = computed(() => {
   const allItems = [
     { label: "Dashboard", to: "/", icon: "i-heroicons-squares-2x2" },
     { label: "Users", to: "/users", icon: "i-heroicons-users" },
-    { label: "Colleges", to: "/colleges", icon: "i-heroicons-building-library" },
+    {
+      label: "Colleges",
+      to: "/colleges",
+      icon: "i-heroicons-building-library",
+    },
     { label: "Resources", to: "/resources", icon: "i-heroicons-document-text" },
     { label: "Syllabus", to: "/syllabus", icon: "i-heroicons-book-open" },
-    { label: "Moderation", to: "/moderation", icon: "i-heroicons-shield-check" },
+    {
+      label: "Moderation",
+      to: "/moderation",
+      icon: "i-heroicons-shield-check",
+    },
+    { label: "Events", to: "/events", icon: "i-heroicons-calendar-days" },
     { label: "Reports", to: "/reports", icon: "i-heroicons-flag" },
     {
       label: "Ambassadors",
@@ -27,7 +36,9 @@ const nav = computed(() => {
     { label: "CMS", to: "/cms", icon: "i-heroicons-pencil-square" },
   ];
   if (isAmbassador.value) {
-    return allItems.filter(item => item.label === "Syllabus" || item.label === "Resources");
+    return allItems.filter((item) =>
+      ["Syllabus", "Resources", "Events"].includes(item.label),
+    );
   }
   return allItems;
 });
@@ -47,7 +58,9 @@ const isActive = (to: string) =>
     class="fixed inset-y-0 left-0 z-50 w-56 min-h-screen bg-gray-950 flex flex-col transition-transform duration-200 ease-in-out lg:static lg:translate-x-0"
     :class="isOpen ? 'translate-x-0' : '-translate-x-full'"
   >
-    <div class="px-5 py-6 border-b border-gray-800 flex items-center justify-between">
+    <div
+      class="px-5 py-6 border-b border-gray-800 flex items-center justify-between"
+    >
       <div>
         <span class="text-white font-bold text-lg tracking-tight"
           >CodeSapiens</span
