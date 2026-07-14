@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../../models/api_models.dart';
 import '../../providers/app_state_notifier.dart';
 import '../../services/api_service.dart';
+import '../../services/college_service.dart';
 import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
+import '../../widgets/searchable_dropdown.dart';
+
+enum _OrganizerType { community, college }
 
 class CreateEventScreen extends StatefulWidget {
   const CreateEventScreen({super.key});
@@ -21,8 +26,30 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final _logoController = TextEditingController();
   final _linkController = TextEditingController();
   final _dateController = TextEditingController();
+  final _collegeService = CollegeService();
+
+  _OrganizerType _organizerType = _OrganizerType.community;
+  List<College> _colleges = [];
+  College? _selectedCollege;
 
   bool _isSubmitting = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadColleges();
+  }
+
+  Future<void> _loadColleges() async {
+    try {
+      final colleges = await _collegeService.listColleges();
+      if (!mounted) return;
+      colleges.sort((a, b) => a.name.compareTo(b.name));
+      setState(() => _colleges = colleges);
+    } catch (_) {
+      // Community-name entry still works if colleges fail to load.
+    }
+  }
 
   @override
   void dispose() {
@@ -69,13 +96,26 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   Future<void> _submit() async {
     if (!_formKey.currentState!.validate()) return;
 
+    final String communityName;
+    if (_organizerType == _OrganizerType.college) {
+      if (_selectedCollege == null) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(content: Text('Please select a college')),
+        );
+        return;
+      }
+      communityName = _selectedCollege!.name;
+    } else {
+      communityName = _communityController.text.trim();
+    }
+
     setState(() => _isSubmitting = true);
 
     try {
       final body = {
         'eventName': _nameController.text.trim(),
         'location': _locationController.text.trim(),
-        'communityName': _communityController.text.trim(),
+        'communityName': communityName,
         'communityLogo': _logoController.text.trim(),
         'eventLink': _linkController.text.trim(),
         'eventDate': _dateController.text.trim(),
@@ -271,16 +311,55 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
                               ),
                             ),
                             const SizedBox(height: 16),
-                            TextFormField(
-                              controller: _communityController,
-                              decoration: const InputDecoration(
-                                labelText: 'Community Name',
-                                hintText: 'e.g., Google Developer Groups',
-                              ),
-                              validator: (v) => v == null || v.trim().isEmpty
-                                  ? 'Please enter the community name'
-                                  : null,
+                            Row(
+                              children: [
+                                ChoiceChip(
+                                  label: const Text('Community'),
+                                  selected:
+                                      _organizerType == _OrganizerType.community,
+                                  onSelected: (_) => setState(() {
+                                    _organizerType = _OrganizerType.community;
+                                  }),
+                                  selectedColor: AppColors.accentGreen,
+                                  side: const BorderSide(color: Colors.black),
+                                ),
+                                const SizedBox(width: 8),
+                                ChoiceChip(
+                                  label: const Text('College'),
+                                  selected:
+                                      _organizerType == _OrganizerType.college,
+                                  onSelected: (_) => setState(() {
+                                    _organizerType = _OrganizerType.college;
+                                  }),
+                                  selectedColor: AppColors.accentBlue,
+                                  side: const BorderSide(color: Colors.black),
+                                ),
+                              ],
                             ),
+                            const SizedBox(height: 16),
+                            if (_organizerType == _OrganizerType.community)
+                              TextFormField(
+                                controller: _communityController,
+                                decoration: const InputDecoration(
+                                  labelText: 'Community Name',
+                                  hintText: 'e.g., Google Developer Groups',
+                                ),
+                                validator: (v) => v == null || v.trim().isEmpty
+                                    ? 'Please enter the community name'
+                                    : null,
+                              )
+                            else
+                              SearchableDropdown<College>(
+                                items: _colleges,
+                                value: _selectedCollege,
+                                labelBuilder: (c) => c.name,
+                                decoration: const InputDecoration(
+                                  labelText: 'College',
+                                  hintText: 'Search for your college',
+                                ),
+                                onChanged: (college) =>
+                                    setState(() => _selectedCollege = college),
+                              ),
                             const SizedBox(height: 16),
                             TextFormField(
                               controller: _logoController,
