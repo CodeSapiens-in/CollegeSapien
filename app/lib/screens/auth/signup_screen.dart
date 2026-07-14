@@ -1,7 +1,6 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../services/auth_service.dart';
 import '../../widgets/responsive_layout.dart';

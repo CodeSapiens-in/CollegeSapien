@@ -3,7 +3,6 @@ import 'package:flutter/services.dart';
 
 import '../models/syllabus_models.dart';
 import '../services/syllabus_service.dart';
-import '../utils/app_colors.dart';
 import '../utils/app_theme.dart';
 import 'searchable_dropdown.dart';
 

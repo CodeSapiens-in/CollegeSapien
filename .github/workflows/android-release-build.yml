@@ -1,0 +1,86 @@
+name: Build Android release bundle
+
+# Manual only — this produces a signed, obfuscated release build for distribution, not
+# something that should run on every push/merge. Trigger it from the Actions tab when
+# you're ready to cut a release.
+#
+# Requires these repository secrets (Settings > Secrets and variables > Actions):
+#   ANDROID_KEYSTORE_BASE64   base64 of the upload keystore (`base64 -i release.keystore`)
+#   ANDROID_KEYSTORE_PASSWORD
+#   ANDROID_KEY_ALIAS
+#   ANDROID_KEY_PASSWORD
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build_release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.44.0'
+          channel: stable
+          cache: true
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install dependencies
+        working-directory: app
+        run: flutter pub get
+
+      - name: Write signing keystore
+        working-directory: app/android
+        run: |
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > release.keystore
+          cat > key.properties <<EOF
+          storeFile=release.keystore
+          storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          keyAlias=${{ secrets.ANDROID_KEY_ALIAS }}
+          keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
+          EOF
+
+      - name: Build App Bundle (Play Store)
+        working-directory: app
+        run: >
+          flutter build appbundle --release
+          --obfuscate --split-debug-info=build/app/outputs/symbols
+
+      - name: Build split APKs (sideload/testing)
+        working-directory: app
+        run: >
+          flutter build apk --release --split-per-abi
+          --obfuscate --split-debug-info=build/app/outputs/symbols
+
+      - name: Remove signing secrets from workspace
+        if: always()
+        working-directory: app/android
+        run: rm -f release.keystore key.properties
+
+      - name: Upload App Bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-aab
+          path: app/build/app/outputs/bundle/release/*.aab
+          if-no-files-found: error
+
+      - name: Upload split APKs
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-apks
+          path: app/build/app/outputs/flutter-apk/*-release.apk
+          if-no-files-found: error
+
+      - name: Upload debug symbols
+        uses: actions/upload-artifact@v4
+        with:
+          name: app-release-symbols
+          path: app/build/app/outputs/symbols
+          if-no-files-found: error

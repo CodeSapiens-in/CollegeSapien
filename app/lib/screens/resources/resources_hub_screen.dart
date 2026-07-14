@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 // import '../../services/app_capability_service.dart'; // mod: moved to web admin panel
 import '../../utils/app_theme.dart';
-import '../../utils/app_colors.dart';
 import '../../widgets/hoverable.dart';
 import '../../widgets/responsive_layout.dart';
 // import '../profile/admin_management_screen.dart'; // mod: moved to web admin panel

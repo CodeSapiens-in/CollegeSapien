@@ -18,7 +18,6 @@ import '../../services/college_service.dart';
 import '../profile/profile_screen.dart';
 import '../../models/syllabus_models.dart';
 import '../../services/syllabus_service.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/app_spacing.dart';
 import '../../widgets/responsive_layout.dart';

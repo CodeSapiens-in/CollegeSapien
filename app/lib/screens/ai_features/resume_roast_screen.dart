@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import '../../utils/app_theme.dart';
-import '../../utils/app_colors.dart';
 import '../../services/academic_service.dart';
 import '../../widgets/responsive_layout.dart';
 

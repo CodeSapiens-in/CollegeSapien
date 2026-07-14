@@ -1,10 +1,19 @@
 import { Response } from 'express';
 import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import { InternalMarksSchema, SemestersSchema } from './cgpa.model';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import type { GoogleGenerativeAI } from '@google/generative-ai';
 import * as admin from 'firebase-admin';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
+// calculateCGPA (the only caller) is currently disabled — see its early 503 return below.
+// Defer loading @google/generative-ai (~700KB) so it doesn't cost every cold start of this route.
+let genAIPromise: Promise<GoogleGenerativeAI> | undefined;
+
+function getGenAI(): Promise<GoogleGenerativeAI> {
+  genAIPromise ??= import('@google/generative-ai').then(
+    ({ GoogleGenerativeAI }) => new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '')
+  );
+  return genAIPromise;
+}
 
 export const calculateCGPA = async (req: AuthRequest, res: Response) => {
   return res.status(503).json({ error: 'CGPA image scanning is temporarily unavailable.' });
@@ -13,6 +22,7 @@ export const calculateCGPA = async (req: AuthRequest, res: Response) => {
     const { imageBase64 } = req.body;
     if (!imageBase64) return res.status(400).json({ error: 'Image data is required' });
 
+    const genAI = await getGenAI();
     const model = genAI.getGenerativeModel({ model: 'gemini-3.1-pro-preview' });
     const prompt =
       "Parse this grade sheet image and calculate the GPA and CGPA. Return a JSON object with fields 'gpa', 'cgpa', and 'subjects' (array of { name, grade, credits }).";

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../../utils/app_theme.dart';
-import '../../utils/app_colors.dart';
 import 'package:intl/intl.dart';
 import '../../models/timetable_models.dart';
 import '../../services/attendance_service.dart';

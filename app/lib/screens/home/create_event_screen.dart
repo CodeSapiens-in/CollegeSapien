@@ -5,7 +5,6 @@ import '../../models/api_models.dart';
 import '../../providers/app_state_notifier.dart';
 import '../../services/api_service.dart';
 import '../../services/college_service.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/searchable_dropdown.dart';
 

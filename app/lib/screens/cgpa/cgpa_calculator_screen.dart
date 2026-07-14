@@ -3,7 +3,6 @@ import 'package:image_picker/image_picker.dart';
 import '../../models/cgpa_models.dart';
 import '../../providers/app_state_notifier.dart';
 import '../../utils/app_theme.dart';
-import '../../utils/app_colors.dart';
 import '../../utils/app_constants.dart';
 import '../../utils/app_spacing.dart';
 import '../../widgets/responsive_layout.dart';
