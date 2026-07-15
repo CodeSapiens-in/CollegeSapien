@@ -9,6 +9,7 @@ name: Build Android release bundle
 #   ANDROID_KEYSTORE_PASSWORD
 #   ANDROID_KEY_ALIAS
 #   ANDROID_KEY_PASSWORD
+#   GOOGLE_SERVICES_JSON_BASE64   base64 of app/android/app/google-services.json
 on:
   workflow_dispatch:
 
@@ -47,6 +48,10 @@ jobs:
           keyPassword=${{ secrets.ANDROID_KEY_PASSWORD }}
           EOF
 
+      - name: Write google-services.json
+        working-directory: app/android/app
+        run: echo "${{ secrets.GOOGLE_SERVICES_JSON_BASE64 }}" | base64 -d > google-services.json
+
       - name: Build App Bundle (Play Store)
         working-directory: app
         run: >
@@ -62,7 +67,9 @@ jobs:
       - name: Remove signing secrets from workspace
         if: always()
         working-directory: app/android
-        run: rm -f release.keystore key.properties
+        run: |
+          rm -f release.keystore key.properties
+          rm -f app/google-services.json
 
       - name: Upload App Bundle
         uses: actions/upload-artifact@v4
