@@ -1,2 +1,3 @@
 .claude/
 app/.env.example
+app/*.jks

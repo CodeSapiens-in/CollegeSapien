@@ -40,7 +40,7 @@ jobs:
       - name: Write signing keystore
         working-directory: app/android
         run: |
-          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > release.keystore
+          echo "${{ secrets.ANDROID_KEYSTORE_BASE64 }}" | base64 -d > app/release.keystore
           cat > key.properties <<EOF
           storeFile=release.keystore
           storePassword=${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
@@ -68,7 +68,7 @@ jobs:
         if: always()
         working-directory: app/android
         run: |
-          rm -f release.keystore key.properties
+          rm -f app/release.keystore key.properties
           rm -f app/google-services.json
 
       - name: Upload App Bundle
