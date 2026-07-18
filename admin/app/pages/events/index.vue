@@ -20,6 +20,7 @@ const pendingReject = ref<EventItem | null>(null);
 const rejectReason = ref("");
 const actionInFlight = ref<Set<string>>(new Set());
 const snack = ref("");
+const editing = ref<Map<string, EventItem>>(new Map());
 
 const fetchPending = async () => {
   loading.value = true;
@@ -29,11 +30,31 @@ const fetchPending = async () => {
 
 onMounted(fetchPending);
 
+const startEdit = (event: EventItem) => {
+  editing.value.set(event.id, { ...event });
+};
+
+const cancelEdit = (id: string) => {
+  editing.value.delete(id);
+};
+
 const approve = async (id: string) => {
   actionInFlight.value.add(id);
   try {
-    await patch(`/events/${id}/approve`);
+    const edited = editing.value.get(id);
+    const body = edited
+      ? {
+          eventName: edited.eventName,
+          location: edited.location,
+          communityName: edited.communityName,
+          communityLogo: edited.communityLogo,
+          eventLink: edited.eventLink,
+          eventDate: edited.eventDate,
+        }
+      : {};
+    await patch(`/events/${id}/approve`, body);
     events.value = events.value.filter((e) => e.id !== id);
+    editing.value.delete(id);
     snack.value = "Event approved.";
   } catch (err) {
     console.error("Failed to approve event", err);
@@ -103,8 +124,11 @@ const reject = async () => {
           >
         </div>
 
-        <!-- Metadata -->
-        <div class="text-xs text-gray-500 space-y-1 mb-3">
+        <!-- Metadata (read-only) -->
+        <div
+          v-if="!editing.has(event.id)"
+          class="text-xs text-gray-500 space-y-1 mb-3"
+        >
           <div class="flex items-center gap-1">
             <Icon
               v-if="event.communityLogo"
@@ -115,6 +139,40 @@ const reject = async () => {
           </div>
           <div>{{ event.location }}</div>
           <div>{{ event.eventDate }}</div>
+        </div>
+
+        <!-- Edit form -->
+        <div v-else class="space-y-2 mb-3">
+          <input
+            v-model="editing.get(event.id)!.eventName"
+            placeholder="Event name"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
+          <input
+            v-model="editing.get(event.id)!.communityName"
+            placeholder="Community"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
+          <input
+            v-model="editing.get(event.id)!.communityLogo"
+            placeholder="Community logo URL"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
+          <input
+            v-model="editing.get(event.id)!.location"
+            placeholder="Location"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
+          <input
+            v-model="editing.get(event.id)!.eventDate"
+            placeholder="Event date"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
+          <input
+            v-model="editing.get(event.id)!.eventLink"
+            placeholder="Event link"
+            class="w-full px-2 py-1 text-xs border border-gray-300 rounded"
+          />
         </div>
 
         <!-- Actions -->
@@ -131,6 +189,20 @@ const reject = async () => {
             />
             Open Link
           </a>
+          <button
+            v-if="!editing.has(event.id)"
+            class="px-3 py-1.5 text-xs font-medium border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+            @click="startEdit(event)"
+          >
+            Edit
+          </button>
+          <button
+            v-else
+            class="px-3 py-1.5 text-xs font-medium border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+            @click="cancelEdit(event.id)"
+          >
+            Cancel edit
+          </button>
           <button
             :disabled="actionInFlight.has(event.id)"
             class="px-3 py-1.5 text-xs font-medium bg-green-600 text-white rounded-lg hover:bg-green-700 disabled:opacity-60 transition-colors"

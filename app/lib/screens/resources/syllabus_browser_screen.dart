@@ -3,13 +3,14 @@ import 'package:file_picker/file_picker.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/api_models.dart';
+import '../../models/syllabus_models.dart';
 import '../../services/auth_service.dart';
 import '../../services/college_service.dart';
 import '../../services/resource_service.dart';
+import '../../services/syllabus_service.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/department_constants.dart';
 import '../../widgets/responsive_layout.dart';
-import '../../widgets/resource_grid_section.dart';
 import '../../widgets/searchable_dropdown.dart';
 
 class SyllabusBrowserScreen extends StatefulWidget {
@@ -22,9 +23,9 @@ class SyllabusBrowserScreen extends StatefulWidget {
 class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
   final _resourceService = ResourceService();
   final _collegeService = CollegeService();
+  final _syllabusService = SyllabusService();
   late Future<List<HubResource>> _future;
   double? _uploadProgress;
-  final _searchController = TextEditingController();
   String? _filterCollege;
   String? _filterDepartment;
   String? _filterRegulation;
@@ -32,6 +33,11 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
   List<College> _colleges = [];
   List<Department> _departments = defaultDepartments;
   UserProfile? _userProfile;
+
+  List<String> _regulationOptions = [];
+  bool _curriculumLoading = false;
+  String? _curriculumError;
+  CurriculumBundle? _curriculumBundle;
 
   @override
   void initState() {
@@ -66,10 +72,77 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
     });
   }
 
-  @override
-  void dispose() {
-    _searchController.dispose();
-    super.dispose();
+  String? get _selectedDepartmentCode => _departments
+      .where((d) => d.name == _filterDepartment)
+      .firstOrNull
+      ?.code;
+
+  void _onCollegeChanged(String? code) {
+    setState(() {
+      _filterCollege = code;
+      _regulationOptions = [];
+      _filterRegulation = null;
+      _curriculumBundle = null;
+    });
+    _loadRegulations();
+  }
+
+  void _onDepartmentChanged(String? name) {
+    setState(() {
+      _filterDepartment = name;
+      _regulationOptions = [];
+      _filterRegulation = null;
+      _curriculumBundle = null;
+    });
+    _loadRegulations();
+  }
+
+  Future<void> _loadRegulations() async {
+    final collegeCode = _filterCollege;
+    final courseCode = _selectedDepartmentCode;
+    if (collegeCode == null || courseCode == null) return;
+    try {
+      final bundle = await _syllabusService.getCurriculum(
+        collegeCode: collegeCode,
+        courseCode: courseCode,
+      );
+      if (!mounted) return;
+      setState(() => _regulationOptions = bundle.availableRegulations);
+    } catch (_) {
+      if (!mounted) return;
+      setState(() => _regulationOptions = []);
+    }
+  }
+
+  Future<void> _loadCurriculum() async {
+    final collegeCode = _filterCollege;
+    final courseCode = _selectedDepartmentCode;
+    final regulation = _filterRegulation;
+    if (collegeCode == null || courseCode == null || regulation == null) {
+      return;
+    }
+    setState(() {
+      _curriculumLoading = true;
+      _curriculumError = null;
+    });
+    try {
+      final bundle = await _syllabusService.getCurriculum(
+        collegeCode: collegeCode,
+        courseCode: courseCode,
+        regulation: regulation,
+      );
+      if (!mounted) return;
+      setState(() {
+        _curriculumBundle = bundle;
+        _curriculumLoading = false;
+      });
+    } catch (e) {
+      if (!mounted) return;
+      setState(() {
+        _curriculumError = e.toString();
+        _curriculumLoading = false;
+      });
+    }
   }
 
   HubResource? _findProfileSyllabus(List<HubResource> items) {
@@ -297,23 +370,6 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
                   final allItems = snapshot.data ?? [];
                   final profileMatch = _findProfileSyllabus(allItems);
 
-                  final query = _searchController.text.toLowerCase();
-                  final items = allItems.where((r) {
-                    final matchesSearch =
-                        query.isEmpty || r.name.toLowerCase().contains(query);
-                    final matchesCollege = _filterCollege == null ||
-                        r.name.toUpperCase().contains(
-                            _filterCollege!.toUpperCase());
-                    final matchesDept = _filterDepartment == null ||
-                        r.department == _filterDepartment;
-                    final matchesReg = _filterRegulation == null ||
-                        r.regulation == _filterRegulation;
-                    return matchesSearch &&
-                        matchesCollege &&
-                        matchesDept &&
-                        matchesReg;
-                  }).toList();
-
                   return MaxWidthContent(
                     maxWidth: 1000,
                     child: ListView(
@@ -332,20 +388,7 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
                         _buildSyllabusCard(profileMatch, highlighted: true),
                         const Divider(height: 32),
                       ],
-                      TextField(
-                        controller: _searchController,
-                        decoration: InputDecoration(
-                          hintText: 'Search syllabus...',
-                          prefixIcon: const Icon(Icons.search),
-                          border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(8)),
-                          filled: true,
-                          fillColor: Colors.white,
-                        ),
-                        onChanged: (_) => setState(() {}),
-                      ),
                       if (_colleges.isNotEmpty) ...[
-                        const SizedBox(height: 12),
                         SearchableDropdown<College>(
                           items: _colleges,
                           value: _filterCollege != null
@@ -361,11 +404,10 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
                             filled: true,
                             fillColor: Colors.white,
                           ),
-                          onChanged: (c) =>
-                              setState(() => _filterCollege = c?.code),
+                          onChanged: (c) => _onCollegeChanged(c?.code),
                         ),
+                        const SizedBox(height: 12),
                       ],
-                      const SizedBox(height: 12),
                       SearchableDropdown<Department>(
                         items: _departments,
                         value: _filterDepartment != null
@@ -381,12 +423,11 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
                           filled: true,
                           fillColor: Colors.white,
                         ),
-                        onChanged: (d) =>
-                            setState(() => _filterDepartment = d?.name),
+                        onChanged: (d) => _onDepartmentChanged(d?.name),
                       ),
                       const SizedBox(height: 12),
                       SearchableDropdown<String>(
-                        items: regulations,
+                        items: _regulationOptions,
                         value: _filterRegulation,
                         labelBuilder: (r) => r,
                         decoration: InputDecoration(
@@ -396,22 +437,13 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
                           filled: true,
                           fillColor: Colors.white,
                         ),
-                        onChanged: (r) =>
-                            setState(() => _filterRegulation = r),
+                        onChanged: (r) {
+                          setState(() => _filterRegulation = r);
+                          _loadCurriculum();
+                        },
                       ),
                       const SizedBox(height: 16),
-                      if (items.isEmpty)
-                        Container(
-                          padding: const EdgeInsets.all(20),
-                          decoration: AppTheme.cardDecoration(
-                              color: AppColors.accentGreen),
-                          child: const Text('No syllabus documents found.'),
-                        )
-                      else
-                        ResourceGridSection(
-                          items: items,
-                          cardBuilder: _buildSyllabusCard,
-                        ),
+                      _buildCurriculumSection(),
                     ],
                     ),
                   );
@@ -419,6 +451,155 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
               ),
             ),
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCurriculumSection() {
+    if (_filterCollege == null || _filterDepartment == null) {
+      return Container(
+        padding: const EdgeInsets.all(20),
+        decoration: AppTheme.cardDecoration(color: AppColors.accentGreen),
+        child: const Text('Select a college and department to view the curriculum.'),
+      );
+    }
+    if (_filterRegulation == null) {
+      return Container(
+        padding: const EdgeInsets.all(20),
+        decoration: AppTheme.cardDecoration(color: AppColors.accentGreen),
+        child: Text(_regulationOptions.isEmpty
+            ? 'No curriculum found for this college and department.'
+            : 'Select a regulation to view the curriculum.'),
+      );
+    }
+    if (_curriculumLoading) {
+      return const Padding(
+        padding: EdgeInsets.symmetric(vertical: 32),
+        child: Center(child: CircularProgressIndicator()),
+      );
+    }
+    if (_curriculumError != null) {
+      return Container(
+        padding: const EdgeInsets.all(20),
+        decoration: AppTheme.cardDecoration(color: AppColors.accentPink),
+        child: Text(_curriculumError!),
+      );
+    }
+    final bundle = _curriculumBundle;
+    if (bundle == null || bundle.subjects.isEmpty) {
+      return Container(
+        padding: const EdgeInsets.all(20),
+        decoration: AppTheme.cardDecoration(color: AppColors.accentGreen),
+        child: const Text('No subjects found for this curriculum.'),
+      );
+    }
+
+    final core = bundle.subjects.where((s) => !s.isOption).toList();
+    final electives = bundle.subjects.where((s) => s.isOption).toList();
+
+    final bySemester = <int, List<CurriculumSubject>>{};
+    for (final subject in core) {
+      bySemester.putIfAbsent(subject.semester ?? 0, () => []).add(subject);
+    }
+    final semesters = bySemester.keys.toList()..sort();
+
+    final byElectiveType = <String, List<CurriculumSubject>>{};
+    for (final subject in electives) {
+      final type = subject.electiveType?.trim();
+      byElectiveType
+          .putIfAbsent(type?.isNotEmpty == true ? type! : 'Electives', () => [])
+          .add(subject);
+    }
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final semester in semesters)
+          _buildSubjectGroup(
+            semester == 0 ? 'Unassigned' : 'Semester $semester',
+            bySemester[semester]!,
+          ),
+        for (final type in byElectiveType.keys)
+          _buildSubjectGroup(type, byElectiveType[type]!),
+      ],
+    );
+  }
+
+  Widget _buildSubjectGroup(String title, List<CurriculumSubject> subjects) {
+    // ListTile (inside ExpansionTile) paints its background/ink splashes on
+    // the nearest Material ancestor — a colored Container in between hides
+    // them, so the fill color lives on a Material here instead.
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        border: Border.all(color: AppColors.border, width: 2),
+        borderRadius: BorderRadius.circular(8),
+        boxShadow: [
+          BoxShadow(offset: const Offset(4, 4), color: AppColors.shadow),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Material(
+          color: AppColors.accentGreen,
+          child: Theme(
+            data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
+            child: ExpansionTile(
+              initiallyExpanded: true,
+              title: Text(
+                title,
+                style: const TextStyle(
+                  fontFamily: 'Lexend Mega',
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              childrenPadding: const EdgeInsets.fromLTRB(16, 0, 16, 12),
+              children: [
+                for (final subject in subjects) _buildSubjectTile(subject),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSubjectTile(CurriculumSubject subject) {
+    return Container(
+      margin: const EdgeInsets.only(bottom: 8),
+      padding: const EdgeInsets.all(16),
+      decoration: AppTheme.cardDecoration(color: AppColors.accentGreen),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  subject.subjectName,
+                  style: const TextStyle(
+                    fontFamily: 'Lexend Mega',
+                    fontSize: 14,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  '${subject.subjectCode} · ${subject.category}',
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black.withValues(alpha: 0.6),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          if (subject.credits != null)
+            Text('${subject.credits} cr',
+                style: const TextStyle(fontWeight: FontWeight.w600)),
         ],
       ),
     );

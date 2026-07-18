@@ -16,3 +16,13 @@ export const EventSchema = z.object({
 });
 
 export type Event = z.infer<typeof EventSchema>;
+
+// Fields an admin may correct while approving a pending event
+export const EventEditSchema = EventSchema.pick({
+  eventName: true,
+  location: true,
+  communityName: true,
+  communityLogo: true,
+  eventLink: true,
+  eventDate: true,
+}).partial();

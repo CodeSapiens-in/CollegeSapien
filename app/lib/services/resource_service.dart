@@ -148,6 +148,13 @@ class ResourceService {
     return resourceId;
   }
 
+  Future<void> renameResource({
+    required String resourceId,
+    required String name,
+  }) async {
+    await ApiService.instance.patch('/resources/$resourceId', {'name': name});
+  }
+
   Future<void> reportResource({
     required String resourceId,
     required String type,

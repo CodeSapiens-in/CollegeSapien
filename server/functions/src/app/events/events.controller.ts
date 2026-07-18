@@ -1,7 +1,7 @@
 import { Response } from 'express';
 import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import * as admin from 'firebase-admin';
-import { EventSchema } from './events.model';
+import { EventSchema, EventEditSchema } from './events.model';
 import { zodError } from '../../shared/zod-error';
 
 const firestore = () => admin.firestore();
@@ -76,11 +76,18 @@ export const getPendingEvents = async (req: AuthRequest, res: Response) => {
   }
 };
 
-// 4. Approve an event
+// 4. Approve an event (optionally editing its fields first)
 export const approveEvent = async (req: AuthRequest, res: Response) => {
   try {
     const uid = req.user?.uid;
     if (!uid) return res.status(401).json({ error: 'Unauthorized' });
+
+    let edits;
+    try {
+      edits = EventEditSchema.parse(req.body ?? {});
+    } catch (error: any) {
+      return res.status(400).json({ error: zodError(error) });
+    }
 
     const id = req.params.id as string;
     const docRef = firestore().collection('events').doc(id);
@@ -94,6 +101,7 @@ export const approveEvent = async (req: AuthRequest, res: Response) => {
     }
 
     await docRef.update({
+      ...edits,
       status: 'approved',
       approvedBy: uid,
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),

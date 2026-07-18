@@ -1,9 +1,7 @@
-import 'dart:convert';
 import 'dart:math' as math;
 
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:provider/provider.dart';
@@ -481,49 +479,41 @@ class _HomeScreenState extends State<HomeScreen> {
     }
 
     try {
-      final res = await http
-          .get(Uri.parse(
-            'https://raw.githubusercontent.com/FOSSUChennai/Communities/'
-            'c809df4bc58b5b6265a99a91124acd2352a418f8/src/data/events.json',
-          ))
-          .timeout(const Duration(seconds: 10));
-      if (res.statusCode == 200) {
-        final raw = jsonDecode(res.body) as List<dynamic>;
-        final all = raw
-            .map((e) => EventItem.fromJson(e as Map<String, dynamic>))
-            .where((e) => e.eventName.isNotEmpty)
-            .toList();
+      final raw = await ApiService.instance.get('/events') as List<dynamic>;
+      final all = raw
+          .map((e) => EventItem.fromJson(e as Map<String, dynamic>))
+          .where((e) => e.eventName.isNotEmpty)
+          .toList();
 
-        // Sort: upcoming first (date >= today), then past most-recent first
-        final today = DateTime.now();
-        final todayDate = DateTime(today.year, today.month, today.day);
+      // Sort: upcoming first (date >= today), then past most-recent first
+      final today = DateTime.now();
+      final todayDate = DateTime(today.year, today.month, today.day);
 
-        final upcoming = all.where((e) {
-          final d = DateTime.tryParse(e.eventDate);
-          return d != null && !d.isBefore(todayDate);
-        }).toList()
-          ..sort((a, b) => DateTime.parse(a.eventDate)
-              .compareTo(DateTime.parse(b.eventDate)));
+      final upcoming = all.where((e) {
+        final d = DateTime.tryParse(e.eventDate);
+        return d != null && !d.isBefore(todayDate);
+      }).toList()
+        ..sort((a, b) => DateTime.parse(a.eventDate)
+            .compareTo(DateTime.parse(b.eventDate)));
 
-        final shown = upcoming.isNotEmpty ? upcoming : all
-          ..sort((a, b) {
-            final da = DateTime.tryParse(a.eventDate);
-            final db = DateTime.tryParse(b.eventDate);
-            if (da == null && db == null) return 0;
-            if (da == null) return 1;
-            if (db == null) return -1;
-            return db.compareTo(da);
-          });
+      final shown = upcoming.isNotEmpty ? upcoming : all
+        ..sort((a, b) {
+          final da = DateTime.tryParse(a.eventDate);
+          final db = DateTime.tryParse(b.eventDate);
+          if (da == null && db == null) return 0;
+          if (da == null) return 1;
+          if (db == null) return -1;
+          return db.compareTo(da);
+        });
 
-        appState.setEvents(shown);
-        if (mounted) {
-          setState(() {
-            _allEvents = shown;
-            _shownEvents = shown.take(2).toList();
-            _hasMoreEvents = shown.length > 2;
-            _loadingEvents = false;
-          });
-        }
+      appState.setEvents(shown);
+      if (mounted) {
+        setState(() {
+          _allEvents = shown;
+          _shownEvents = shown.take(2).toList();
+          _hasMoreEvents = shown.length > 2;
+          _loadingEvents = false;
+        });
       }
     } catch (_) {
       if (mounted) setState(() => _loadingEvents = false);

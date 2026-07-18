@@ -309,9 +309,15 @@ export const updateResourceFileUrl = async (req: AuthRequest, res: Response) => 
     if (!uid) return res.status(401).json({ error: 'Unauthorized' });
 
     const id = req.params.id as string;
-    const { fileUrl } = req.body as { fileUrl?: string };
-    if (!fileUrl || typeof fileUrl !== 'string') {
-      return res.status(400).json({ error: 'fileUrl is required' });
+    const { fileUrl, name } = req.body as { fileUrl?: string; name?: string };
+    if (fileUrl !== undefined && typeof fileUrl !== 'string') {
+      return res.status(400).json({ error: 'fileUrl must be a string' });
+    }
+    if (name !== undefined && (typeof name !== 'string' || !name.trim())) {
+      return res.status(400).json({ error: 'name must be a non-empty string' });
+    }
+    if (fileUrl === undefined && name === undefined) {
+      return res.status(400).json({ error: 'fileUrl or name is required' });
     }
 
     const docRef = firestore().collection('hub_resources').doc(id);
@@ -325,7 +331,8 @@ export const updateResourceFileUrl = async (req: AuthRequest, res: Response) => 
     }
 
     await docRef.update({
-      fileUrl,
+      ...(fileUrl !== undefined ? { fileUrl } : {}),
+      ...(name !== undefined ? { name: name.trim() } : {}),
       updatedAt: admin.firestore.FieldValue.serverTimestamp(),
     });
 

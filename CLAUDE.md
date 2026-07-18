@@ -9,6 +9,8 @@ app/          → Flutter mobile app (iOS/Android/Web) — Dart, SDK >=3.0
 admin/        → Admin dashboard — Nuxt 3, Vue, UnoCSS, Pinia, pnpm
 server/       → Backend — Firebase Cloud Functions (TypeScript, Node 22)
 website/      → Marketing site — static HTML hosted on Firebase
+data/         → Syllabus datasets (data/syllabus/)
+.github/      → CI workflows (see CI/CD section)
 ```
 
 ## App (`app/`)
@@ -22,6 +24,7 @@ Flutter app. Entry: `lib/main.dart`. Key directories under `lib/`:
 - `data/` — local data layer
 - `widgets/` — shared widgets
 - `utils/` — utilities
+- `core/` — core app infrastructure
 
 Auth: Firebase Auth + Google Sign-In. Storage: Firebase Storage + SharedPreferences.
 Tests: `test/` (unit/widget), `integration_test/` (integration).
@@ -34,8 +37,8 @@ Integration test: `cd app && flutter test integration_test/`
 
 Nuxt 3 app. Key directories under `app/`:
 
-- `pages/` — ambassadors, cms, colleges, moderation, reports, resources, users
-- `components/`, `composables/`, `stores/` (Pinia), `layouts/`, `middleware/`, `plugins/`
+- `pages/` — ambassadors, cms, colleges, events, moderation, reports, resources, syllabus, users
+- `components/`, `composables/`, `stores/` (Pinia), `layouts/`, `middleware/`, `plugins/`, `public/`, `utils/`
 
 Run: `cd admin && pnpm dev`
 Build: `cd admin && pnpm build`
@@ -45,7 +48,7 @@ Lint: `cd admin && pnpm lint`
 
 Firebase project: `collegesapiens`. Functions source: `server/functions/src/`. Express 5.0, npm (package-lock.json; not pnpm).
 
-Domain modules under `src/app/`: admin, ai, attendance, auth, cgpa, cms, colleges, curriculum, resources, subjects, syllabus, timetable.
+Domain modules under `src/app/`: admin, ai, attendance, auth, cgpa, cms, colleges, curriculum, events, resources, subjects, syllabus, timetable.
 Shared: `src/shared/` (docs, middlewares), `src/db/` (Firestore helpers), `src/ses/` (email via AWS SES).
 
 Firestore rules: `server/firestore.rules`
@@ -60,6 +63,14 @@ Emulators: `cd server/functions && npm run serve`
 
 - `app1` / `app2` → Flutter web app
 - `admin` → Admin dashboard (`admin-collegesapiens`)
+- Note: 4 separate `firebase.json` files exist (root, `app/`, `server/`, `website/`); root's only defines `app1`/`app2`.
+
+## CI/CD (`.github/workflows/`)
+
+- `android-release-build.yml` — manual, signed/obfuscated Android release bundle
+- `firebase-functions-deploy.yml` — manual, deploys Firebase Functions
+- `firebase-hosting-merge.yml` — deploys hosting on push to `main`
+- `firebase-hosting-pull-request.yml` — deploys hosting preview on PRs
 
 ## Conventions
 

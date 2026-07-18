@@ -19,6 +19,8 @@ const users = ref<User[]>([]);
 const loading = ref(true);
 const search = ref("");
 const roleFilter = ref("all");
+const page = ref(1);
+const pageSize = ref(25);
 
 onMounted(async () => {
   users.value = await get<User[]>("/admin/users");
@@ -36,6 +38,19 @@ const filtered = computed(() =>
     return matchSearch && matchRole;
   }),
 );
+
+watch([search, roleFilter, pageSize], () => {
+  page.value = 1;
+});
+
+const totalPages = computed(() =>
+  Math.max(1, Math.ceil(filtered.value.length / pageSize.value)),
+);
+
+const paginated = computed(() => {
+  const start = (page.value - 1) * pageSize.value;
+  return filtered.value.slice(start, start + pageSize.value);
+});
 </script>
 
 <template>
@@ -82,7 +97,7 @@ const filtered = computed(() =>
           </thead>
           <tbody>
             <tr
-              v-for="user in filtered"
+              v-for="user in paginated"
               :key="user.id"
               class="border-b border-gray-50 hover:bg-gray-50 cursor-pointer"
               @click="navigateTo(`/users/${user.id}`)"
@@ -97,8 +112,43 @@ const filtered = computed(() =>
           </tbody>
         </table>
       </div>
-      <div class="px-4 py-3 text-xs text-gray-400 border-t border-gray-100">
-        {{ filtered.length }} of {{ users.length }} users
+      <div
+        class="px-4 py-3 border-t border-gray-100 flex items-center justify-between flex-wrap gap-3"
+      >
+        <div class="text-xs text-gray-400">
+          {{ filtered.length }} of {{ users.length }} users
+        </div>
+        <div class="flex items-center gap-3 text-xs text-gray-500">
+          <label class="flex items-center gap-1">
+            Page size
+            <select
+              v-model.number="pageSize"
+              class="px-2 py-1 border border-gray-300 rounded-lg focus:outline-none"
+            >
+              <option :value="10">10</option>
+              <option :value="25">25</option>
+              <option :value="50">50</option>
+              <option :value="100">100</option>
+            </select>
+          </label>
+          <div class="flex items-center gap-2">
+            <button
+              class="px-2 py-1 border border-gray-300 rounded-lg disabled:opacity-40"
+              :disabled="page <= 1"
+              @click="page--"
+            >
+              Prev
+            </button>
+            <span>Page {{ page }} of {{ totalPages }}</span>
+            <button
+              class="px-2 py-1 border border-gray-300 rounded-lg disabled:opacity-40"
+              :disabled="page >= totalPages"
+              @click="page++"
+            >
+              Next
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>

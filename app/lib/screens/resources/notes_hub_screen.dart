@@ -5,9 +5,13 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/api_models.dart';
 // import '../../services/api_service.dart'; // mod: mod endpoints removed
+import '../../models/syllabus_models.dart';
 import '../../providers/resources_cache_store.dart';
 import '../../services/app_capability_service.dart';
+import '../../services/auth_service.dart';
+import '../../services/college_service.dart';
 import '../../services/resource_service.dart';
+import '../../services/syllabus_service.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 import '../../widgets/resource_grid_section.dart';
@@ -23,6 +27,8 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
   static const _unlockPrefsKey = 'has_approved_hub_upload';
 
   final _resourceService = ResourceService();
+  final _collegeService = CollegeService();
+  final _syllabusService = SyllabusService();
   final _capabilityService = AppCapabilityService.instance;
   final _searchController = TextEditingController();
   late Future<List<HubResource>> _future;
@@ -33,9 +39,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
   // List<HubResource> _pending = [];
   double? _uploadProgress;
   String? _selectedSubjectId;
-  final _subjectNameController = TextEditingController();
-  final _subjectCodeController = TextEditingController();
-  final _titleController = TextEditingController();
 
   bool get _downloadsUnlocked => _canBypassUnlock || _isUnlocked;
 
@@ -117,11 +120,42 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
   }
 
   Future<void> _pickAndUpload() async {
-    _subjectNameController.clear();
-    _subjectCodeController.clear();
-    _titleController.clear();
+    CurriculumBundle? bundle;
+    int currentSemester = 1;
+    try {
+      final syncResult = await AuthService.instance.syncProfile();
+      final profile = syncResult.user;
+      if (profile != null) {
+        currentSemester = profile.semester;
+        final colleges = await _collegeService.listColleges();
+        final departments = await _collegeService.listDepartments();
+        final college =
+            colleges.where((c) => c.id == profile.collegeId).firstOrNull;
+        final deptObj =
+            departments.where((d) => d.name == profile.department).firstOrNull;
+        if (college != null && deptObj != null) {
+          bundle = await _syllabusService.getCurriculum(
+            collegeCode: college.code,
+            courseCode: deptObj.code,
+          );
+        }
+      }
+    } catch (_) {}
+    if (!mounted) return;
 
-    final uploadData = await showModalBottomSheet<Map<String, String>>(
+    final semesters = bundle == null
+        ? <int>[]
+        : (bundle.subjects.map((s) => s.semester).whereType<int>().toSet().toList()
+          ..sort());
+    int? selectedSemester =
+        semesters.contains(currentSemester) ? currentSemester : semesters.firstOrNull;
+    List<CurriculumSubject> subjectsForSemester = selectedSemester == null
+        ? []
+        : _syllabusService.getSubjectsForSemester(bundle!, semester: selectedSemester);
+    CurriculumSubject? selectedSubject =
+        subjectsForSemester.length == 1 ? subjectsForSemester.first : null;
+
+    final confirmed = await showModalBottomSheet<bool>(
       context: context,
       isScrollControlled: true,
       shape: const RoundedRectangleBorder(
@@ -141,35 +175,51 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
                       fontSize: 16,
                       fontWeight: FontWeight.w600)),
               const SizedBox(height: 16),
-              TextField(
-                controller: _subjectNameController,
-                decoration: InputDecoration(
-                  labelText: 'Subject Name',
-                  hintText: 'e.g., Data Structures',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8)),
+              if (bundle == null)
+                const Text(
+                    'No curriculum found for your department. The note will be uploaded without a subject tag.')
+              else ...[
+                DropdownButtonFormField<int>(
+                  initialValue: selectedSemester,
+                  decoration: InputDecoration(
+                    labelText: 'Semester',
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                  ),
+                  items: semesters
+                      .map((s) => DropdownMenuItem(
+                            value: s,
+                            child: Text('Semester $s'),
+                          ))
+                      .toList(),
+                  onChanged: (v) => setSheetState(() {
+                    selectedSemester = v;
+                    subjectsForSemester = v == null
+                        ? []
+                        : _syllabusService.getSubjectsForSemester(bundle!, semester: v);
+                    selectedSubject = subjectsForSemester.length == 1
+                        ? subjectsForSemester.first
+                        : null;
+                  }),
                 ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _subjectCodeController,
-                decoration: InputDecoration(
-                  labelText: 'Subject Code',
-                  hintText: 'e.g., CS3401',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8)),
+                const SizedBox(height: 12),
+                DropdownButtonFormField<CurriculumSubject>(
+                  initialValue: selectedSubject,
+                  decoration: InputDecoration(
+                    labelText: 'Subject',
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(8)),
+                  ),
+                  items: subjectsForSemester
+                      .map((s) => DropdownMenuItem(
+                            value: s,
+                            child: Text('${s.subjectName} (${s.subjectCode})',
+                                overflow: TextOverflow.ellipsis),
+                          ))
+                      .toList(),
+                  onChanged: (v) => setSheetState(() => selectedSubject = v),
                 ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _titleController,
-                decoration: InputDecoration(
-                  labelText: 'Document Title',
-                  hintText: 'e.g., Unit 1 Notes',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                ),
-              ),
+              ],
               const SizedBox(height: 16),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -179,11 +229,7 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
                       child: const Text('Cancel')),
                   const SizedBox(width: 8),
                   ElevatedButton(
-                    onPressed: () => Navigator.pop(ctx, {
-                      'subjectName': _subjectNameController.text.trim(),
-                      'subjectCode': _subjectCodeController.text.trim(),
-                      'title': _titleController.text.trim(),
-                    }),
+                    onPressed: () => Navigator.pop(ctx, true),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
@@ -198,7 +244,7 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
       ),
     );
 
-    if (uploadData == null) return;
+    if (confirmed != true) return;
 
     final result = await FilePicker.pickFiles(
       type: FileType.custom,
@@ -209,15 +255,15 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
 
     if (mounted) setState(() => _uploadProgress = 0.0);
     try {
-      await _resourceService.uploadLocalFile(
+      final resourceId = await _resourceService.uploadLocalFile(
         file: file,
-        title: uploadData['title'] ?? file.name,
+        title: file.name,
         category: 'Notes',
         mimeType: file.extension == 'pdf'
             ? 'application/pdf'
             : 'image/${file.extension}',
-        subjectId: uploadData['subjectCode'],
-        subjectName: uploadData['subjectName'],
+        subjectId: selectedSubject?.subjectCode,
+        subjectName: selectedSubject?.subjectName,
         onProgress: (p) {
           if (mounted) setState(() => _uploadProgress = p);
         },
@@ -232,8 +278,51 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
             backgroundColor: Colors.green),
       );
       _refresh();
+      await _maybeRename(resourceId, file.name);
     } catch (e) {
       if (mounted) setState(() => _uploadProgress = null);
+      if (!mounted) return;
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(e.toString()), backgroundColor: Colors.red),
+      );
+    }
+  }
+
+  Future<void> _maybeRename(String resourceId, String currentName) async {
+    final controller = TextEditingController(text: currentName);
+    final newName = await showDialog<String>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: const Text('Rename document?'),
+        content: TextField(
+          controller: controller,
+          autofocus: true,
+          decoration: const InputDecoration(labelText: 'Document title'),
+        ),
+        actions: [
+          TextButton(
+              onPressed: () => Navigator.pop(ctx),
+              child: const Text('Keep as is')),
+          ElevatedButton(
+            onPressed: () => Navigator.pop(ctx, controller.text.trim()),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.black,
+              foregroundColor: Colors.white,
+            ),
+            child: const Text('Rename'),
+          ),
+        ],
+      ),
+    );
+    controller.dispose();
+
+    if (newName == null || newName.isEmpty || newName == currentName) return;
+
+    try {
+      await _resourceService.renameResource(
+          resourceId: resourceId, name: newName);
+      _refresh();
+    } catch (e) {
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text(e.toString()), backgroundColor: Colors.red),
@@ -249,9 +338,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
   @override
   void dispose() {
     _searchController.dispose();
-    _subjectNameController.dispose();
-    _subjectCodeController.dispose();
-    _titleController.dispose();
     super.dispose();
   }
 

@@ -25,11 +25,15 @@ Future<void> main() async {
   );
   await FirebasePerformance.instance.setPerformanceCollectionEnabled(true);
 
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
-  PlatformDispatcher.instance.onError = (error, stack) {
-    FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
-    return true;
-  };
+  // Crashlytics has no Flutter Web implementation — routing errors to it
+  // there throws its own assertion and masks the real error.
+  if (!kIsWeb) {
+    FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+    PlatformDispatcher.instance.onError = (error, stack) {
+      FirebaseCrashlytics.instance.recordError(error, stack, fatal: true);
+      return true;
+    };
+  }
 
   if (!AppConstants.disableAppCheck) {
     final shouldActivate =
