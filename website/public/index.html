@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CollegeSapien — Open-Source Academic Platform</title>
+        <title>CodeSapiens — Explore. Evolve. Engineer.</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
             rel="preconnect"
@@ -151,60 +151,19 @@
                 opacity: 1;
             }
 
-            /* ── TICKER ── */
-            .ticker-outer {
-                background: var(--black);
-                border-bottom: var(--bdr);
-                overflow: hidden;
-                padding: 11px 0;
-            }
-            .ticker-track {
-                display: flex;
-                white-space: nowrap;
-                animation: ticker 28s linear infinite;
-                width: max-content;
-            }
-            .ticker-item {
-                display: inline-flex;
-                align-items: center;
-                gap: 18px;
-                padding: 0 28px;
-                font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 12px;
-                font-weight: 700;
-                color: var(--yellow);
-                letter-spacing: 0.06em;
-                text-transform: uppercase;
-            }
-            .ticker-sep {
-                width: 5px;
-                height: 5px;
-                background: var(--yellow);
-                border-radius: 50%;
-                opacity: 0.45;
-            }
-            @keyframes ticker {
-                from {
-                    transform: translateX(0);
-                }
-                to {
-                    transform: translateX(-50%);
-                }
-            }
-
             /* ── HERO ── */
             .hero-wrap {
                 border-bottom: var(--bdr);
             }
             .hero {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                display: flex;
+                flex-direction: column;
                 align-items: center;
-                gap: 40px;
-                padding: 72px 56px 88px;
-                max-width: 1360px;
+                text-align: center;
+                gap: 0;
+                padding: 120px 56px;
+                max-width: 1000px;
                 margin: 0 auto;
-                min-height: calc(100vh - 92px);
             }
             .hero-eyebrow {
                 display: inline-flex;
@@ -219,7 +178,7 @@
                 padding: 4px 12px;
                 border: var(--bdr);
                 box-shadow: 2px 2px 0 var(--black);
-                margin-bottom: 24px;
+                margin-bottom: 28px;
             }
             .hero-dot {
                 width: 6px;
@@ -228,84 +187,31 @@
                 border-radius: 50%;
             }
             .hero h1 {
-                font-size: clamp(38px, 4.6vw, 68px);
-                margin-bottom: 20px;
+                font-size: clamp(56px, 11vw, 148px);
+                line-height: 0.98;
                 text-wrap: pretty;
             }
             .hero-sub {
-                font-size: 17px;
-                color: var(--ink);
-                line-height: 1.65;
-                margin-bottom: 36px;
-                max-width: 460px;
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-size: clamp(18px, 2.4vw, 28px);
+                font-weight: 700;
+                letter-spacing: 0.04em;
+                color: var(--tag-purple);
+                margin-top: 14px;
+                margin-bottom: 40px;
             }
-            .hero-actions {
+            /* Stat row */
+            .hero-stats {
                 display: flex;
-                gap: 14px;
+                gap: 16px;
                 flex-wrap: wrap;
-            }
-            .hero-actions .btn {
-                padding: 13px 26px;
-                font-size: 15px;
-            }
-
-            /* Phone */
-            .hero-visual {
-                position: relative;
-                display: flex;
-                align-items: center;
                 justify-content: center;
-                min-height: 560px;
+                margin-top: 56px;
             }
-            .phone {
-                width: 264px;
-                height: 536px;
-                border: 3px solid var(--black);
-                border-radius: 36px;
-                box-shadow: var(--sh-lg);
-                overflow: hidden;
-                background: var(--dk-yellow);
-                position: relative;
-                flex-shrink: 0;
-            }
-            .phone-notch {
-                position: absolute;
-                top: 12px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 78px;
-                height: 22px;
-                background: var(--black);
-                border-radius: 99px;
-                z-index: 2;
-            }
-            .phone-screen {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .phone-ph {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 5px;
-                opacity: 0.35;
-            }
-            .phone-ph span {
-                font-family: monospace;
-                font-size: 11px;
-                text-align: center;
-                line-height: 1.5;
-            }
-
-            /* Float cards */
             .icard {
-                position: absolute;
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: 10px 14px;
+                padding: 10px 16px;
                 border-radius: 3px;
                 font-family: "Bricolage Grotesque", sans-serif;
             }
@@ -323,40 +229,12 @@
             }
             .ic-a {
                 background: var(--green);
-                top: 72px;
-                right: 4px;
-                animation: flt 3.2s ease-in-out infinite;
             }
             .ic-b {
                 background: var(--blue);
-                top: 48%;
-                left: 4px;
-                transform: translateY(-50%);
-                animation: fltm 3.8s ease-in-out infinite 0.4s;
             }
             .ic-c {
                 background: var(--pink);
-                bottom: 80px;
-                right: 4px;
-                animation: flt 2.9s ease-in-out infinite 0.8s;
-            }
-            @keyframes flt {
-                0%,
-                100% {
-                    transform: translateY(0);
-                }
-                50% {
-                    transform: translateY(-7px);
-                }
-            }
-            @keyframes fltm {
-                0%,
-                100% {
-                    transform: translateY(-50%);
-                }
-                50% {
-                    transform: translateY(calc(-50% - 7px));
-                }
             }
 
             /* ── VALUE STRIP ── */
@@ -667,6 +545,35 @@
                 color: var(--yellow);
             }
 
+            /* ── LETTER HEIST GAME ── */
+            .ch {
+                display: inline-block;
+                position: relative;
+            }
+            .ch.stolen {
+                visibility: hidden;
+            }
+            .ch.back {
+                animation: pop 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
+            }
+            @keyframes pop {
+                0% {
+                    transform: scale(2.1) rotate(-14deg);
+                }
+                100% {
+                    transform: scale(1) rotate(0);
+                }
+            }
+            #game {
+                position: fixed;
+                inset: 0;
+                z-index: 90;
+                pointer-events: none;
+            }
+            #game.live {
+                pointer-events: auto;
+            }
+
             /* ── REVEAL ── */
             .r {
                 opacity: 0;
@@ -707,12 +614,8 @@
                     display: none;
                 }
                 .hero {
-                    grid-template-columns: 1fr;
                     padding: 48px 24px;
                     min-height: auto;
-                }
-                .hero-visual {
-                    display: none;
                 }
                 .sec {
                     padding: 64px 24px;
@@ -754,15 +657,15 @@
     <body>
         <!-- NAV -->
         <nav class="nav">
-            <a href="#" class="nav-logo">CollegeSapien</a>
+            <a href="#" class="nav-logo">CodeSapiens</a>
             <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#collegesapien">CollegeSapien</a></li>
                 <li><a href="#open-source">Open source</a></li>
             </ul>
             <div style="display: flex; gap: 12px; align-items: center">
                 <a
-                    href="https://github.com/codesapiens-in/collegesapien"
+                    href="https://github.com/codesapiens-in"
                     class="btn btn-dark"
                     style="padding: 9px 18px; font-size: 13px"
                 >
@@ -781,156 +684,27 @@
             </div>
         </nav>
 
-        <!-- TICKER -->
-        <div class="ticker-outer">
-            <div class="ticker-track" id="ticker">
-                <span class="ticker-item"
-                    >Open Source<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >MIT License<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Flutter<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Nuxt 3<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Firebase<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Node.js<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Learn by Building<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Student-First<span class="ticker-sep"></span
-                ></span>
-                <!-- duplicate for seamless loop -->
-                <span class="ticker-item"
-                    >Open Source<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >MIT License<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Flutter<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Nuxt 3<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Firebase<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Node.js<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Learn by Building<span class="ticker-sep"></span
-                ></span>
-                <span class="ticker-item"
-                    >Student-First<span class="ticker-sep"></span
-                ></span>
-            </div>
-        </div>
-
         <!-- HERO -->
         <div class="hero-wrap">
             <div class="hero">
-                <div>
-                    <div class="hero-eyebrow">
-                        <span class="hero-dot"></span> Open Source · MIT License
-                    </div>
-                    <h1>
-                        Build the future of campus life—open&nbsp;source &amp;
-                        student&#8209;first.
-                    </h1>
-                    <p class="hero-sub">
-                        CollegeSapien is an open‑source platform for
-                        universities, combining a modern mobile app, admin
-                        dashboard, and secure backend—built by the community,
-                        for the community.
-                    </p>
-                    <div class="hero-actions">
-                        <a
-                            href="https://github.com/codesapiens-in/collegesapien"
-                            class="btn btn-dark"
-                        >
-                            <svg
-                                width="15"
-                                height="15"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                            >
-                                <path
-                                    d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-                                />
-                            </svg>
-                            View on GitHub
-                        </a>
-                        <a href="#" class="btn btn-ghost">Get the App</a>
-                    </div>
+                <div class="hero-eyebrow">
+                    <span class="hero-dot"></span> CodeSapiens Community
                 </div>
+                <h1 data-steal>CodeSapiens</h1>
+                <p class="hero-sub" data-steal>Explore. Evolve. Engineer.</p>
 
-                <div class="hero-visual">
-                    <div class="phone">
-                        <div class="phone-notch"></div>
-                        <div class="phone-screen">
-                            <div class="phone-ph">
-                                <svg
-                                    width="40"
-                                    height="40"
-                                    viewBox="0 0 40 40"
-                                    fill="none"
-                                >
-                                    <rect
-                                        width="40"
-                                        height="40"
-                                        rx="8"
-                                        fill="rgba(0,0,0,0.08)"
-                                    />
-                                    <rect
-                                        x="8"
-                                        y="8"
-                                        width="24"
-                                        height="4"
-                                        rx="2"
-                                        fill="rgba(0,0,0,0.15)"
-                                    />
-                                    <rect
-                                        x="8"
-                                        y="16"
-                                        width="16"
-                                        height="3"
-                                        rx="1.5"
-                                        fill="rgba(0,0,0,0.1)"
-                                    />
-                                    <rect
-                                        x="8"
-                                        y="22"
-                                        width="20"
-                                        height="3"
-                                        rx="1.5"
-                                        fill="rgba(0,0,0,0.1)"
-                                    />
-                                </svg>
-                                <span>app screenshot<br />goes here</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="hero-stats">
                     <div class="icard ic-a">
-                        <div class="icard-label">Attendance</div>
-                        <div class="icard-val">87%</div>
+                        <div class="icard-label">Members</div>
+                        <div class="icard-val">500+</div>
                     </div>
                     <div class="icard ic-b">
-                        <div class="icard-label">Next Class</div>
-                        <div class="icard-val">10:30 AM</div>
+                        <div class="icard-label">Workshops</div>
+                        <div class="icard-val">Weekly</div>
                     </div>
                     <div class="icard ic-c">
-                        <div class="icard-label">Predicted</div>
-                        <div class="icard-val">Grade A</div>
+                        <div class="icard-label">Projects</div>
+                        <div class="icard-val">Open Source</div>
                     </div>
                 </div>
             </div>
@@ -939,63 +713,63 @@
         <!-- VALUE STRIP -->
         <div class="value-strip">
             <p>
-                Make academic life simpler: track attendance, see today's
-                schedule at a glance, access notes and question papers, and stay
-                connected to your campus community.
+                CodeSapiens is a student-led community of curious builders —
+                learning in public, shipping side projects, and helping each
+                other grow. Workshops every weekend. Open source all year.
             </p>
         </div>
 
-        <!-- FEATURES -->
-        <section class="sec" id="features">
-            <div class="pill">Features</div>
-            <h2 class="sec-h">Everything a student needs.</h2>
+        <!-- COMMUNITY -->
+        <section class="sec" id="community">
+            <div class="pill">Community</div>
+            <h2 class="sec-h">What CodeSapiens is about.</h2>
             <div class="feat-grid">
                 <div class="feat r">
                     <div class="feat-n">01</div>
-                    <div class="feat-t">Attendance Tracking</div>
+                    <div class="feat-t">Weekly Workshops</div>
                     <p class="feat-d">
-                        Real‑time attendance percentages with clear visual
-                        progress so you always know where you stand.
+                        Hands-on sessions on real tools and stacks, taught by
+                        members for members.
                     </p>
                 </div>
                 <div class="feat r rd2">
                     <div class="feat-n">02</div>
-                    <div class="feat-t">Smart Timetable</div>
+                    <div class="feat-t">Open Source Projects</div>
                     <p class="feat-d">
-                        Color‑coded class cards and today's schedule view keep
-                        your day organized at a glance.
+                        Real codebases to contribute to, from first PR to
+                        maintainer.
                     </p>
                 </div>
                 <div class="feat r rd3">
                     <div class="feat-n">03</div>
-                    <div class="feat-t">Next Class Preview</div>
+                    <div class="feat-t">Peer Mentorship</div>
                     <p class="feat-d">
-                        Quick look at the upcoming class, room, and time —
-                        always one step ahead.
+                        Get unstuck faster with guidance from people who've
+                        been there.
                     </p>
                 </div>
                 <div class="feat r rd1">
                     <div class="feat-n">04</div>
-                    <div class="feat-t">Community Feed</div>
+                    <div class="feat-t">Hackathons &amp; Build Days</div>
                     <p class="feat-d">
-                        Share notes and resources with classmates. Learning is
-                        always better together.
+                        Ship something new with a team in a day, then keep
+                        building it.
                     </p>
                 </div>
                 <div class="feat r rd2">
                     <div class="feat-n">05</div>
-                    <div class="feat-t">Resources Hub</div>
+                    <div class="feat-t">Career Prep</div>
                     <p class="feat-d">
-                        Syllabus, question papers, and study materials all in
-                        one accessible place.
+                        Resume reviews, mock interviews, and referrals from
+                        alumni already in the industry.
                     </p>
                 </div>
                 <div class="feat r rd3">
                     <div class="feat-n">06</div>
-                    <div class="feat-t">Grade Prediction</div>
+                    <div class="feat-t">Resource Sharing</div>
                     <p class="feat-d">
-                        Estimate required external marks from internal
-                        performance. Plan with confidence.
+                        Notes, question papers, and study material shared
+                        across the community.
                     </p>
                 </div>
             </div>
@@ -1004,43 +778,49 @@
         <!-- HOW IT WORKS -->
         <div class="steps-out" id="how-it-works">
             <div class="steps-in">
-                <div class="pill">How it works</div>
-                <h2 class="sec-h">Up and running in minutes.</h2>
+                <div class="pill">How to get involved</div>
+                <h2 class="sec-h">Join in three steps.</h2>
                 <div class="steps-grid">
                     <div class="step r">
                         <div class="step-n">01</div>
-                        <div class="step-t">Sign in with college email</div>
+                        <div class="step-t">Join the community</div>
                         <p>
-                            Verify with your institutional email for secure,
-                            campus‑specific access.
+                            Hop into the GitHub org and say hello — no
+                            application, no gatekeeping.
                         </p>
                     </div>
                     <div class="step r rd2">
                         <div class="step-n">02</div>
                         <div class="step-t">
-                            Set up subjects &amp; timetable
+                            Pick a project or workshop
                         </div>
                         <p>
-                            Configure your subjects and weekly schedule for the
-                            current semester in minutes.
+                            Find something that matches your interest, from
+                            beginner-friendly issues to full builds.
                         </p>
                     </div>
                     <div class="step r rd4">
                         <div class="step-n">03</div>
-                        <div class="step-t">Stay ahead all semester</div>
+                        <div class="step-t">Build, ship, and learn</div>
                         <p>
-                            Track attendance and access resources daily — never
-                            miss a beat.
+                            Contribute, get reviewed, and grow alongside
+                            people building the same way.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- SUITE -->
-        <section class="sec">
-            <div class="pill">Product Suite</div>
-            <h2 class="sec-h">Three layers, one platform.</h2>
+        <!-- COLLEGESAPIEN -->
+        <section class="sec" id="collegesapien">
+            <div class="pill">Flagship Project</div>
+            <h2 class="sec-h">CollegeSapien, built by the community.</h2>
+            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
+                An open‑source platform for universities, combining a modern
+                mobile app, admin dashboard, and secure backend — the
+                community's answer to messy attendance sheets and scattered
+                syllabus PDFs.
+            </p>
             <div class="suite-grid">
                 <div class="suite-card r">
                     <div class="suite-icon">
@@ -1115,6 +895,18 @@
                     </p>
                 </div>
             </div>
+            <a
+                href="https://github.com/codesapiens-in/collegesapien"
+                class="btn btn-dark"
+                style="margin-top: 32px"
+            >
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
+                    />
+                </svg>
+                View CollegeSapien on GitHub
+            </a>
         </section>
 
         <!-- OSS -->
@@ -1125,11 +917,12 @@
                     <h2 class="sec-h">Contribute, learn, and ship.</h2>
                     <p class="oss-desc">
                         Transparent, extensible, and welcoming to contributors —
-                        CollegeSapien is a hands‑on project for learners and
-                        builders who want real impact.
+                        CodeSapiens projects, including CollegeSapien, are
+                        hands‑on for learners and builders who want real
+                        impact.
                     </p>
                     <a
-                        href="https://github.com/codesapiens-in/collegesapien"
+                        href="https://github.com/codesapiens-in"
                         class="btn btn-dark"
                     >
                         <svg
@@ -1194,14 +987,14 @@
 
         <!-- CTA -->
         <div class="cta-out">
-            <h2>Bring CollegeSapien to your campus.</h2>
+            <h2>Join the CodeSapiens community.</h2>
             <p>
-                Join a growing OSS community improving attendance, timetables,
-                and academic resources for campuses everywhere.
+                Explore. Evolve. Engineer. — with builders shipping open
+                source, one weekend workshop at a time.
             </p>
             <div class="cta-btns">
                 <a
-                    href="https://github.com/codesapiens-in/collegesapien"
+                    href="https://github.com/codesapiens-in"
                     class="btn btn-dark"
                 >
                     <svg
@@ -1216,13 +1009,18 @@
                     </svg>
                     View on GitHub
                 </a>
-                <a href="#" class="btn btn-ghost">Get the App</a>
+                <a href="#collegesapien" class="btn btn-ghost"
+                    >See CollegeSapien</a
+                >
             </div>
         </div>
 
+        <!-- LETTER HEIST GAME (ambient, auto-plays, no UI) -->
+        <canvas id="game" class="live"></canvas>
+
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="footer-logo">CollegeSapien</div>
+            <div class="footer-logo">CodeSapiens</div>
             <p class="footer-note">
                 Licensed under MIT · Open to contributors of all experience
                 levels.
@@ -1259,7 +1057,6 @@
         <script type="text/babel">
             const TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/ {
                 theme: "yellow",
-                tickerSpeed: "normal",
                 showFloatingCards: true,
             }; /*EDITMODE-END*/
 
@@ -1317,13 +1114,6 @@
                 document.querySelector(".oss-out").style.background = c.ossBg;
             }
 
-            function applyTickerSpeed(s) {
-                const dur = s === "slow" ? "42s" : s === "fast" ? "14s" : "28s";
-                document.querySelector(
-                    ".ticker-track",
-                ).style.animationDuration = dur;
-            }
-
             function applyCards(show) {
                 document
                     .querySelectorAll(".icard")
@@ -1336,9 +1126,6 @@
                 React.useEffect(() => {
                     applyTheme(tweaks.theme);
                 }, [tweaks.theme]);
-                React.useEffect(() => {
-                    applyTickerSpeed(tweaks.tickerSpeed);
-                }, [tweaks.tickerSpeed]);
                 React.useEffect(() => {
                     applyCards(tweaks.showFloatingCards);
                 }, [tweaks.showFloatingCards]);
@@ -1427,14 +1214,6 @@
                             </div>
                         </TweakSection>
 
-                        <TweakSection label="Ticker Speed">
-                            <TweakRadio
-                                value={tweaks.tickerSpeed}
-                                options={["slow", "normal", "fast"]}
-                                onChange={(v) => setTweak("tickerSpeed", v)}
-                            />
-                        </TweakSection>
-
                         <TweakSection label="Hero Cards">
                             <TweakToggle
                                 label="Show floating cards"
@@ -1454,6 +1233,743 @@
         </script>
 
         <script>
+            // ── Letter Heist ──
+            (() => {
+                "use strict";
+                const C = {
+                    ink: "#0a0a0a",
+                    yellow: "#ffd966",
+                    green: "#d2ffb6",
+                    pink: "#ffc0b6",
+                    purple: "#9191ff",
+                    paper: "#fefcf5",
+                };
+
+                /* letters — split into spans on first play */
+                let letters = null;
+                function splitLetters() {
+                    letters = [];
+                    document.querySelectorAll("[data-steal]").forEach((block) => {
+                        const text = block.textContent;
+                        block.textContent = "";
+                        for (const ch of text) {
+                            if (ch.trim() === "") {
+                                block.appendChild(document.createTextNode(ch));
+                            } else {
+                                const s = document.createElement("span");
+                                s.className = "ch";
+                                s.textContent = ch;
+                                block.appendChild(s);
+                                letters.push({ el: s, char: ch, stolen: false });
+                            }
+                        }
+                    });
+                }
+                let rectsDirty = true;
+                function refreshRects() {
+                    for (const L of letters) {
+                        const r = L.el.getBoundingClientRect();
+                        L.x = r.left + r.width / 2;
+                        L.y = r.top + r.height / 2;
+                    }
+                    rectsDirty = false;
+                }
+                addEventListener("resize", () => (rectsDirty = true));
+                addEventListener("scroll", () => (rectsDirty = true), {
+                    passive: true,
+                });
+
+                /* canvas */
+                const canvas = document.getElementById("game");
+                const ctx = canvas.getContext("2d");
+                let W = 0,
+                    H = 0;
+                function resize() {
+                    const DPR = Math.min(devicePixelRatio || 1, 2);
+                    W = innerWidth;
+                    H = innerHeight;
+                    canvas.width = W * DPR;
+                    canvas.height = H * DPR;
+                    canvas.style.width = W + "px";
+                    canvas.style.height = H + "px";
+                    ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
+                }
+                resize();
+                addEventListener("resize", resize);
+
+                /* tiny audio */
+                let AC = null;
+                function beep(freq, dur = 0.09, type = "square", vol = 0.05) {
+                    try {
+                        AC =
+                            AC ||
+                            new (window.AudioContext ||
+                                window.webkitAudioContext)();
+                        const o = AC.createOscillator(),
+                            g = AC.createGain();
+                        o.type = type;
+                        o.frequency.value = freq;
+                        g.gain.setValueAtTime(vol, AC.currentTime);
+                        g.gain.exponentialRampToValueAtTime(
+                            0.0001,
+                            AC.currentTime + dur,
+                        );
+                        o.connect(g);
+                        g.connect(AC.destination);
+                        o.start();
+                        o.stop(AC.currentTime + dur);
+                    } catch (e) {}
+                }
+
+                /* state — alternates forever: steal all letters, then
+                   return them all, each half starting slow and ramping up */
+                let monkeys = [],
+                    flights = [],
+                    sparks = [];
+                let phase = "steal",
+                    phaseElapsed = 0,
+                    spawnTimer = 0.6;
+
+                const STATES = { SEEK: 0, FLEE: 1, DIZZY: 2, SCARED: 3 };
+
+                function edgeSpawnPoint() {
+                    const side = Math.floor(Math.random() * 4);
+                    if (side === 0)
+                        return { x: -60, y: 60 + Math.random() * (H - 120) };
+                    if (side === 1)
+                        return { x: W + 60, y: 60 + Math.random() * (H - 120) };
+                    if (side === 2)
+                        return { x: 60 + Math.random() * (W - 120), y: -60 };
+                    return { x: 60 + Math.random() * (W - 120), y: H + 60 };
+                }
+                function nearestExit(x, y) {
+                    const d = [
+                        { x: -90, y },
+                        { x: W + 90, y },
+                        { x, y: -90 },
+                        { x, y: H + 90 },
+                    ];
+                    d.sort(
+                        (a, b) =>
+                            Math.hypot(a.x - x, a.y - y) -
+                            Math.hypot(b.x - x, b.y - y),
+                    );
+                    return d[0];
+                }
+                function pickToSteal() {
+                    const avail = letters.filter(
+                        (L) => !L.stolen && !L.reserved,
+                    );
+                    if (!avail.length) return null;
+                    return avail[Math.floor(Math.random() * avail.length)];
+                }
+                function pickToReturn() {
+                    const avail = letters.filter(
+                        (L) => L.stolen && !L.reserved,
+                    );
+                    if (!avail.length) return null;
+                    return avail[Math.floor(Math.random() * avail.length)];
+                }
+
+                function spawnMonkey() {
+                    const mode = phase;
+                    const target =
+                        mode === "steal" ? pickToSteal() : pickToReturn();
+                    if (!target) return;
+                    if (rectsDirty) refreshRects();
+                    target.reserved = true;
+                    const p = edgeSpawnPoint();
+                    const speed = 105 + phaseElapsed * 2.2 + Math.random() * 40;
+                    monkeys.push({
+                        x: p.x,
+                        y: p.y,
+                        scale: 0.8 + Math.random() * 0.35,
+                        speed: Math.min(speed, 300),
+                        state: STATES.SEEK,
+                        mode,
+                        target,
+                        carrying: mode === "return" ? target : null,
+                        hop: Math.random() * Math.PI,
+                        face: 1,
+                        dizzyT: 0,
+                        blink: Math.random() * 3,
+                        wink: 2 + Math.random() * 4,
+                        emote: null,
+                        emoteT: 0,
+                        flip: 0,
+                    });
+                }
+
+                function bonk(m) {
+                    if (m.state === STATES.DIZZY) return;
+                    beep(180, 0.12, "sawtooth", 0.07);
+                    beep(90, 0.18, "square", 0.06);
+                    burst(m.x, m.y - 20, C.yellow, 12);
+                    if (m.carrying) {
+                        flights.push({
+                            char: m.carrying.char,
+                            L: m.carrying,
+                            x: m.x,
+                            y: m.y - 30,
+                            t: 0,
+                            dur: 0.55,
+                        });
+                        m.carrying = null;
+                    }
+                    if (m.target) {
+                        m.target.reserved = false;
+                        m.target = null;
+                    }
+                    m.state = STATES.DIZZY;
+                    m.dizzyT = 0.55;
+                }
+
+                function updateMonkey(m, dt) {
+                    m.hop += dt * (6 + m.speed / 40);
+                    m.blink -= dt;
+                    if (m.blink < -0.12) m.blink = 2 + Math.random() * 3;
+                    m.wink -= dt;
+                    if (m.wink < -0.5) m.wink = 2.5 + Math.random() * 4;
+                    if (m.flip > 0) m.flip = Math.max(m.flip - dt, 0);
+
+                    if (m.state === STATES.DIZZY) {
+                        m.dizzyT -= dt;
+                        if (m.dizzyT <= 0) {
+                            m.state = STATES.SCARED;
+                            m.exit = nearestExit(m.x, m.y);
+                        }
+                        return;
+                    }
+
+                    if (m.emote) {
+                        m.emoteT -= dt;
+                        if (m.emoteT <= 0) m.emote = null;
+                    } else if (
+                        m.state === STATES.FLEE &&
+                        Math.random() < dt * 0.4
+                    ) {
+                        m.emote = "taunt";
+                        m.emoteT = 0.9;
+                    } else if (
+                        m.state === STATES.SEEK &&
+                        m.flip === 0 &&
+                        Math.random() < dt * 0.18
+                    ) {
+                        m.flip = 0.5;
+                    }
+                    if (m.emote === "taunt") {
+                        m.face = W / 2 - m.x >= 0 ? 1 : -1;
+                        return;
+                    }
+
+                    let tx, ty, spd = m.speed;
+                    if (m.state === STATES.SEEK) {
+                        const lost =
+                            m.mode === "steal"
+                                ? !m.target || m.target.stolen
+                                : !m.target || !m.target.stolen;
+                        if (lost) {
+                            m.target && (m.target.reserved = false);
+                            m.target =
+                                m.mode === "steal"
+                                    ? pickToSteal()
+                                    : pickToReturn();
+                            if (m.target) {
+                                m.target.reserved = true;
+                                if (m.mode === "return") m.carrying = m.target;
+                            } else {
+                                m.carrying = null;
+                            }
+                        }
+                        if (!m.target) {
+                            m.state = STATES.SCARED;
+                            m.exit = nearestExit(m.x, m.y);
+                            return;
+                        }
+                        if (rectsDirty) refreshRects();
+                        tx = m.target.x;
+                        ty = m.target.y;
+                    } else if (m.state === STATES.FLEE) {
+                        tx = m.exit.x;
+                        ty = m.exit.y;
+                        spd = m.speed * 1.35;
+                    } else {
+                        tx = m.exit.x;
+                        ty = m.exit.y;
+                        spd = m.speed * 1.8;
+                    }
+
+                    const dx = tx - m.x,
+                        dy = ty - m.y;
+                    const dist = Math.hypot(dx, dy) || 1;
+                    m.face = dx >= 0 ? 1 : -1;
+                    m.x += (dx / dist) * spd * dt;
+                    m.y += (dy / dist) * spd * dt;
+
+                    if (m.state === STATES.SEEK && dist < 14) {
+                        if (m.mode === "steal") {
+                            m.target.stolen = true;
+                            m.target.el.classList.add("stolen");
+                            m.target.el.classList.remove("back");
+                            m.carrying = m.target;
+                            m.target.reserved = false;
+                            m.target = null;
+                            beep(520, 0.07, "triangle", 0.05);
+                            burst(m.x, m.y, C.ink, 6);
+                        } else {
+                            flights.push({
+                                char: m.carrying.char,
+                                L: m.carrying,
+                                x: m.x,
+                                y: m.y - 30,
+                                t: 0,
+                                dur: 0.55,
+                            });
+                            m.carrying = null;
+                            m.target.reserved = false;
+                            m.target = null;
+                            beep(760, 0.08, "triangle", 0.05);
+                            burst(m.x, m.y, C.purple, 6);
+                        }
+                        m.state = STATES.FLEE;
+                        m.exit = nearestExit(m.x, m.y);
+                    }
+
+                    if (
+                        (m.state === STATES.FLEE ||
+                            m.state === STATES.SCARED) &&
+                        (m.x < -80 || m.x > W + 80 || m.y < -80 || m.y > H + 80)
+                    ) {
+                        if (m.carrying) beep(140, 0.2, "sine", 0.06);
+                        m.dead = true;
+                    }
+                }
+
+                function updateFlights(dt) {
+                    for (const f of flights) {
+                        f.t += dt / f.dur;
+                        if (f.t >= 1) {
+                            f.done = true;
+                            f.L.stolen = false;
+                            f.L.el.classList.remove("stolen");
+                            f.L.el.classList.add("back");
+                            burst(f.L.x, f.L.y, C.purple, 8);
+                            beep(760, 0.08, "triangle", 0.05);
+                        }
+                    }
+                    flights = flights.filter((f) => !f.done);
+                }
+                function burst(x, y, color, n) {
+                    for (let i = 0; i < n; i++) {
+                        const a = Math.random() * Math.PI * 2,
+                            s = 60 + Math.random() * 140;
+                        sparks.push({
+                            x,
+                            y,
+                            vx: Math.cos(a) * s,
+                            vy: Math.sin(a) * s - 40,
+                            life: 0.5 + Math.random() * 0.3,
+                            color,
+                        });
+                    }
+                }
+                function updateSparks(dt) {
+                    for (const p of sparks) {
+                        p.life -= dt;
+                        p.x += p.vx * dt;
+                        p.y += p.vy * dt;
+                        p.vy += 300 * dt;
+                    }
+                    sparks = sparks.filter((p) => p.life > 0);
+                }
+
+                /* drawing — neo-brutalist monkey: flat fills, thick ink outlines */
+                function drawMonkey(m) {
+                    const bounce = Math.abs(Math.sin(m.hop)) * 14;
+                    const squash = 1 + Math.sin(m.hop * 2) * 0.05;
+                    const taunt = m.emote === "taunt";
+                    const wig = taunt ? Math.sin((0.9 - m.emoteT) * 24) : 0;
+
+                    // hard offset shadow instead of soft ellipse
+                    ctx.fillStyle = "rgba(10,10,10,.2)";
+                    ctx.fillRect(
+                        m.x - 20 * m.scale + 4,
+                        m.y + 32 * m.scale + 4,
+                        40 * m.scale,
+                        7 * m.scale,
+                    );
+
+                    ctx.save();
+                    ctx.translate(m.x, m.y - (taunt ? 3 : bounce));
+                    let spin = 0;
+                    if (m.state === STATES.DIZZY)
+                        spin = Math.sin((0.55 - m.dizzyT) * 22) * 0.35;
+                    if (m.flip > 0)
+                        spin += ((0.5 - m.flip) / 0.5) * Math.PI * 2;
+                    ctx.rotate(spin + wig * 0.07);
+                    ctx.scale(m.scale * m.face, m.scale * squash);
+
+                    const fur = "#4a3226";
+                    const skin = "#f2d6ae";
+                    const ink = C.ink;
+                    const hip = wig * 3;
+                    const outline = (fill, path) => {
+                        ctx.fillStyle = fill;
+                        ctx.beginPath();
+                        path();
+                        ctx.fill();
+                        ctx.strokeStyle = ink;
+                        ctx.lineWidth = 2.5;
+                        ctx.stroke();
+                    };
+
+                    // tail
+                    ctx.strokeStyle = ink;
+                    ctx.lineCap = "round";
+                    ctx.lineWidth = 7;
+                    ctx.beginPath();
+                    ctx.moveTo(-12, 20 + hip * 0.3);
+                    ctx.quadraticCurveTo(-26, 18, -27, 8);
+                    ctx.stroke();
+                    ctx.strokeStyle = fur;
+                    ctx.lineWidth = 4;
+                    ctx.beginPath();
+                    ctx.moveTo(-12, 20 + hip * 0.3);
+                    ctx.quadraticCurveTo(-26, 18, -27, 8);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(-27, 3.5, 4.5, 0.3, Math.PI * 1.7);
+                    ctx.stroke();
+
+                    // legs
+                    const leg = Math.sin(m.hop) * 5;
+                    ctx.strokeStyle = ink;
+                    ctx.lineWidth = 11;
+                    ctx.beginPath();
+                    ctx.moveTo(-7 + hip, 24);
+                    ctx.lineTo(-10 + hip, 33 + leg);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(7 + hip, 24);
+                    ctx.lineTo(10 + hip, 33 - leg);
+                    ctx.stroke();
+                    ctx.strokeStyle = fur;
+                    ctx.lineWidth = 7;
+                    ctx.beginPath();
+                    ctx.moveTo(-7 + hip, 24);
+                    ctx.lineTo(-10 + hip, 33 + leg);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(7 + hip, 24);
+                    ctx.lineTo(10 + hip, 33 - leg);
+                    ctx.stroke();
+
+                    // body + tummy
+                    outline(fur, () =>
+                        ctx.ellipse(hip, 20, 14.5, 13, 0, 0, Math.PI * 2),
+                    );
+                    ctx.fillStyle = skin;
+                    ctx.beginPath();
+                    ctx.ellipse(hip, 22, 8.5, 7.5, 0, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // arms (ink underlay for outline, fur on top)
+                    const arm = (x1, y1, x2, y2) => {
+                        ctx.strokeStyle = ink;
+                        ctx.lineWidth = 10;
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.stroke();
+                        ctx.strokeStyle = fur;
+                        ctx.lineWidth = 6;
+                        ctx.beginPath();
+                        ctx.moveTo(x1, y1);
+                        ctx.lineTo(x2, y2);
+                        ctx.stroke();
+                    };
+                    if (m.carrying && taunt) {
+                        arm(7 + hip, 14, 19, -16);
+                        arm(-7 + hip, 14, -18, -2 - wig * 2);
+                    } else if (m.carrying) {
+                        arm(7 + hip, 14, 19, -16);
+                        arm(-7 + hip, 14, -16, 23 + leg);
+                    } else if (taunt) {
+                        arm(7 + hip, 14, 18, -2 + wig * 2);
+                        arm(-7 + hip, 14, -18, -2 - wig * 2);
+                    } else {
+                        arm(7 + hip, 14, 16, 23 - leg);
+                        arm(-7 + hip, 14, -16, 23 + leg);
+                    }
+
+                    // ears
+                    outline(fur, () => ctx.arc(-23, -16, 10.5, 0, Math.PI * 2));
+                    outline(fur, () => ctx.arc(23, -16, 10.5, 0, Math.PI * 2));
+                    ctx.fillStyle = skin;
+                    ctx.beginPath();
+                    ctx.arc(-23, -16, 5.5, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(23, -16, 5.5, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // head
+                    outline(fur, () => ctx.arc(0, -16, 23, 0, Math.PI * 2));
+
+                    // face patch
+                    ctx.fillStyle = skin;
+                    ctx.beginPath();
+                    ctx.arc(-8, -18, 10, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(8, -18, 10, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(0, -8, 13, 9, 0, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // hair curl
+                    ctx.strokeStyle = ink;
+                    ctx.lineWidth = 4;
+                    ctx.beginPath();
+                    ctx.moveTo(0, -38);
+                    ctx.quadraticCurveTo(4 + wig, -46, 10, -42);
+                    ctx.stroke();
+
+                    // blush
+                    ctx.fillStyle = "rgba(255,122,144,.45)";
+                    ctx.beginPath();
+                    ctx.ellipse(-13, -6, 4.2, 2.8, 0, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.ellipse(13, -6, 4.2, 2.8, 0, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // glasses
+                    ctx.fillStyle = C.paper;
+                    ctx.beginPath();
+                    ctx.arc(-8, -19, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(8, -19, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.strokeStyle = ink;
+                    ctx.lineWidth = 2.6;
+                    ctx.beginPath();
+                    ctx.arc(-8, -19, 8, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.arc(8, -19, 8, 0, Math.PI * 2);
+                    ctx.stroke();
+                    ctx.beginPath();
+                    ctx.moveTo(-1.2, -19);
+                    ctx.lineTo(1.2, -19);
+                    ctx.stroke();
+
+                    // eyes
+                    const blink = m.blink < 0;
+                    const wink = m.wink < 0 && !blink;
+                    ctx.lineWidth = 2.2;
+                    ctx.strokeStyle = ink;
+                    const happyEye = (x) => {
+                        ctx.beginPath();
+                        ctx.arc(x, -17.5, 3.6, Math.PI * 1.12, Math.PI * 1.88);
+                        ctx.stroke();
+                    };
+                    const openEye = (x) => {
+                        ctx.fillStyle = ink;
+                        ctx.beginPath();
+                        ctx.arc(x, -19, 3.7, 0, Math.PI * 2);
+                        ctx.fill();
+                        ctx.fillStyle = C.paper;
+                        ctx.beginPath();
+                        ctx.arc(x + 1.2, -20.4, 1.4, 0, Math.PI * 2);
+                        ctx.fill();
+                    };
+                    if (m.state === STATES.DIZZY) {
+                        ctx.fillStyle = ink;
+                        ctx.font = "bold 9px sans-serif";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText("×", -8, -19);
+                        ctx.fillText("×", 8, -19);
+                    } else if (blink) {
+                        happyEye(-8);
+                        happyEye(8);
+                    } else if (wink || taunt) {
+                        openEye(-8);
+                        happyEye(8);
+                    } else {
+                        openEye(-8);
+                        openEye(8);
+                    }
+
+                    // mouth
+                    ctx.strokeStyle = ink;
+                    ctx.lineWidth = 2;
+                    if (taunt) {
+                        ctx.fillStyle = ink;
+                        ctx.beginPath();
+                        ctx.arc(0, -7, 4.5, 0, Math.PI);
+                        ctx.fill();
+                        ctx.fillStyle = "#f2788c";
+                        ctx.beginPath();
+                        ctx.ellipse(
+                            0,
+                            -2.5 + Math.abs(wig) * 0.6,
+                            2.8,
+                            3.4,
+                            0,
+                            0,
+                            Math.PI * 2,
+                        );
+                        ctx.fill();
+                    } else {
+                        ctx.beginPath();
+                        ctx.arc(0, -8, 4.5, Math.PI * 0.15, Math.PI * 0.85);
+                        ctx.stroke();
+                    }
+
+                    // freckles
+                    ctx.fillStyle = ink;
+                    ctx.beginPath();
+                    ctx.arc(-2, -12, 0.8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.beginPath();
+                    ctx.arc(2, -12, 0.8, 0, Math.PI * 2);
+                    ctx.fill();
+
+                    // dizzy stars
+                    if (m.state === STATES.DIZZY) {
+                        const t = (0.55 - m.dizzyT) * 10;
+                        ctx.fillStyle = C.yellow;
+                        ctx.strokeStyle = ink;
+                        ctx.font = "800 12px 'Bricolage Grotesque', sans-serif";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        for (let i = 0; i < 3; i++) {
+                            const a = t + i * ((Math.PI * 2) / 3);
+                            ctx.fillText(
+                                "★",
+                                Math.cos(a) * 26,
+                                -38 + Math.sin(a) * 6,
+                            );
+                        }
+                    }
+
+                    // carried letter badge — square tile, hard shadow
+                    if (m.carrying) {
+                        ctx.save();
+                        ctx.translate(22, -26);
+                        ctx.rotate(Math.sin(m.hop) * 0.18 + wig * 0.1);
+                        ctx.scale(m.face, 1);
+                        ctx.fillStyle = ink;
+                        ctx.fillRect(-9, -9, 22, 22); // offset shadow
+                        ctx.fillStyle = C.yellow;
+                        ctx.fillRect(-12, -12, 22, 22);
+                        ctx.strokeStyle = ink;
+                        ctx.lineWidth = 2.5;
+                        ctx.strokeRect(-12, -12, 22, 22);
+                        ctx.fillStyle = ink;
+                        ctx.font = "800 14px 'Bricolage Grotesque', sans-serif";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText(m.carrying.char, -1, 0);
+                        ctx.restore();
+                    }
+                    ctx.restore();
+                }
+
+                function drawFlight(f) {
+                    const e = 1 - Math.pow(1 - f.t, 3);
+                    if (rectsDirty) refreshRects();
+                    const x = f.x + (f.L.x - f.x) * e;
+                    const y =
+                        f.y +
+                        (f.L.y - f.y) * e -
+                        Math.sin(f.t * Math.PI) * 70;
+                    ctx.save();
+                    ctx.translate(x, y);
+                    ctx.rotate((1 - f.t) * 3);
+                    ctx.fillStyle = C.ink;
+                    ctx.font = "800 22px 'Bricolage Grotesque', sans-serif";
+                    ctx.textAlign = "center";
+                    ctx.textBaseline = "middle";
+                    ctx.fillText(f.char, 0, 0);
+                    ctx.restore();
+                }
+
+                function draw() {
+                    ctx.clearRect(0, 0, W, H);
+                    for (const p of sparks) {
+                        ctx.globalAlpha = Math.max(p.life * 2, 0);
+                        ctx.fillStyle = p.color;
+                        ctx.fillRect(p.x - 3, p.y - 3, 6, 6); // square sparks
+                    }
+                    ctx.globalAlpha = 1;
+                    for (const f of flights) drawFlight(f);
+                    monkeys.sort((a, b) => a.y - b.y);
+                    for (const m of monkeys) drawMonkey(m);
+                }
+
+                /* input */
+                canvas.addEventListener("pointerdown", (e) => {
+                    const px = e.clientX,
+                        py = e.clientY;
+                    let best = null,
+                        bestD = 1e9;
+                    for (const m of monkeys) {
+                        const r = 44 * m.scale;
+                        const d = Math.hypot(m.x - px, m.y - py - 10);
+                        if (d < r && d < bestD) {
+                            best = m;
+                            bestD = d;
+                        }
+                    }
+                    if (best) bonk(best);
+                });
+
+                /* loop */
+                let last = 0;
+                function frame(t) {
+                    requestAnimationFrame(frame);
+                    const dt = Math.min((t - last) / 1000, 0.05);
+                    last = t;
+                    phaseElapsed += dt;
+                    spawnTimer -= dt;
+                    const interval = Math.max(2.6 - phaseElapsed * 0.035, 0.75);
+                    const cap = Math.min(3 + Math.floor(phaseElapsed / 10), 9);
+                    if (spawnTimer <= 0 && monkeys.length < cap) {
+                        spawnMonkey();
+                        spawnTimer = interval * (0.7 + Math.random() * 0.6);
+                    }
+                    for (const m of monkeys) updateMonkey(m, dt);
+                    monkeys = monkeys.filter((m) => !m.dead);
+                    updateFlights(dt);
+                    updateSparks(dt);
+                    // board fully clear + every letter matches the phase's
+                    // goal → flip direction and reset pacing back to slow
+                    if (!monkeys.length && !flights.length) {
+                        if (phase === "steal" && letters.every((L) => L.stolen)) {
+                            phase = "return";
+                            phaseElapsed = 0;
+                            spawnTimer = 0.6;
+                        } else if (
+                            phase === "return" &&
+                            letters.every((L) => !L.stolen)
+                        ) {
+                            phase = "steal";
+                            phaseElapsed = 0;
+                            spawnTimer = 0.6;
+                        }
+                    }
+                    draw();
+                }
+                /* auto-start — ambient, no UI, runs until every letter is gone */
+                splitLetters();
+                requestAnimationFrame(frame);
+            })();
+
             // Scroll reveal
             const obs = new IntersectionObserver(
                 (entries) => {

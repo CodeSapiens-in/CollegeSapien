@@ -14,6 +14,10 @@ export const getModeratorScopeError = (
 ): string | null => {
   if (user?.role !== 'moderator') return null;
 
+  // Not college-scoped (e.g. Notes/QP, which are tied only to subject +
+  // regulation) — any moderator may act on it, regardless of college.
+  if (!targetCollegeId) return null;
+
   const moderatorCollegeId =
     typeof user.collegeId === 'string' && user.collegeId.trim().length > 0 ? user.collegeId : null;
 
@@ -21,11 +25,22 @@ export const getModeratorScopeError = (
     return 'Forbidden: Moderator is not assigned to a college';
   }
 
-  if (!targetCollegeId || targetCollegeId !== moderatorCollegeId) {
+  if (targetCollegeId !== moderatorCollegeId) {
     return `Forbidden: ${entity} belongs to another college`;
   }
 
   return null;
+};
+
+// College-scoped moderators see their own college's Syllabus docs plus all
+// Notes/QP (which have no collegeId — they're shared across colleges).
+export const filterByModeratorCollege = (
+  docs: any[],
+  role: string | undefined,
+  moderatorCollegeId: string | undefined
+): any[] => {
+  if (role !== 'moderator') return docs;
+  return docs.filter(doc => !doc.collegeId || doc.collegeId === moderatorCollegeId);
 };
 
 export const archiveResourceForModeration = async (

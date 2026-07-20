@@ -177,7 +177,7 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
               const SizedBox(height: 16),
               if (bundle == null)
                 const Text(
-                    'No curriculum found for your department. The note will be uploaded without a subject tag.')
+                    'No curriculum found for your department, so a subject can\'t be selected. Notes are tagged to a subject and regulation, so upload isn\'t available right now.')
               else ...[
                 DropdownButtonFormField<int>(
                   initialValue: selectedSemester,
@@ -229,7 +229,9 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
                       child: const Text('Cancel')),
                   const SizedBox(width: 8),
                   ElevatedButton(
-                    onPressed: () => Navigator.pop(ctx, true),
+                    onPressed: selectedSubject == null
+                        ? null
+                        : () => Navigator.pop(ctx, true),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
@@ -244,7 +246,7 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
       ),
     );
 
-    if (confirmed != true) return;
+    if (confirmed != true || selectedSubject == null) return;
 
     final result = await FilePicker.pickFiles(
       type: FileType.custom,
@@ -262,8 +264,9 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
         mimeType: file.extension == 'pdf'
             ? 'application/pdf'
             : 'image/${file.extension}',
-        subjectId: selectedSubject?.subjectCode,
-        subjectName: selectedSubject?.subjectName,
+        subjectId: selectedSubject!.subjectCode,
+        subjectName: selectedSubject!.subjectName,
+        regulation: bundle?.regulation,
         onProgress: (p) {
           if (mounted) setState(() => _uploadProgress = p);
         },

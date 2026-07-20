@@ -16,6 +16,7 @@ const { get, patch } = useApi();
 
 const events = ref<EventItem[]>([]);
 const loading = ref(true);
+const loadError = ref("");
 const pendingReject = ref<EventItem | null>(null);
 const rejectReason = ref("");
 const actionInFlight = ref<Set<string>>(new Set());
@@ -24,8 +25,15 @@ const editing = ref<Map<string, EventItem>>(new Map());
 
 const fetchPending = async () => {
   loading.value = true;
-  events.value = await get<EventItem[]>("/events/pending");
-  loading.value = false;
+  loadError.value = "";
+  try {
+    events.value = await get<EventItem[]>("/events/pending");
+  } catch (err) {
+    console.error("Failed to load pending events", err);
+    loadError.value = "Couldn't load pending events. Please try again.";
+  } finally {
+    loading.value = false;
+  }
 };
 
 onMounted(fetchPending);
@@ -99,6 +107,19 @@ const reject = async () => {
     </div>
 
     <div v-if="loading" class="text-gray-400 text-sm p-4">Loading…</div>
+
+    <div
+      v-else-if="loadError"
+      class="bg-white rounded-xl border border-red-200 p-8 text-center text-sm"
+    >
+      <p class="text-red-600 mb-3">{{ loadError }}</p>
+      <button
+        class="px-3 py-1.5 text-xs font-medium border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-50 transition-colors"
+        @click="fetchPending"
+      >
+        Retry
+      </button>
+    </div>
 
     <div
       v-else-if="events.length === 0"

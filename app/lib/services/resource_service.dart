@@ -26,12 +26,10 @@ class ResourceService {
 
   Future<List<HubResource>> listHubResources(
     String category, {
-    String? department,
     String? regulation,
     String? subjectCode,
   }) async {
     final params = <String, String>{'category': category};
-    if (department != null) params['department'] = department;
     if (regulation != null) params['regulation'] = regulation;
     if (subjectCode != null) params['subjectId'] = subjectCode;
 

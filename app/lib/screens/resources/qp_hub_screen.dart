@@ -32,10 +32,8 @@ class _QpHubScreenState extends State<QpHubScreen> {
   // bool _isMod = false;
   // List<HubResource> _pending = [];
   double? _uploadProgress;
-  String? _selectedDepartment;
   String? _selectedRegulation;
   final _subjectCodeController = TextEditingController();
-  final _departmentController = TextEditingController();
   final _regulationController = TextEditingController();
   final _titleController = TextEditingController();
 
@@ -61,7 +59,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
     try {
       final fresh = await _resourceService.listHubResources(
         'QP',
-        department: _selectedDepartment,
         regulation: _selectedRegulation,
       );
       ResourcesCacheStore.instance.qpBox.set(fresh);
@@ -116,7 +113,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
     setState(() {
       _future = _resourceService.listHubResources(
         'QP',
-        department: _selectedDepartment,
         regulation: _selectedRegulation,
       );
     });
@@ -128,7 +124,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
 
   Future<void> _pickAndUpload() async {
     _subjectCodeController.clear();
-    _departmentController.clear();
     _regulationController.clear();
     _titleController.clear();
 
@@ -160,16 +155,7 @@ class _QpHubScreenState extends State<QpHubScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8)),
                 ),
-              ),
-              const SizedBox(height: 12),
-              TextField(
-                controller: _departmentController,
-                decoration: InputDecoration(
-                  labelText: 'Department',
-                  hintText: 'e.g., Computer Science',
-                  border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(8)),
-                ),
+                onChanged: (_) => setSheetState(() {}),
               ),
               const SizedBox(height: 12),
               TextField(
@@ -180,6 +166,7 @@ class _QpHubScreenState extends State<QpHubScreen> {
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(8)),
                 ),
+                onChanged: (_) => setSheetState(() {}),
               ),
               const SizedBox(height: 12),
               TextField(
@@ -200,12 +187,14 @@ class _QpHubScreenState extends State<QpHubScreen> {
                       child: const Text('Cancel')),
                   const SizedBox(width: 8),
                   ElevatedButton(
-                    onPressed: () => Navigator.pop(ctx, {
-                      'subjectCode': _subjectCodeController.text.trim(),
-                      'department': _departmentController.text.trim(),
-                      'regulation': _regulationController.text.trim(),
-                      'title': _titleController.text.trim(),
-                    }),
+                    onPressed: _subjectCodeController.text.trim().isEmpty ||
+                            _regulationController.text.trim().isEmpty
+                        ? null
+                        : () => Navigator.pop(ctx, {
+                              'subjectCode': _subjectCodeController.text.trim(),
+                              'regulation': _regulationController.text.trim(),
+                              'title': _titleController.text.trim(),
+                            }),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.black,
                       foregroundColor: Colors.white,
@@ -272,7 +261,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
   void dispose() {
     _searchController.dispose();
     _subjectCodeController.dispose();
-    _departmentController.dispose();
     _regulationController.dispose();
     _titleController.dispose();
     super.dispose();
@@ -330,12 +318,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
                   }
 
                   final allResources = snapshot.data ?? [];
-                  final departments = allResources
-                      .map((r) => r.department)
-                      .whereType<String>()
-                      .toSet()
-                      .toList()
-                    ..sort();
                   final regulations = allResources
                       .map((r) => r.regulation)
                       .whereType<String>()
@@ -347,11 +329,9 @@ class _QpHubScreenState extends State<QpHubScreen> {
                   final resources = allResources.where((r) {
                     final matchesSearch =
                         query.isEmpty || r.name.toLowerCase().contains(query);
-                    final matchesDept = _selectedDepartment == null ||
-                        r.department == _selectedDepartment;
                     final matchesReg = _selectedRegulation == null ||
                         r.regulation == _selectedRegulation;
-                    return matchesSearch && matchesDept && matchesReg;
+                    return matchesSearch && matchesReg;
                   }).toList();
 
                   return MaxWidthContent(
@@ -372,36 +352,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
                         ),
                         onChanged: (_) => setState(() {}),
                       ),
-                      if (departments.isNotEmpty) ...[
-                        const SizedBox(height: 12),
-                        DropdownButtonFormField<String?>(
-                          initialValue: _selectedDepartment,
-                          decoration: InputDecoration(
-                            labelText: 'Department',
-                            border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8)),
-                            filled: true,
-                            fillColor: Colors.white,
-                            contentPadding: const EdgeInsets.symmetric(
-                                horizontal: 12, vertical: 8),
-                          ),
-                          items: [
-                            const DropdownMenuItem<String?>(
-                              value: null,
-                              child: Text('All Departments'),
-                            ),
-                            ...departments.map(
-                              (dept) => DropdownMenuItem<String?>(
-                                value: dept,
-                                child:
-                                    Text(dept, overflow: TextOverflow.ellipsis),
-                              ),
-                            ),
-                          ],
-                          onChanged: (v) =>
-                              setState(() => _selectedDepartment = v),
-                        ),
-                      ],
                       if (regulations.isNotEmpty) ...[
                         const SizedBox(height: 12),
                         DropdownButtonFormField<String?>(

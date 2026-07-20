@@ -5,6 +5,7 @@ import { HubResourceSchema, ReportSchema } from './resources.model';
 import { zodError } from '../../shared/zod-error';
 import {
   archiveResourceForModeration,
+  filterByModeratorCollege,
   getModeratorScopeError,
   resolvePendingReportsForResource,
 } from './resources.moderation';
@@ -56,19 +57,18 @@ export const getHubResources = async (req: AuthRequest, res: Response) => {
     const uid = req.user?.uid;
     if (!uid) return res.status(401).json({ error: 'Unauthorized' });
 
-    const { category, type, department, semester, regulation } = (req.query ?? {}) as Record<
+    const { category, type, subjectId, regulation } = (req.query ?? {}) as Record<
       string,
       string | undefined
-    >; // category: Notes, QP
-    const profile = await getUserProfile(uid);
+    >;
+    // Notes/QP are scoped by subject + regulation only — not college, department,
+    // or semester, since the same subject can sit in different semesters/colleges.
     let ref: admin.firestore.Query = firestore().collection('hub_resources');
 
-    if (profile?.collegeId) ref = ref.where('collegeId', '==', profile.collegeId);
     if (category) ref = ref.where('category', '==', category);
     if (type) ref = ref.where('type', '==', type);
-    if (department) ref = ref.where('department', '==', department);
+    if (subjectId) ref = ref.where('subjectId', '==', subjectId);
     if (regulation) ref = ref.where('regulation', '==', regulation);
-    if (semester) ref = ref.where('semester', '==', Number(semester));
     ref = ref.where('status', '==', 'approved').where('deletedAt', '==', null);
 
     const snapshot = await ref.get();
@@ -93,18 +93,15 @@ export const listPendingResources = async (req: AuthRequest, res: Response) => {
 
     const role = (req.user as any)?.role;
     const collegeId = (req.user as any)?.collegeId;
-    const scopeError = getModeratorScopeError(req.user as any, collegeId, 'Resource');
-    if (scopeError) {
-      return res.status(403).json({ error: scopeError });
-    }
 
-    if (role === 'moderator') {
-      ref = ref.where('collegeId', '==', collegeId);
-    }
     if (category) ref = ref.where('category', '==', category);
 
     const snapshot = await ref.get();
-    const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+    const data = filterByModeratorCollege(
+      snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })),
+      role,
+      collegeId
+    );
     return res.status(200).json(data);
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
@@ -125,11 +122,15 @@ export const listApprovedResources = async (req: AuthRequest, res: Response) => 
       .where('status', '==', 'approved')
       .where('deletedAt', '==', null);
 
-    if (role === 'moderator') ref = ref.where('collegeId', '==', collegeId);
     if (category) ref = ref.where('category', '==', category);
 
     const snapshot = await ref.get();
-    return res.status(200).json(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+    const data = filterByModeratorCollege(
+      snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })),
+      role,
+      collegeId
+    );
+    return res.status(200).json(data);
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }
@@ -148,11 +149,15 @@ export const listArchivedResources = async (req: AuthRequest, res: Response) => 
       .collection('hub_resources')
       .where('deletedAt', '!=', null);
 
-    if (role === 'moderator') ref = ref.where('collegeId', '==', collegeId);
     if (category) ref = ref.where('category', '==', category);
 
     const snapshot = await ref.get();
-    return res.status(200).json(snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })));
+    const data = filterByModeratorCollege(
+      snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() })),
+      role,
+      collegeId
+    );
+    return res.status(200).json(data);
   } catch (error: any) {
     return res.status(500).json({ error: error.message });
   }
@@ -233,14 +238,32 @@ export const uploadResource = async (req: AuthRequest, res: Response) => {
     if (!uid) return res.status(401).json({ error: 'Unauthorized' });
 
     const profile = await getUserProfile(uid);
-    if (!profile?.collegeId) {
-      return res.status(400).json({ error: 'Complete onboarding before uploading resources' });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const { category, department, semester, collegeId, subjectId, ...rest } = req.body;
+
+    let scoped: Record<string, unknown>;
+    if (category === 'Syllabus') {
+      // Syllabus documents are curriculum-specific: college + department.
+      if (!profile?.collegeId) {
+        return res.status(400).json({ error: 'Complete onboarding before uploading resources' });
+      }
+      scoped = { collegeId: profile.collegeId, department: department || profile.department };
+    } else {
+      // Notes and question papers are scoped to subject + regulation only —
+      // the same subject can sit in different semesters across colleges, so
+      // they aren't tied to college, department, or semester.
+      if (!subjectId || !rest.regulation) {
+        return res
+          .status(400)
+          .json({ error: 'subjectId and regulation are required for Notes/QP uploads' });
+      }
+      scoped = { subjectId };
     }
 
     const validated = HubResourceSchema.parse({
-      ...req.body,
-      collegeId: profile.collegeId,
-      department: req.body.department || profile.department,
+      ...rest,
+      category,
+      ...scoped,
       uploadedBy: uid,
       status: 'pending_moderation',
       createdAt: admin.firestore.FieldValue.serverTimestamp(),
@@ -251,7 +274,7 @@ export const uploadResource = async (req: AuthRequest, res: Response) => {
     const { id, ...validatedResource } = validated;
     const resourceData = {
       ...validatedResource,
-      uploaderName: profile.name || '',
+      uploaderName: profile?.name || '',
     };
 
     const docRef = id
