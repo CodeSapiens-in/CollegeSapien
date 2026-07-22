@@ -150,6 +150,14 @@
             .nav-links a:hover {
                 opacity: 1;
             }
+            .nav-logo img {
+                height: 40px;
+                width: auto;
+            }
+            .btn-nav {
+                padding: 9px 18px;
+                font-size: 13px;
+            }
 
             /* ── HERO ── */
             .hero-wrap {
@@ -282,7 +290,7 @@
             .feat:nth-child(3n) {
                 border-right: none;
             }
-            .feat:nth-child(n + 4) {
+            .feat:nth-child(n) {
                 border-bottom: none;
             }
             .feat:hover {
@@ -570,6 +578,24 @@
                 z-index: 90;
                 pointer-events: none;
             }
+            #score {
+                position: fixed;
+                top: 72px;
+                right: 16px;
+                z-index: 95;
+                display: none;
+                background: var(--yellow);
+                border: var(--bdr);
+                box-shadow: var(--sh);
+                padding: 6px 14px;
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-weight: 800;
+                font-size: 15px;
+                pointer-events: none;
+            }
+            #score.bump {
+                animation: pop 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
+            }
             #game.live {
                 pointer-events: auto;
             }
@@ -608,10 +634,24 @@
             /* ── RESPONSIVE ── */
             @media (max-width: 900px) {
                 .nav {
-                    padding: 0 24px;
+                    padding: 0 16px;
                 }
                 .nav-links {
                     display: none;
+                }
+                .gh-label {
+                    display: none;
+                }
+                .nav-logo {
+                    font-size: 16px;
+                    gap: 8px !important;
+                }
+                .nav-logo img {
+                    height: 30px;
+                }
+                .btn-nav {
+                    padding: 8px 12px;
+                    font-size: 12px;
                 }
                 .hero {
                     padding: 48px 24px;
@@ -657,17 +697,25 @@
     <body>
         <!-- NAV -->
         <nav class="nav">
-            <a href="#" class="nav-logo">CodeSapiens</a>
+            <a
+                href="#"
+                class="nav-logo"
+                style="display: inline-flex; align-items: center; gap: 10px"
+            >
+                <img
+                    src="./assets/codesapiens_logo.png"
+                    alt="CodeSapiens logo"
+                />
+                CodeSapiens
+            </a>
             <ul class="nav-links">
                 <li><a href="#community">Community</a></li>
                 <li><a href="#collegesapien">CollegeSapien</a></li>
-                <li><a href="#open-source">Open source</a></li>
             </ul>
             <div style="display: flex; gap: 12px; align-items: center">
                 <a
-                    href="https://github.com/codesapiens-in"
-                    class="btn btn-dark"
-                    style="padding: 9px 18px; font-size: 13px"
+                    href="https://github.com/CodeSapiens-in/CollegeSapien"
+                    class="btn btn-dark btn-nav"
                 >
                     <svg
                         width="15"
@@ -679,8 +727,13 @@
                             d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
                         />
                     </svg>
-                    GitHub
+                    <span class="gh-label">GitHub</span>
                 </a>
+                <a
+                    href="https://college.codesapiens.in"
+                    class="btn btn-dark btn-nav"
+                    >Get Started</a
+                >
             </div>
         </nav>
 
@@ -696,15 +749,15 @@
                 <div class="hero-stats">
                     <div class="icard ic-a">
                         <div class="icard-label">Members</div>
-                        <div class="icard-val">500+</div>
+                        <div class="icard-val">2500+</div>
                     </div>
                     <div class="icard ic-b">
-                        <div class="icard-label">Workshops</div>
-                        <div class="icard-val">Weekly</div>
+                        <div class="icard-label">Events Hosted</div>
+                        <div class="icard-val">20+</div>
                     </div>
                     <div class="icard ic-c">
-                        <div class="icard-label">Projects</div>
-                        <div class="icard-val">Open Source</div>
+                        <div class="icard-label">Colleges</div>
+                        <div class="icard-val">50+</div>
                     </div>
                 </div>
             </div>
@@ -713,63 +766,132 @@
         <!-- VALUE STRIP -->
         <div class="value-strip">
             <p>
-                CodeSapiens is a student-led community of curious builders —
-                learning in public, shipping side projects, and helping each
-                other grow. Workshops every weekend. Open source all year.
+                The only non-profit inter-college students community — by the
+                students, for the students. Bringing students together to
+                collaborate, share, and grow.
             </p>
         </div>
 
-        <!-- COMMUNITY -->
+        <!-- COMMUNITY / VISION -->
         <section class="sec" id="community">
-            <div class="pill">Community</div>
-            <h2 class="sec-h">What CodeSapiens is about.</h2>
+            <div class="pill">Our Vision</div>
+            <h2 class="sec-h">By the students, for the students.</h2>
+            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
+                Our vision is to bring students together to collaborate,
+                share, and grow. We envision a platform managed by students,
+                for students — where you can build your career based on your
+                interests.
+            </p>
             <div class="feat-grid">
                 <div class="feat r">
                     <div class="feat-n">01</div>
-                    <div class="feat-t">Weekly Workshops</div>
+                    <div class="feat-t">Network</div>
                     <p class="feat-d">
-                        Hands-on sessions on real tools and stacks, taught by
-                        members for members.
+                        Connect with students across colleges through our
+                        online and offline engagements.
                     </p>
                 </div>
                 <div class="feat r rd2">
                     <div class="feat-n">02</div>
-                    <div class="feat-t">Open Source Projects</div>
+                    <div class="feat-t">Build</div>
                     <p class="feat-d">
-                        Real codebases to contribute to, from first PR to
-                        maintainer.
+                        Level up through our workshops and internships — learn
+                        by shipping real things.
                     </p>
                 </div>
                 <div class="feat r rd3">
                     <div class="feat-n">03</div>
-                    <div class="feat-t">Peer Mentorship</div>
+                    <div class="feat-t">Discover</div>
                     <p class="feat-d">
-                        Get unstuck faster with guidance from people who've
-                        been there.
+                        Discover yourself and like-minded people who build the
+                        same way you do.
                     </p>
                 </div>
-                <div class="feat r rd1">
-                    <div class="feat-n">04</div>
-                    <div class="feat-t">Hackathons &amp; Build Days</div>
-                    <p class="feat-d">
-                        Ship something new with a team in a day, then keep
-                        building it.
+            </div>
+        </section>
+
+        <!-- COLLEGESAPIEN -->
+        <section class="sec" id="collegesapien">
+            <div class="pill">Flagship Project</div>
+            <h2 class="sec-h">CollegeSapien, built by the community.</h2>
+            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
+                Your open‑source student companion — everything for your
+                college life in one app. No more messy attendance sheets,
+                scattered syllabus PDFs, or missed events. Built in the open
+                by students like you. Come join us — let's build the best
+                student companion together.
+            </p>
+            <div class="suite-grid">
+                <div class="suite-card r">
+                    <div class="suite-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <rect x="5" y="2" width="14" height="20" rx="2" />
+                            <line x1="12" y1="18" x2="12" y2="18.01" />
+                        </svg>
+                    </div>
+                    <div class="suite-badge">Study</div>
+                    <h3>Syllabus &amp; Subject Content</h3>
+                    <p>
+                        Your syllabus with the right subject content — notes,
+                        question papers, and resources mapped to what you
+                        actually study.
                     </p>
                 </div>
-                <div class="feat r rd2">
-                    <div class="feat-n">05</div>
-                    <div class="feat-t">Career Prep</div>
-                    <p class="feat-d">
-                        Resume reviews, mock interviews, and referrals from
-                        alumni already in the industry.
+                <div class="suite-card r rd2">
+                    <div class="suite-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <rect x="2" y="3" width="20" height="14" rx="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" />
+                            <line x1="12" y1="17" x2="12" y2="21" />
+                        </svg>
+                    </div>
+                    <div class="suite-badge">Track</div>
+                    <h3>Attendance, Timetable &amp; GPA</h3>
+                    <p>
+                        Track your attendance, plan your day with your
+                        timetable, and calculate your GPA — all in your
+                        pocket.
                     </p>
                 </div>
-                <div class="feat r rd3">
-                    <div class="feat-n">06</div>
-                    <div class="feat-t">Resource Sharing</div>
-                    <p class="feat-d">
-                        Notes, question papers, and study material shared
-                        across the community.
+                <div class="suite-card r rd4">
+                    <div class="suite-icon">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        >
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <div class="suite-badge">Connect</div>
+                    <h3>College &amp; Community Events</h3>
+                    <p>
+                        Never miss what's happening — college and community
+                        events, workshops, and much more in one feed.
                     </p>
                 </div>
             </div>
@@ -785,8 +907,8 @@
                         <div class="step-n">01</div>
                         <div class="step-t">Join the community</div>
                         <p>
-                            Hop into the GitHub org and say hello — no
-                            application, no gatekeeping.
+                            Follow us on LinkedIn and say hello, or join our
+                            open source project.
                         </p>
                     </div>
                     <div class="step r rd2">
@@ -811,211 +933,8 @@
             </div>
         </div>
 
-        <!-- COLLEGESAPIEN -->
-        <section class="sec" id="collegesapien">
-            <div class="pill">Flagship Project</div>
-            <h2 class="sec-h">CollegeSapien, built by the community.</h2>
-            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
-                An open‑source platform for universities, combining a modern
-                mobile app, admin dashboard, and secure backend — the
-                community's answer to messy attendance sheets and scattered
-                syllabus PDFs.
-            </p>
-            <div class="suite-grid">
-                <div class="suite-card r">
-                    <div class="suite-icon">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <rect x="5" y="2" width="14" height="20" rx="2" />
-                            <line x1="12" y1="18" x2="12" y2="18.01" />
-                        </svg>
-                    </div>
-                    <div class="suite-badge">Flutter</div>
-                    <h3>Mobile App</h3>
-                    <p>
-                        A pixel‑perfect student app built from Figma specs.
-                        Thenable, responsive, and fast — attendance, timetable,
-                        and resources in your pocket.
-                    </p>
-                </div>
-                <div class="suite-card r rd2">
-                    <div class="suite-icon">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <rect x="2" y="3" width="20" height="14" rx="2" />
-                            <line x1="8" y1="21" x2="16" y2="21" />
-                            <line x1="12" y1="17" x2="12" y2="21" />
-                        </svg>
-                    </div>
-                    <div class="suite-badge">Nuxt 3</div>
-                    <h3>Admin Dashboard</h3>
-                    <p>
-                        Manage colleges, users, subjects, and resource reports
-                        from a single dashboard with audit‑friendly workflows.
-                    </p>
-                </div>
-                <div class="suite-card r rd4">
-                    <div class="suite-icon">
-                        <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <polyline points="16 18 22 12 16 6" />
-                            <polyline points="8 6 2 12 8 18" />
-                        </svg>
-                    </div>
-                    <div class="suite-badge">Node.js + Firebase</div>
-                    <h3>Backend API</h3>
-                    <p>
-                        Secure, scalable data management with Firebase
-                        Functions. Built to handle real campus‑scale usage with
-                        confidence.
-                    </p>
-                </div>
-            </div>
-            <a
-                href="https://github.com/codesapiens-in/collegesapien"
-                class="btn btn-dark"
-                style="margin-top: 32px"
-            >
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                    <path
-                        d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-                    />
-                </svg>
-                View CollegeSapien on GitHub
-            </a>
-        </section>
-
-        <!-- OSS -->
-        <div class="oss-out" id="open-source">
-            <div class="oss-in">
-                <div>
-                    <div class="pill">Open Source</div>
-                    <h2 class="sec-h">Contribute, learn, and ship.</h2>
-                    <p class="oss-desc">
-                        Transparent, extensible, and welcoming to contributors —
-                        CodeSapiens projects, including CollegeSapien, are
-                        hands‑on for learners and builders who want real
-                        impact.
-                    </p>
-                    <a
-                        href="https://github.com/codesapiens-in"
-                        class="btn btn-dark"
-                    >
-                        <svg
-                            width="15"
-                            height="15"
-                            viewBox="0 0 24 24"
-                            fill="currentColor"
-                        >
-                            <path
-                                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-                            />
-                        </svg>
-                        Star on GitHub
-                    </a>
-                </div>
-                <div class="oss-list">
-                    <div class="oss-item r">
-                        <div class="oss-num">01</div>
-                        <div>
-                            <div class="oss-item-t">Learn by building</div>
-                            <p>
-                                Contribute to a real‑world monorepo spanning
-                                Flutter, Nuxt 3, and Firebase.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="oss-item r rd1">
-                        <div class="oss-num">02</div>
-                        <div>
-                            <div class="oss-item-t">
-                                Community‑driven roadmap
-                            </div>
-                            <p>
-                                Features shaped by students, developers, and
-                                campus teams worldwide.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="oss-item r rd2">
-                        <div class="oss-num">03</div>
-                        <div>
-                            <div class="oss-item-t">Modular by design</div>
-                            <p>
-                                Extend the mobile app, admin dashboard, or
-                                backend independently.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="oss-item r rd3">
-                        <div class="oss-num">04</div>
-                        <div>
-                            <div class="oss-item-t">Documentation‑first</div>
-                            <p>
-                                Clear setup guides and contributor workflows for
-                                all experience levels.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CTA -->
-        <div class="cta-out">
-            <h2>Join the CodeSapiens community.</h2>
-            <p>
-                Explore. Evolve. Engineer. — with builders shipping open
-                source, one weekend workshop at a time.
-            </p>
-            <div class="cta-btns">
-                <a
-                    href="https://github.com/codesapiens-in"
-                    class="btn btn-dark"
-                >
-                    <svg
-                        width="15"
-                        height="15"
-                        viewBox="0 0 24 24"
-                        fill="currentColor"
-                    >
-                        <path
-                            d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"
-                        />
-                    </svg>
-                    View on GitHub
-                </a>
-                <a href="#collegesapien" class="btn btn-ghost"
-                    >See CollegeSapien</a
-                >
-            </div>
-        </div>
-
         <!-- LETTER HEIST GAME (ambient, auto-plays, no UI) -->
+        <div id="score"></div>
         <canvas id="game" class="live"></canvas>
 
         <!-- FOOTER -->
@@ -1025,8 +944,79 @@
                 Licensed under MIT · Open to contributors of all experience
                 levels.
             </p>
-            <div class="footer-links">
-                <a href="https://github.com/codesapiens-in/collegesapien"
+            <div
+                class="footer-links"
+                style="align-items: center; flex-wrap: wrap; justify-content: center"
+            >
+                <a
+                    href="https://github.com/Codesapiens-in"
+                    aria-label="Instagram"
+                    title="Instagram"
+                    ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        style="vertical-align: middle"
+                    >
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <circle cx="12" cy="12" r="4" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg></a
+                >
+                <a
+                    href="https://youtube.com/@codesapiens-in"
+                    aria-label="YouTube"
+                    title="YouTube"
+                    ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        style="vertical-align: middle"
+                    >
+                        <path
+                            d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"
+                        />
+                    </svg></a
+                >
+                <a
+                    href="https://chat.whatsapp.com/codesapiens"
+                    aria-label="WhatsApp"
+                    title="WhatsApp"
+                    ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        style="vertical-align: middle"
+                    >
+                        <path
+                            d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12.04 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 1 1 8.38 4.62zM20.5 3.5A11.8 11.8 0 0 0 12.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.93 11.93 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.47-8.4z"
+                        />
+                    </svg></a
+                >
+                <a
+                    href="https://www.linkedin.com/company/codesapiens-community/"
+                    aria-label="LinkedIn"
+                    title="LinkedIn"
+                    ><svg
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        style="vertical-align: middle"
+                    >
+                        <path
+                            d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0z"
+                        />
+                    </svg></a
+                >
+                <a href="https://github.com/CodeSapiens-in/CollegeSapien"
                     >GitHub</a
                 >
                 <a href="./privacy.html">Privacy Policy</a>
@@ -1111,7 +1101,6 @@
                 r.setProperty("--blue", c.blue);
                 r.setProperty("--lt-blue", c.ltBlue);
                 r.setProperty("--tag-purple", c.tagPurple);
-                document.querySelector(".oss-out").style.background = c.ossBg;
             }
 
             function applyCards(show) {
@@ -1400,8 +1389,16 @@
                     });
                 }
 
+                let score = 0;
+                const scoreEl = document.getElementById("score");
                 function bonk(m) {
                     if (m.state === STATES.DIZZY) return;
+                    score++;
+                    scoreEl.textContent = "🐒 Bonks: " + score;
+                    scoreEl.style.display = "block";
+                    scoreEl.classList.remove("bump");
+                    void scoreEl.offsetWidth;
+                    scoreEl.classList.add("bump");
                     beep(180, 0.12, "sawtooth", 0.07);
                     beep(90, 0.18, "square", 0.06);
                     burst(m.x, m.y - 20, C.yellow, 12);
