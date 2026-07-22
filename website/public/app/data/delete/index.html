@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Account — CollegeSapien</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #feeec3;
+        --yellow: #ffd966;
+        --dk-yellow: #fcd150;
+        --pink: #ffc0b6;
+        --black: #0a0a0a;
+        --ink: #2a2a2a;
+        --bdr: 2px solid #0a0a0a;
+        --sh: 4px 4px 0 #0a0a0a;
+        --sh-lg: 6px 6px 0 #0a0a0a;
+      }
+      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        background: var(--bg);
+        color: var(--black);
+        font-family: "DM Sans", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      h1, h2, h3 {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-weight: 800;
+        line-height: 1.05;
+        letter-spacing: -0.025em;
+      }
+
+      /* NAV */
+      .nav {
+        background: var(--yellow);
+        border-bottom: var(--bdr);
+        padding: 0 56px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-shrink: 0;
+      }
+      .nav-logo {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-weight: 800;
+        font-size: 19px;
+        letter-spacing: -0.04em;
+        text-decoration: none;
+        color: var(--black);
+      }
+
+      /* MAIN */
+      .main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 48px 24px;
+      }
+      .card {
+        width: 100%;
+        max-width: 440px;
+        background: #fff;
+        border: var(--bdr);
+        box-shadow: var(--sh-lg);
+        padding: 40px;
+      }
+      .warn-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 7px;
+        background: var(--pink);
+        border: var(--bdr);
+        box-shadow: 2px 2px 0 var(--black);
+        padding: 4px 12px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      .card h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+      .card .sub {
+        font-size: 14px;
+        color: var(--ink);
+        line-height: 1.6;
+        margin-bottom: 28px;
+      }
+      .what-gets-deleted {
+        background: #fff5f5;
+        border: var(--bdr);
+        padding: 14px 16px;
+        margin-bottom: 28px;
+        font-size: 13px;
+        line-height: 1.7;
+        color: var(--ink);
+      }
+      .what-gets-deleted strong {
+        display: block;
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        margin-bottom: 6px;
+        color: #c0392b;
+      }
+      .what-gets-deleted ul {
+        padding-left: 18px;
+      }
+
+      label {
+        display: block;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 6px;
+      }
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        border: var(--bdr);
+        padding: 11px 14px;
+        font-family: "DM Sans", sans-serif;
+        font-size: 15px;
+        background: var(--bg);
+        outline: none;
+        margin-bottom: 18px;
+        transition: box-shadow 0.15s;
+      }
+      input:focus { box-shadow: var(--sh); }
+
+      .checkbox-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 24px;
+      }
+      .checkbox-row input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        flex-shrink: 0;
+        margin-top: 2px;
+        accent-color: var(--black);
+        cursor: pointer;
+      }
+      .checkbox-row label {
+        font-size: 13px;
+        color: var(--ink);
+        cursor: pointer;
+        margin-bottom: 0;
+      }
+
+      .btn-delete {
+        width: 100%;
+        padding: 13px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        background: #c0392b;
+        color: #fff;
+        border: var(--bdr);
+        box-shadow: var(--sh);
+        cursor: pointer;
+        transition: transform 0.12s, box-shadow 0.12s;
+      }
+      .btn-delete:hover:not(:disabled) {
+        transform: translate(-2px, -2px);
+        box-shadow: var(--sh-lg);
+      }
+      .btn-delete:active:not(:disabled) {
+        transform: translate(1px, 1px);
+        box-shadow: none;
+      }
+      .btn-delete:disabled { opacity: 0.55; cursor: not-allowed; }
+
+      .msg {
+        margin-top: 18px;
+        padding: 12px 14px;
+        border: var(--bdr);
+        font-size: 14px;
+        font-weight: 500;
+        display: none;
+      }
+      .msg.error { background: var(--pink); }
+      .msg.success { background: #d2ffb6; }
+      .msg.show { display: block; }
+
+      /* SUCCESS STATE */
+      .success-state {
+        display: none;
+        text-align: center;
+      }
+      .success-state.show { display: block; }
+      .success-state .icon {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+      .success-state h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+      }
+      .success-state p {
+        font-size: 14px;
+        color: var(--ink);
+        line-height: 1.6;
+      }
+      .form-area.hide { display: none; }
+
+      /* FOOTER */
+      .footer {
+        background: var(--black);
+        padding: 20px 56px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        flex-shrink: 0;
+      }
+      .footer-logo {
+        font-family: "Bricolage Grotesque", sans-serif;
+        font-weight: 800;
+        font-size: 16px;
+        color: var(--yellow);
+        letter-spacing: -0.03em;
+      }
+      .footer-links { display: flex; gap: 16px; }
+      .footer-links a {
+        font-size: 13px;
+        color: rgba(255,255,255,0.55);
+        text-decoration: none;
+      }
+      .footer-links a:hover { color: var(--yellow); }
+
+      @media (max-width: 600px) {
+        .nav { padding: 0 20px; }
+        .card { padding: 28px 20px; }
+        .footer { flex-direction: column; text-align: center; padding: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="https://codesapiens.in" class="nav-logo">CollegeSapien</a>
+    </nav>
+
+    <main class="main">
+      <div class="card">
+        <div class="form-area" id="formArea">
+          <div class="warn-badge">⚠ Irreversible Action</div>
+          <h2>Delete Your Account</h2>
+          <p class="sub">
+            Confirm your identity to permanently delete your account and all
+            associated data. This cannot be undone.
+          </p>
+
+          <div class="what-gets-deleted">
+            <strong>What will be deleted:</strong>
+            <ul>
+              <li>Your account and profile</li>
+              <li>All attendance records</li>
+              <li>Timetables and semester data</li>
+              <li>CGPA and grade data</li>
+            </ul>
+          </div>
+
+          <form id="deleteForm" novalidate>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="you@college.edu" required autocomplete="email" />
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Your password" required autocomplete="current-password" />
+
+            <div class="checkbox-row">
+              <input type="checkbox" id="confirm" />
+              <label for="confirm">
+                I understand this is permanent and all my data will be deleted immediately.
+              </label>
+            </div>
+
+            <button class="btn-delete" type="submit" id="submitBtn" disabled>
+              Delete My Account
+            </button>
+          </form>
+
+          <div class="msg" id="msg"></div>
+        </div>
+
+        <div class="success-state" id="successState">
+          <div class="icon">✓</div>
+          <h3>Account Deleted</h3>
+          <p>
+            Your account and all associated data have been permanently deleted.
+            Thank you for using CollegeSapien.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-logo">CollegeSapien</div>
+      <div class="footer-links">
+        <a href="https://codesapiens.in/privacy.html">Privacy Policy</a>
+        <a href="https://codesapiens.in/terms.html">Terms of Service</a>
+      </div>
+    </footer>
+
+    <!-- Firebase Auth SDK -->
+    <script type="module">
+      import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js';
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+        deleteUser,
+      } from 'https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js';
+
+      const firebaseConfig = {
+        apiKey: 'AIzaSyCDwcEYp1P3Dw8ea_FmR8AvSxUz6k1wmZU',
+        authDomain: 'collegesapiens.firebaseapp.com',
+        projectId: 'collegesapiens',
+        storageBucket: 'collegesapiens.firebasestorage.app',
+        messagingSenderId: '186941997391',
+      };
+
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth(app);
+
+      const API = 'https://api-3jeofohxha-el.a.run.app/api/v1';
+
+      const form      = document.getElementById('deleteForm');
+      const submitBtn = document.getElementById('submitBtn');
+      const confirmCb = document.getElementById('confirm');
+      const msgEl     = document.getElementById('msg');
+      const formArea  = document.getElementById('formArea');
+      const successEl = document.getElementById('successState');
+
+      confirmCb.addEventListener('change', () => {
+        submitBtn.disabled = !confirmCb.checked;
+      });
+
+      function showMsg(text, type) {
+        msgEl.textContent = text;
+        msgEl.className = `msg ${type} show`;
+      }
+
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const email    = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        if (!email || !password) {
+          showMsg('Please enter your email and password.', 'error');
+          return;
+        }
+        if (!confirmCb.checked) {
+          showMsg('Please check the confirmation box.', 'error');
+          return;
+        }
+
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Deleting…';
+        msgEl.className = 'msg';
+
+        try {
+          // 1. Sign in to verify credentials
+          const cred = await signInWithEmailAndPassword(auth, email, password);
+          const idToken = await cred.user.getIdToken();
+
+          // 2. Call server to delete Firestore data + Firebase Auth user
+          const res = await fetch(`${API}/auth/me`, {
+            method: 'DELETE',
+            headers: {
+              'Authorization': `Bearer ${idToken}`,
+              'Content-Type': 'application/json',
+            },
+          });
+
+          if (!res.ok) {
+            const body = await res.json().catch(() => ({}));
+            throw new Error(body.error || `Server error ${res.status}`);
+          }
+
+          // 3. Show success
+          formArea.classList.add('hide');
+          successEl.classList.add('show');
+
+        } catch (err) {
+          let msg = err.message || 'Something went wrong.';
+          if (err.code === 'auth/invalid-credential' || err.code === 'auth/wrong-password') {
+            msg = 'Incorrect email or password.';
+          } else if (err.code === 'auth/user-not-found') {
+            msg = 'No account found with that email.';
+          } else if (err.code === 'auth/too-many-requests') {
+            msg = 'Too many attempts. Please wait a few minutes and try again.';
+          }
+          showMsg(msg, 'error');
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'Delete My Account';
+        }
+      });
+    </script>
+  </body>
+</html>

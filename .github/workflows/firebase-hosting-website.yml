@@ -1,0 +1,29 @@
+name: Deploy website to Firebase Hosting on merge
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'website/**'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy to Firebase Hosting (codesapiens.web.app)
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS: ${{ runner.temp }}/gcloud.json
+        run: |
+          echo '${{ secrets.FIREBASE_SERVICE_ACCOUNT_COLLEGESAPIENS }}' > "$GOOGLE_APPLICATION_CREDENTIALS"
+          OUTPUT=$(npx firebase-tools@latest deploy --only hosting:app2 --project collegesapiens --json 2>&1) || true
+          echo "$OUTPUT"
+          if echo "$OUTPUT" | grep -q "is the current active version"; then
+            echo "Site already up to date, nothing to deploy."
+          elif echo "$OUTPUT" | grep -q '"status": "success"'; then
+            echo "Deploy succeeded."
+          else
+            echo "Deploy failed."
+            exit 1
+          fi
+          rm -f "$GOOGLE_APPLICATION_CREDENTIALS"
