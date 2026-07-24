@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/gestures.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -139,9 +140,16 @@ class _LoginScreenState extends State<LoginScreen> {
       backgroundColor: AppColors.background,
       body: SafeArea(
         child: ResponsiveLayout(
-          mobile: (_) => SingleChildScrollView(
-            padding: EdgeInsets.symmetric(horizontal: w * 0.06, vertical: 32),
-            child: Form(key: _formKey, child: _formColumn()),
+          mobile: (_) => LayoutBuilder(
+            builder: (context, constraints) => SingleChildScrollView(
+              padding: EdgeInsets.symmetric(horizontal: w * 0.06, vertical: 12),
+              child: ConstrainedBox(
+                constraints: BoxConstraints(minHeight: constraints.maxHeight - 24),
+                child: Center(
+                  child: Form(key: _formKey, child: _formColumn(compact: true)),
+                ),
+              ),
+            ),
           ),
           // Desktop: the form becomes a centered card on the page background
           // instead of an edge-to-edge column stretched across the window.
@@ -164,17 +172,23 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  Widget _formColumn() {
+  Widget _formColumn({bool compact = false}) {
+    final logoSize = compact ? 64.0 : 96.0;
     return Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                const SizedBox(height: 24),
+                if (kIsWeb) ...[
+                  _playStoreBanner(),
+                  SizedBox(height: compact ? 12 : 20),
+                ] else
+                  SizedBox(height: compact ? 8 : 24),
 
                 // Logo
                 Center(
                   child: Container(
-                    width: 96,
-                    height: 96,
+                    width: logoSize,
+                    height: logoSize,
                     decoration: AppTheme.cardDecoration(
                       color: AppColors.primaryYellow,
                       shadowOffset: const Offset(6, 6),
@@ -188,22 +202,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 24),
+                SizedBox(height: compact ? 12 : 24),
 
                 // Heading
-                const Center(
+                Center(
                   child: Text(
                     'Welcome Back!',
                     style: TextStyle(
                       fontFamily: 'Lexend Mega',
-                      fontSize: 28,
+                      fontSize: compact ? 24 : 28,
                       fontWeight: FontWeight.w700,
                       letterSpacing: -2.0,
                       color: Colors.black,
                     ),
                   ),
                 ),
-                const SizedBox(height: 6),
+                const SizedBox(height: 4),
                 Center(
                   child: Text(
                     'Login to continue',
@@ -214,7 +228,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 32),
+                SizedBox(height: compact ? 20 : 32),
 
                 // Email
                 TextFormField(
@@ -271,14 +285,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: compact ? 8 : 12),
 
                 // Login button
                 _primaryButton(
                   label: 'Login',
                   onTap: _loading ? null : _login,
                 ),
-                const SizedBox(height: 14),
+                SizedBox(height: compact ? 10 : 14),
 
                 // Create account button — visible without scrolling
                 _secondaryButton(
@@ -291,15 +305,15 @@ class _LoginScreenState extends State<LoginScreen> {
                                 builder: (_) => const SignupScreen()),
                           ),
                 ),
-                const SizedBox(height: 28),
+                SizedBox(height: compact ? 18 : 28),
 
                 // OR divider
                 _orDivider(),
-                const SizedBox(height: 20),
+                SizedBox(height: compact ? 14 : 20),
 
                 // Google
                 _googleButton(),
-                const SizedBox(height: 24),
+                SizedBox(height: compact ? 16 : 24),
 
                 // Terms & Privacy
                 Center(
@@ -348,12 +362,45 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 24),
+                SizedBox(height: compact ? 12 : 24),
               ],
     );
   }
 
   // ─── Shared button widgets ─────────────────────────────────────────────────
+
+  Widget _playStoreBanner() {
+    return GestureDetector(
+      onTap: () => launchUrl(
+        Uri.parse(
+            'https://play.google.com/store/apps/details?id=com.collegesapien.app'),
+        mode: LaunchMode.externalApplication,
+      ),
+      child: Container(
+        height: 44,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          borderRadius: BorderRadius.circular(8),
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(Icons.shop, size: 18, color: Colors.white),
+            SizedBox(width: 8),
+            Text(
+              'Get the app on Google Play',
+              style: TextStyle(
+                fontFamily: 'Public Sans',
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+                color: Colors.white,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   Widget _primaryButton({required String label, VoidCallback? onTap}) {
     return GestureDetector(

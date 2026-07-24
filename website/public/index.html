@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>CodeSapiens — Explore. Evolve. Engineer.</title>
+        <link rel="icon" href="./assets/codesapiens_logo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
             rel="preconnect"
@@ -43,12 +44,28 @@
             }
             html {
                 scroll-behavior: smooth;
+                scroll-snap-type: y mandatory;
+                scroll-padding-top: 60px;
             }
             body {
                 background: var(--bg);
                 color: var(--black);
                 font-family: "DM Sans", sans-serif;
                 overflow-x: hidden;
+            }
+            .snap-sec {
+                min-height: calc(100vh - 60px);
+                min-height: calc(100svh - 60px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                scroll-snap-align: start;
+            }
+            .grow {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
             h1,
             h2,
@@ -162,16 +179,21 @@
             /* ── HERO ── */
             .hero-wrap {
                 border-bottom: var(--bdr);
+                flex: 1;
+                display: flex;
             }
             .hero {
+                flex: 1;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                justify-content: center;
                 text-align: center;
                 gap: 0;
-                padding: 120px 56px;
+                padding: clamp(24px, 4vh, 64px) clamp(16px, 4vw, 56px);
                 max-width: 1000px;
                 margin: 0 auto;
+                width: 100%;
             }
             .hero-eyebrow {
                 display: inline-flex;
@@ -186,7 +208,8 @@
                 padding: 4px 12px;
                 border: var(--bdr);
                 box-shadow: 2px 2px 0 var(--black);
-                margin-bottom: 28px;
+                margin-bottom: clamp(14px, 3vh, 28px);
+                white-space: nowrap;
             }
             .hero-dot {
                 width: 6px;
@@ -195,81 +218,121 @@
                 border-radius: 50%;
             }
             .hero h1 {
-                font-size: clamp(56px, 11vw, 148px);
+                font-size: clamp(40px, 12vw, 148px);
                 line-height: 0.98;
-                text-wrap: pretty;
+                white-space: nowrap;
             }
-            .hero-sub {
+            .hero-tags {
+                display: flex;
+                gap: clamp(6px, 1.5vw, 10px);
+                flex-wrap: nowrap;
+                justify-content: center;
+                margin-top: clamp(10px, 2vh, 14px);
+                margin-bottom: clamp(20px, 4vh, 32px);
+            }
+            .htag {
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: clamp(18px, 2.4vw, 28px);
+                font-size: clamp(13px, 3.4vw, 22px);
                 font-weight: 700;
-                letter-spacing: 0.04em;
-                color: var(--tag-purple);
-                margin-top: 14px;
-                margin-bottom: 40px;
+                padding: clamp(4px, 0.8vh, 6px) clamp(8px, 2vw, 16px);
+                border: var(--bdr);
+                box-shadow: 2px 2px 0 var(--black);
+                white-space: nowrap;
+            }
+            .htag.a {
+                background: var(--green);
+            }
+            .htag.b {
+                background: var(--blue);
+            }
+            .htag.c {
+                background: var(--yellow);
+            }
+            .hero-btns {
+                display: flex;
+                gap: clamp(10px, 2vw, 14px);
+                flex-wrap: nowrap;
+                justify-content: center;
+                margin-bottom: clamp(28px, 7vh, 56px);
+            }
+            .btn-lg {
+                padding: clamp(10px, 1.6vh, 15px) clamp(12px, 2.6vw, 30px);
+                font-size: clamp(12px, 3vw, 15px);
+            }
+            .btn-light {
+                background: var(--bg2);
+                color: var(--black);
+                box-shadow: var(--sh);
+            }
+            .btn-light:hover {
+                box-shadow: var(--sh-lg);
             }
             /* Stat row */
             .hero-stats {
                 display: flex;
-                gap: 16px;
-                flex-wrap: wrap;
+                gap: clamp(8px, 1.5vw, 10px);
+                flex-wrap: nowrap;
                 justify-content: center;
-                margin-top: 56px;
             }
             .icard {
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: 10px 16px;
+                padding: clamp(8px, 1.4vh, 12px) clamp(12px, 2.6vw, 22px);
                 border-radius: 3px;
                 font-family: "Bricolage Grotesque", sans-serif;
+                text-align: center;
+                flex: 0 1 auto;
             }
             .icard-label {
                 font-size: 9px;
                 font-weight: 700;
                 text-transform: uppercase;
-                letter-spacing: 0.07em;
+                letter-spacing: 0.06em;
                 opacity: 0.55;
-                margin-bottom: 3px;
+                margin-top: 2px;
             }
             .icard-val {
-                font-size: 17px;
+                font-size: clamp(16px, 3.2vw, 24px);
                 font-weight: 800;
+                white-space: nowrap;
             }
             .ic-a {
-                background: var(--green);
+                background: var(--purple);
             }
             .ic-b {
                 background: var(--blue);
             }
             .ic-c {
-                background: var(--pink);
+                background: var(--green);
             }
 
             /* ── VALUE STRIP ── */
             .value-strip {
                 background: var(--black);
                 border-bottom: var(--bdr);
-                padding: 36px 56px;
+                padding: clamp(14px, 2.5vh, 18px) 16px;
             }
             .value-strip p {
-                font-size: 18px;
+                font-size: clamp(10px, 2.6vw, 18px);
                 font-weight: 500;
-                line-height: 1.65;
+                line-height: 1.4;
                 color: var(--yellow);
-                max-width: 760px;
+                max-width: 100%;
                 margin: 0 auto;
                 text-align: center;
+                white-space: nowrap;
             }
 
             /* ── SECTIONS ── */
             .sec {
-                padding: 88px 56px;
+                padding: clamp(32px, 4vh, 88px) clamp(20px, 4vw, 56px);
                 max-width: 1360px;
                 margin: 0 auto;
+                width: 100%;
             }
             .sec-h {
                 font-size: clamp(28px, 3.5vw, 50px);
-                margin-bottom: 48px;
+                margin-bottom: clamp(20px, 4vh, 48px);
             }
 
             /* ── FEATURES ── */
@@ -279,7 +342,7 @@
                 border: var(--bdr);
             }
             .feat {
-                padding: 32px;
+                padding: clamp(20px, 3vh, 32px);
                 border-right: var(--bdr);
                 border-bottom: var(--bdr);
                 transition:
@@ -336,54 +399,6 @@
                 line-height: 1.6;
             }
 
-            /* ── HOW IT WORKS ── */
-            .steps-out {
-                background: var(--black);
-                border-top: var(--bdr);
-                border-bottom: var(--bdr);
-                padding: 88px 56px;
-            }
-            .steps-in {
-                max-width: 1360px;
-                margin: 0 auto;
-            }
-            .steps-out .pill {
-                background: var(--yellow);
-            }
-            .steps-out .sec-h {
-                color: white;
-            }
-            .steps-grid {
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-            }
-            .step {
-                background: var(--bg);
-                border: var(--bdr);
-                box-shadow: var(--sh);
-                padding: 32px;
-            }
-            .step-n {
-                font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 54px;
-                font-weight: 800;
-                color: var(--yellow);
-                line-height: 1;
-                margin-bottom: 14px;
-            }
-            .step-t {
-                font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 18px;
-                font-weight: 700;
-                margin-bottom: 8px;
-            }
-            .step p {
-                font-size: 14px;
-                color: var(--ink);
-                line-height: 1.6;
-            }
-
             /* ── SUITE ── */
             .suite-grid {
                 display: grid;
@@ -393,7 +408,7 @@
             .suite-card {
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: 32px;
+                padding: clamp(20px, 3vh, 32px);
                 background: var(--bg2);
                 transition:
                     transform 0.15s,
@@ -431,6 +446,24 @@
                 font-size: 14px;
                 color: var(--ink);
                 line-height: 1.6;
+            }
+
+            .suite-cta {
+                margin-top: clamp(20px, 4vh, 40px);
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                flex-wrap: wrap;
+            }
+            .gh-btn {
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .suite-cta-note {
+                font-size: 14px;
+                font-weight: 600;
+                opacity: 0.6;
             }
 
             /* ── OSS ── */
@@ -522,7 +555,7 @@
             /* ── FOOTER ── */
             .footer {
                 background: var(--black);
-                padding: 36px 56px;
+                padding: clamp(18px, 2.5vh, 36px) 56px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
@@ -551,6 +584,31 @@
             }
             .footer-links a:hover {
                 color: var(--yellow);
+            }
+            .footer-right {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 14px;
+            }
+            .social-row {
+                display: flex;
+                gap: 10px;
+            }
+            .social-btn {
+                width: 34px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--yellow);
+                color: var(--black);
+                border: var(--bdr);
+                border-radius: 3px;
+                transition: transform 0.12s;
+            }
+            .social-btn:hover {
+                transform: translate(-2px, -2px);
             }
 
             /* ── LETTER HEIST GAME ── */
@@ -596,9 +654,6 @@
             #score.bump {
                 animation: pop 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
             }
-            #game.live {
-                pointer-events: auto;
-            }
 
             /* ── REVEAL ── */
             .r {
@@ -633,6 +688,23 @@
 
             /* ── RESPONSIVE ── */
             @media (max-width: 900px) {
+                /* sections stack taller than the viewport on mobile —
+                   mandatory snap would trap the footer, so relax it */
+                html {
+                    scroll-snap-type: y proximity;
+                }
+                .snap-sec {
+                    min-height: auto;
+                    scroll-snap-align: none;
+                    justify-content: flex-start;
+                }
+                #hero-section {
+                    min-height: calc(100svh - 60px);
+                }
+                .grow {
+                    flex: initial;
+                    justify-content: flex-start;
+                }
                 .nav {
                     padding: 0 16px;
                 }
@@ -654,11 +726,39 @@
                     font-size: 12px;
                 }
                 .hero {
-                    padding: 48px 24px;
-                    min-height: auto;
+                    justify-content: flex-start;
+                    padding: clamp(34px, 6vh, 64px) 20px
+                        clamp(28px, 5vh, 72px);
+                }
+                .hero-eyebrow {
+                    margin-top: auto;
+                }
+                .hero h1 {
+                    font-size: clamp(38px, 11.5vw, 92px);
+                }
+                .hero-btns {
+                    flex-wrap: nowrap;
+                    margin-bottom: 0;
+                }
+                .hero-stats {
+                    margin-top: auto;
+                    width: min(100%, 420px);
+                }
+                .icard {
+                    flex: 1 1 0;
+                    min-width: 0;
+                    padding: 9px 10px;
                 }
                 .sec {
-                    padding: 64px 24px;
+                    padding: 56px 20px;
+                }
+                .sec-h {
+                    max-width: 760px;
+                    margin-bottom: 18px;
+                }
+                .oss-desc {
+                    font-size: 15px;
+                    line-height: 1.65;
                 }
                 .feat-grid {
                     grid-template-columns: 1fr;
@@ -670,17 +770,31 @@
                 .feat:last-child {
                     border-bottom: none;
                 }
-                .steps-out,
                 .oss-out,
                 .cta-out {
                     padding: 64px 24px;
                 }
                 .value-strip {
-                    padding: 28px 24px;
+                    padding: 14px 12px;
                 }
-                .steps-grid,
+                .value-strip p {
+                    max-width: 28rem;
+                    white-space: normal;
+                }
                 .suite-grid {
                     grid-template-columns: 1fr;
+                    gap: 16px;
+                }
+                .suite-card {
+                    padding: 22px;
+                }
+                .suite-cta {
+                    align-items: flex-start;
+                    gap: 12px;
+                }
+                .suite-cta-note {
+                    max-width: 28rem;
+                    line-height: 1.45;
                 }
                 .oss-in {
                     grid-template-columns: 1fr;
@@ -690,6 +804,74 @@
                     flex-direction: column;
                     text-align: center;
                     padding: 28px 24px;
+                }
+                .footer-right {
+                    align-items: center;
+                }
+                .social-row {
+                    justify-content: center;
+                }
+            }
+
+            @media (max-width: 520px) {
+                .hero {
+                    padding-inline: 16px;
+                    padding-bottom: clamp(30px, 5vh, 58px);
+                }
+                .hero-eyebrow {
+                    margin-bottom: 18px;
+                }
+                .hero-tags {
+                    gap: 6px;
+                    margin-bottom: 22px;
+                }
+                .htag {
+                    font-size: clamp(12px, 3.6vw, 15px);
+                    padding: 4px 8px;
+                }
+                .hero-btns {
+                    width: min(100%, 360px);
+                    flex-wrap: nowrap;
+                }
+                .hero-btns .btn {
+                    flex: 1 1 0;
+                    justify-content: center;
+                    padding-inline: 10px;
+                }
+                .hero-stats {
+                    gap: 7px;
+                }
+                .icard-val {
+                    font-size: 17px;
+                }
+                .icard-label {
+                    font-size: 8px;
+                }
+                .sec {
+                    padding: 48px 16px;
+                }
+                .sec-h {
+                    font-size: clamp(30px, 9vw, 42px);
+                    line-height: 1;
+                }
+                .feat {
+                    padding: 22px 20px;
+                }
+                .feat-n {
+                    font-size: 34px;
+                    margin-bottom: 8px;
+                }
+                .suite-card {
+                    padding: 20px;
+                }
+                .suite-icon {
+                    width: 44px;
+                    height: 44px;
+                    margin-bottom: 14px;
+                }
+                .suite-cta .btn {
+                    width: 100%;
+                    justify-content: center;
                 }
             }
         </style>
@@ -740,26 +922,42 @@
         </nav>
 
         <!-- HERO -->
+        <div class="snap-sec" id="hero-section">
         <div class="hero-wrap">
             <div class="hero">
                 <div class="hero-eyebrow">
-                    <span class="hero-dot"></span> CodeSapiens Community
+                    <span class="hero-dot"></span> Students Community
                 </div>
                 <h1 data-steal>CodeSapiens</h1>
-                <p class="hero-sub" data-steal>Explore. Evolve. Engineer.</p>
+                <div class="hero-tags">
+                    <span class="htag a" data-steal>Explore.</span>
+                    <span class="htag b" data-steal>Evolve.</span>
+                    <span class="htag c" data-steal>Engineer.</span>
+                </div>
+
+                <div class="hero-btns">
+                    <a
+                        href="https://college.codesapiens.in"
+                        class="btn btn-dark btn-lg"
+                        >Get Started</a
+                    >
+                    <a href="#community" class="btn btn-light btn-lg"
+                        >Meet the community</a
+                    >
+                </div>
 
                 <div class="hero-stats">
                     <div class="icard ic-a">
-                        <div class="icard-label">Members</div>
                         <div class="icard-val">2500+</div>
+                        <div class="icard-label">Members</div>
                     </div>
                     <div class="icard ic-b">
-                        <div class="icard-label">Events Hosted</div>
                         <div class="icard-val">20+</div>
+                        <div class="icard-label">Events</div>
                     </div>
                     <div class="icard ic-c">
-                        <div class="icard-label">Colleges</div>
                         <div class="icard-val">50+</div>
+                        <div class="icard-label">Colleges</div>
                     </div>
                 </div>
             </div>
@@ -767,18 +965,15 @@
 
         <!-- VALUE STRIP -->
         <div class="value-strip">
-            <p>
-                The only non-profit inter-college students community — by the
-                students, for the students. Bringing students together to
-                collaborate, share, and grow.
-            </p>
+            <p>The only non-profit inter-college students community.</p>
+        </div>
         </div>
 
         <!-- COMMUNITY / VISION -->
-        <section class="sec" id="community">
+        <section class="sec snap-sec" id="community">
             <div class="pill">Our Vision</div>
             <h2 class="sec-h">By the students, for the students.</h2>
-            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
+            <p class="oss-desc" style="max-width: 640px; margin-bottom: clamp(20px, 4vh, 40px)">
                 Our vision is to bring students together to collaborate,
                 share, and grow. We envision a platform managed by students,
                 for students — where you can build your career based on your
@@ -787,36 +982,37 @@
             <div class="feat-grid">
                 <div class="feat r">
                     <div class="feat-n">01</div>
-                    <div class="feat-t">Network</div>
+                    <div class="feat-t">Explore</div>
                     <p class="feat-d">
-                        Connect with students across colleges through our
-                        online and offline engagements.
+                        Network beyond your campus and explore knowledge you
+                        won't find in a classroom.
                     </p>
                 </div>
                 <div class="feat r rd2">
                     <div class="feat-n">02</div>
-                    <div class="feat-t">Build</div>
+                    <div class="feat-t">Evolve</div>
                     <p class="feat-d">
-                        Level up through our workshops and internships — learn
-                        by shipping real things.
+                        Discover who you are, and evolve into a better version
+                        of yourself.
                     </p>
                 </div>
                 <div class="feat r rd3">
                     <div class="feat-n">03</div>
-                    <div class="feat-t">Discover</div>
+                    <div class="feat-t">Engineer</div>
                     <p class="feat-d">
-                        Discover yourself and like-minded people who build the
-                        same way you do.
+                        Build real projects and showcase what you create to
+                        the community.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- COLLEGESAPIEN -->
-        <section class="sec" id="collegesapien">
-            <div class="pill">Flagship Project</div>
+        <!-- COLLEGESAPIEN + FOOTER -->
+        <div class="snap-sec">
+        <section class="sec grow" id="collegesapien">
+            <div class="pill">Open Source Project</div>
             <h2 class="sec-h">CollegeSapien, built by the community.</h2>
-            <p class="oss-desc" style="max-width: 640px; margin-bottom: 40px">
+            <p class="oss-desc" style="max-width: 760px; margin-bottom: clamp(20px, 4vh, 40px)">
                 Your open‑source student companion — everything for your
                 college life in one app. No more messy attendance sheets,
                 scattered syllabus PDFs, or missed events. Built in the open
@@ -897,60 +1093,44 @@
                     </p>
                 </div>
             </div>
-        </section>
-
-        <!-- HOW IT WORKS -->
-        <div class="steps-out" id="how-it-works">
-            <div class="steps-in">
-                <div class="pill">How to get involved</div>
-                <h2 class="sec-h">Join in three steps.</h2>
-                <div class="steps-grid">
-                    <div class="step r">
-                        <div class="step-n">01</div>
-                        <div class="step-t">Join the community</div>
-                        <p>
-                            Follow us on LinkedIn and say hello, or join our
-                            open source project.
-                        </p>
-                    </div>
-                    <div class="step r rd2">
-                        <div class="step-n">02</div>
-                        <div class="step-t">
-                            Pick a project or workshop
-                        </div>
-                        <p>
-                            Find something that matches your interest, from
-                            beginner-friendly issues to full builds.
-                        </p>
-                    </div>
-                    <div class="step r rd4">
-                        <div class="step-n">03</div>
-                        <div class="step-t">Build, ship, and learn</div>
-                        <p>
-                            Contribute, get reviewed, and grow alongside
-                            people building the same way.
-                        </p>
-                    </div>
-                </div>
+            <div class="suite-cta">
+                <a
+                    href="https://github.com/CodeSapiens-in/CollegeSapien"
+                    target="_blank"
+                    rel="noopener"
+                    class="btn btn-dark btn-lg gh-btn"
+                >
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path
+                            d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.7.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"
+                        />
+                    </svg>
+                    Contribute on GitHub
+                </a>
+                <span class="suite-cta-note">
+                    Star the repo, pick an issue, ship your first PR.
+                </span>
             </div>
-        </div>
+        </section>
+        <!-- /snap-sec closed after footer -->
 
         <!-- LETTER HEIST GAME (ambient, auto-plays, no UI) -->
         <div id="score"></div>
-        <canvas id="game" class="live"></canvas>
+        <canvas id="game"></canvas>
 
         <!-- FOOTER -->
         <footer class="footer">
-            <div class="footer-logo">CodeSapiens</div>
-            <p class="footer-note">
-                Licensed under MIT · Open to contributors of all experience
-                levels.
-            </p>
-            <div
-                class="footer-links"
-                style="align-items: center; flex-wrap: wrap; justify-content: center"
-            >
+            <div>
+                <div class="footer-logo">CodeSapiens</div>
+                <p class="footer-note">
+                    Licensed under MIT · Open to contributors of all
+                    experience levels.
+                </p>
+            </div>
+            <div class="footer-right">
+                <div class="social-row">
                 <a
+                    class="social-btn"
                     href="https://github.com/Codesapiens-in"
                     aria-label="Instagram"
                     title="Instagram"
@@ -971,7 +1151,8 @@
                     </svg></a
                 >
                 <a
-                    href="https://youtube.com/@codesapiens-in"
+                    class="social-btn"
+                    href="https://youtube.com/@codesapiens-in?si=90EaPMYHcSZIHtMi"
                     aria-label="YouTube"
                     title="YouTube"
                     ><svg
@@ -987,7 +1168,8 @@
                     </svg></a
                 >
                 <a
-                    href="https://chat.whatsapp.com/codesapiens"
+                    class="social-btn"
+                    href="https://chat.whatsapp.com/IiaPFDThmGk9UEoYzvoXWU"
                     aria-label="WhatsApp"
                     title="WhatsApp"
                     ><svg
@@ -1003,7 +1185,8 @@
                     </svg></a
                 >
                 <a
-                    href="https://www.linkedin.com/company/codesapiens-community/"
+                    class="social-btn"
+                    href="https://www.linkedin.com/company/codesapiens-community/posts/"
                     aria-label="LinkedIn"
                     title="LinkedIn"
                     ><svg
@@ -1018,17 +1201,24 @@
                         />
                     </svg></a
                 >
-                <a
-                    href="https://github.com/CodeSapiens-in/CollegeSapien"
-                    target="_blank"
-                    rel="noopener"
-                    >GitHub</a
+                </div>
+                <div
+                    class="footer-links"
+                    style="flex-wrap: wrap; justify-content: center"
                 >
-                <a href="./privacy.html">Privacy Policy</a>
-                <a href="./terms.html">Terms of Service</a>
-                <a href="./app/data/delete">Delete Account</a>
+                    <a
+                        href="https://github.com/CodeSapiens-in/CollegeSapien"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                    >
+                    <a href="./privacy.html">Privacy Policy</a>
+                    <a href="./terms.html">Terms of Service</a>
+                    <a href="./app/data/delete/index.html">Delete Account</a>
+                </div>
             </div>
         </footer>
+        </div>
 
         <!-- React + Babel for Tweaks panel only -->
         <div id="tweaks-root"></div>
@@ -1914,8 +2104,9 @@
                     for (const m of monkeys) drawMonkey(m);
                 }
 
-                /* input */
-                canvas.addEventListener("pointerdown", (e) => {
+                /* input — listens on window, not the canvas, so the canvas
+                   (pointer-events: none) never blocks clicks on real links */
+                window.addEventListener("pointerdown", (e) => {
                     const px = e.clientX,
                         py = e.clientY;
                     let best = null,
