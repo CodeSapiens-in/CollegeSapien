@@ -1,13 +1,22 @@
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'dart:async';
+import 'dart:math' as math;
 import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import '../../models/api_models.dart';
 import '../../services/college_service.dart';
 import '../../utils/app_constants.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 import 'auth_screen.dart';
+
+const _githubMarkSvg = '''
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+''';
 
 /// First screen a student sees — pick a college before signing up or
 /// logging in. Selection carries forward into onboarding so it isn't
@@ -61,6 +70,12 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
         .toList();
   }
 
+  MascotMood get _mood {
+    if (_searchCtrl.text.trim().isEmpty) return MascotMood.normal;
+    if (!_loading && _filtered.isEmpty) return MascotMood.sad;
+    return MascotMood.curious;
+  }
+
   void _selectCollege(College college) {
     Navigator.push(
       context,
@@ -84,7 +99,7 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
               children: [
                 Align(alignment: Alignment.centerRight, child: _signInLink()),
                 const SizedBox(height: 16),
-                if (kIsWeb) ...[_playStoreBanner(), const SizedBox(height: 20)],
+                if (kIsWeb) ...[_ctaRow(), const SizedBox(height: 20)],
                 _content(),
               ],
             ),
@@ -110,31 +125,29 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 _brandMark(),
-                const Spacer(),
+                const SizedBox(height: 36),
                 Container(
-                  width: 140,
-                  height: 140,
+                  width: 88,
+                  height: 88,
                   decoration: AppTheme.cardDecoration(
                     color: AppColors.background,
-                    shadowOffset: const Offset(8, 8),
+                    shadowOffset: const Offset(6, 6),
                   ),
-                  child: const Center(
-                    child: Icon(Icons.sentiment_satisfied_alt, size: 72),
-                  ),
+                  child: const Center(child: _LogoHeadMascot(size: 70)),
                 ),
-                const SizedBox(height: 32),
+                const SizedBox(height: 24),
                 const Text(
-                  'Every syllabus.\nEvery college.\nOne place.',
+                  'The super app for students.\nThe companion you need.',
                   style: TextStyle(
                     fontFamily: 'Lexend Mega',
-                    fontSize: 40,
+                    fontSize: 34,
                     fontWeight: FontWeight.w700,
                     letterSpacing: -1.0,
                     height: 1.15,
                     color: Colors.black,
                   ),
                 ),
-                const SizedBox(height: 16),
+                const SizedBox(height: 14),
                 Text(
                   'Find your college, get your subjects, and stay on top of '
                   'your semester — built by students, for students.',
@@ -144,8 +157,10 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
                     color: Colors.black.withValues(alpha: 0.7),
                   ),
                 ),
-                const Spacer(flex: 2),
-                if (kIsWeb) _playStoreBanner(),
+                const SizedBox(height: 32),
+                _featureList(),
+                const Spacer(),
+                if (kIsWeb) _ctaRow(),
               ],
             ),
           ),
@@ -207,6 +222,95 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
     );
   }
 
+  // Desktop-only: mirrors the app's post-signup onboarding carousel, so a
+  // browser visitor sees the same pitch a new mobile user gets.
+  Widget _featureList() {
+    final features = [
+      (
+        icon: Icons.calendar_today,
+        color: AppColors.accentGreen,
+        title: 'Attendance Tracker',
+        desc: 'Never miss a class, get notified when it drops below 75%.',
+      ),
+      (
+        icon: Icons.calculate,
+        color: AppColors.accentBlue,
+        title: 'CGPA Calculator',
+        desc: 'Upload your grade sheet, get your CGPA instantly.',
+      ),
+      (
+        icon: Icons.library_books,
+        color: AppColors.accentPurple,
+        title: 'Syllabus, Notes & Papers',
+        desc: 'Every resource for your semester, in one place.',
+      ),
+      (
+        icon: Icons.timer,
+        color: AppColors.primaryYellow,
+        title: 'Pomodoro Timer',
+        desc: 'Stay focused with built-in study sessions.',
+      ),
+    ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        for (final f in features)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 16),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Container(
+                  width: 36,
+                  height: 36,
+                  decoration: BoxDecoration(
+                    color: f.color,
+                    border: Border.all(color: Colors.black, width: 1.5),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: Icon(f.icon, size: 18, color: Colors.black),
+                ),
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        f.title,
+                        style: const TextStyle(
+                          fontFamily: 'Public Sans',
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: Colors.black,
+                        ),
+                      ),
+                      Text(
+                        f.desc,
+                        style: TextStyle(
+                          fontFamily: 'Public Sans',
+                          fontSize: 12.5,
+                          color: Colors.black.withValues(alpha: 0.65),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        Text(
+          '+ much more',
+          style: TextStyle(
+            fontFamily: 'Public Sans',
+            fontSize: 13,
+            fontWeight: FontWeight.w700,
+            color: Colors.black.withValues(alpha: 0.5),
+          ),
+        ),
+      ],
+    );
+  }
+
   Widget _signInLink() {
     return RichText(
       text: TextSpan(
@@ -235,6 +339,16 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
     );
   }
 
+  Widget _ctaRow() {
+    return Row(
+      children: [
+        Expanded(child: _playStoreBanner()),
+        const SizedBox(width: 12),
+        Expanded(child: _githubBanner()),
+      ],
+    );
+  }
+
   Widget _playStoreBanner() {
     return GestureDetector(
       onTap: () => launchUrl(
@@ -243,51 +357,89 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
         mode: LaunchMode.externalApplication,
       ),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         decoration: BoxDecoration(
           color: Colors.black,
           borderRadius: BorderRadius.circular(10),
         ),
         child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
           children: [
             Container(
-              width: 32,
-              height: 32,
+              width: 26,
+              height: 26,
               decoration: BoxDecoration(
                 color: AppColors.primaryYellow,
-                borderRadius: BorderRadius.circular(8),
+                borderRadius: BorderRadius.circular(7),
               ),
-              child: const Icon(Icons.play_arrow, size: 20),
+              child: const Icon(Icons.play_arrow, size: 16),
             ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'GET THE APP',
-                    style: TextStyle(
-                      fontFamily: 'Public Sans',
-                      fontSize: 10,
-                      fontWeight: FontWeight.w700,
-                      letterSpacing: 0.5,
-                      color: Colors.white.withValues(alpha: 0.6),
-                    ),
-                  ),
-                  const Text(
-                    'Download on Google Play',
-                    style: TextStyle(
-                      fontFamily: 'Public Sans',
-                      fontSize: 14,
-                      fontWeight: FontWeight.w700,
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                'Google Play',
+                style: const TextStyle(
+                  fontFamily: 'Public Sans',
+                  fontSize: 13,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.white,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
             ),
-            Icon(Icons.chevron_right, color: AppColors.primaryYellow),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _githubBanner() {
+    return GestureDetector(
+      onTap: () => launchUrl(
+        Uri.parse('https://github.com/CodeSapiens-in/CollegeSapien'),
+        mode: LaunchMode.externalApplication,
+      ),
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          border: Border.all(color: Colors.black, width: 2),
+          borderRadius: BorderRadius.circular(10),
+        ),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Container(
+              width: 26,
+              height: 26,
+              decoration: BoxDecoration(
+                color: Colors.black,
+                borderRadius: BorderRadius.circular(7),
+              ),
+              padding: const EdgeInsets.all(5),
+              child: SvgPicture.string(
+                _githubMarkSvg,
+                colorFilter:
+                    const ColorFilter.mode(Colors.white, BlendMode.srcIn),
+              ),
+            ),
+            const SizedBox(width: 8),
+            Flexible(
+              child: Text(
+                'GitHub',
+                style: const TextStyle(
+                  fontFamily: 'Public Sans',
+                  fontSize: 13,
+                  fontWeight: FontWeight.w700,
+                  color: Colors.black,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+              ),
+            ),
           ],
         ),
       ),
@@ -306,8 +458,8 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
               color: AppColors.primaryYellow,
               shadowOffset: const Offset(6, 6),
             ),
-            child: const Center(
-              child: Icon(Icons.sentiment_satisfied_alt, size: 48),
+            child: Center(
+              child: _LogoHeadMascot(size: 78, mood: _mood),
             ),
           ),
         ),
@@ -501,6 +653,94 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
               color: Colors.black,
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+enum MascotMood {
+  normal('assets/images/mascot_normal.png'),
+  curious('assets/images/mascot_curious.png'),
+  sad('assets/images/mascot_sad.png');
+
+  const MascotMood(this.asset);
+  final String asset;
+}
+
+/// A small, intentionally quiet mascot treatment for auth: it bobs, blinks, and
+/// reacts to the search — curious while typing, sad when nothing matches.
+class _LogoHeadMascot extends StatefulWidget {
+  const _LogoHeadMascot({required this.size, this.mood = MascotMood.normal});
+
+  final double size;
+  final MascotMood mood;
+
+  @override
+  State<_LogoHeadMascot> createState() => _LogoHeadMascotState();
+}
+
+class _LogoHeadMascotState extends State<_LogoHeadMascot>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _bobController;
+  final _random = math.Random();
+  Timer? _blinkTimer;
+  bool _blinking = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _bobController = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 1800),
+    )..repeat();
+    _scheduleBlink();
+  }
+
+  void _scheduleBlink() {
+    _blinkTimer?.cancel();
+    final delay = 2800 + _random.nextInt(3900);
+    _blinkTimer = Timer(Duration(milliseconds: delay), () {
+      if (!mounted) return;
+      setState(() => _blinking = true);
+      _blinkTimer = Timer(const Duration(milliseconds: 170), () {
+        if (!mounted) return;
+        setState(() => _blinking = false);
+        _scheduleBlink();
+      });
+    });
+  }
+
+  @override
+  void dispose() {
+    _blinkTimer?.cancel();
+    _bobController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _bobController,
+      builder: (context, child) {
+        final bob = math.sin(_bobController.value * math.pi * 2) * 2.2;
+        return Transform.translate(
+          offset: Offset(0, bob),
+          child: Transform.scale(
+            alignment: Alignment.center,
+            scaleY: _blinking ? 0.91 : 1,
+            child: child,
+          ),
+        );
+      },
+      child: AnimatedSwitcher(
+        duration: const Duration(milliseconds: 200),
+        child: Image.asset(
+          widget.mood.asset,
+          key: ValueKey(widget.mood),
+          width: widget.size,
+          height: widget.size,
+          fit: BoxFit.contain,
         ),
       ),
     );
