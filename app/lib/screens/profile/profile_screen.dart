@@ -11,7 +11,7 @@ import '../../utils/app_spacing.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 import '../attendance_screen.dart';
-import '../auth/login_screen.dart';
+import '../auth/college_selection_screen.dart';
 import '../resources/resources_hub_screen.dart';
 import '../syllabus/syllabus_selection_screen.dart';
 import 'about_screen.dart';
@@ -609,7 +609,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           if (!context.mounted) return;
           Navigator.pushAndRemoveUntil(
             context,
-            MaterialPageRoute(builder: (_) => const LoginScreen()),
+            MaterialPageRoute(builder: (_) => const CollegeSelectionScreen()),
             (_) => false,
           );
         },

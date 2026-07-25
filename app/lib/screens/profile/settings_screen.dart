@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../../services/attendance_notification_service.dart';
 import '../../services/app_theme_notifier.dart';
 import '../../services/auth_service.dart';
-import '../../screens/auth/login_screen.dart';
+import '../../screens/auth/college_selection_screen.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/app_color_scheme.dart';
 import '../../widgets/responsive_layout.dart';
@@ -48,7 +48,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       if (!mounted) return;
       Navigator.pushAndRemoveUntil(
         context,
-        MaterialPageRoute(builder: (_) => const LoginScreen()),
+        MaterialPageRoute(builder: (_) => const CollegeSelectionScreen()),
         (_) => false,
       );
     } catch (e) {

@@ -5,7 +5,12 @@ import 'user_details_screen.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingScreen extends StatefulWidget {
-  const OnboardingScreen({super.key});
+  /// Screen to land on once the intro carousel finishes or is skipped.
+  /// Defaults to the standalone college/department/semester form for
+  /// callers (e.g. SessionGuard) that don't already have that data.
+  final Widget nextScreen;
+
+  const OnboardingScreen({super.key, this.nextScreen = const UserDetailsScreen()});
 
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
@@ -59,14 +64,14 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
         curve: Curves.easeInOut,
       );
     } else {
-      _navigateToUserDetails();
+      _finish();
     }
   }
 
-  void _navigateToUserDetails() {
+  void _finish() {
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(builder: (context) => const UserDetailsScreen()),
+      MaterialPageRoute(builder: (context) => widget.nextScreen),
     );
   }
 
@@ -83,7 +88,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
             Align(
               alignment: Alignment.topRight,
               child: TextButton(
-                onPressed: _navigateToUserDetails,
+                onPressed: _finish,
                 child: const Text(
                   'Skip',
                   style: TextStyle(

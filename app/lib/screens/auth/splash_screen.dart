@@ -8,7 +8,7 @@ import '../../providers/app_state_notifier.dart';
 import '../../providers/session_action.dart';
 import '../home/main_navigation.dart';
 import '../onboarding/onboarding_screen.dart';
-import 'login_screen.dart';
+import 'college_selection_screen.dart';
 
 /// Splash Screen - App launch screen
 class SplashScreen extends StatefulWidget {
@@ -76,7 +76,7 @@ class _SplashScreenState extends State<SplashScreen>
   Future<void> _navigateToNext(AppStateNotifier appState) async {
     final user = AuthService.instance.currentUser;
     if (user == null) {
-      _replaceWith(const LoginScreen());
+      _replaceWith(const CollegeSelectionScreen());
       return;
     }
 
@@ -126,7 +126,7 @@ class _SplashScreenState extends State<SplashScreen>
 
       if (!mounted) return;
       if (!result.emailVerified) {
-        _replaceWith(const LoginScreen());
+        _replaceWith(const CollegeSelectionScreen());
       } else if (result.onboardingRequired) {
         _replaceWith(const OnboardingScreen());
       } else {
@@ -171,7 +171,7 @@ class _SplashScreenState extends State<SplashScreen>
 
   void _routeToLogin({required bool blocking, required AppStateNotifier appState}) {
     if (blocking) {
-      if (mounted) _replaceWith(const LoginScreen());
+      if (mounted) _replaceWith(const CollegeSelectionScreen());
     } else {
       appState.requestSessionAction(SessionAction.requireLogin);
     }
@@ -188,7 +188,7 @@ class _SplashScreenState extends State<SplashScreen>
         profile.department != null) {
       _replaceWith(const MainNavigation());
     } else {
-      _replaceWith(const LoginScreen());
+      _replaceWith(const CollegeSelectionScreen());
     }
   }
 

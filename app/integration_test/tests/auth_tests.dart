@@ -1,14 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:codesapiens/models/api_models.dart';
 import 'package:codesapiens/screens/auth/splash_screen.dart';
-import 'package:codesapiens/screens/auth/login_screen.dart';
-import 'package:codesapiens/screens/auth/signup_screen.dart';
+import 'package:codesapiens/screens/auth/college_selection_screen.dart';
+import 'package:codesapiens/screens/auth/auth_screen.dart';
 import 'package:codesapiens/screens/onboarding/onboarding_screen.dart';
 import 'package:codesapiens/screens/onboarding/user_details_screen.dart';
 
+final _testCollege =
+    College(id: 'col_test', name: 'Test Institute of Technology', code: 'TIT');
+
 void runAuthTests() {
   group('Authentication & Onboarding Flow', () {
-    testWidgets('Verify Splash Screen & Navigation to Login', (WidgetTester tester) async {
+    testWidgets('Verify Splash Screen & Navigation to College Selection',
+        (WidgetTester tester) async {
       await tester.pumpWidget(const MaterialApp(home: SplashScreen()));
       await tester.pumpAndSettle();
 
@@ -17,51 +22,49 @@ void runAuthTests() {
       expect(find.text('Your College Companion'), findsOneWidget);
       expect(find.byIcon(Icons.school), findsOneWidget);
 
-      // Wait for splash navigation timer (3 seconds) to trigger
+      // Wait for splash navigation timer to trigger
       await tester.pumpAndSettle(const Duration(seconds: 4));
 
-      // Should transition to LoginScreen
-      expect(find.byType(LoginScreen), findsOneWidget);
-      expect(find.text('Welcome Back!'), findsOneWidget);
+      // Should transition to CollegeSelectionScreen (no signed-in user)
+      expect(find.byType(CollegeSelectionScreen), findsOneWidget);
+      expect(find.text('Find Your College'), findsOneWidget);
     });
 
-    testWidgets('Verify Login Screen Form & Validation', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: LoginScreen()));
+    testWidgets('Verify Sign In Tab Validation', (WidgetTester tester) async {
+      await tester.pumpWidget(
+          MaterialApp(home: AuthScreen(college: _testCollege)));
       await tester.pumpAndSettle();
 
-      // Verify fields exist
+      // Defaults to Sign Up — switch to Sign In
+      await tester.tap(find.text('Sign In'));
+      await tester.pumpAndSettle();
+
       expect(find.widgetWithText(TextFormField, 'Email'), findsOneWidget);
       expect(find.widgetWithText(TextFormField, 'Password'), findsOneWidget);
 
-      // Tap login without credentials to trigger validation
+      // Tap Login without credentials to trigger validation
       await tester.tap(find.text('Login'));
       await tester.pumpAndSettle();
 
-      // Verify validation errors
       expect(find.text('Enter your email'), findsOneWidget);
       expect(find.text('Enter your password'), findsOneWidget);
 
       // Enter invalid email
-      await tester.enterText(find.widgetWithText(TextFormField, 'Email'), 'invalid-email');
+      await tester.enterText(
+          find.widgetWithText(TextFormField, 'Email'), 'invalid-email');
       await tester.tap(find.text('Login'));
       await tester.pumpAndSettle();
       expect(find.text('Enter a valid email'), findsOneWidget);
     });
 
-    testWidgets('Verify Navigation to Signup Screen', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: LoginScreen()));
+    testWidgets('Verify Sign Up Tab Is the Default', (WidgetTester tester) async {
+      await tester.pumpWidget(
+          MaterialApp(home: AuthScreen(college: _testCollege)));
       await tester.pumpAndSettle();
 
-      // Tap on Sign Up navigation button
-      final signUpButton = find.text("Don't have an account?  Sign Up →");
-      expect(signUpButton, findsOneWidget);
-      await tester.tap(signUpButton);
-      await tester.pumpAndSettle();
-
-      // Verify we are on SignupScreen
-      expect(find.byType(SignupScreen), findsOneWidget);
       expect(find.text('Create Account'), findsOneWidget);
       expect(find.widgetWithText(TextFormField, 'Full Name'), findsOneWidget);
+      expect(find.text(_testCollege.name), findsOneWidget);
     });
 
     testWidgets('Verify Onboarding Carousel Swipe Flow', (WidgetTester tester) async {
@@ -76,7 +79,7 @@ void runAuthTests() {
       await tester.pumpAndSettle();
 
       // Verify second onboarding slide
-      expect(find.text('Calculate CGPA'), findsOneWidget);
+      expect(find.text('CGPA Calculator'), findsOneWidget);
 
       // Tap "Skip" to skip onboarding
       final skipButton = find.text('Skip');
@@ -91,18 +94,15 @@ void runAuthTests() {
 
       // Verify form fields
       expect(find.widgetWithText(TextFormField, 'Full Name'), findsOneWidget);
-      expect(find.widgetWithText(TextFormField, 'Roll / Reg Number'), findsOneWidget);
-      expect(find.text('Select Department'), findsOneWidget);
-      expect(find.text('Select Semester'), findsOneWidget);
-      expect(find.text('Select College'), findsOneWidget);
+      expect(find.text('College'), findsOneWidget);
+      expect(find.text('Department'), findsOneWidget);
+      expect(find.text('Current Semester'), findsOneWidget);
 
-      // Enter name and roll number
-      await tester.enterText(find.widgetWithText(TextFormField, 'Full Name'), 'John Doe');
-      await tester.enterText(find.widgetWithText(TextFormField, 'Roll / Reg Number'), 'CS101');
+      await tester.enterText(
+          find.widgetWithText(TextFormField, 'Full Name'), 'John Doe');
       await tester.pumpAndSettle();
 
       expect(find.text('John Doe'), findsOneWidget);
-      expect(find.text('CS101'), findsOneWidget);
     });
   });
 }

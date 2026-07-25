@@ -9,7 +9,9 @@ import '../../widgets/searchable_dropdown.dart';
 import '../home/main_navigation.dart';
 
 class UserDetailsScreen extends StatefulWidget {
-  const UserDetailsScreen({super.key});
+  final String? collegeId;
+
+  const UserDetailsScreen({super.key, this.collegeId});
 
   @override
   State<UserDetailsScreen> createState() => _UserDetailsScreenState();
@@ -37,6 +39,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>
       duration: const Duration(seconds: 15),
     )..repeat();
     _nameController.text = AuthService.instance.currentUser?.displayName ?? '';
+    _selectedCollegeId = widget.collegeId;
     _loadColleges();
   }
 
