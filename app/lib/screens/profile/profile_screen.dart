@@ -15,7 +15,6 @@ import '../auth/college_selection_screen.dart';
 import '../resources/resources_hub_screen.dart';
 import '../syllabus/syllabus_selection_screen.dart';
 import 'about_screen.dart';
-// import 'admin_management_screen.dart'; // mod: moved to web admin panel
 import 'edit_profile_screen.dart';
 import '../cgpa/cgpa_calculator_screen.dart';
 import 'help_screen.dart';
@@ -39,8 +38,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String _filesUploaded = '--';
   String? _collegeName;
   String? _department;
-  // mod: _showAdminManagement removed — admin management moved to web admin panel
-  // bool _showAdminManagement = false;
 
   @override
   void initState() {
@@ -162,15 +159,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
         if (mounted) setState(() => _filesUploaded = countStr);
       }
     } catch (_) {}
-
-    // mod: admin management capability check removed — moved to web admin panel
-    // try {
-    //   final capabilities =
-    //       await AppCapabilityService.instance.resolveCapabilities();
-    //   if (mounted) {
-    //     setState(() => _showAdminManagement = capabilities.canModerateResources);
-    //   }
-    // } catch (_) {}
   }
 
   void _applyCgpaStat(List<CgpaSemesterEntry>? entries) {
@@ -580,19 +568,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             MaterialPageRoute(builder: (_) => const AboutScreen()),
           ),
         ),
-        // mod: Admin Management menu item removed — moved to web admin panel
-        // if (_showAdminManagement) ...[
-        //   const SizedBox(height: 12),
-        //   _buildMenuItem(
-        //     context,
-        //     'Admin Management',
-        //     Icons.admin_panel_settings_outlined,
-        //     () => Navigator.push(
-        //       context,
-        //       MaterialPageRoute(builder: (_) => const AdminManagementScreen()),
-        //     ),
-        //   ),
-        // ],
       ],
     );
   }

@@ -13,7 +13,7 @@ import '../../models/event_models.dart';
 import '../../services/api_service.dart';
 import '../../services/attendance_service.dart';
 import '../../services/auth_service.dart';
-import '../../services/college_service.dart';
+import '../../providers/reference_data_store.dart';
 import '../profile/profile_screen.dart';
 import '../../models/syllabus_models.dart';
 import '../../services/syllabus_service.dart';
@@ -57,11 +57,7 @@ String _todayCode() {
   return days[DateTime.now().weekday - 1];
 }
 
-String _dateKey(DateTime date) {
-  return '${date.year.toString().padLeft(4, '0')}-'
-      '${date.month.toString().padLeft(2, '0')}-'
-      '${date.day.toString().padLeft(2, '0')}';
-}
+String _dateKey(DateTime date) => DateFormat('yyyy-MM-dd').format(date);
 
 int _toMin(String t) {
   final p = t.split(':');
@@ -327,9 +323,9 @@ class _HomeScreenState extends State<HomeScreen> {
         // No saved subjects — try curriculum fallback
         var fallbackApplied = false;
         try {
-          final collegeService = CollegeService();
-          final colleges = await collegeService.listColleges();
-          final departmentsList = await collegeService.listDepartments();
+          final colleges = await ReferenceDataStore.instance.listColleges();
+          final departmentsList =
+              await ReferenceDataStore.instance.listDepartments();
           final college =
               colleges.where((c) => c.id == freshUser.collegeId).firstOrNull;
           final collegeCode = college?.code;

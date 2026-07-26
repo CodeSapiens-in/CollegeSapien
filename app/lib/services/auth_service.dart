@@ -6,7 +6,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/api_models.dart';
 import '../providers/app_state_notifier.dart';
 import 'api_service.dart';
-// import 'app_capability_service.dart'; // mod: moved to web admin panel
 
 // Web OAuth client ID from google-services.json (client_type: 3).
 // Required for Google Sign-In on Android to return an idToken.
@@ -185,7 +184,6 @@ class AuthService {
   }
 
   Future<void> signOut() async {
-    // AppCapabilityService.instance.invalidate(); // mod: moved to web admin panel
     try {
       await ApiService.instance
           .post('/auth/logout')

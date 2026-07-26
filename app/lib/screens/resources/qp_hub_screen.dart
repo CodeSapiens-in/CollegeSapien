@@ -4,7 +4,6 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/api_models.dart';
-// import '../../services/api_service.dart'; // mod: mod endpoints removed
 import '../../providers/resources_cache_store.dart';
 import '../../services/app_capability_service.dart';
 import '../../services/resource_service.dart';
@@ -28,9 +27,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
   late Future<List<HubResource>> _future;
   bool _isUnlocked = false;
   bool _canBypassUnlock = false;
-  // mod: _isMod + _pending removed — moderation moved to web admin panel
-  // bool _isMod = false;
-  // List<HubResource> _pending = [];
   double? _uploadProgress;
   String? _selectedRegulation;
   final _subjectCodeController = TextEditingController();
@@ -81,30 +77,14 @@ class _QpHubScreenState extends State<QpHubScreen> {
       if (mounted) {
         setState(() {
           _canBypassUnlock = capabilities.bypassResourceUnlock;
-          // mod: _isMod removed — pending queue moved to web admin panel
-          // _isMod = capabilities.canModerateResources;
         });
       }
 
-      // mod: pending resource fetch removed — moderation moved to web admin panel
-      // if (isMod) {
-      //   final raw = await ApiService.instance
-      //       .get('/admin/resources/pending?category=QP') as List<dynamic>;
-      //   if (mounted) {
-      //     setState(() {
-      //       _pending = raw
-      //           .map((item) =>
-      //               HubResource.fromJson(item as Map<String, dynamic>))
-      //           .toList();
-      //     });
-      //   }
-      // } else {
       final isUnlocked = await _resourceService.hasApprovedHubContribution();
       await prefs.setBool(_unlockPrefsKey, isUnlocked);
       if (mounted) {
         setState(() => _isUnlocked = isUnlocked);
       }
-      // }
     } catch (_) {}
   }
 
@@ -251,11 +231,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
       );
     }
   }
-
-  // mod: approve/reject/archive methods removed — moderation moved to web admin panel
-  // Future<void> _approveResource(String id) async { ... }
-  // Future<void> _rejectResource(String id) async { ... }
-  // Future<void> _archiveResource(String id) async { ... }
 
   @override
   void dispose() {
@@ -410,12 +385,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
                       ),
                       const SizedBox(height: 24),
 
-                      // mod: pending approval section removed — moderation moved to web admin panel
-                      // if (_isMod && _pending.isNotEmpty) ...[
-                      //   Container( ... 'Pending Approval' ... ),
-                      //   ..._pending.map((r) => _buildPendingCard(r)),
-                      // ],
-
                       if (resources.isEmpty)
                         Container(
                           padding: const EdgeInsets.all(20),
@@ -495,14 +464,6 @@ class _QpHubScreenState extends State<QpHubScreen> {
               ],
             ],
           ),
-          // mod: Archive button removed — moderation moved to web admin panel
-          // if (_isMod) ...[
-          //   const SizedBox(height: 10),
-          //   OutlinedButton.icon(
-          //     onPressed: () => _archiveResource(resource.id),
-          //     ...
-          //   ),
-          // ],
         ],
       ),
     );
@@ -609,7 +570,4 @@ class _QpHubScreenState extends State<QpHubScreen> {
       }
     });
   }
-
-  // mod: _buildPendingCard removed — moderation moved to web admin panel
-  // Widget _buildPendingCard(HubResource resource) { ... }
 }
