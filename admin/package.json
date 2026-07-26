@@ -20,7 +20,7 @@
     "@vueuse/core": "^13.1.0",
     "@vueuse/nuxt": "^13.1.0",
     "firebase": "^11.0.0",
-    "nuxt": "^3.17.1",
+    "nuxt": "^3.21.9",
     "pinia": "^3.0.2",
     "pinia-plugin-persistedstate": "^4.2.0",
     "unocss": "^66.0.0",
