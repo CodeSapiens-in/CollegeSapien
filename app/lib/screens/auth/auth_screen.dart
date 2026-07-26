@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/gestures.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../../models/api_models.dart';
+import '../../providers/reference_data_store.dart';
 import '../../services/auth_service.dart';
-import '../../services/college_service.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/department_constants.dart';
 import '../../widgets/responsive_layout.dart';
@@ -54,7 +54,7 @@ class _AuthScreenState extends State<AuthScreen> {
   void initState() {
     super.initState();
     _tab = widget.college == null ? _AuthTab.signIn : _AuthTab.signUp;
-    CollegeService().listDepartments().then((depts) {
+    ReferenceDataStore.instance.listDepartments().then((depts) {
       if (!mounted) return;
       depts.sort((a, b) => a.name.compareTo(b.name));
       setState(() => _departments = depts);

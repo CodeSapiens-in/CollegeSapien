@@ -6,7 +6,7 @@ import 'dart:math' as math;
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import '../../models/api_models.dart';
-import '../../services/college_service.dart';
+import '../../providers/reference_data_store.dart';
 import '../../utils/app_constants.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
@@ -30,7 +30,6 @@ class CollegeSelectionScreen extends StatefulWidget {
 }
 
 class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
-  final _collegeService = CollegeService();
   final _searchCtrl = TextEditingController();
   List<College> _colleges = [];
   bool _loading = true;
@@ -50,7 +49,7 @@ class _CollegeSelectionScreenState extends State<CollegeSelectionScreen> {
 
   Future<void> _load() async {
     try {
-      final colleges = await _collegeService.listColleges();
+      final colleges = await ReferenceDataStore.instance.listColleges();
       colleges.sort((a, b) => a.name.compareTo(b.name));
       if (!mounted) return;
       setState(() {

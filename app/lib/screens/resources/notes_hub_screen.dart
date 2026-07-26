@@ -4,12 +4,11 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/api_models.dart';
-// import '../../services/api_service.dart'; // mod: mod endpoints removed
 import '../../models/syllabus_models.dart';
+import '../../providers/reference_data_store.dart';
 import '../../providers/resources_cache_store.dart';
 import '../../services/app_capability_service.dart';
 import '../../services/auth_service.dart';
-import '../../services/college_service.dart';
 import '../../services/resource_service.dart';
 import '../../services/syllabus_service.dart';
 import '../../utils/app_theme.dart';
@@ -27,16 +26,12 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
   static const _unlockPrefsKey = 'has_approved_hub_upload';
 
   final _resourceService = ResourceService();
-  final _collegeService = CollegeService();
   final _syllabusService = SyllabusService();
   final _capabilityService = AppCapabilityService.instance;
   final _searchController = TextEditingController();
   late Future<List<HubResource>> _future;
   bool _isUnlocked = false;
   bool _canBypassUnlock = false;
-  // mod: _isMod + _pending removed — moderation moved to web admin panel
-  // bool _isMod = false;
-  // List<HubResource> _pending = [];
   double? _uploadProgress;
   String? _selectedSubjectId;
 
@@ -81,30 +76,14 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
       if (mounted) {
         setState(() {
           _canBypassUnlock = capabilities.bypassResourceUnlock;
-          // mod: _isMod removed — pending queue moved to web admin panel
-          // _isMod = capabilities.canModerateResources;
         });
       }
 
-      // mod: pending resource fetch removed — moderation moved to web admin panel
-      // if (isMod) {
-      //   final raw = await ApiService.instance
-      //       .get('/admin/resources/pending?category=Notes') as List<dynamic>;
-      //   if (mounted) {
-      //     setState(() {
-      //       _pending = raw
-      //           .map((item) =>
-      //               HubResource.fromJson(item as Map<String, dynamic>))
-      //           .toList();
-      //     });
-      //   }
-      // } else {
       final isUnlocked = await _resourceService.hasApprovedHubContribution();
       await prefs.setBool(_unlockPrefsKey, isUnlocked);
       if (mounted) {
         setState(() => _isUnlocked = isUnlocked);
       }
-      // }
     } catch (_) {}
   }
 
@@ -127,8 +106,8 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
       final profile = syncResult.user;
       if (profile != null) {
         currentSemester = profile.semester;
-        final colleges = await _collegeService.listColleges();
-        final departments = await _collegeService.listDepartments();
+        final colleges = await ReferenceDataStore.instance.listColleges();
+        final departments = await ReferenceDataStore.instance.listDepartments();
         final college =
             colleges.where((c) => c.id == profile.collegeId).firstOrNull;
         final deptObj =
@@ -333,11 +312,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
     }
   }
 
-  // mod: approve/reject/archive methods removed — moderation moved to web admin panel
-  // Future<void> _approveResource(String id) async { ... }
-  // Future<void> _rejectResource(String id) async { ... }
-  // Future<void> _archiveResource(String id) async { ... }
-
   @override
   void dispose() {
     _searchController.dispose();
@@ -482,22 +456,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
                       _buildInfoBanner(),
                       const SizedBox(height: 24),
 
-                      // mod: pending approval section removed — moderation moved to web admin panel
-                      // if (_isMod && _pending.isNotEmpty) ...[
-                      //   Container(
-                      //     padding: const EdgeInsets.all(16),
-                      //     decoration: AppTheme.cardDecoration(color: AppColors.accentPink),
-                      //     child: const Row(
-                      //       children: [
-                      //         Icon(Icons.pending_actions, size: 20),
-                      //         SizedBox(width: 8),
-                      //         Text('Pending Approval', ...),
-                      //       ],
-                      //     ),
-                      //   ),
-                      //   ..._pending.map((r) => _buildPendingCard(r)),
-                      // ],
-
                       if (resources.isEmpty)
                         _buildEmptyState()
                       else
@@ -605,14 +563,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
               ],
             ],
           ),
-          // mod: Archive button removed — moderation moved to web admin panel
-          // if (_isMod) ...[
-          //   const SizedBox(height: 10),
-          //   OutlinedButton.icon(
-          //     onPressed: () => _archiveResource(resource.id),
-          //     ...
-          //   ),
-          // ],
         ],
       ),
     );
@@ -719,9 +669,6 @@ class _NotesHubScreenState extends State<NotesHubScreen> {
       }
     });
   }
-
-  // mod: _buildPendingCard removed — moderation moved to web admin panel
-  // Widget _buildPendingCard(HubResource resource) { ... }
 }
 
 class _ErrorState extends StatelessWidget {

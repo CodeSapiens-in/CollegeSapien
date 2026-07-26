@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-// import '../../services/app_capability_service.dart'; // mod: moved to web admin panel
 import '../../utils/app_theme.dart';
 import '../../widgets/hoverable.dart';
 import '../../widgets/responsive_layout.dart';
-// import '../profile/admin_management_screen.dart'; // mod: moved to web admin panel
 import 'syllabus_browser_screen.dart';
 import 'notes_hub_screen.dart';
 import 'qp_hub_screen.dart';
@@ -16,27 +14,6 @@ class ResourcesHubScreen extends StatefulWidget {
 }
 
 class _ResourcesHubScreenState extends State<ResourcesHubScreen> {
-  // mod: admin tools entry point removed — moderation moved to web admin panel
-  // bool _showAdminTools = false;
-
-  @override
-  void initState() {
-    super.initState();
-    // mod: _loadCapabilities() removed — no mod-gating needed in mobile app
-    // _loadCapabilities();
-  }
-
-  // mod: capability loading removed — admin features moved to web admin panel
-  // Future<void> _loadCapabilities() async {
-  //   try {
-  //     final capabilities =
-  //         await AppCapabilityService.instance.resolveCapabilities();
-  //     if (mounted) {
-  //       setState(() => _showAdminTools = capabilities.canModerateResources);
-  //     }
-  //   } catch (_) {}
-  // }
-
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.of(context).size.width;
@@ -131,26 +108,6 @@ class _ResourcesHubScreenState extends State<ResourcesHubScreen> {
                   );
                 },
               ),
-
-              // mod: Admin Management card removed — moderation moved to web admin panel
-              // if (_showAdminTools) ...[
-              //   const SizedBox(height: 16),
-              //   _buildResourceCard(
-              //     context,
-              //     'Admin Management',
-              //     'Review reports and run moderator/superadmin actions',
-              //     Icons.admin_panel_settings_outlined,
-              //     AppColors.accentPink,
-              //     () {
-              //       Navigator.push(
-              //         context,
-              //         MaterialPageRoute(
-              //           builder: (_) => const AdminManagementScreen(),
-              //         ),
-              //       );
-              //     },
-              //   ),
-              // ],
 
               const SizedBox(height: 30),
 

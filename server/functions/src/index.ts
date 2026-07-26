@@ -2,7 +2,6 @@ import { onRequest } from 'firebase-functions/v2/https';
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { app } from './app';
-// import { processResourceDocument } from './app/ai/ai.controller';
 
 // Gemini API key is currently disabled — do not bind it as a secret or
 // Firebase will try to resolve it from Secret Manager at deploy time and fail.
@@ -44,7 +43,5 @@ export const processHubResource = onDocumentCreated(
       .doc(event.params.resourceId)
       .update({ aiProcessed: true, updatedAt: admin.firestore.FieldValue.serverTimestamp() })
       .catch(() => undefined);
-
-    // await processResourceDocument(event.params.resourceId, data);
   }
 );
