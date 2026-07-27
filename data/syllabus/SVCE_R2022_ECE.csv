@@ -1,5 +1,5 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,1,HS22151,Tamil language and Heritage of Ancient Tamil Society,1,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,1,HS22151,Tamil Language and Heritage of Ancient Tamil Society,1,HS,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,1,HS22152,Communicative English,3,HS,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,1,MA22151,Applied Mathematics I,4,BS,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,1,PH22151,Applied Physics,3,BS,,core
@@ -39,7 +39,7 @@ Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engin
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,EC22503,Communication Networks and Security,3,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,EC22504,Physical VLSI Design,3,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,EC22505,Transmission Lines and RF Systems,3,PC,,core
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,,Professional Elective I,3,PE,Professional Elective I,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,,Professional Elective I,3,PE,Programme Elective,elective
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,,Mandatory Course,0,MC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,EC22511,Communication Systems Laboratory,1.5,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,5,EC22512,Communication Networks Laboratory,1.5,PC,,core
@@ -47,18 +47,96 @@ Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engin
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22601,Antenna and Microwave Engineering,4,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22602,Embedded Systems and IoT Design,3,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22603,Wireless Communication,3,PC,,core
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Professional Elective II,3,PE,Professional Elective II,option
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Professional Elective III,3,PE,Professional Elective III,option
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Open Elective I,3,OE,Open Elective I,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Professional Elective II,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Professional Elective III,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,,Open Elective I,3,OE,Open Elective,elective
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22611,Antenna and Microwave Engineering Laboratory,2,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22612,Embedded Systems and IoT Laboratory,1.5,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,HS22511,Interview and Career Skills Laboratory,2,EEC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,6,EC22613,Industrial Training/Internship,2,EEC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,EC22701,Optical Communication and Networks,3,PC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,EC22702,Management Principles and Ethical Conduct,3,MC,,core
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective IV,3,PE,Professional Elective IV,option
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective V,3,PE,Professional Elective V,option
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective VI,3,PE,Professional Elective VI,option
-Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Open Elective II,3,OE,Open Elective II,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective IV,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective V,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Professional Elective VI,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,,Open Elective II,3,OE,Open Elective,elective
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,7,EC22711,Project Work - Phase I,2,EEC,,core
 Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,8,EC22811,Project Work - Phase II,8,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22001,Financial Statement Analysis,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22002,Introduction to Securities Market,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22003,Option Trading Strategies,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22004,Corporate Finance,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22005,Managerial Economics,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22006,Project Management,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,SE22007,Mathematics for AI & ML,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22021,Cognitive Radio,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22022,Emerging Wireless Technologies,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22023,Free Space Optical Communication,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22024,Intelligent Communication Networks,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22025,Mobile Technologies,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22026,Multimedia Communication Systems,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22027,Radio over Fibre Systems,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22028,Satellite Communication Systems,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22029,Next Generation Mobile Networks – 5G,3,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22020,Mini Project,2,Wireless Systems Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22031,Antenna Theory and Design,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22032,Antennas for Wireless Communication Systems,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22033,Computational Electromagnetics with EM Simulation,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22034,EMI/EMC Pre Compliance Testing,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22035,RADAR and Microwave Engineering,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22036,MICs and RF System Design,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22037,Millimeter Wave Antenna Technology,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22038,Smart Antenna Systems and Technology,3,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22030,Mini Project,2,Antenna and Microwave Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22041,Analog IC Design,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22042,ASIC and FPGA Design,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22043,CAD for VLSI Circuits,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22044,Low Power IC Design,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22045,Mixed Signal IC Design and Testing,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22046,SoC Design,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22047,Testing of VLSI Circuits,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22048,VLSI for Wireless Communication,3,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22040,Mini Project,2,VLSI,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22051,Audio Signal Processing,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22052,Artificial Intelligence for Signal Processing,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22053,Biomedical Signal Processing,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22054,Biometric Systems,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22055,Data Science and its Applications,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22056,Deep Learning for Computer Vision,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22057,Image Analysis and Machine Vision,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22058,Soft Computing Techniques and its Applications,3,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22050,Mini Project,2,Signal Processing and Data Science,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22061,Industry 4.0 and IIoT,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22062,IoT Based System Design,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22063,IoT for Real Time Applications,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22064,IoT Solutions for Smart Cities,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22065,Real Time Operating Systems,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22066,Robotics and Automation,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22067,Vehicle Infotainment and Connected Vehicles,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22068,Wearable Devices for Healthcare Applications,3,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22060,Mini Project,2,Embedded System Design and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22071,Blockchain and Smart Contract,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22072,Cryptography and Network Security,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22073,IoT Security,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22074,Software Defined Networking in IoT,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22075,SDN and NFV Architectures,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22076,Wireless Broadband Networks,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22077,Wireless Networks,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22078,Wireless Sensor Networks,3,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,EC22070,Mini Project,2,Networking and Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22701,Autotronics,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22702,Biometric System and its Application,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22703,Computer Vision and its Application,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22704,Consumer Electronics,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22705,Embedded Systems and its Application,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22706,Fundamentals of Analog and Digital ICs,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22707,IoT and Sensing,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22708,Fundamentals of Wireless Communication,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22709,Introduction to Smart City,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22710,Medical Imaging System,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22711,Neural Networks and its Application,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22712,Robotic Systems,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,OE22713,System Design using Microcontrollers,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,MC22001,Indian Constitution and Society,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,MC22002,Essence of Indian Traditional Knowledge,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Electronics and Communication Engineering,ECE,R2022,,MC22003,Gender Sensitization,0,Mandatory Course,,option
