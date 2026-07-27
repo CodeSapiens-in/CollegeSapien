@@ -23,23 +23,12 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
   }
 
   try {
-    // console.log('=== AUTH MIDDLEWARE DEBUG ===');
-    // console.log('Token:', idToken);
-    // console.log('=== SYNC ENDPOINT DEBUG ===');
-    // console.log(
-    //   'Project ID from env:',
-    //   process.env.GCLOUD_PROJECT || process.env.FIREBASE_PROJECT_ID
-    // );
-    // console.log('Admin app project ID:', admin.apps[0]?.options?.projectId);
-    // console.log('Auth Header:', req.headers.authorization ? 'Present' : 'Missing');
     let decodedToken: admin.auth.DecodedIdToken;
 
     if (process.env.FIREBASE_AUTH_EMULATOR_HOST) {
       const payload = JSON.parse(Buffer.from(idToken.split('.')[1], 'base64').toString('utf8'));
       // Emulator tokens are unsigned JWTs — decode without signature verification
-      // console.log('payload', payload);
       decodedToken = payload as admin.auth.DecodedIdToken;
-      // console.log('decoded token', decodedToken);
     } else {
       const checkRevoked = process.env.CHECK_REVOKED_TOKENS === 'true';
       decodedToken = await admin.auth().verifyIdToken(idToken, checkRevoked);

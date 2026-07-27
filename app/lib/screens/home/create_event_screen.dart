@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 
 import '../../models/api_models.dart';
 import '../../providers/app_state_notifier.dart';
+import '../../providers/reference_data_store.dart';
 import '../../services/api_service.dart';
-import '../../services/college_service.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/searchable_dropdown.dart';
 
@@ -25,7 +25,6 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
   final _logoController = TextEditingController();
   final _linkController = TextEditingController();
   final _dateController = TextEditingController();
-  final _collegeService = CollegeService();
 
   _OrganizerType _organizerType = _OrganizerType.community;
   List<College> _colleges = [];
@@ -41,7 +40,7 @@ class _CreateEventScreenState extends State<CreateEventScreen> {
 
   Future<void> _loadColleges() async {
     try {
-      final colleges = await _collegeService.listColleges();
+      final colleges = await ReferenceDataStore.instance.listColleges();
       if (!mounted) return;
       colleges.sort((a, b) => a.name.compareTo(b.name));
       setState(() => _colleges = colleges);

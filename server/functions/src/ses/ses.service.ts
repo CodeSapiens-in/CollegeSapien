@@ -38,33 +38,3 @@ export const sendOtpEmail = async (toEmail: string, otp: string, type: 'signup' 
     throw error;
   }
 };
-
-export const sendLoginLinkEmail = async (toEmail: string, link: string) => {
-  const subject = 'Verify your CodeSapiens Account';
-  const body = `Click here to verify your email and sign in to your CodeSapiens account: ${link}\n\nThis link will expire in 1 hour.`;
-
-  const command = new SendEmailCommand({
-    Source: process.env.SES_SENDER_EMAIL || 'noreply@codesapiens.in',
-    Destination: {
-      ToAddresses: [toEmail],
-    },
-    Message: {
-      Subject: { Data: subject },
-      Body: {
-        Text: { Data: body },
-      },
-    },
-  });
-
-  try {
-    if (process.env.AWS_ACCESS_KEY_ID === 'MOCK_KEY' || !process.env.AWS_ACCESS_KEY_ID) {
-      console.log(`[MOCK EMAIL] To: ${toEmail}, Subject: ${subject}, Body: ${body}`);
-      return true;
-    }
-    await sesClient.send(command);
-    return true;
-  } catch (error) {
-    console.error('Error sending login link email via SES:', error);
-    throw error;
-  }
-};

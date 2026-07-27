@@ -4,6 +4,7 @@ import 'dart:ui';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:intl/intl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:timezone/data/latest.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
@@ -347,11 +348,7 @@ class AttendanceNotificationService {
     return days[date.weekday - 1];
   }
 
-  static String _dateKey(DateTime date) {
-    return '${date.year.toString().padLeft(4, '0')}-'
-        '${date.month.toString().padLeft(2, '0')}-'
-        '${date.day.toString().padLeft(2, '0')}';
-  }
+  static String _dateKey(DateTime date) => DateFormat('yyyy-MM-dd').format(date);
 
   static DateTime _dateWithTime(DateTime date, String time) {
     final parts = time.split(':');

@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { resolveComponent } from "vue";
-
 defineProps<{
   label: string;
   value: string | number;
@@ -12,7 +10,7 @@ defineProps<{
 
 <template>
   <component
-    :is="to ? resolveComponent('NuxtLink') : 'div'"
+    :is="to ? 'NuxtLink' : 'div'"
     :to="to"
     class="bg-white rounded-xl border border-gray-200 p-5 flex items-center gap-4 transition-colors"
     :class="{ 'hover:border-yellow-400 cursor-pointer': to }"

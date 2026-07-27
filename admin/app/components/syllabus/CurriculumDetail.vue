@@ -93,10 +93,6 @@ watch(
   },
 );
 
-const effectiveSemester = (s: CurriculumSubject): number | null => {
-  return s.semester;
-};
-
 const displaySubjects = computed(() =>
   editMode.value ? editSubjects.value : props.curriculum.subjects,
 );
@@ -105,7 +101,7 @@ const semesterGroups = computed(() => {
   const groups = new Map<number, { subject: CurriculumSubject; index: number }[]>();
   displaySubjects.value.forEach((s, index) => {
     if (s.record_type === "option") return;
-    const sem = effectiveSemester(s);
+    const sem = s.semester;
     if (sem === null) return;
     if (!groups.has(sem)) groups.set(sem, []);
     groups.get(sem)!.push({ subject: s, index });

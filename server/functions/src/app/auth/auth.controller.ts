@@ -7,7 +7,6 @@ import {
   computeAttendanceSummary,
   ensureAttendanceTrackingStartDate,
 } from '../attendance/attendance.controller';
-// import { sendLoginLinkEmail } from '../../ses/ses.service';
 
 const COOKIE_OPTIONS = {
   httpOnly: true,
