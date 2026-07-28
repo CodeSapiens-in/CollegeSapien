@@ -7,23 +7,12 @@ export const useApi = () => {
     method: ApiMethod,
     path: string,
     body?: Record<string, unknown>,
-    explicitToken?: string,
-  ) =>
-    $api<T>(path, {
-      method,
-      body,
-      ...(explicitToken
-        ? { headers: { Authorization: `Bearer ${explicitToken}` } }
-        : {}),
-    });
+  ) => $api<T>(path, { method, body });
 
   return {
     get: <T = unknown>(path: string) => request<T>("GET", path),
-    post: <T = unknown>(
-      path: string,
-      body?: Record<string, unknown>,
-      token?: string,
-    ) => request<T>("POST", path, body, token),
+    post: <T = unknown>(path: string, body?: Record<string, unknown>) =>
+      request<T>("POST", path, body),
     patch: <T = unknown>(path: string, body?: Record<string, unknown>) =>
       request<T>("PATCH", path, body),
     delete: <T = unknown>(path: string) => request<T>("DELETE", path),

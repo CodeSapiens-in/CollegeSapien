@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../providers/app_state_notifier.dart';
 import '../providers/session_action.dart';
-import '../screens/auth/login_screen.dart';
+import '../screens/auth/college_selection_screen.dart';
 import '../screens/onboarding/onboarding_screen.dart';
 import '../services/app_navigation.dart';
 
@@ -43,7 +43,7 @@ class _SessionGuardState extends State<SessionGuard> {
 
     final target = action == SessionAction.requireOnboarding
         ? const OnboardingScreen()
-        : const LoginScreen();
+        : const CollegeSelectionScreen();
     nav.pushAndRemoveUntil(
       MaterialPageRoute(builder: (_) => target),
       (route) => false,

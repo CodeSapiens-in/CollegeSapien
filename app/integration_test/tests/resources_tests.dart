@@ -39,7 +39,7 @@ void runResourcesTests() {
     });
 
     testWidgets('Verify Notes Hub Gating & Upload Flow', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: const NotesHubScreen()));
+      await tester.pumpWidget(const MaterialApp(home: NotesHubScreen()));
       await tester.pumpAndSettle();
 
       // Verify Notes Hub title
@@ -62,7 +62,7 @@ void runResourcesTests() {
     });
 
     testWidgets('Verify QP Hub Content Gating', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: const QpHubScreen()));
+      await tester.pumpWidget(const MaterialApp(home: QpHubScreen()));
       await tester.pumpAndSettle();
 
       // Verify QP Hub title

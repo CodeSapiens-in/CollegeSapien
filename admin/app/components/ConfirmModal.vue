@@ -13,8 +13,8 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 p-4">
-    <div class="bg-white rounded-xl shadow-xl w-full max-w-sm p-6">
+  <Modal max-width="max-w-sm">
+    <div class="p-6">
       <h3 class="text-base font-semibold text-gray-900 mb-2">{{ title }}</h3>
       <p class="text-sm text-gray-600 mb-5 whitespace-pre-line">{{ message }}</p>
       <div class="flex justify-end gap-2">
@@ -37,5 +37,5 @@ const emit = defineEmits<{
         </button>
       </div>
     </div>
-  </div>
+  </Modal>
 </template>

@@ -63,11 +63,7 @@ class _MarkAttendanceScreenState extends State<MarkAttendanceScreen> {
     _loadSubjects();
   }
 
-  String _dateKey(DateTime date) {
-    return '${date.year.toString().padLeft(4, '0')}-'
-        '${date.month.toString().padLeft(2, '0')}-'
-        '${date.day.toString().padLeft(2, '0')}';
-  }
+  String _dateKey(DateTime date) => DateFormat('yyyy-MM-dd').format(date);
 
   DateTime _dateFromKey(String dateKey) {
     final parts = dateKey.split('-').map(int.tryParse).toList();

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/api_models.dart';
+import '../../providers/reference_data_store.dart';
 import '../../services/auth_service.dart';
-import '../../services/college_service.dart';
 import '../../utils/app_theme.dart';
 import '../../utils/department_constants.dart';
 import '../../widgets/responsive_layout.dart';
@@ -9,7 +9,9 @@ import '../../widgets/searchable_dropdown.dart';
 import '../home/main_navigation.dart';
 
 class UserDetailsScreen extends StatefulWidget {
-  const UserDetailsScreen({super.key});
+  final String? collegeId;
+
+  const UserDetailsScreen({super.key, this.collegeId});
 
   @override
   State<UserDetailsScreen> createState() => _UserDetailsScreenState();
@@ -19,7 +21,6 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>
     with TickerProviderStateMixin {
   final _formKey = GlobalKey<FormState>();
   final _nameController = TextEditingController();
-  final _collegeService = CollegeService();
   List<College> _colleges = [];
   List<Department> _departments = [];
   String? _selectedCollegeId;
@@ -37,6 +38,7 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>
       duration: const Duration(seconds: 15),
     )..repeat();
     _nameController.text = AuthService.instance.currentUser?.displayName ?? '';
+    _selectedCollegeId = widget.collegeId;
     _loadColleges();
   }
 
@@ -49,8 +51,8 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>
 
   Future<void> _loadColleges() async {
     try {
-      final colleges = await _collegeService.listColleges();
-      final departments = await _collegeService.listDepartments();
+      final colleges = await ReferenceDataStore.instance.listColleges();
+      final departments = await ReferenceDataStore.instance.listDepartments();
       if (!mounted) return;
       colleges.sort((a, b) => a.name.compareTo(b.name));
       departments.sort((a, b) => a.name.compareTo(b.name));

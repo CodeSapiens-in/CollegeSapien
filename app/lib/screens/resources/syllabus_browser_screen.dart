@@ -4,8 +4,8 @@ import 'package:url_launcher/url_launcher.dart';
 
 import '../../models/api_models.dart';
 import '../../models/syllabus_models.dart';
+import '../../providers/reference_data_store.dart';
 import '../../services/auth_service.dart';
-import '../../services/college_service.dart';
 import '../../services/resource_service.dart';
 import '../../services/syllabus_service.dart';
 import '../../utils/app_theme.dart';
@@ -22,7 +22,6 @@ class SyllabusBrowserScreen extends StatefulWidget {
 
 class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
   final _resourceService = ResourceService();
-  final _collegeService = CollegeService();
   final _syllabusService = SyllabusService();
   late Future<List<HubResource>> _future;
   double? _uploadProgress;
@@ -49,8 +48,8 @@ class _SyllabusBrowserScreenState extends State<SyllabusBrowserScreen> {
   Future<void> _loadUserData() async {
     try {
       final results = await Future.wait([
-        _collegeService.listColleges(),
-        _collegeService.listDepartments(),
+        ReferenceDataStore.instance.listColleges(),
+        ReferenceDataStore.instance.listDepartments(),
         AuthService.instance.syncProfile(),
       ]);
       if (!mounted) return;

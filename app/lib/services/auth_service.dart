@@ -1,11 +1,11 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/api_models.dart';
 import '../providers/app_state_notifier.dart';
 import 'api_service.dart';
-// import 'app_capability_service.dart'; // mod: moved to web admin panel
 
 // Web OAuth client ID from google-services.json (client_type: 3).
 // Required for Google Sign-In on Android to return an idToken.
@@ -121,8 +121,69 @@ class AuthService {
     return UserProfile.fromJson(json['user'] as Map<String, dynamic>);
   }
 
+  static const _pendingCollegeKey = 'pending_onboard_collegeId';
+  static const _pendingDeptKey = 'pending_onboard_department';
+  static const _pendingSemKey = 'pending_onboard_semester';
+
+  /// Caches onboarding details collected at signup time — /auth/onboard
+  /// rejects unverified accounts, so this bridges the gap until the user
+  /// clicks the verification link and logs back in.
+  static Future<void> savePendingOnboarding({
+    required String collegeId,
+    required String department,
+    required int semester,
+  }) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_pendingCollegeKey, collegeId);
+    await prefs.setString(_pendingDeptKey, department);
+    await prefs.setInt(_pendingSemKey, semester);
+  }
+
+  /// Returns and clears the cached onboarding details, if any.
+  static Future<({String collegeId, String department, int semester})?>
+      consumePendingOnboarding() async {
+    final prefs = await SharedPreferences.getInstance();
+    final collegeId = prefs.getString(_pendingCollegeKey);
+    final department = prefs.getString(_pendingDeptKey);
+    final semester = prefs.getInt(_pendingSemKey);
+    if (collegeId == null || department == null || semester == null) {
+      return null;
+    }
+    await prefs.remove(_pendingCollegeKey);
+    await prefs.remove(_pendingDeptKey);
+    await prefs.remove(_pendingSemKey);
+    return (collegeId: collegeId, department: department, semester: semester);
+  }
+
+  /// Maps a caught auth error to a message safe to show the user.
+  static String friendlyError(Object e) {
+    if (e is FirebaseAuthException) {
+      switch (e.code) {
+        case 'too-many-requests':
+          return 'Too many attempts. Please wait a few minutes and try again.';
+        case 'email-already-in-use':
+          return 'An account with this email already exists.';
+        case 'invalid-email':
+          return 'Please enter a valid email address.';
+        case 'weak-password':
+          return 'Password is too weak. Please choose a stronger one.';
+        case 'user-not-found':
+        case 'wrong-password':
+        case 'invalid-credential':
+          return 'Incorrect email or password.';
+        case 'user-disabled':
+          return 'This account has been disabled.';
+        case 'network-request-failed':
+          return 'Network error. Please check your connection.';
+        default:
+          return e.message ?? 'Something went wrong. Please try again.';
+      }
+    }
+    if (e is ApiException) return e.message;
+    return 'Something went wrong. Please try again.';
+  }
+
   Future<void> signOut() async {
-    // AppCapabilityService.instance.invalidate(); // mod: moved to web admin panel
     try {
       await ApiService.instance
           .post('/auth/logout')
