@@ -8,8 +8,8 @@
     {
       "semester": 1,
       "subject_code": "21LEH101T",
-      "subject_name": "",
-      "credits": null,
+      "subject_name": "Communicative English",
+      "credits": 3,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -26,7 +26,7 @@
     {
       "semester": 1,
       "subject_code": "21PYB102J",
-      "subject_name": "C Semiconductor Physics and",
+      "subject_name": "Semiconductor Physics and Computational Methods",
       "credits": 5,
       "category": "",
       "elective_type": null,
@@ -35,17 +35,17 @@
     {
       "semester": 1,
       "subject_code": "21MES102L",
-      "subject_name": "",
-      "credits": null,
+      "subject_name": "Engineering Graphics and Design",
+      "credits": 2,
       "category": "",
       "elective_type": null,
       "record_type": "core"
     },
     {
       "semester": 1,
-      "subject_code": "21EES101T",
-      "subject_name": "",
-      "credits": null,
+      "subject_code": "21EEE101T",
+      "subject_name": "Electrical and Electronics Engineering",
+      "credits": 4,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -53,8 +53,8 @@
     {
       "semester": 1,
       "subject_code": "21CSS101J",
-      "subject_name": "",
-      "credits": null,
+      "subject_name": "Programming for Problem Solving",
+      "credits": 4,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -62,7 +62,7 @@
     {
       "semester": 1,
       "subject_code": "21CYM101T",
-      "subject_name": "Environmental Science",
+      "subject_name": "Environmental Science*",
       "credits": 0,
       "category": "",
       "elective_type": null,
@@ -71,8 +71,8 @@
     {
       "semester": 1,
       "subject_code": "21PDM101L",
-      "subject_name": "",
-      "credits": null,
+      "subject_name": "Professional Skills and Practices",
+      "credits": 0,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -87,9 +87,162 @@
       "record_type": "core"
     },
     {
+      "semester": 2,
+      "subject_code": "21LEH102T",
+      "subject_name": "Chinese",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21LEH103T",
+      "subject_name": "French",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21LEH104T",
+      "subject_name": "German",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21LEH105T",
+      "subject_name": "Japanese",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21LEH106T",
+      "subject_name": "Korean",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21LEH107T",
+      "subject_name": "Spanish",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21GNH101J",
+      "subject_name": "Philosophy of Engineering",
+      "credits": 2,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21MAB102T",
+      "subject_name": "Advanced Calculus and Complex Analysis",
+      "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21CYB101T",
+      "subject_name": "Chemistry",
+      "credits": 5,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21BTB102T",
+      "subject_name": "Introduction to Computational Biology",
+      "credits": 2,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21CSC101T",
+      "subject_name": "Object Oriented Design and Programming",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21MES101L",
+      "subject_name": "Basic Civil and Mechanical Workshop",
+      "credits": 2,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21PDM102L",
+      "subject_name": "General Aptitude*",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21GNM101L",
+      "subject_name": "Physical and Mental Health using Yoga",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21GNM102L",
+      "subject_name": "NSS",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21GNM103L",
+      "subject_name": "NCC",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 2,
+      "subject_code": "21GNM104L",
+      "subject_name": "NSO",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
       "semester": 3,
       "subject_code": "21MAB201T",
-      "subject_name": "Transforms and Boundary Value",
+      "subject_name": "Transforms and Boundary Value Problems",
       "credits": 4,
       "category": "",
       "elective_type": null,
@@ -98,8 +251,8 @@
     {
       "semester": 3,
       "subject_code": "21DCS201P",
-      "subject_name": "",
-      "credits": null,
+      "subject_name": "Design Thinking and Methodology",
+      "credits": 3,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -107,15 +260,15 @@
     {
       "semester": 3,
       "subject_code": "21CSS201T",
-      "subject_name": "Computer Organization and",
-      "credits": 0,
+      "subject_name": "Computer Organization and Architecture",
+      "credits": 4,
       "category": "",
       "elective_type": null,
       "record_type": "core"
     },
     {
       "semester": 3,
-      "subject_code": "21CSC201J",
+      "subject_code": "21CSC201T",
       "subject_name": "Data Structures and Algorithms",
       "credits": 4,
       "category": "",
@@ -124,9 +277,9 @@
     },
     {
       "semester": 3,
-      "subject_code": "21CSC101T",
-      "subject_name": "Object Oriented Design and",
-      "credits": 3,
+      "subject_code": "21CSC202P",
+      "subject_name": "Operating Systems",
+      "credits": 4,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -152,286 +305,16 @@
     {
       "semester": 3,
       "subject_code": "21PDM201L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21MAB302T",
-      "subject_name": "Discrete Mathematics",
-      "credits": 4,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21CSC301T",
-      "subject_name": "Formal Language and Automata",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21CSC205P",
-      "subject_name": "Database Management Systems",
-      "credits": 4,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21AIC301J",
-      "subject_name": "Deep Learning Techniques",
-      "credits": 4,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21GNP301L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21PDM301L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 5,
-      "subject_code": "21LEM301T",
-      "subject_name": "Indian Art Form",
+      "subject_name": "Verbal Reasoning",
       "credits": 0,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 7,
-      "subject_code": "21AIC401T",
-      "subject_name": "Inferential Statistics and Predictive",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 7,
-      "subject_code": "21AIC402T",
-      "subject_name": "Design of Artificial Intelligence Products",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 7,
-      "subject_code": "21AIP401L",
-      "subject_name": "Major Project",
-      "credits": 15,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 7,
-      "subject_code": "21AIP402L",
-      "subject_name": "Major Project",
-      "credits": 10,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 7,
-      "subject_code": "21AIP403L",
-      "subject_name": "Internship#",
-      "credits": 5,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH102T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH103T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH104T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH105T",
-      "subject_name": "Japanese",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH106T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH107T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21LEH108T",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21GNH101J",
-      "subject_name": "Philosophy of Engineering",
-      "credits": 2,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21MAB102T",
-      "subject_name": "Advanced Calculus and Complex",
-      "credits": 4,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21CYB101J",
-      "subject_name": "Chemistry",
-      "credits": 5,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21BTB102T",
-      "subject_name": "Introduction to Computational Biology",
-      "credits": 2,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21AIS101J",
-      "subject_name": "Foundation of Data Analysis",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21MES101L",
-      "subject_name": "Basic Civil and Mechanical Workshop",
-      "credits": 2,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21PDM102L",
-      "subject_name": "General Aptitude",
-      "credits": 0,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21GNM101L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21GNM102L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21GNM103L",
-      "subject_name": "",
-      "credits": null,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 2,
-      "subject_code": "21GNM104L",
-      "subject_name": "",
-      "credits": null,
       "category": "",
       "elective_type": null,
       "record_type": "core"
     },
     {
       "semester": 4,
-      "subject_code": "21MAB304T",
-      "subject_name": "Probability and Applied Statistics",
+      "subject_code": "21MAB204T",
+      "subject_name": "Probability and Queueing Theory",
       "credits": 4,
       "category": "",
       "elective_type": null,
@@ -448,27 +331,18 @@
     },
     {
       "semester": 4,
-      "subject_code": "21AIS201J",
-      "subject_name": "Foundation of Artificial Intelligence",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 4,
-      "subject_code": "21AIC202J",
-      "subject_name": "Neural Networks and Machine Learning",
-      "credits": 3,
-      "category": "",
-      "elective_type": null,
-      "record_type": "core"
-    },
-    {
-      "semester": 4,
-      "subject_code": "21CSC202J",
-      "subject_name": "Operating Systems",
+      "subject_code": "21CSC205P",
+      "subject_name": "Database Management Systems",
       "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 4,
+      "subject_code": "21CSC206T",
+      "subject_name": "Artificial Intelligence",
+      "credits": 3,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -494,16 +368,79 @@
     {
       "semester": 4,
       "subject_code": "21LEM202T",
-      "subject_name": "Understanding Harmony and Ethical",
+      "subject_name": "Universal Human Values",
       "credits": 3,
       "category": "",
       "elective_type": null,
       "record_type": "core"
     },
     {
+      "semester": 5,
+      "subject_code": "21MAB302T",
+      "subject_name": "Discrete Mathematics",
+      "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21CSC301T",
+      "subject_name": "Formal Language and Automata",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21CSC302J",
+      "subject_name": "Computer Networks",
+      "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21CSC305P",
+      "subject_name": "Machine Learning",
+      "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21GNP301L",
+      "subject_name": "Community Connect",
+      "credits": 1,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21PDM301L",
+      "subject_name": "Analytical and Logical Thinking Skills",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 5,
+      "subject_code": "21LEM301T",
+      "subject_name": "Indian Art Form",
+      "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
       "semester": 6,
-      "subject_code": "21AIC303T",
-      "subject_name": "Computer Networks and",
+      "subject_code": "21CSS303T",
+      "subject_name": "Data Science",
       "credits": 2,
       "category": "",
       "elective_type": null,
@@ -512,7 +449,7 @@
     {
       "semester": 6,
       "subject_code": "21CSC303J",
-      "subject_name": "Software Engineering and Project",
+      "subject_name": "Software Engineering and Project Management",
       "credits": 3,
       "category": "",
       "elective_type": null,
@@ -520,8 +457,8 @@
     },
     {
       "semester": 6,
-      "subject_code": "21AIC302J",
-      "subject_name": "Reinforcement Learning Techniques",
+      "subject_code": "21CSC304J",
+      "subject_name": "Compiler Design",
       "credits": 3,
       "category": "",
       "elective_type": null,
@@ -529,18 +466,18 @@
     },
     {
       "semester": 6,
-      "subject_code": "21AIP302L",
-      "subject_name": "",
-      "credits": null,
+      "subject_code": "21CSP302L",
+      "subject_name": "Project",
+      "credits": 3,
       "category": "",
       "elective_type": null,
       "record_type": "core"
     },
     {
       "semester": 6,
-      "subject_code": "21AIP303T",
-      "subject_name": "",
-      "credits": null,
+      "subject_code": "21CSP303T",
+      "subject_name": "MOOC",
+      "credits": 0,
       "category": "",
       "elective_type": null,
       "record_type": "core"
@@ -559,6 +496,51 @@
       "subject_code": "21LEM302T",
       "subject_name": "Indian Traditional Knowledge",
       "credits": 0,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 7,
+      "subject_code": "21GNH401T",
+      "subject_name": "Behavioral Psychology",
+      "credits": 3,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 7,
+      "subject_code": "21CSC401J",
+      "subject_name": "Deep Learning Techniques",
+      "credits": 4,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 7,
+      "subject_code": "21CSC402P",
+      "subject_name": "Report Writing",
+      "credits": 2,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 8,
+      "subject_code": "21CSP401L",
+      "subject_name": "Major Project",
+      "credits": 15,
+      "category": "",
+      "elective_type": null,
+      "record_type": "core"
+    },
+    {
+      "semester": 8,
+      "subject_code": "21CSP402L",
+      "subject_name": "Internship",
+      "credits": 15,
       "category": "",
       "elective_type": null,
       "record_type": "core"

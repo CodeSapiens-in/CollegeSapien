@@ -1,60 +1,59 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH102T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH103T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH104T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH105T,Japanese,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH106T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH107T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH108T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNH101J,Philosophy of Engineering,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21MES101L,Basic Civil and Mechanical Workshop,2,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21MAB101T,Calculus and Linear Algebra,4,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21CYB101J,Chemistry,5,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH102T,Chinese,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH103T,French,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH104T,German,3,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21BTB102T,Introduction to Computational Biology,2,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21CSS101J,Programming for Problem Solving,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21MES101L,Basic Civil and Mechanical Workshop,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH105T,Japanese,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH106T,Korean,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM103L,NCC,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM104L,NSO,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM102L,NSS,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNH101J,Philosophy of Engineering,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM101L,Physical and Mental Health using Yoga,0,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21PDM101L,Professional Skills and Practices,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM101L,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM102L,National Service Scheme,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM103L,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21GNM104L,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21MAB201T,Transforms and Boundary Value Problems,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21DCS201P,Design Thinking and Methodology,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSS201T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSC201J,Data Structures and Algorithms,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSC202J,Operating Systems,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21CSS101J,Programming for Problem Solving,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,1,21LEH107T,Spanish,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21MAB102T,Advanced Calculus and Complex Analysis,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21LEH101T,Communicative English,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21LEM101T,Constitution of India,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21EES101T,Electrical and Electronics Engineering,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21MES102L,Engineering Graphics and Design,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21CYM101T,Environmental Science,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21PDM102L,General Aptitude,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21CSC101T,Object Oriented Design and Programming,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21PYB102J,Semiconductor Physics and Computational Methods,5,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSC203P,Advanced Programming Practice,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSS201T,Computer Organization and Architecture,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSC201J,Data Structures and Algorithms,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21DCS201P,Design Thinking and Methodology,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21CSC202J,Operating Systems,4,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21LEM201T,Professional Ethics,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21MAB201T,Transforms and Boundary Value Problems,4,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,3,21PDM201L,Verbal Reasoning,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC206T,Artificial Intelligence,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21PDM202L,Critical and Creative Thinking Skills,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC205P,Database Management Systems,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC204J,Design and Analysis of Algorithms,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21MAB204T,Probability and Queueing Theory,4,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21PDH201T,Social Engineering,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21LEM202T,Universal Human Values,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21PDM301L,Analytical and Logical Thinking Skills,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21GNP301L,Community Connect,1,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21CSC302J,Computer Networks,4,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21MAB302T,Discrete Mathematics,4,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21CSC301T,Formal Language and Automata,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21CSC302J,Computer Networks,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21CSC305P,Machine Learning,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21GNP301L,Community Connect,1,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21PDM301L,Analytical and Logical Thinking Skills,0,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21LEM301T,Indian Art Form,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21LEH101T,Communicative English,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21MAB102T,Advanced Calculus and Complex Analysis,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21PYB102J,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21MES102L,Engineering Graphics and Design,2,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21EES101T,Electrical and Electronics Engineering,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21CSC101T,,,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21CYM101T,Environmental Science,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21PDM102L,General Aptitude*,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,2,21LEM101T,Constitution of India,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21MAB204T,Probability and Queueing Theory,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC204J,Design and Analysis of Algorithms,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC205P,Database Management Systems,4,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21CSC206T,Artificial Intelligence,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21PDH209T,Social Engineering,2,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21PDM202L,Critical and Creative Thinking Skills,0,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,4,21LEM202T,Understanding Harmony and Ethical,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSS303T,Data Science,2,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSC303J,Software Engineering and Project,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,5,21CSC305P,Machine Learning,3,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSC304J,Compiler Design,3,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSP302L,Project,2,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSP303T,MOOC,2,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSS303T,Data Science,2,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21PDM302L,Employability Skills and Practices,0,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21LEM302T,Indian Traditional Knowledge,0,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSP303T,MOOC,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSP302L,Project,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,6,21CSC303J,Software Engineering and Project Management,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,7,21GNH401T,Behavioral Psychology,3,,,core
+SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,8,21CSP402L,Intership,15,,,core
 SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,8,21CSP401L,Major Project,15,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,8,21CSP402L,Major Project,10,,,core
-SRM Institute of Science and Technology,SRM,Computer Science Engineering,CSE,R2021,8,21CSP403L,Internship#,5,,,core
