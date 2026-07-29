@@ -44,7 +44,9 @@ void runUtilityTests() {
     });
 
     testWidgets('Verify Pomodoro Timer Modes & Task List', (WidgetTester tester) async {
-      await tester.pumpWidget(const MaterialApp(home: PomodoroTimerScreen()));
+      await tester.pumpWidget(
+        const MaterialApp(home: PomodoroTimerScreen(timerId: 'test-timer')),
+      );
       await tester.pumpAndSettle();
 
       // Verify timer title

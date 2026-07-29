@@ -57,6 +57,14 @@
       ]
     },
     {
+      "collectionGroup": "pomodoroSessions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "timerId", "order": "ASCENDING" },
+        { "fieldPath": "startedAt", "order": "DESCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "syllabus",
       "queryScope": "COLLECTION",
       "fields": [

@@ -1,44 +1,80 @@
 import 'package:flutter/material.dart';
+import '../../models/pomodoro_models.dart';
+import '../../services/pomodoro_service.dart';
 import '../../utils/app_theme.dart';
 import '../../widgets/responsive_layout.dart';
 import 'dart:async';
 
 class PomodoroTimerScreen extends StatefulWidget {
-  const PomodoroTimerScreen({super.key});
+  final String timerId;
+  final PomodoroMode initialMode;
+
+  const PomodoroTimerScreen({
+    super.key,
+    required this.timerId,
+    this.initialMode = PomodoroMode.focus,
+  });
 
   @override
   State<PomodoroTimerScreen> createState() => _PomodoroTimerScreenState();
 }
 
 class _PomodoroTimerScreenState extends State<PomodoroTimerScreen> {
-  int _timeLeft = 25 * 60;
+  static const _modeLabels = {
+    PomodoroMode.focus: 'Pomodoro',
+    PomodoroMode.shortBreak: 'Short Break',
+    PomodoroMode.longBreak: 'Long Break',
+  };
+
+  final _pomodoroService = PomodoroService();
+
+  late int _timeLeft;
   bool _isRunning = false;
   Timer? _timer;
   int _sessionsCompleted = 0;
-  String _selectedMode = 'Pomodoro';
+  late String _selectedMode;
+
+  // Tracks the currently-running session doc so a mode switch or early exit
+  // can cancel it — natural completion needs no call (status is time-derived).
+  bool _sessionStarted = false;
+  String? _currentSessionId;
 
   final List<Map<String, dynamic>> _tasks = [];
   final TextEditingController _taskController = TextEditingController();
 
   @override
+  void initState() {
+    super.initState();
+    _selectedMode = _modeLabels[widget.initialMode]!;
+    _timeLeft = widget.initialMode.defaultDurationSec;
+  }
+
+  PomodoroMode _modeFromLabel(String label) =>
+      _modeLabels.entries.firstWhere((e) => e.value == label).key;
+
+  void _cancelActiveSessionIfAny() {
+    if (_sessionStarted && _currentSessionId != null) {
+      _pomodoroService.cancelSession(_currentSessionId!).catchError((_) {});
+    }
+    _sessionStarted = false;
+    _currentSessionId = null;
+  }
+
+  @override
   void dispose() {
     _timer?.cancel();
+    if (_isRunning) _cancelActiveSessionIfAny();
     _taskController.dispose();
     super.dispose();
   }
 
   void _setMode(String mode) {
     _timer?.cancel();
+    _cancelActiveSessionIfAny();
     setState(() {
       _selectedMode = mode;
       _isRunning = false;
-      if (mode == 'Pomodoro') {
-        _timeLeft = 25 * 60;
-      } else if (mode == 'Short Break') {
-        _timeLeft = 5 * 60;
-      } else {
-        _timeLeft = 15 * 60;
-      }
+      _timeLeft = _modeFromLabel(mode).defaultDurationSec;
     });
   }
 
@@ -53,6 +89,17 @@ class _PomodoroTimerScreenState extends State<PomodoroTimerScreen> {
         }
       });
     });
+    if (!_sessionStarted) {
+      _sessionStarted = true;
+      _beginSession();
+    }
+  }
+
+  Future<void> _beginSession() async {
+    try {
+      _currentSessionId = await _pomodoroService.startSession(
+          widget.timerId, _modeFromLabel(_selectedMode), _timeLeft);
+    } catch (_) {}
   }
 
   void _pauseTimer() {
@@ -66,6 +113,8 @@ class _PomodoroTimerScreenState extends State<PomodoroTimerScreen> {
       _isRunning = false;
       if (_selectedMode == 'Pomodoro') _sessionsCompleted++;
     });
+    _sessionStarted = false;
+    _currentSessionId = null;
 
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(

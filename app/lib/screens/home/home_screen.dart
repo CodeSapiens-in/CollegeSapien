@@ -24,6 +24,7 @@ import '../attendance/mark_attendance_screen.dart';
 import '../syllabus/syllabus_selection_screen.dart';
 import '../timetable_list_screen.dart';
 import '../ai_features/resume_roast_screen.dart';
+import '../pomodoro/pomodoro_home_screen.dart';
 import 'events_all_screen.dart';
 import 'create_event_screen.dart';
 import '../../providers/app_state_notifier.dart';
@@ -558,6 +559,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 24),
           _statCardsRow(),
           const SizedBox(height: 24),
+          ..._pomodoroSection(),
           ..._timetableSection(context),
           ..._subjectsSection(context),
           const SizedBox(height: 24),
@@ -594,6 +596,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      ..._pomodoroSection(),
                       ..._timetableSection(context),
                       ..._subjectsSection(context),
                       ..._aiFeaturesSection(),
@@ -764,6 +767,72 @@ class _HomeScreenState extends State<HomeScreen> {
       const SizedBox(height: 12),
       _eventsSection(),
     ];
+  }
+
+  List<Widget> _pomodoroSection() {
+    return [
+      _sectionHeader('Focus'),
+      const SizedBox(height: 12),
+      _pomodoroCard(),
+      const SizedBox(height: 24),
+    ];
+  }
+
+  Widget _pomodoroCard() {
+    return GestureDetector(
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute(builder: (_) => const PomodoroHomeScreen()),
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(8),
+        child: Container(
+          width: double.infinity,
+          padding: const EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            color: AppColors.accentGreen,
+            border: Border.all(color: Colors.black, width: 1.5),
+            borderRadius: BorderRadius.circular(8),
+            boxShadow: const [
+              BoxShadow(offset: Offset(1, 1), color: Colors.black)
+            ],
+          ),
+          child: const Row(
+            children: [
+              Icon(Icons.timer_outlined, size: 36, color: Colors.black),
+              SizedBox(width: 16),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Pomodoro Timer',
+                      style: TextStyle(
+                        fontFamily: 'Lexend Mega',
+                        fontSize: 16,
+                        fontWeight: FontWeight.w700,
+                        letterSpacing: -0.5,
+                        color: Colors.black,
+                      ),
+                    ),
+                    SizedBox(height: 4),
+                    Text(
+                      'Focus with friends, track your sessions',
+                      style: TextStyle(
+                        fontFamily: 'Public Sans',
+                        fontSize: 13,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Icon(Icons.arrow_forward_ios, size: 18, color: Colors.black),
+            ],
+          ),
+        ),
+      ),
+    );
   }
 
   List<Widget> _aiFeaturesSection() {

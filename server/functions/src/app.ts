@@ -19,6 +19,8 @@ import syllabusRoutes from './app/syllabus/syllabus.route';
 import cmsRoutes from './app/cms/cms.route';
 import curriculumRoutes from './app/curriculum/curriculum.route';
 import eventsRoutes from './app/events/events.route';
+import friendsRoutes from './app/friends/friends.route';
+import pomodoroRoutes from './app/pomodoro/pomodoro.route';
 
 const app = express();
 app.set('query parser', 'extended');
@@ -30,9 +32,7 @@ app.use((req, _res, next) => {
   if (req.query === undefined) {
     const queryIndex = req.url.indexOf('?');
     (req as { query: Record<string, string> }).query =
-      queryIndex >= 0
-        ? Object.fromEntries(new URLSearchParams(req.url.slice(queryIndex + 1)))
-        : {};
+      queryIndex >= 0 ? Object.fromEntries(new URLSearchParams(req.url.slice(queryIndex + 1))) : {};
   }
   next();
 });
@@ -117,6 +117,8 @@ app.use('/api/v1/subjects', subjectRoutes);
 app.use('/api/v1/syllabus', syllabusRoutes);
 app.use('/api/v1/curriculum', curriculumRoutes);
 app.use('/api/v1/events', eventsRoutes);
+app.use('/api/v1/friends', friendsRoutes);
+app.use('/api/v1/pomodoro', pomodoroRoutes);
 
 app.use('/api/v1/cms', cmsRoutes);
 

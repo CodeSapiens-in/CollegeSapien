@@ -11,6 +11,7 @@ import 'home_screen.dart';
 import '../attendance_screen.dart';
 import '../timetable_list_screen.dart';
 import '../resources/resources_hub_screen.dart';
+import '../friends/friends_screen.dart';
 import '../profile/profile_screen.dart';
 
 class MainNavigation extends StatefulWidget {
@@ -41,6 +42,7 @@ class _MainNavigationState extends State<MainNavigation>
     (icon: Icons.check_circle_outline, label: 'Attendance'),
     (icon: Icons.calendar_today_outlined, label: 'Timetable'),
     (icon: Icons.library_books_outlined, label: 'Resources'),
+    (icon: Icons.people_outline, label: 'Friends'),
   ];
 
   @override
@@ -143,6 +145,7 @@ class _MainNavigationState extends State<MainNavigation>
       1 => AttendanceScreen(refreshToken: _attendanceRefreshToken),
       2 => const TimetableListScreen(),
       3 => const ResourcesHubScreen(),
+      4 => const FriendsScreen(),
       _ => homeScreen,
     };
   }
