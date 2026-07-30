@@ -74,6 +74,19 @@ const filterCollegeCode = ref("");
 const filterCourseCode = ref("");
 const filterRegulation = ref("");
 
+const approvedPage = ref(1);
+const approvedPageSize = ref(25);
+const paginatedApproved = computed(() => {
+  const start = (approvedPage.value - 1) * approvedPageSize.value;
+  return approved.value.slice(start, start + approvedPageSize.value);
+});
+watch(approved, () => {
+  approvedPage.value = 1;
+});
+watch(approvedPageSize, () => {
+  approvedPage.value = 1;
+});
+
 const buildQuery = (params: Record<string, string>) => {
   const entries = Object.entries(params).filter(([, v]) => v);
   if (entries.length === 0) return "";
@@ -600,9 +613,16 @@ const handleSaveEdit = async (payload: {
 
 <template>
   <div>
+    <NuxtLink
+      to="/moderation"
+      class="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1 mb-2"
+    >
+      <Icon name="i-heroicons-arrow-left" class="w-3.5 h-3.5" />
+      Moderation
+    </NuxtLink>
     <div class="mb-6 flex justify-between items-start">
       <div>
-        <h1 class="text-xl font-bold text-gray-900">Syllabus Management</h1>
+        <h1 class="text-xl font-bold text-gray-900">Syllabus Moderation</h1>
         <p class="text-sm text-gray-500 mt-0.5">
           Upload curriculum JSON or CSV files, review, and publish to the app.
         </p>
@@ -839,7 +859,7 @@ const handleSaveEdit = async (payload: {
             </thead>
             <tbody>
               <tr
-                v-for="row in approved"
+                v-for="row in paginatedApproved"
                 :key="row.id"
                 class="border-b border-gray-50 hover:bg-gray-50 cursor-pointer"
                 @click="detailItem = row"
@@ -870,6 +890,15 @@ const handleSaveEdit = async (payload: {
             </tbody>
           </table>
         </div>
+        <Pagination
+          v-if="approved.length > 0"
+          :page="approvedPage"
+          :page-size="approvedPageSize"
+          :total="approved.length"
+          :page-size-options="[10, 25, 50, 100]"
+          @update:page="approvedPage = $event"
+          @update:page-size="approvedPageSize = $event"
+        />
       </div>
     </div>
 

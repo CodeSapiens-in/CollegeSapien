@@ -18,12 +18,12 @@ export default defineNuxtRouteMiddleware(async (to) => {
   }
 
   if (authStore.user?.role === "ambassador") {
-    const allowed = ["/syllabus", "/resources", "/events"];
+    const allowed = ["/resources", "/moderation", "/events"];
     const isAllowed = allowed.some(
       (p) => to.path === p || to.path.startsWith(p + "/"),
     );
     if (!isAllowed) {
-      return navigateTo("/syllabus");
+      return navigateTo("/resources");
     }
   }
 });
