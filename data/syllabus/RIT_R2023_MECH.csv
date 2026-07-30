@@ -1,0 +1,67 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,HS23111,Communicative English,3,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,MA23111,Matrices and Calculus,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23114,Electrical Electronics and Instrumentation Engineering,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23111,Problem Solving and C Programming,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,PH23113,Materials Science,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23112,Heritage of Tamils,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,PH23121,Physics Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23121,Problem Solving and C Programming Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23122,Engineering Practices Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,1,GE23123,Basic Electrical and Electronics Engineering Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,HS23211,Professional English,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,CY23211,Engineering Chemistry,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,MA23211,Statistics and Numerical Methods,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,AD23211,Python for Data Science,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,GE23213,Tamils and Technology,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,GE23231,Engineering Graphics,4,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,CY23221,Chemistry Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,AD23221,Python for Data Science Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,2,GE23221,Communication Laboratory / Foreign Language,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,MA23313,Transforms and Partial Differential Equations,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,ME23311,Engineering Mechanics,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,ME23312,Engineering Thermodynamics,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,ME23313,Fluid Mechanics and Machinery,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,ME23314,Manufacturing Processes,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,CS23312,Object Oriented Programming,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,ME23321,Computer Aided Machine Drawing Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,3,CS23322,Object Oriented Programming Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,GE23412,Environmental Science for Mechanical Engineers,2,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23411,Engineering Materials and Metallurgy,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23412,Manufacturing Technology,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23413,Mechanics of Solids,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23414,Theory of Machines,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23431,Thermal Engineering,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23421,Manufacturing Technology Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23422,Strength of Materials and Fluid Machinery Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,4,ME23IC1,Introduction to Product Lifecycle Management,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23511,Design of Machine Elements,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23512,Heat and Mass Transfer,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,,Professional Elective I,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,,Professional Elective II,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,,Mandatory Course I,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23531,Mechatronics,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23521,Heat Transfer Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23522,Professional/Skill Development,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,5,ME23IC2,Introduction to Supply Chain Management,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23611,Design of Transmission Systems,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,,Professional Elective III,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,,Professional Elective IV,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,,Open Elective-I*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,,Open Elective-II*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,,Mandatory Course II,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23631,Metrology and Measurements,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23621,Design and Fabrication Project,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23622,CAD and CAM Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23623,Dynamics Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,6,ME23IC3,Introduction to HVAC Systems,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,GE23711,Human Values and Ethics,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,,Elective Management,3,HSMC,Management,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,ME23712,Industrial Robotics,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,ME23713,Finite Element Analysis,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,,Professional Elective V,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,,Professional Elective VI,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,ME23721,Internship/Certification Course,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,7,ME23722,Simulation Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,8,,Open Elective-III*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Mechanical Engineering,ME,R2023,8,ME23821,Project Work,10,EEC,,core
