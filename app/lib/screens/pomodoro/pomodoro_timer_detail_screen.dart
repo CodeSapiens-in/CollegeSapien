@@ -30,7 +30,9 @@ class _PomodoroTimerDetailScreenState extends State<PomodoroTimerDetailScreen> {
     _refresh();
   }
 
-  void _refresh() => setState(() => _future = _pomodoroService.getTimerDetail(widget.timerId));
+  void _refresh() => setState(() {
+        _future = _pomodoroService.getTimerDetail(widget.timerId);
+      });
 
   void _showError(Object error) {
     if (!mounted) return;

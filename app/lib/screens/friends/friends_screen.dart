@@ -23,7 +23,9 @@ class _FriendsScreenState extends State<FriendsScreen> {
     _refresh();
   }
 
-  void _refresh() => setState(() => _future = _service.getOverview());
+  void _refresh() => setState(() {
+        _future = _service.getOverview();
+      });
 
   @override
   void dispose() {

@@ -22,7 +22,9 @@ class _PomodoroHomeScreenState extends State<PomodoroHomeScreen> {
     _refresh();
   }
 
-  void _refresh() => setState(() => _future = _service.getTimers());
+  void _refresh() => setState(() {
+        _future = _service.getTimers();
+      });
 
   void _showError(Object error) {
     if (!mounted) return;
