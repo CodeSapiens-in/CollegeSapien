@@ -1,61 +1,92 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21LEH101T,Communicative English,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21MAB101T,Calculus and Linear Algebra,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21PYB102J,Semiconductor Physics and Computational Methods,5,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21MES102L,Engineering Graphics and Design,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21EEE101T,Electrical and Electronics Engineering,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21CSS101J,Programming for Problem Solving,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21CYM101T,Environmental Science*,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21PDM101L,Professional Skills and Practices,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21LEM101T,Constitution of India,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH102T,Chinese,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH103T,French,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH104T,German,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH105T,Japanese,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH106T,Korean,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH107T,Spanish,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNH101J,Philosophy of Engineering,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21MAB102T,Advanced Calculus and Complex Analysis,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21CYB101T,Chemistry,5,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21BTB102T,Introduction to Computational Biology,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21CSC101T,Object Oriented Design and Programming,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21MES101L,Basic Civil and Mechanical Workshop,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21PDM102L,General Aptitude*,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM101L,Physical and Mental Health using Yoga,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM102L,NSS,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM103L,NCC,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM104L,NSO,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21MAB201T,Transforms and Boundary Value Problems,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21DCS201P,Design Thinking and Methodology,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSS201T,Computer Organization and Architecture,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC201T,Data Structures and Algorithms,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC202P,Operating Systems,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC203P,Advanced Programming Practice,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21LEM201T,Professional Ethics,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21PDM201L,Verbal Reasoning,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21MAB204T,Probability and Queueing Theory,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC204J,Design and Analysis of Algorithms,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC205P,Database Management Systems,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC206T,Artificial Intelligence,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21PDH209T,Social Engineering,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21PDM202L,Critical and Creative Thinking Skills,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21LEM202T,Universal Human Values,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21MAB302T,Discrete Mathematics,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC301T,Formal Language and Automata,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC302J,Computer Networks,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC305P,Machine Learning,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21GNP301L,Community Connect,1,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21PDM301L,Analytical and Logical Thinking Skills,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21LEM301T,Indian Art Form,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSS303T,Data Science,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSC303J,Software Engineering and Project Management,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSC304J,Compiler Design,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSP302L,Project,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSP303T,MOOC,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21PDM302L,Employability Skills and Practices,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21LEM302T,Indian Traditional Knowledge,0,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21GNH401T,Behavioral Psychology,3,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSC401J,Deep Learning Techniques,4,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSC402P,Report Writing,2,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,8,21CSP401L,Major Project,15,,,core
-SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,8,21CSP402L,Internship,15,,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21MAB101T,Calculus and Linear Algebra,4,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21LEH101T,Communicative English,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21LEM101T,Constitution of India,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21EEE101T,Electrical and Electronics Engineering,4,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21MES102L,Engineering Graphics and Design,2,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21CYM101T,Environmental Science,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21PDM101L,Professional Skills and Practices,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21CSS101J,Programming for Problem Solving,4,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,1,21PYB102J,Semiconductor Physics and Computational Methods,5,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21MAB102T,Advanced Calculus and Complex Analysis,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21MES101L,Basic Civil and Mechanical Workshop,2, H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21CYB101T,Chemistry,5,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH102T,Chinese,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH103T,French,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21PDM102L,General Aptitude,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH104T,German,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21BTB102T,Introduction to Computational Biology,2,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH105T,Japanese,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH106T,Korean,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM103L,NCC,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM104L,NSO,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM102L,NSS,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21CSC101T,Object Oriented Design and Programming,3,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNH101J,Philosophy of Engineering,2,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21GNM101L,Physical and Mental Health using Yoga,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,2,21LEH107T,Spanish,3,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC203P,Advanced Programming Practice,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSS201T,Computer Organization and Architecture,4,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC201T,Data Structures and Algorithms,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21DCS201P,Design Thinking and Methodology,3,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21CSC202P,Operating Systems,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21LEM201T,Professional Ethics,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21MAB201T,Transforms and Boundary Value Problems,4,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,3,21PDM201L,Verbal Reasoning,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC206T,Artificial Intelligence,3,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21PDM202L,Critical and Creative Thinking Skills,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC205P,Database Management Systems,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSC204J,Design and Analysis of Algorithms,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21MAB204T,Probability and Queueing Theory,4,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21PDH209T,Social Engineering,2,H,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21LEM202T,Universal Human Values,3,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE251T,Digital Image Processing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE254T,Bio Inspired Computing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE355T,Data Mining and Analytics,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE358T,Network Security Cryptography and...,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE359T,Information Storage and Management,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,4,21CSE360T,High Performance Computing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21PDM301L,Analytical and Logical Thinking Skills,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21GNP301L,Community Connect,1,P,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC302J,Computer Networks,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21MAB302T,Discrete Mathematics,4,B,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC301T,Formal Language and Automata,3,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21LEM301T,Indian Art Form,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSC305P,Machine Learning,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE252T,Biometrics,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE351T,Computational Logic,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE353T,"Augmented, Virtual and Mixed Reality",3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE354T,Full Stack Web Development,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE357T,Distributed Computing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE361T,Database Security and Privacy,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE451T,Pattern Recognition Techniques,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE452T,Semantic Web,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE453T,Speech Recognition,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,5,21CSE454T,Computer Vision,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSC304J,Compiler Design,3,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSS303T,Data Science,2,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21PDM302L,Employability Skills and Practices,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21LEM302T,Indian Traditional Knowledge,0,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSP303T,MOOC,0,P,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSP302L,Project,3,P,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSC303J,Software Engineering and Project Management,3,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSE253T,Internet of Things,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSE352T,Neuro Fuzzy and Genetic Programming,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSE356T,Natural Language Processing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSE455T,Social Network Analysis,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSO353T,Mobile Application Development,3,O,Open,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,6,21CSO354T,Data Analystics,3,O,Open,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21GNH401T,Behavioral Psychology,3,M,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSC401J,Deep Learning Techniques,4,C,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSC402P,Report Writing,2,S,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE255T,Computer Graphics and Animation,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE362T,Cloud Computing,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE456T,Software Defined Networks,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE457T,Service Oriented Architecture,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE458T,Wireless and Mobile Communication,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE459T,Wireless Sensor Networks,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSE460T,Network Protocols and Algorithms...,3,E,Professional,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSO351T,Web Programming,3,O,Open,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,7,21CSO352T,Python Programming,3,O,Open,elective
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,8,21CSP402L,Internship,15,P,,core
+SRM Institute of Science and Technology,SRM,Artificial Intelligence and Machine Learning,AIML,R2021,8,21CSP401L,Major Project,15,P,,core
