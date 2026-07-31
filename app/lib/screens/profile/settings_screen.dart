@@ -1,5 +1,6 @@
 import 'package:codesapiens/utils/app_constants.dart';
 import 'package:flutter/material.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import '../../services/attendance_notification_service.dart';
 import '../../services/app_theme_notifier.dart';
 import '../../services/auth_service.dart';
@@ -21,6 +22,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
   bool _attendanceAlerts = true;
   double _attendanceThreshold = 75.0;
   bool _sendingTest = false;
+  String _appVersion = '';
+
+  @override
+  void initState() {
+    super.initState();
+    PackageInfo.fromPlatform().then((info) {
+      if (mounted) setState(() => _appVersion = '${info.version}+${info.buildNumber}');
+    });
+  }
 
   Future<void> _confirmDeleteAccount() async {
     final confirmed = await showDialog<bool>(
@@ -336,7 +346,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       ),
                       const SizedBox(height: 8),
                       Text(
-                        'Version 1.0.0',
+                        _appVersion.isEmpty ? ' ' : 'Version $_appVersion',
                         style: TextStyle(
                           fontFamily: 'Public Sans',
                           fontSize: 14,

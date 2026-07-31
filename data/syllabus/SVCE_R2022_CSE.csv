@@ -1,0 +1,119 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,HS22151,Tamil Language and Heritage of Ancient Tamil Society,1,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,HS22152,Communicative English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,MA22151,Applied Mathematics I,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,PH22151,Applied Physics,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,CY22151,Applied Chemistry,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,EE22151,Basic Electrical and Electronics Engineering,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,IT22101,Programming for Problem Solving,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,PH22161,Physics Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,EE22111,Basic Electrical and Electronics Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,1,IT22111,Programming for Problem Solving Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,HS22252,Technical English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,MA22251,Applied Mathematics II,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,ME22251,Technical Drawing,2,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,CS22201,Python for Data Science,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,CS22202,Digital Principles and System Design,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,CS22203,Object Oriented Programming,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,CS22211,Digital Principles and System Design Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,2,CS22212,Object Oriented Programming Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,MA22353,Discrete Mathematics,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,AD22301,Artificial Intelligence,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22301,Database Management Systems,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22302,Datamining and Data Warehousing,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22303,Data Structures,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22304,Microprocessor and Computer Architecture,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22311,Database Management Systems Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22312,Data Structures Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,3,CS22313,Microprocessor Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,MA22454,Probability and Queuing Theory,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22401,Operating Systems,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22402,Machine Learning Techniques,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22403,Design and Analysis of Algorithms,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22409,Java Programming: Theory and Practices,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,GE22451,Environmental Sciences and Sustainability,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22411,Operating Systems Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,4,CS22412,Artificial Intelligence and Machine Learning Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22501,Computer Networks,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22502,Software Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22503,User Interface Tools and Techniques,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22504,Theory of Computation,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,,Professional Elective I,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,,Open Elective I,3,OE,Open Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,,Mandatory Course,0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22511,Computer Networks Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,CS22512,User Interface Tools and Techniques Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,5,HS22511,Interview and Career Skills Laboratory,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22601,Cryptography and Network Security,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22602,Software Project Management,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,AD22501,Internet of Things and Applications,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22603,Cloud Computing,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22604,Compiler Design,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,,Professional Elective II,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,,Open Elective II,3,OE,Open Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22611,Cryptography and Network Security Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22612,Cloud Computing Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,6,CS22613,Internship,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,7,CS22701,Ethics for Computer Professionals,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,7,,Professional Elective III,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,7,,Professional Elective IV,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,7,,Professional Elective V,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,7,,Professional Elective VI,3,PE,Programme Elective,elective
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,8,CS22811,Project Work,10,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22001,Financial Statement Analysis,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22002,Introduction to Securities Market,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22003,Option Trading Strategies,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22004,Corporate Finance,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22005,Managerial Economics,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22006,Project Management,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,SE22007,Mathematics for AI & ML,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22021,Exploratory Data Analysis,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22022,Distributed Databases and Analysis,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22023,Mining Massive Datasets,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22024,Text and Speech Processing,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22025,Image and Video Analytics,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22026,Social Network Engineering,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22027,Web Information Search and Analytics,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22028,MLOps: Machine Learning Operations,3,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22020,Capstone Project,2,Data Analytics,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22031,Knowledge Engineering,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,AD22601,Reinforcement Learning Techniques,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22032,Deep Neural Networks,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22033,Recommendation Systems,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22034,Robotics Process Automation,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22035,Information Retrieval Methodologies,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22036,Computer Vision,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22037,Explainable AI,3,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22030,Capstone Project,2,Artificial Intelligence and Machine Learning,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22041,Information Security System,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22042,Ethical Hacking,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22043,5G Security and Challenges,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22044,Cyber Security,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22045,Malware Analysis,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22046,Blockchain Technologies,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22047,Identity Management and Access Models,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22048,Digital Forensics,3,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22040,Capstone Project,2,Information Security and Cyber Security,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22051,Virtualization Techniques,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22052,DevOps and Containerization,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22053,Cloud Services Management,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22054,Cloud Application Development and Management,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22055,Edge and Fog Computing,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22056,Software Defined Networks,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22057,Security and Privacy in Cloud,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22058,IoT Automation,3,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22050,Capstone Project,2,Cloud Computing and IoT,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22061,Principles of Multimedia Systems,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22062,Multimedia Data Compression and Storage,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22063,Multimedia Network Technology,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22064,Multimedia Databases,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22065,Digital Image Processing Techniques,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22066,Introduction to 3D Printing and Design: Theory and Practices,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22067,Pattern Recognition,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22068,Augmented and Virtual Reality Programming: Theory and Practices,3,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,CS22060,Capstone Project,2,Multimedia Systems,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,MC22001,Indian Constitution and Society,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,MC22002,Essence of Indian Traditional Knowledge,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Computer Science and Engineering,CSE,R2022,,MC22003,Gender Sensitization,0,Mandatory Course,,option
+

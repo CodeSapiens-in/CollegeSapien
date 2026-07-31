@@ -25,6 +25,7 @@ const props = defineProps<{
   curriculum: Curriculum;
   actionInFlight?: boolean;
   savingEdit?: boolean;
+  readOnly?: boolean;
 }>();
 
 const emit = defineEmits<{
@@ -203,14 +204,14 @@ const handleDelete = () => {
         </div>
         <div class="flex items-center gap-2 shrink-0">
           <button
-            v-if="!editMode"
+            v-if="!editMode && !readOnly"
             class="px-3 py-1.5 text-xs font-medium border border-gray-300 text-gray-600 rounded-lg hover:bg-gray-50 transition-colors"
             @click="startEdit"
           >
             Edit
           </button>
           <button
-            v-if="!editMode && curriculum.status === 'approved' && !isAmbassador"
+            v-if="!editMode && !readOnly && curriculum.status === 'approved' && !isAmbassador"
             class="px-3 py-1.5 text-xs font-medium border border-red-300 text-red-600 bg-red-50 hover:bg-red-100 rounded-lg transition-colors flex items-center gap-1"
             title="Delete Curriculum"
             @click="handleDelete"
@@ -402,7 +403,7 @@ const handleDelete = () => {
             {{ savingEdit ? "Saving…" : "Save changes" }}
           </button>
         </template>
-        <template v-else-if="curriculum.status === 'pending'">
+        <template v-else-if="curriculum.status === 'pending' && !readOnly">
           <button
             :disabled="actionInFlight"
             class="px-4 py-2 text-sm border border-red-300 text-red-600 rounded-lg hover:bg-red-50 disabled:opacity-60 transition-colors"

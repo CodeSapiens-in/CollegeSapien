@@ -47,6 +47,13 @@ const save = async (entry: CmsEntry) => {
 
 <template>
   <div>
+    <NuxtLink
+      to="/moderation"
+      class="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1 mb-2"
+    >
+      <Icon name="i-heroicons-arrow-left" class="w-3.5 h-3.5" />
+      Moderation
+    </NuxtLink>
     <div class="mb-6">
       <h1 class="text-xl font-bold text-gray-900">CMS</h1>
       <p class="text-sm text-gray-500 mt-0.5">Edit app content and copy</p>

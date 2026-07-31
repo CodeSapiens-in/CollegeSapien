@@ -380,12 +380,15 @@
                 background: var(--lt-blue);
             }
             .feat-n {
+                display: inline-block;
                 font-family: "Bricolage Grotesque", sans-serif;
                 font-size: 42px;
                 font-weight: 800;
                 color: rgba(0, 0, 0, 0.1);
                 line-height: 1;
                 margin-bottom: 10px;
+                transform-origin: left center;
+                transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
             }
             .feat-t {
                 font-family: "Bricolage Grotesque", sans-serif;
@@ -686,6 +689,69 @@
                 transition-delay: 0.6s;
             }
 
+            /* ── MODERN TEXT ANIMATIONS ── */
+            .icard-val {
+                display: inline-block;
+                transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            }
+            .icard-val.count-pop {
+                animation: statPop 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
+            @keyframes statPop {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.22); color: var(--black); }
+                100% { transform: scale(1); }
+            }
+
+            .hero-dot {
+                animation: pulseGlow 1.8s infinite ease-in-out;
+            }
+            @keyframes pulseGlow {
+                0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(123, 245, 160, 0.7); }
+                50% { transform: scale(1.4); box-shadow: 0 0 0 6px rgba(123, 245, 160, 0); }
+            }
+
+
+
+            .htag {
+                transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s, letter-spacing 0.2s;
+                cursor: default;
+            }
+            .htag:hover {
+                transform: translateY(-4px) rotate(-1deg);
+                box-shadow: 4px 4px 0 var(--black);
+                letter-spacing: 0.02em;
+            }
+
+            .pill {
+                transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
+            }
+            .pill:hover {
+                transform: translateY(-2px);
+                box-shadow: 3px 3px 0 var(--black);
+            }
+
+            .icard {
+                transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s;
+            }
+            .icard:hover {
+                transform: translateY(-3px) scale(1.02);
+                box-shadow: var(--sh-lg);
+            }
+
+            .feat:hover .feat-n {
+                transform: scale(1.15) translateY(-2px);
+                color: var(--black);
+            }
+
+            .value-strip p {
+                animation: textPulseGlow 3s ease-in-out infinite alternate;
+            }
+            @keyframes textPulseGlow {
+                0% { opacity: 0.92; text-shadow: 0 0 0px transparent; }
+                100% { opacity: 1; text-shadow: 0 0 12px rgba(255, 217, 102, 0.35); }
+            }
+
             /* ── RESPONSIVE ── */
             @media (max-width: 900px) {
                 /* sections stack taller than the viewport on mobile —
@@ -948,15 +1014,15 @@
 
                 <div class="hero-stats">
                     <div class="icard ic-a">
-                        <div class="icard-val">2500+</div>
+                        <div class="icard-val" data-target="2500" data-suffix="+">0+</div>
                         <div class="icard-label">Members</div>
                     </div>
                     <div class="icard ic-b">
-                        <div class="icard-val">20+</div>
+                        <div class="icard-val" data-target="20" data-suffix="+">0+</div>
                         <div class="icard-label">Events</div>
                     </div>
                     <div class="icard ic-c">
-                        <div class="icard-val">50+</div>
+                        <div class="icard-val" data-target="50" data-suffix="+">0+</div>
                         <div class="icard-label">Colleges</div>
                     </div>
                 </div>
@@ -1514,7 +1580,7 @@
                     phaseElapsed = 0,
                     spawnTimer = 0.6;
 
-                const STATES = { SEEK: 0, FLEE: 1, DIZZY: 2, SCARED: 3 };
+                const STATES = { SEEK: 0, FLEE: 1, DIZZY: 2, SCARED: 3, ANGRY: 4, DIALOGUE: 5 };
 
                 function edgeSpawnPoint() {
                     const side = Math.floor(Math.random() * 4);
@@ -1576,27 +1642,24 @@
                         hop: Math.random() * Math.PI,
                         face: 1,
                         dizzyT: 0,
+                        angryT: 0,
+                        dialogueT: 0,
                         blink: Math.random() * 3,
                         wink: 2 + Math.random() * 4,
                         emote: null,
                         emoteT: 0,
                         flip: 0,
+                        personality: Math.floor(Math.random() * 3), // 0: Normal Dizzy, 1: Angry Emotion, 2: "Valikudhu bro" Dialogue
+                        tapCount: 0,
+                        lastTapTime: 0,
                     });
                 }
 
                 let score = 0;
                 const scoreEl = document.getElementById("score");
-                function bonk(m) {
-                    if (m.state === STATES.DIZZY) return;
-                    score++;
-                    scoreEl.textContent = "🐒 Bonks: " + score;
-                    scoreEl.style.display = "block";
-                    scoreEl.classList.remove("bump");
-                    void scoreEl.offsetWidth;
-                    scoreEl.classList.add("bump");
-                    beep(180, 0.12, "sawtooth", 0.07);
-                    beep(90, 0.18, "square", 0.06);
-                    burst(m.x, m.y - 20, C.yellow, 12);
+                function bonk(m, isDoubleTap = false) {
+                    if (m.state === STATES.DIZZY || m.state === STATES.ANGRY || m.state === STATES.DIALOGUE) return;
+
                     if (m.carrying) {
                         flights.push({
                             char: m.carrying.char,
@@ -1612,8 +1675,49 @@
                         m.target.reserved = false;
                         m.target = null;
                     }
-                    m.state = STATES.DIZZY;
-                    m.dizzyT = 0.55;
+
+                    if (isDoubleTap) {
+                        score += 2;
+                        scoreEl.textContent = "🐒 Bonks: " + score;
+                        scoreEl.style.display = "block";
+                        scoreEl.classList.remove("bump");
+                        void scoreEl.offsetWidth;
+                        scoreEl.classList.add("bump");
+
+                        if (m.personality === 1) {
+                            // Angry emotion animation -> turns normal -> runs away
+                            m.state = STATES.ANGRY;
+                            m.angryT = 1.8;
+                            beep(120, 0.22, "sawtooth", 0.08);
+                            beep(80, 0.28, "square", 0.08);
+                            burst(m.x, m.y - 20, "#e63946", 18);
+                        } else if (m.personality === 2) {
+                            // Dialogue box "Valikudhu bro" -> runs away
+                            m.state = STATES.DIALOGUE;
+                            m.dialogueT = 1.8;
+                            beep(480, 0.12, "sine", 0.06);
+                            beep(360, 0.18, "triangle", 0.06);
+                            burst(m.x, m.y - 20, C.yellow, 14);
+                        } else {
+                            // Standard dizzy bonk
+                            m.state = STATES.DIZZY;
+                            m.dizzyT = 0.75;
+                            beep(220, 0.15, "sawtooth", 0.07);
+                            burst(m.x, m.y - 20, C.yellow, 12);
+                        }
+                    } else {
+                        score++;
+                        scoreEl.textContent = "🐒 Bonks: " + score;
+                        scoreEl.style.display = "block";
+                        scoreEl.classList.remove("bump");
+                        void scoreEl.offsetWidth;
+                        scoreEl.classList.add("bump");
+                        beep(180, 0.12, "sawtooth", 0.07);
+                        beep(90, 0.18, "square", 0.06);
+                        burst(m.x, m.y - 20, C.yellow, 12);
+                        m.state = STATES.DIZZY;
+                        m.dizzyT = 0.55;
+                    }
                 }
 
                 function updateMonkey(m, dt) {
@@ -1628,6 +1732,29 @@
                         m.dizzyT -= dt;
                         if (m.dizzyT <= 0) {
                             m.state = STATES.SCARED;
+                            m.exit = nearestExit(m.x, m.y);
+                        }
+                        return;
+                    }
+
+                    if (m.state === STATES.ANGRY) {
+                        m.angryT -= dt;
+                        if (Math.random() < dt * 10) {
+                            burst(m.x + (Math.random() * 24 - 12), m.y - 30 + (Math.random() * 20 - 10), "#e63946", 2);
+                        }
+                        if (m.angryT <= 0) {
+                            m.state = STATES.SCARED;
+                            m.speed *= 1.6;
+                            m.exit = nearestExit(m.x, m.y);
+                        }
+                        return;
+                    }
+
+                    if (m.state === STATES.DIALOGUE) {
+                        m.dialogueT -= dt;
+                        if (m.dialogueT <= 0) {
+                            m.state = STATES.SCARED;
+                            m.speed *= 1.4;
                             m.exit = nearestExit(m.x, m.y);
                         }
                         return;
@@ -1985,6 +2112,19 @@
                         ctx.textBaseline = "middle";
                         ctx.fillText("×", -8, -19);
                         ctx.fillText("×", 8, -19);
+                    } else if (m.state === STATES.ANGRY) {
+                        ctx.lineWidth = 2.5;
+                        ctx.strokeStyle = ink;
+                        ctx.beginPath(); ctx.moveTo(-12, -22); ctx.lineTo(-4, -17); ctx.stroke();
+                        ctx.beginPath(); ctx.moveTo(12, -22); ctx.lineTo(4, -17); ctx.stroke();
+                        ctx.fillStyle = ink;
+                        ctx.beginPath(); ctx.arc(-8, -17, 3, 0, Math.PI * 2); ctx.fill();
+                        ctx.beginPath(); ctx.arc(8, -17, 3, 0, Math.PI * 2); ctx.fill();
+                    } else if (m.state === STATES.DIALOGUE) {
+                        ctx.lineWidth = 2.4;
+                        ctx.strokeStyle = ink;
+                        ctx.beginPath(); ctx.moveTo(-11, -21); ctx.lineTo(-5, -17.5); ctx.lineTo(-11, -14); ctx.stroke();
+                        ctx.beginPath(); ctx.moveTo(11, -21); ctx.lineTo(5, -17.5); ctx.lineTo(11, -14); ctx.stroke();
                     } else if (blink) {
                         happyEye(-8);
                         happyEye(8);
@@ -1999,7 +2139,15 @@
                     // mouth
                     ctx.strokeStyle = ink;
                     ctx.lineWidth = 2;
-                    if (taunt) {
+                    if (m.state === STATES.ANGRY) {
+                        ctx.fillStyle = C.paper;
+                        ctx.fillRect(-6, -9, 12, 6);
+                        ctx.strokeRect(-6, -9, 12, 6);
+                        ctx.beginPath(); ctx.moveTo(0, -9); ctx.lineTo(0, -3); ctx.stroke();
+                    } else if (m.state === STATES.DIALOGUE) {
+                        ctx.fillStyle = ink;
+                        ctx.beginPath(); ctx.arc(0, -6.5, 3.5, 0, Math.PI * 2); ctx.fill();
+                    } else if (taunt) {
                         ctx.fillStyle = ink;
                         ctx.beginPath();
                         ctx.arc(0, -7, 4.5, 0, Math.PI);
@@ -2030,6 +2178,50 @@
                     ctx.beginPath();
                     ctx.arc(2, -12, 0.8, 0, Math.PI * 2);
                     ctx.fill();
+
+                    // angry symbol 💢
+                    if (m.state === STATES.ANGRY) {
+                        const angerT = (1.8 - (m.angryT || 0)) * 14;
+                        ctx.fillStyle = "#e63946";
+                        ctx.font = "800 14px 'Bricolage Grotesque', sans-serif";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText("💢", Math.sin(angerT) * 5, -42);
+                    }
+
+                    // speech bubble "Valikudhu bro"
+                    if (m.state === STATES.DIALOGUE) {
+                        ctx.save();
+                        ctx.translate(0, -44);
+                        ctx.scale(m.face, 1); // keep bubble upright
+                        const bw = 96, bh = 26;
+                        const bx = -bw / 2, by = -bh;
+                        // hard offset shadow
+                        ctx.fillStyle = ink;
+                        ctx.fillRect(bx + 4, by + 4, bw, bh);
+                        // bubble body
+                        ctx.fillStyle = C.yellow;
+                        ctx.fillRect(bx, by, bw, bh);
+                        ctx.strokeStyle = ink;
+                        ctx.lineWidth = 2.5;
+                        ctx.strokeRect(bx, by, bw, bh);
+                        // pointer tail
+                        ctx.fillStyle = C.yellow;
+                        ctx.beginPath();
+                        ctx.moveTo(-5, 0);
+                        ctx.lineTo(5, 0);
+                        ctx.lineTo(0, 6);
+                        ctx.closePath();
+                        ctx.fill();
+                        ctx.stroke();
+                        // text
+                        ctx.fillStyle = ink;
+                        ctx.font = "800 12px 'Bricolage Grotesque', sans-serif";
+                        ctx.textAlign = "center";
+                        ctx.textBaseline = "middle";
+                        ctx.fillText("Valikudhu bro", 0, by + bh / 2 + 1);
+                        ctx.restore();
+                    }
 
                     // dizzy stars
                     if (m.state === STATES.DIZZY) {
@@ -2119,7 +2311,22 @@
                             bestD = d;
                         }
                     }
-                    if (best) bonk(best);
+                    if (best) {
+                        const now = performance.now();
+                        if (best.lastTapTime && (now - best.lastTapTime < 380)) {
+                            best.tapCount = (best.tapCount || 1) + 1;
+                        } else {
+                            best.tapCount = 1;
+                        }
+                        best.lastTapTime = now;
+
+                        if (best.tapCount >= 2) {
+                            bonk(best, true);
+                            best.tapCount = 0;
+                        } else {
+                            bonk(best, false);
+                        }
+                    }
                 });
 
                 /* loop */
@@ -2173,6 +2380,73 @@
                 { threshold: 0.08 },
             );
             document.querySelectorAll(".r").forEach((el) => obs.observe(el));
+
+            // ── Stats Count Up Animation (Looping & Scroll-triggered) ──
+            (() => {
+                const statEls = document.querySelectorAll(".icard-val[data-target]");
+                if (!statEls.length) return;
+
+                let isRunning = false;
+                let loopTimeout = null;
+
+                function animateCountUp() {
+                    if (isRunning) return;
+                    isRunning = true;
+
+                    const duration = 1800;
+                    const startTime = performance.now();
+
+                    function step(now) {
+                        const elapsed = now - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const easeProgress = 1 - Math.pow(1 - progress, 3);
+
+                        statEls.forEach((el) => {
+                            const target = parseInt(el.getAttribute("data-target"), 10);
+                            const suffix = el.getAttribute("data-suffix") || "";
+                            const currentVal = Math.floor(easeProgress * target);
+                            el.textContent = currentVal.toLocaleString() + suffix;
+                        });
+
+                        if (progress < 1) {
+                            requestAnimationFrame(step);
+                        } else {
+                            statEls.forEach((el) => {
+                                el.classList.add("count-pop");
+                                setTimeout(() => el.classList.remove("count-pop"), 450);
+                            });
+                            isRunning = false;
+
+                            loopTimeout = setTimeout(() => {
+                                animateCountUp();
+                            }, 4500);
+                        }
+                    }
+
+                    requestAnimationFrame(step);
+                }
+
+                const heroStats = document.querySelector(".hero-stats");
+                if (heroStats) {
+                    const observer = new IntersectionObserver(
+                        (entries) => {
+                            entries.forEach((entry) => {
+                                if (entry.isIntersecting) {
+                                    if (loopTimeout) clearTimeout(loopTimeout);
+                                    animateCountUp();
+                                } else {
+                                    if (loopTimeout) clearTimeout(loopTimeout);
+                                    isRunning = false;
+                                }
+                            });
+                        },
+                        { threshold: 0.1 },
+                    );
+                    observer.observe(heroStats);
+                }
+            })();
+
+
         </script>
     </body>
 </html>

@@ -66,7 +66,7 @@ Each row represents a single subject record. Common metadata fields (college, co
 | **`credits`** | Number | The academic credits weight of the course. | `4` |
 | **`category`** | String | Course category (e.g. Basic Sciences `BS`, Professional Core `PC`, or the elective stream title like `Artificial Intelligence`). | `BS` |
 | **`elective_type`** | String/Null | The name of the elective pool slot for `option` records, or `null` for `core` records. | `Professional Elective I` |
-| **`record_type`** | String | Subject status: `'core'` (mandatory) or `'option'` (choice from an elective pool). | `core` |
+| **`record_type`** | String | Subject status: `'core'` (mandatory) or `'elective'` or `'option'` (choice from an elective pool). | `core` |
 
 ---
 
