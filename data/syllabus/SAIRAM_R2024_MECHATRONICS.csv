@@ -1,0 +1,168 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24ESGE101,Engineering Graphics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24ESID101,Idea Engineering Lab -I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24BSMA203,Differential Equations and its Applications,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24HSEN201,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24BSPH202,Physics of Materials,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24ESCE201,Engineering Mechanics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24ESGE102,Engineering Practices Laboratory,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,2,24ESMC201,MS Office (Mandatory)/NPTEL Non Credit,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24BSMA304,Transforms and Numerical Methods,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTPC301,Fluid Mechanics and Thermal Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24ESXX301,"Basic Electrical, Electronics Engineering and Measurements",3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTPC302,Sensors and Instrumentation,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTPW301,Manufacturing Process with Lab,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24HSMC301,Universal Human Values - II,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24HSNC201,NCC Course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTPL301,Computer Aided Design and Modelling Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTTP301,Aptitude skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24MTID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,3,24ESMC202,Joy of Computing using Python (Mandatory),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTPC401,Kinematics and Dynamics of Machinery,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24ESXX401,Digital Electronics and Microprocessor,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTPC402,Applied Hydraulics and Pneumatics systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24ESCEXXX,Strength of Materials,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24ESPW401,Electrical Drives and Actuators with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24HSNC301,NCC Course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTPL401,SoM and FMM Lab,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTPT401,Computer Aided Design and Manufacturing with Laboratory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTTP401,Aptitude skills,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,4,24MTID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MTPC501,Industrial Automation,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24ESXX501,Embedded Systems and Programming,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,,Professional Elective - I,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,,Professional Elective - II,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MGMC501,Constitution of India,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MTPL501,Industrial Automation Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MTPL502,Simulation and Analysis Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MTTP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,5,24MTID501,Prototype development Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24MTPC601,Robotics and Machine Vision,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24ESXX601,Control Systems Engineering,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,,Professional Elective - III,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,,Professional Elective - IV,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24HSMG501,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,,Open Elective - III,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24MTPL601,Robotics Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24MTTP601,Technical Skill,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,6,24MTID601,Prototype Development Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,24MTPC701,Design of Mechatronics System,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,,Professional Elective - V,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,,Professional Elective - VI,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,,Professional Elective - VII,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,,Open Elective - IV,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,24MGEL703,Creative Innovation and Entrepreneurship,2,EL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,24MTPL701,Mechatronics System Design Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,24MTPJ701,Project work - Phase I,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,7,24MTTP701,Company Specific Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,8,24MTPJ801,Project work - Phase II,6,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,8,24MTIN801,Internship,3,IN,,core
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL501,Design of Machine Element,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL502,Industrial IOT,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL503,Eco-Friendly (Green) Design,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL504,Automobile Engineering,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL505,Automotive System Modelling and Simulation,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL506,Automotive Materials and Manufacturing,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL507,Robots and Systems in Smart Manufacturing,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL508,Artificial Intelligence for Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL509,Robot Operating Systems,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL510,Virtual Instrumentation,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL511,Robotic Process Automation,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL512,Control Systems and Sensors,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Disaster Management,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MEIE501,Advanced Fuel Injection System - I,3,Delphi TVS,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL513,Design of Transmission systems,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL514,Advanced Manufacturing Systems,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL515,Industry 4.0,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL516,Smart mobility and Intelligent Vehicles,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL517,Electric and Sustainable Mobility,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL518,Vehicle-to-Everything (V2X) Communication,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL519,Robot Dynamics and Control,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL520,Introduction to Machine learning,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL521,Drone Technologies,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL522,Design for manufacturing and Assembly,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL523,Analog and Digital Electronics,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL524,Cybersecurity in Industrial Automation,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Project Management,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL601,Computer Integrated Manufacturing,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL602,Design for X,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL603,Digital Manufacturing and IoT,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL604,Electric and Hybrid Vehicles,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL605,Autonomous Vehicles,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL606,Navigation and Communication System,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL607,Robotics and Mobility Systems,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL608,Digital image processing,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL609,Wireless Sensor Networks for Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL610,Digital Twin and Industry 5.0,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL611,Artificial Intelligence and Machine Learning in Automation,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL612,Automation in Process Industries,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Industrial Relations and Labour Legislation,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MEIE601,Advanced Fuel Injection System - II,3,Delphi TVS,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL613,Additive Manufacturing,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL614,CNC Machine Tools and Programming,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL615,Flexible Manufacturing Systems,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL616,Electric Vehicle Ecosystems,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL617,Guidance and Control,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL618,Smart Public Transport,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL619,Robot Path Planning and Programming,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL620,Machine Vision Systems,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL621,Medical Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL622,Microprocessor and Microcontroller,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL623,Programmable Logic Controllers,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL624,Human-Machine Interface,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Supply Chain and Logistics Management,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL625,Computer Aided Inspection and Testing,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL626,Artificial Intelligence For Manufacturing,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL627,Lean Manufacturing,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL628,Automotive Mechatronics,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL629,Advanced Driver Assistance Systems,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL630,Traffic Optimization and Smart Traffic Signals,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL631,Mobile robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL632,Motion simulation and virtual reality,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL633,Microrobotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL634,Micro Electro Mechanical Systems,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL635,Supervisory Control and Data Acquisition,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL636,Motion Control System,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Total Quality Management,0,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL701,Finite Element Analysis,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL702,Environment Sustainability And Impact Assessment,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL703,Smart farming using Automation principles,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL704,Design of UAV systems,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL705,Machine Learning for Intelligent Systems,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL706,Cybersecurity in Intelligent Mobility,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL707,Agricultural Robotics and Automation,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL708,Industrial Robotics : Theories for implementation,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL709,Collaborative Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL710,Total Integrated Automation,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL711,Design of material handling systems,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL712,Automation in production systems and Management,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Intellectual Property Rights,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL713,Composite and Smart Materials,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL714,Unconventional Machining Processes,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL715,Product Design and Development,3,Design and Manufacturing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL716,Condition Monitoring and Fault Diagnostics,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL717,Computer Vision and Deep Learning,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL718,Predictive Management for Mobility,3,Intelligent Mobility System,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL719,Robot vision and Intelligence,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL720,Underwater Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL721,Humanoid Robotics,3,Applied Robotics,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL722,Medical Mechatronics,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL723,Industrial Network Protocols,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MTEL724,Automation System Design,3,Industrial Automation,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Mechatronics Engineering,MCT,R2024,,24MGELxxx,Professional Ethics and Values,3,Management,Programme Elective,option

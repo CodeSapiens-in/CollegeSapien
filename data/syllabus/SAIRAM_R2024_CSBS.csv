@@ -1,20 +1,104 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESCS101,PROBLEM SOLVING AND LT P cpic,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24HSEN101,Communicative English,3,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSCY201,CHEMISTRY FOR ENVIRONMENT,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSMA201,uly leicelc,9,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24ESMC201,MS Office (Mandatory - NC),0,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24HSNC201,NCC Course Level 1*,0,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24HSTA201,Tamils and Technology,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24BSMA202,Introductory Topics in Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24BSPH101,Engineering Physics,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24ESID101,Idea Engineering Lab - I,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24HSNC201,NCC Course Level 1*,0,HUM,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24BSMA102,"Introductory Topics in Calculus, Probability and Statistics",3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24HSEN102,Business Communication and Value Science - I,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24BSPH102,Physics for Computing Science,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESEE101,Principles of Electrical Engineering,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24BSPL102,Physics for Computing Science Laboratory,1,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESPL102,Electrical Engineering Laboratory,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,1,24ESID101,Idea Engineering Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSMA204,Discrete Mathematics for Computer Science,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24HSEN202,Business Communication and Value Science - II,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSPH205,Principles of Electronics Engineering,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSMA205,Statistical Methods with Laboratory,6,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24CBPC201,Data Structures and Algorithms,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24CYMC201,Environmental Studies,2,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24BSPL201,Principles of Electronics Engineering Laboratory,1,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24CBPL201,Data Structures and Algorithms Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,2,24ESMC201,MS Office (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24BSMA305,Linear Algebra,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBPC301,Formal Language and Automata Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBPC302,Computer Organization and Architecture,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBPC303,Software Engineering and Design,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBMG301,Fundamentals of Management,3,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24HSMC301,Universal Human Values - II Understanding Harmony,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24HSNC301,NCC Course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBPL301,Software Engineering and Design Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBTP301,Aptitude Skills - I,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24CBID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,3,24ESMC301,Joy of Computing Using Python,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24BSMA404,Computational Statistics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24BSMA405,Operations Research with Laboratory,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBPC401,Database Management Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBPW401,Operating Systems with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBMG401,Marketing Management,2,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBMG402,Financial and Cost Accounting,3,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24HSNC401,NCC Course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBPL401,Database Management Systems Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CSPT401,Object Oriented Programming Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBTP401,Aptitude Skills - II,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,4,24CBID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBPC501,Compiler Design,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBPC502,Design and Analysis of Algorithms,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBMG501,Fundamentals of Management,2,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBMG502,Business Strategy,3,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBPC503,Design Thinking,2,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,,Professional Elective I + Lab,3,PE,Professional Elective I,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,,Professional Elective II,3,PE,Professional Elective II,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBPL501,Compiler Design Laboratory,1.5,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBPL502,Design and Analysis of Algorithms Laboratory,1.5,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBTE501,Live-in-Lab - III,1,TE,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,5,24CBTP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24HSEN601,Business Communication and Value Science IV,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPC601,Computer Networks,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPC602,Information Security,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPC603,Artificial Intelligence,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,,Professional Elective III + Lab,3,PE,Professional Elective III,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,,Professional Elective IV,3,PE,Professional Elective IV,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPL601,Computer Networks Laboratory,1.5,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPL602,Information Security Laboratory,1.5,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPL603,Artificial Intelligence Laboratory,1.5,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBPJ601,Innovative Design Project,1,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,6,24CBTP601,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBPW701,Usability Design of Software Applications with Laboratory,3,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBPW702,IT Workshop Sky Lab/Mat Lab,3,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBPW703,IT Project Management with Laboratory,3,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBMG701,Human Resource Management,2,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBMG702,Financial and Cost Accounting,3,MG,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBPJ701,Project Phase-I,2,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,7,24CBTP701,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024,8,24CBPJ801,Project Phase - II,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL501,Conversational Systems with Laboratory,3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL502,"Cloud, Micro services and Application with Laboratory",3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL503,Machine Learning with Laboratory,3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL504,Web Technology with Laboratory,3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL505,Mobile Application Development with Laboratory,3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL506,Soft Computing with Laboratory,3,PE,Professional Elective I,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL507,Behavioral Economics,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL508,Computational Finance and Modeling,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL509,Psychology,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL510,Information Systems and Business Analytics,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL511,Software Testing,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL512,Graph Theory and Applications,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24HSMC501,Universal Human Values - II: Understanding Harmony,3,PE,Professional Elective II,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL601,Data Mining and Analytics with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL602,Robotics and Embedded Systems with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL603,Modern Web Applications with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL604,Computer Graphics and Multimedia with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL605,Cognitive Science and Analytics with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL606,Cryptology with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL607,Internet of Things with Laboratory,3,PE,Professional Elective III,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL608,Enterprise Systems,3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL609,Advance Finance,3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL610,Image Processing and Pattern Recognition,3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL611,Services Science and Service Operational Management,3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL612,"Advanced Social, Text and Media Analytics",3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL613,Quantum Computation & Quantum Information,3,PE,Professional Elective IV,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Business Systems,CSBS,R2024, ,24CBEL614,Mobile Computing,3,PE,Professional Elective IV,option
