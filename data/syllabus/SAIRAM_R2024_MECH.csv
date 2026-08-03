@@ -1,0 +1,75 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24ESGE101,Engineering Graphics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,1,24ESID101,Idea Engineering Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24BSMA203,Differential Equations and its Applications,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24HSEN201,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24BSPH202,Physics of Materials,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24ESCE201,Engineering Mechanics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24ESGE102,Engineering Practices Lab,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,2,24ESMC201,MS Office (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24BSMA304,Transforms and Numerical Methods,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24MEPC301,Engineering Thermodynamics,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24CEPC305,Fluid Mechanics and Machinery,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24MEPC302,Engineering Metallurgy,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24MEPW301,Manufacturing Process with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24HSMC301,Universal Human Values - II,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24HSNC301,NCC Course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24MEPL301,Computer Aided Machine Drawing Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24METP301,Aptitude skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24MEID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,3,24ESMC301,Joy of Computing using Python (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEPC401,Thermal Engineering,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEPC402,Metrology and Measurements,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEPC403,Theory of Machines,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24CEPC305,Strength of Materials,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEPW401,Machine Tool Technology with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24HSNC401,NCC course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24CEPL403,Strength of Materials and Fluid Mechanics & Machinery Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEPT401,Dynamics & Metrology Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24METP401,Aptitude skills,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,4,24MEID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MEPC501,Heat Transfer,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MEPC502,Design of Machine Elements,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,,Professional Elective - I,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,,Professional Elective - II,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MGMC501,Constitution of India,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MEPL501,Heat Transfer and IC Engines Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MEPL502,CAD/CAM Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24METP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,5,24MEID501,Prototype Development Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24MEPC601,Design of Transmission Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24MEPC602,Finite Element Analysis,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,,Professional Elective - III,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,,Professional Elective - IV,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24HSMG501,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,,Open Elective - III,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24MEPL601,Simulation and Analysis Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24METP601,Technical Skill,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,6,24MEID601,Prototype Development Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,24MEPC701,Mechatronics and IoT,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,,Professional Elective - V,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,,Professional Elective - VI,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,,Open Elective - IV,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,24MGEL703,Creative Innovation and Entrepreneurship,2,EL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,24MEPL701,Mechatronics & Robotics Lab,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,24MEPJ701,Project work - Phase I,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,7,24METP701,Company Specific Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,8,,Professional Elective - VII,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,8,24MEPJ801,Project Work - Phase II,6,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Mechanical Engineering,MECH,R2024,8,24MEIN801,Internship,3,IN,,core

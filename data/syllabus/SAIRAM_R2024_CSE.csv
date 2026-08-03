@@ -1,18 +1,131 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
 Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESCS101,PROBLEM SOLVING AND LT P cpic,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESGE102,Engineering Practices Laboratory,2,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24HSEN101,Communicative English,3,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24HSTA101,Heritage of Tamils,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24BSCY201,CHEMISTRY FOR ENVIRONMENT,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24HSTA201,Tamils and Technology,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24BSPH101,Engineering Physics,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24ESMC201,MS Office (Mandatory - NC),0,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24ITPT201,OOPS Using Java Laboratory with Theory,3,PC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24ITPT201,OOPS Using Java Laboratory with Theory,3,PC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24XXOEXXX,Open Elective,3,PE,Open Elective,elective
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24ITPT201,OOPS Using Java Laboratory with Theory,3,PC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24XXEL5YY,Professional Elective - I,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESGE102,Engineering Practices Laboratory,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ESID101,Idea Engineering Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24BSMA201,Discrete Structures,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24HSEN201,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24ESGE101,Engineering Graphics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,2,24ESMC201,MS Office (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24BSMA301,Statistics and Linear Algebra,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSPC301,Database Management Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSPC302,Data Structures,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24ITPC302,Software Engineering,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSPW301,Digital Design and Computer Organization with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24HSMC301,Universal Human Values - II Understanding Harmony,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24HSNC301,NCC Course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSPL301,Database Management Systems Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSPL302,Data Structures Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSTP301,Aptitude Skills - I,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24CSID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,3,24ESMC301,Joy of Computing using Python (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24BSMA402,Probability and Queueing Theory,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24CSPC401,Theoretical Computer Science,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24CSPC402,Design and Analysis of Algorithms,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24ITPW401,Operating Systems with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24ESEC401,Microprocessors and Microcontrollers,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24HSNC401,NCC Course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24CSPT401,Object Oriented Programming Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24CSTP401,Aptitude Skills - II,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,4,24CSID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24ITPC501,Computer Networks,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24CSPW501,Artificial Intelligence with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,,Professional Elective - I,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,,Professional Elective - II,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24MGMC501,Constitution of India,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24ITPL501,Computer Networks Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24CSTP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,5,24CSID501,Prototype Development Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24CSPC601,Internet Programming,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,,Professional Elective - III,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,,Professional Elective - IV,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,,Professional Elective - V,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,,Open Elective - III,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24HSMG501,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24CSPL601,Internet Programming Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24CSTP601,Technical Skill,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,6,24CSID601,Prototype Development Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24ITPC701,Cryptography and Network Security,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,,Professional Elective - VI,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,,Professional Elective - VII,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,,Open Elective - IV,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24MGEL703,Creative Innovation and Entrepreneurship,2,EL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24ITPL701,Network Security Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24CSPJ701,Project Work - Phase I,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,7,24CSTP701,Company Specific Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,8,,Professional Elective - VIII,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,8,24CSPJ801,Project Work - Phase II,6,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,8,24CSIN801,Internship,3,IN,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL501,Computer Graphics and Multimedia,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL511,Graph Theory,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL503,Cloud Computing,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL501,Exploratory Data Analysis with R Software,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL502,Artificial Intelligence Fundamentals and Applications,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL503,Human Centered Computing,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITPC401,User Interface / User Experience (UI/UX) Designing Skills,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL501,Introduction to Mobile Technologies,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL502,No SQL Databases,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL507,Data Warehousing and Data Mining,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL508,Data Analytics with Python,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL509,Big Data Essentials,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL503,Machine Learning Algorithms,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL504,Machine Learning for Intelligent Systems,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL505,Machine Learning Essentials for Cyber Security,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL501,IoT Concepts and Applications,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL502,Data Science for Internet of Things,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL503,Dynamic Paradigm in IoT,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL510,Advanced Analysis of Algorithm,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL502,Distributed Systems,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL512,Parallel Algorithms,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL504,Business Intelligence,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL505,Machine Learning Essentials,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24AIEL506,Decision Support Systems,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL511,Usability Design of Software Application,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL506,Web Design,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL507,Mobile Application Development,3,Web and App Development,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL516,Learning Analytics Tools,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL517,Data Science for Engineers,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITEL518,Data Mining for Decision Making,3,Data Science,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL508,Machine Learning for Intrusion Detection,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL509,Deep Learning Architectures and Applications,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSEL510,Intelligent Decision Systems,3,Machine Learning,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL504,Web of Things,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL505,Wireless Technologies in Internet of Things,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CIEL506,Descriptive Analytics for IoT,3,Industrial IoT,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE501,UI/UX Developer,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE502,Software Engineering Tools,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE601,Data-driven Storytelling and Visualization,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE602,Fundamentals of Business Analytics,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE603,NODE.JS - The Complete Guide,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE604,Security Professional,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE601,Network Professional,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE602,Cyber Defense,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE603,Fundamentals of Agile Methodology with DevOps Integration,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE701,Building Web Services with Java Network Programming,3,L&T Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24EIIE611,Embedded System for Connected Devices,3,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE612,C++ for Embedded Systems,3,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE711,Advanced C++ for Embedded Programming,3,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24EIIE712,Product Development Process,3,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE712,Project Phase-I,4,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE811,Internship,3,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE812,Project Phase-II,6,HCL Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE503,Salesforce Administrator,3,Salesforce Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE504,Salesforce Developer,3,Salesforce Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24ITIE605,MuleSoft Anypoint Platform Fundamentals,3,Salesforce Basket,Industry Connected Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science Engineering,CSE,R2024,,24CSIE606,Salesforce Business Analyst,3,Salesforce Basket,Industry Connected Elective,option
