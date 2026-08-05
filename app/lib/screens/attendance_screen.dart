@@ -280,7 +280,18 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
       {bool includeMargin = true}) {
     final color =
         summary.percentage >= 75 ? AppColors.accentGreen : AppColors.accentPink;
-    return Container(
+    return GestureDetector(
+      onTap: () async {
+        await Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) =>
+                MarkAttendanceScreen(preselectedSubjectId: summary.subjectId),
+          ),
+        );
+        _refresh();
+      },
+      child: Container(
       margin: includeMargin ? const EdgeInsets.only(bottom: 16) : null,
       padding: const EdgeInsets.all(20),
       decoration: AppTheme.cardDecoration(color: color),
@@ -321,6 +332,7 @@ class _AttendanceScreenState extends State<AttendanceScreen> {
             ),
           ],
         ],
+      ),
       ),
     );
   }
