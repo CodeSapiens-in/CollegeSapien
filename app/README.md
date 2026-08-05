@@ -102,6 +102,19 @@ You can download these fonts from:
 
 For local API testing, point `CODESAPIENS_API_BASE_URL` to the Functions emulator URL and keep `DISABLE_APP_CHECK=true` on the backend emulator.
 
+### Web integration tests
+
+Run the web suite with a ChromeDriver matched to the installed Chrome version:
+
+```bash
+./tool/run_web_integration_tests.sh
+```
+
+The runner downloads and caches the matching Chrome-for-Testing driver under
+`.tools/` and uses Flutter's `flutter drive -d chrome` flow. The
+real-login test also requires `app/.env` with `TEST_ACCOUNT_EMAIL` and
+`TEST_ACCOUNT_PASSWORD`.
+
 Email/password and Google sign-in are wired in the app. Passwordless email-link auth is supported by the backend contract, but mobile deep-link capture still requires the Firebase platform link configuration before exposing it in the UI.
 
 ## Project Structure
