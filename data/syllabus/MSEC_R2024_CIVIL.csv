@@ -1,0 +1,77 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24IP101,Induction Programme - Universal Human Values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24MA101,Mathematical foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24PH101,Physics for Civil Engineering -I,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24CY101,Chemistry for Civil Engineering,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24EE101,"Basics of Electrical ,Electronics & instrumentation Engineering",4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24TP110,Communication Skills Lab I,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,1,U24ED111,Design Thinking -Building Innovation and Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24CE202,Value Added Course - I (Biology for Civil Engineers),0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24MA201,Probability and Statistics for Civil Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24PH201,Physics for Civil Engineering II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24CE201,Elements of Civil Engineering and Mechanics,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24CE207,Engineering Graphics for Civil Engineering,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24ME101,Engineering Practices Laboratory,2,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24TP210,Communication Skills Lab II,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,2,U24ED211,Design Thinking- Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24MA301,Transforms and Partial Differential Equations and Numerical methods,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24CY201,Green and Sustainable Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24CE302,Fluid Mechanics,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24CE303,Strength of Materials I,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24CE304,Engineering Surveying,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24CE305,Water Supply Engineering,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24ED311,Innovation tool kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24RM312,Research Overview,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,3,U24MC313,Foreign Language ( Japanese/French),0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE401,Strength of Materials II,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE402,Highway and Railway Engineering,3,PEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE403,Applied Hydraulics Engineering,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE404,Soil Mechanics,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE405,Waste Water Engineering,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24CE406,Construction Materials,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24ED411,Idea & simulation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24RM412,Conceptualization,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,4,U24MC413,Indological Studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24CE501,Design of Reinforced Concrete Structural Elements,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24CE502,Structural Analysis I,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24CE503,Foundation Engineering,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24CE504,Computer Aided Building Drawing,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24CE505,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24RM512,Data Exploration,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,5,U24MC513,"Fitness for Life-Yoga, Food nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,,Professional Elective III,3,PCC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24CE601,Design of Steel Structural Elements,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24CE602,Structural Analysis II,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24CE603,Concrete Technology,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24CE604,Concrete and Highway Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24TP610,Employability Skills & Problem Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24ED611,"Building a Business Model, GTM and Market Journey",0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24RM612,Design & Modelling,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,6,U24MC613,Integrated Disaster Management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24CE701,"Estimation, Costing and Valuation Engineering",3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24CE702,Hydrology and Water Resources Engineering,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24CE703,Construction Planning and Management,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24CE704,Computer Aided Design and Drawing,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24CE705,Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24RM712,Testing,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,7,U24MC713,Constitution of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Civil Engineering,CIVIL,R2024,8,U24CE801,Project Work,8,EEC,,core

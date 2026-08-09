@@ -1,0 +1,75 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24IP101,Induction Program -Universal Human Values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24MA101,Mathematical Foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24PH105,Physics for Mechanical Engineering I,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24CY105,Chemistry for Mechanical Engineering,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24EE105,Basics of Electrical and Electronics Engineering,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24TP110,Communication Skill Lab - I,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,1,U24ED111,Design Thinking -Building Innovation & Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24IP201,Biology for Mechanical Engineers,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24MA205,"Fourier Series, Complex Analysis and Calculus",4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24PH205,Physics for Mechanical Engineering II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24CY201,Green and Sustainable Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24CE205,Engineering Graphics for Mechanical Engineering,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24ME101,Engineering Practices Laboratory,2,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24TP210,Communication Skill Lab - II,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,2,U24ED211,Design Thinking - Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24MA305,Statistics and Numerical Methods for Mechanical Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME301,Engineering Mechanics,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME302,Engineering Thermodynamics,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME303,Manufacturing Processes,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME304,Engineering Materials and Metallurgy,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24MC313,Foreign Language (Japanese / French / German),0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME305,Fluid Mechanics and Machinery,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ME306,Computer Aided Machine Drawing,1.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24ED311,Innovation Tool Kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,3,U24RM312,Introduction To Problem Solving,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24MC413,Indological Studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ME401,Manufacturing Technology,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ME402,Metrology and Measurements,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ME403,Strength of Materials,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ME404,Thermal Engineering,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ME405,Hydraulics and Pneumatics,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24ED411,Idea & Simulation Lab,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,4,U24RM412,Hypothesis,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ME501,Design of Machine Elements,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ME502,Theory of machines,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ME503,Heat and Mass Transfer,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ME504,CAD /CAM LAB,2,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ME505,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24RM512,Domain Specific Experiments/Methodology/Algorithms,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,5,U24MC513,"Fitness for Life - Yoga, Food Nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24ME601,Design of Transmission System,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24MG602,Project Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24MC613,Integrated Disaster Management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24ME602,Finite Element Analysis,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24TP610,Employability Skills & Problem Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24ED611,"Building a Business Model, GTM & Startup Journey",0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,6,U24RM612,Technical Writing And Research Ethics,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24MG701,Engineering Economics and Finance Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24ME701,Artificial Intelligence and Robotics for Mechanical Systems,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24MC713,Constitution of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24ME702,Mechatronics and IoT,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24ME703,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,7,U24RM712,"Data Collection, Analysis And Interpretation",0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Mechanical Engineering,MECH,R2024,8,U24ME801,Project Work,8,EEC,,core
