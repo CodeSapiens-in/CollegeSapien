@@ -95,6 +95,15 @@ class AuthService {
     return syncProfile();
   }
 
+  /// Signs in as a Firebase Anonymous Auth user — used for guest flows (e.g.
+  /// joining a live quiz by nickname only) that don't require a full account.
+  /// No-op if already signed in (anonymous or otherwise).
+  Future<User> signInAnonymously() async {
+    if (_auth.currentUser != null) return _auth.currentUser!;
+    final credential = await _auth.signInAnonymously();
+    return credential.user!;
+  }
+
   Future<void> sendEmailVerification() async {
     await _auth.currentUser?.sendEmailVerification();
   }

@@ -65,6 +65,14 @@
       ]
     },
     {
+      "collectionGroup": "quizSessions",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "joinCode", "order": "ASCENDING" },
+        { "fieldPath": "status", "order": "ASCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "syllabus",
       "queryScope": "COLLECTION",
       "fields": [

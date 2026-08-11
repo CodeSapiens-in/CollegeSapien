@@ -108,6 +108,43 @@ service cloud.firestore {
       }
     }
 
+    // Live quiz sessions (Kahoot-style). Anonymous guests join via Firebase
+    // Anonymous Auth, so these rules use signedIn() rather than verified().
+    function isGuestAccount() {
+      return request.auth.token.firebase.sign_in_provider == 'anonymous';
+    }
+
+    function isSessionHost(sessionId) {
+      return signedIn() &&
+        get(/databases/$(database)/documents/quizSessions/$(sessionId)).data.hostUid == request.auth.uid;
+    }
+
+    match /quizSessions/{sessionId} {
+      allow get, list: if signedIn();
+      allow create: if signedIn() && !isGuestAccount()
+        && isOwner(request.resource.data.hostUid);
+      allow update, delete: if isOwner(resource.data.hostUid);
+
+      match /participants/{uid} {
+        allow get, list: if signedIn();
+        allow create: if isOwner(uid) && request.resource.data.score == 0;
+        allow update: if isOwner(uid) || isSessionHost(sessionId);
+        allow delete: if isSessionHost(sessionId);
+      }
+
+      match /answers/{answerId} {
+        allow get: if signedIn() && (resource.data.uid == request.auth.uid || isSessionHost(sessionId));
+        allow list: if isSessionHost(sessionId);
+        // One answer per question per participant — create only, no edits after
+        // submit, except the host flipping `scored` once points are awarded
+        // (see QuizService._scoreAnswers' idempotency guard).
+        allow create: if isOwner(request.resource.data.uid);
+        allow update: if isSessionHost(sessionId)
+          && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['scored']);
+        allow delete: if false;
+      }
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }

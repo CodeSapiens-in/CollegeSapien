@@ -25,6 +25,7 @@ import '../syllabus/syllabus_selection_screen.dart';
 import '../timetable_list_screen.dart';
 import '../ai_features/resume_roast_screen.dart';
 import '../pomodoro/pomodoro_home_screen.dart';
+import '../quiz/quiz_landing_screen.dart';
 import 'events_all_screen.dart';
 import 'create_event_screen.dart';
 import '../../providers/app_state_notifier.dart';
@@ -559,7 +560,7 @@ class _HomeScreenState extends State<HomeScreen> {
           const SizedBox(height: 24),
           _statCardsRow(),
           const SizedBox(height: 24),
-          ..._pomodoroSection(),
+          ..._roomsSection(),
           ..._timetableSection(context),
           ..._subjectsSection(context),
           const SizedBox(height: 24),
@@ -596,7 +597,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      ..._pomodoroSection(),
+                      ..._roomsSection(),
                       ..._timetableSection(context),
                       ..._subjectsSection(context),
                       ..._aiFeaturesSection(),
@@ -769,67 +770,78 @@ class _HomeScreenState extends State<HomeScreen> {
     ];
   }
 
-  List<Widget> _pomodoroSection() {
+  List<Widget> _roomsSection() {
     return [
-      _sectionHeader('Focus'),
+      _sectionHeader('Rooms'),
       const SizedBox(height: 12),
-      _pomodoroCard(),
+      _roomTypeCard(
+        icon: Icons.emoji_events_outlined,
+        color: AppColors.accentBlue,
+        title: 'Quiz Room',
+        subtitle: 'Host or join a live Kahoot-style quiz',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const QuizLandingScreen()),
+        ),
+      ),
+      const SizedBox(height: 12),
+      _roomTypeCard(
+        icon: Icons.timer_outlined,
+        color: AppColors.accentGreen,
+        title: 'Group Study',
+        subtitle: 'Focus with friends, track your pomodoro sessions',
+        onTap: () => Navigator.push(
+          context,
+          MaterialPageRoute(builder: (_) => const PomodoroHomeScreen()),
+        ),
+      ),
       const SizedBox(height: 24),
     ];
   }
 
-  Widget _pomodoroCard() {
+  Widget _roomTypeCard({
+    required IconData icon,
+    required Color color,
+    required String title,
+    required String subtitle,
+    required VoidCallback onTap,
+  }) {
     return GestureDetector(
-      onTap: () => Navigator.push(
-        context,
-        MaterialPageRoute(builder: (_) => const PomodoroHomeScreen()),
-      ),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(8),
-        child: Container(
-          width: double.infinity,
-          padding: const EdgeInsets.all(20),
-          decoration: BoxDecoration(
-            color: AppColors.accentGreen,
-            border: Border.all(color: Colors.black, width: 1.5),
-            borderRadius: BorderRadius.circular(8),
-            boxShadow: const [
-              BoxShadow(offset: Offset(1, 1), color: Colors.black)
-            ],
-          ),
-          child: const Row(
-            children: [
-              Icon(Icons.timer_outlined, size: 36, color: Colors.black),
-              SizedBox(width: 16),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Pomodoro Timer',
-                      style: TextStyle(
-                        fontFamily: 'Lexend Mega',
-                        fontSize: 16,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: -0.5,
-                        color: Colors.black,
-                      ),
-                    ),
-                    SizedBox(height: 4),
-                    Text(
-                      'Focus with friends, track your sessions',
-                      style: TextStyle(
-                        fontFamily: 'Public Sans',
-                        fontSize: 13,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ],
-                ),
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: AppTheme.cardDecoration(color: color),
+        child: Row(
+          children: [
+            Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                border: Border.all(color: Colors.black, width: 1.5),
+                borderRadius: BorderRadius.circular(8),
               ),
-              Icon(Icons.arrow_forward_ios, size: 18, color: Colors.black),
-            ],
-          ),
+              alignment: Alignment.center,
+              child: Icon(icon, size: 20),
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(title,
+                      style: const TextStyle(
+                          fontFamily: 'Public Sans',
+                          fontWeight: FontWeight.w800,
+                          fontSize: 15)),
+                  const SizedBox(height: 2),
+                  Text(subtitle,
+                      style: const TextStyle(fontFamily: 'Inter', fontSize: 11.5)),
+                ],
+              ),
+            ),
+            const Icon(Icons.arrow_forward, size: 18),
+          ],
         ),
       ),
     );
