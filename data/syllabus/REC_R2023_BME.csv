@@ -1,0 +1,61 @@
+﻿college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,HS23111,Technical Communication I,2,HS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,MA23111,Linear Algebra and Calculus,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,GE23111,Engineering Graphics,4,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,GE23117,Heritage of Tamils,1,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,MC23112,Environmental Science and Engineering,0,HS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,CY23131,Chemistry for Electronics Engineering,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,1,GE23121,Engineering Practices - Civil and Mechanical,1,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,MA23212,Differential Equations and Complex Variables,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,ME23211,Engineering Mechanics for Biomedical Engineers,4,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,GE23217,Tamils and Technology,1,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,CS23232,Fundamentals of Data Structures using C,5,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,PH23231,Physics for Bioscience,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,BM23231,Electric Circuits and Machines,4,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,HS23221,Technical Communication II / English for Professional Competence,1,HS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,2,GE23122,Engineering Practices - Electrical and Electronics,1,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,MA23312,Fourier Series and Number Theory,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23311,Human Anatomy and Physiology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23312,Biomedical Instrumentation,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23313,Biochemical Science,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23331,Electronic Devices and Circuits,4,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23332,Sensors and Measurements,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23321,Biochemistry and Physiology Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,3,BM23322,Biomedical Instrumentation Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,BM23411,Analog and Digital Integrated Circuits,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,BM23412,Communication Systems and Standards,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,MC23111,Indian Constitution and Freedom Movement,0,HS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,OE-I,Open Elective I,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,MA23436,Probability and Random Processes,4,BS,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,BM23431,Pathology and Microbiology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,CS23336,Introduction to Python Programming,3,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,BM23421,Analog and Digital Integrated Circuits Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,BM23422,PCB Design Laboratory,1,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,4,GE23421,Soft Skills I,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,BM23511,Biocontrol Systems,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,BM23512,Diagnostic and Therapeutic Equipment,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,OE-II,Open Elective II,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,PE-I,Professional Elective I,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,BM23531,Signals and Systems Analysis,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,BM23532,Microcontroller and Embedded System Design,4,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,CS23422,Python Programming for Machine Learning,2,ES,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,BM23521,Diagnostic and Therapeutic Equipment Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,5,GE23521,Soft Skills II,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,BM23611,Radiological Equipment,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,BM23612,Biomechanics,4,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,PE-II,Professional Elective II,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,PE-III,Professional Elective III,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,BM23631,Biosignal Processing,3,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,BM23632,Physiological Modeling Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,GE23627,Design Thinking and Innovation,2,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,BM23621,Medical Industrial Training,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,6,GE23621,Problem Solving Techniques,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,BM23711,Comprehension in Biomedical Engineering,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,PE-IV,Professional Elective IV,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,PE-V,Professional Elective V,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,PE-VI,Professional Elective VI,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,BM23731,Medical Image Processing,4,PC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,BM23721,Artificial Intelligence and Machine Learning for Biomedical Engineering,2,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,BM23722,Project Phase I,3,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,7,BM23723,Hospital Training,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biomedical Engineering,BME,R2023,8,BM23821,Project Phase II,8,EEC,,core

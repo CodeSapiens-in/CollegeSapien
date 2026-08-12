@@ -1,0 +1,57 @@
+﻿college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,HS23111,Technical Communication I,2,HS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,GE23117,Heritage of Tamils,1,HS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,MA23111,Linear Algebra and Calculus,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,EC23131,Electron Devices,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,CY23131,Chemistry for Electronics Engineering,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,GE23131,Programming using C,4,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,GE23122,Engineering Practices-Electrical and Electronics,1,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,1,MC23111,Indian Constitution and Freedom Movement,0,MC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,MA23212,Differential Equations and Complex Variables,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,GE23217,Tamils and Technology,1,HS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,GE23111,Engineering Graphics,4,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,EE23132,Basic Electrical Engineering,4,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,PH23232,Physics for Electronics Engineering,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,CS23231,Data Structures,5,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,GE23121,Engineering Practices-Civil and Mechanical,1,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,HS23221,Technical Communication II / English for Professional Competence,1,HS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,2,MC23112,Environmental Science and Engineering,0,MC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,MA23312,Fourier Series and Number Theory,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,EC23311,Analog Circuits I,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,EC23312,Electromagnetic Fields,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,EC23313,Digital Principles and System Design,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,EC23332,Principles of Microprocessor and Microcontrollers,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,CS23336,Introduction to Python Programming,3,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,3,EC23321,Analog and Digital Circuits Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,EC23411,Signals and Systems,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,EC23412,Transmission Lines and Waveguides,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,EC23413,Communication Theory,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,EC23431,Analog Circuits II,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,MA23436,Probability and Random Processes,4,BS,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,GE23421,Soft Skills I,1,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,4,CS23422,Python Programming for Machine Learning,2,ES,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,EC23511,Control System Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,EC23512,Modern Digital Communication,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,OE-I,Open Elective I,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,PE-I,Professional Elective I,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,PE-II,Professional Elective II,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,EC23531,Digital Signal Processing,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,EC23521,Communication Systems Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,EC23522,Internship,1,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,5,GE23521,Soft Skills II,1,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,EC23611,Antenna Theory and Wave Propagation,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,OE-II,Open Elective II,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,EC23631,VLSI and Chip Design,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,EC23632,Communication Networks,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,EC23633,Wireless Communication,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,GE23621,Problem Solving Techniques,1,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,6,GE23627,Design Thinking and Innovation,2,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,PE-III,Professional Elective III,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,PE-IV,Professional Elective IV,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,EC23731,Optical Communication and Networks,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,EC23732,RF and Microwave Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,EC23733,Embedded and Real Time Systems,4,PC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,7,EC23721,Artificial Intelligence and Machine Learning for Electronic Engineering,2,EEC,,core
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,8,PE-V,Professional Elective V,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,8,PE-VI,Professional Elective VI,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Electronics and Communication Engineering,ECE,R2023,8,EC23821,Project Work,10,EEC,,core
