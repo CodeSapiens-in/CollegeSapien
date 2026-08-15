@@ -42,13 +42,13 @@ The codebase is organized into four main modules:
   * **Firestore Integration**: Coordinates data models for curricula, colleges, and user profiles.
 
 ### 4. 🌐 `website/` (Landing Page)
-* **Description**: Public-facing marketing website showcasing the product, features, and app store download links.
+* **Description**: The landing page for our community codesapiens.in with a little teaser game and details about our community
 
 ---
 
 ## 📊 Syllabus Data & CSV Structure
 
-The platform stores academic curricula in `data/syllabus/` as `.json` and `.csv` files. The CSV format is designed for easy editing via Excel or Google Sheets.
+The platform stores academic curricula in `data/syllabus/` as `.csv` files. The CSV format is designed for easy editing via Excel or Google Sheets.
 
 ### CSV Layout Guidelines
 Each row represents a single subject record. Common metadata fields (college, course, regulation, etc.) are repeated across every row to produce a self-contained flat file of 12 columns:

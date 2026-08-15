@@ -1,0 +1,75 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24IP101,Induction Program-Universal Human values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24MA101,Mathematical Foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24PH103,Physics for Electronics Engineering -1,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24CY103,Chemistry for Electrical and Electronics Engineering,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24EE103,Basics of Electrical Engineering,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24TP110,Communication Skills Lab I,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,1,U24ED111,Design Thinking -Building Innovation & Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24IP201,Value Added Course – II (Biology for Engineers),0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24MA203,Differential Equations and Transforms,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24PH203,Physics for Electronics Engineering -II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24CY201,Green and Sustainability Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24CE203,Engineering Graphics for Electronics and Communication Engineering,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24ME101,Engineering Practices Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24TP210,Communication Skills Lab II,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,2,U24ED211,Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24MA303,Random Process and Linear Algebra,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24EC301,Signals and Systems,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24EC302,Basic Electric Circuit Analysis,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24EC303,Electronic Devices and Circuits,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24EC304,Digital System Design,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24AD302,Oops and Data Structures Design,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24ED311,Design Thinking Innovation tool kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24RM312,Introduction to Problem Solving,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,3,U24MC313,Foreign Language (Japanese/French),0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24MA402,Linear Algebra and Numerical Methods,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC401,Analog and Digital Communication,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC402,Electromagnetic fields,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC403,Linear Integrated Circuits,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EE408,Control Systems Engineering,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC404,Digital Signal Processing,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC405,Linear Integrated Circuits LAB,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24EC406,Communication Systems Lab,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24ED411,Idea & Simulation Lab,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24RM412,Hypothesis,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,4,U24MC413,Indological studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24EC501,Transmission lines and RF Systems,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24EC502,VLSI and chip design,4.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24EC503,Wireless Communication,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24EC511,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24RM512,Domain Specific Experiments/Methodology/Algorithms,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,5,U24MC513,"Fitness for Life-Yoga, Food nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24EC601,Embedded Systems and IOT Design,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24EC602,Networks & Security,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24RM612,Technical Writing and Research Ethics,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24TP610,Employability Skills & Problem Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24ED611,Business Management - Go To Market & Start-up Journey,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,6,U24MC613,Integrated Disaster Management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24MG701,Engineering Economics and Finance Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24MC713,Constitution Of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24EC701,Microwave and Optical Communication,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24EC702,Artificial Intelligence and Machine learning,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24ME703,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,7,U24RM712,"Data Collection, Analysis and Interpretation",0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electronics and Communication Engineering,ECE,R2024,8,U24ME801,Project Work,8,EEC,,core
