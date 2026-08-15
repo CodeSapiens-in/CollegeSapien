@@ -1,0 +1,95 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,HS22151,Tamil language and Heritage of Ancient Tamil Society,1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,HS22152,Communicative English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,MA22152,Applied Mathematics I for Marine Engineers,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,PH22152,Engineering Physics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,CY22154,Chemistry for Marine Engineering,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,ME22101,Engineering Drawing,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,MR22101,Introduction to Marine Engineering,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,CY22161,Chemistry Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,1.0,MR22111,Fitting Workshop,2.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,HS22251,Science and Technology in Ancient Tamil Society,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,HS22252,Technical English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,MA22252,Applied Mathematics II for Marine Engineers,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,MR22202,Material Science and Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,ME22201,Engineering Mechanics,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,IT22252,Computer Applications and Python programming,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,MR22201,Thermal Engineering for Marine Engineers,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,EE22151,Basic Electrical and Electronics Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,MR22211,Computer Aided Drafting Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,EE22111,Basic Electrical and Electronics Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,2.0,PH22161,Physics Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MA22352,Computational Methods,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22301,Hydraulics and Fluid Machinery for Marine Engineers,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22302,Marine Auxiliary Machinery I,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,EE22351,Marine Electrical Machines I,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22303,"Seamanship, Elementary Navigation and Survival at Sea",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22304,Marine Boilers and steam Turbines,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22305,Marine Diesel Engines -I,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22311,Marine Hydraulics and Fluid Machinery Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,3.0,MR22312,Thermal Engineering and Boiler Chemistry Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22401,Solid Mechanics,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22402,Ship Construction,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22403,Marine Diesel Engines II,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,EE22451,Marine Electrical Machines II,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22404,Marine Auxiliary Machinery II,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,GE22451,Environmental Sciences and Sustainability,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22405,Manufacturing Technology for Marine Engineers,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22411,Applied and Solid Mechanics Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,4.0,MR22412,"Advanced Welding Techniques, Lathe and Special Machines Laboratory",2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,MR22501,"Metrology ,Instrumentation and Automation",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,MR22502,Ship’s Fire Prevention and Control,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,MR22503,Professional Ethics for Marine Engineers,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,,Professional Elective I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,,Professional Elective II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,,Professional Elective III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,,Mandatory Course,0.0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,MR22511,"Fire Fighting, Controls and Simulator Laboratory",2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,5.0,MR22512,Mechanical Measurement and Instrumentation Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,MR22701,Stability of Ships,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,EE22751,Marine Electrical Technology,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,EE22752,Marine Electronics,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,,Professional Elective IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,,Professional Elective V,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,,Open Elective - I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,MR22711,Marine Propulsion and Auxiliary Machineries Overhauling Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,EE22761,"Electrical, Electronics and Micro Controller Laboratory",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,HS22511,Interview and Career Skills Laboratory,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,MR22801,Marine Vehicles Performance,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,MR22802,Marine Management and IMO Requirements,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,,Professional Elective VI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,,Open Elective II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,HS22851,Gender Sensitisation for Marine Engineers,2.0,DGC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,8.0,MR22811,Project Work,10.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22011,Surface Engineering and Coating Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22012,Marine Engineering Equipment Design,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,EE22911,Electrical Technology for Marine Engineers,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22013,Marine Refrigeration and Air Conditioning,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MA22911,Mathematical Foundation for Data Science,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22016,Safety Precautions and Watch Keeping,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,IT22921,Data Science for Marine Engineers,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22022,Advances in Marine Propulsion Engines,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22023,Marine Propellers and Propulsion,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22024,Mechanics of Marine Machines,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22025,Offshore Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22026,Shipboard Leadership and Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22027,Basic Concepts of Marine Insurance,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22028,Ship Safety and Environmental Protection,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22031,Special Duty Vessels and Type of Operations,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22032,Marine Corrosion and Prevention,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22033,Marine Environment and Air Quality,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,CH22041,"Renewable Energy Resources (Common to CH,",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22034,Marine Vibration Measurement Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22035,Energy Efficient Ship Operation,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22036,Fuel Lubrication Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22042,Roles of Classification Society,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22043,Material Handling Equipments,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22044,Dry Docking and Ship Repairs,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22045,Emergency Management and Damage Control,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22046,Marine Resource Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,MR22047,Marine Engineering Safety Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,OE22901,Elements of Marine Engineering,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,OE22902,Marine Propulsion,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,OE22903,Marine Vehicles,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,,OE22904,Introduction to Marine Diesel Engines and Machineries,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Marine Engineering,MR,R2022,6.0,MR22611,Marine Workshop Practices and Afloat Training,16.0,EEC,,core
