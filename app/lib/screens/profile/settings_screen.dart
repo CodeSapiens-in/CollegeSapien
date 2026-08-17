@@ -46,8 +46,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     try {
       await AuthService.instance.deleteAccount();
       if (!mounted) return;
-      Navigator.pushAndRemoveUntil(
-        context,
+      Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
         MaterialPageRoute(builder: (_) => const CollegeSelectionScreen()),
         (_) => false,
       );

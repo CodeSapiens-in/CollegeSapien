@@ -105,10 +105,14 @@ class _UserDetailsScreenState extends State<UserDetailsScreen>
 
       if (mounted) {
         setState(() => _isLoading = false);
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (context) => const MainNavigation()),
-        );
+        if (Navigator.canPop(context)) {
+          Navigator.pop(context);
+        } else {
+          Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (context) => const MainNavigation()),
+            (_) => false,
+          );
+        }
       }
     } catch (e) {
       if (mounted) {

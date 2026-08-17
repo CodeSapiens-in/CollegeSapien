@@ -22,7 +22,9 @@ import 'help_screen.dart';
 import 'settings_screen.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({super.key});
+  final void Function(int)? onTabSwitch;
+
+  const ProfileScreen({super.key, this.onTabSwitch});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -495,10 +497,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 'Attendance',
                 _attendanceStat,
                 AppColors.accentGreen,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (_) => const AttendanceScreen()),
-                ),
+                onTap: () {
+                  if (widget.onTabSwitch != null) {
+                    if (Navigator.canPop(context)) Navigator.pop(context);
+                    widget.onTabSwitch!(1);
+                  } else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const AttendanceScreen()),
+                    );
+                  }
+                },
               ),
             ),
             const SizedBox(width: 12),
@@ -535,11 +545,18 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 'Files Uploaded',
                 _filesUploaded,
                 AppColors.accentPurple,
-                onTap: () => Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                      builder: (_) => const ResourcesHubScreen()),
-                ),
+                onTap: () {
+                  if (widget.onTabSwitch != null) {
+                    if (Navigator.canPop(context)) Navigator.pop(context);
+                    widget.onTabSwitch!(3);
+                  } else {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (_) => const ResourcesHubScreen()),
+                    );
+                  }
+                },
               ),
             ),
           ],
@@ -607,8 +624,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             await AuthService.instance.signOut();
           } catch (_) {}
           if (!context.mounted) return;
-          Navigator.pushAndRemoveUntil(
-            context,
+          Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
             MaterialPageRoute(builder: (_) => const CollegeSelectionScreen()),
             (_) => false,
           );
