@@ -802,7 +802,9 @@ class _HomeScreenState extends State<HomeScreen> {
               GestureDetector(
                 onTap: () => Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (_) => const ProfileScreen()),
+                  MaterialPageRoute(
+                    builder: (_) => ProfileScreen(onTabSwitch: widget.onTabSwitch),
+                  ),
                 ),
                 child: Container(
                   width: 42,

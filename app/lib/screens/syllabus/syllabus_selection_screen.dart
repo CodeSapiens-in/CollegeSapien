@@ -147,10 +147,14 @@ class _SyllabusSelectionScreenState extends State<SyllabusSelectionScreen> {
         // subjects, not a curriculum fallback.
         Provider.of<AppStateNotifier>(context, listen: false)
             .setSavedSubjects(subjects);
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(builder: (_) => const MainNavigation()),
-        );
+        if (Navigator.canPop(context)) {
+          Navigator.pop(context);
+        } else {
+          Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+            MaterialPageRoute(builder: (_) => const MainNavigation()),
+            (_) => false,
+          );
+        }
       }
     } catch (e) {
       if (mounted) {
@@ -239,10 +243,14 @@ class _SyllabusSelectionScreenState extends State<SyllabusSelectionScreen> {
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {
-                    Navigator.pushReplacement(
-                      context,
-                      MaterialPageRoute(builder: (_) => const MainNavigation()),
-                    );
+                    if (Navigator.canPop(context)) {
+                      Navigator.pop(context);
+                    } else {
+                      Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
+                        MaterialPageRoute(builder: (_) => const MainNavigation()),
+                        (_) => false,
+                      );
+                    }
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.black,

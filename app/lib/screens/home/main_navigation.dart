@@ -89,8 +89,10 @@ class _MainNavigationState extends State<MainNavigation>
 
   @override
   Widget build(BuildContext context) {
+    final isNestedInNav =
+        context.dependOnInheritedWidgetOfExactType<_MainNavigationScope>() != null;
     final width = MediaQuery.of(context).size.width;
-    final showRail = Breakpoints.isAtLeastTablet(width);
+    final showRail = !isNestedInNav && Breakpoints.isAtLeastTablet(width);
     final railExpanded = Breakpoints.isAtLeastDesktop(width);
 
     final screen = FadeTransition(
@@ -119,17 +121,19 @@ class _MainNavigationState extends State<MainNavigation>
           )
         : screen;
 
-    return Scaffold(
-      body: showRail
-          ? Row(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                _navRail(expanded: railExpanded),
-                Expanded(child: content),
-              ],
-            )
-          : content,
-      bottomNavigationBar: showRail ? null : _bottomNav(),
+    return _MainNavigationScope(
+      child: Scaffold(
+        body: showRail
+            ? Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  _navRail(expanded: railExpanded),
+                  Expanded(child: content),
+                ],
+              )
+            : content,
+        bottomNavigationBar: showRail ? null : _bottomNav(),
+      ),
     );
   }
 
@@ -325,7 +329,9 @@ class _MainNavigationState extends State<MainNavigation>
           // Navigator.of(context) here would find the root Navigator, not
           // the nested one — push onto it explicitly via its key instead.
           final nav = _contentNavKey.currentState;
-          final route = MaterialPageRoute(builder: (_) => const ProfileScreen());
+          final route = MaterialPageRoute(
+            builder: (_) => ProfileScreen(onTabSwitch: _onTab),
+          );
           setState(() => _profileActive = true);
           final pushed = nav != null
               ? nav.push(route)
@@ -455,3 +461,11 @@ class _MainNavigationState extends State<MainNavigation>
     );
   }
 }
+
+class _MainNavigationScope extends InheritedWidget {
+  const _MainNavigationScope({required super.child});
+
+  @override
+  bool updateShouldNotify(covariant InheritedWidget oldWidget) => false;
+}
+
