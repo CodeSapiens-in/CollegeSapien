@@ -1,0 +1,128 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,HS22151,Tamil Language and Heritage of Ancient Tamil Society,1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,HS22152,Communicative English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,MA22151,Applied Mathematics I,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,PH22151,Applied Physics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,CY22151,Applied Chemistry,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,EE22151,Basic Electrical and Electronics Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,IT22101,Programming for Problem Solving,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,PH22161,Physics Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,EE22111,Basic Electrical and Electronics Engineering Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,1,IT22111,Programming for Problem Solving Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,HS22252,Technical English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,MA22251,Applied Mathematics II,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,ME22251,Technical Drawing,2.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,IT22201,Computer Organization and Architecture,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,IT22202,OOPS using C++ and Python,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,BT22101,Biology for Engineers,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,IT22211,Hardware Assembling and Software Tools Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,2,IT22212,OOPS using C++ and Python Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,MA22353,Discrete Mathematics,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22301,Data Structures and Algorithms,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22302,Database Concepts,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22303,Digital Communication,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22309,IT Essentials: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22311,Data Structures and Algorithms Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22312,Database Concepts Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,3,IT22313,Digital Communication Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,MA22454,Probability and Queuing Theory,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,GE22451,Environmental Sciences and Sustainability,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22401,Operating System Concepts,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22402,Microprocessor and Microcontroller Interfacing,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22408,Paradigms of Algorithm Design: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22409,Software Engineering Methodologies: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22411,Microprocessor and Microcontroller Interfacing Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,4,IT22412,Operating System Concepts Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22501,Essentials of IoT,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22502,User Interface Technologies,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22503,Computational Intelligence,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22504,Data Communication and Networking,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,,Professional Elective I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,,Open Elective I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22511,Essentials of IoT Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,HS22511,Interview and Career Skills Laboratory,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22512,Data Communication and Networking Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,5,IT22513,Industrial Training/Internship,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22609,Information Security: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22601,Machine Learning Algorithms and Techniques,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22602,Natural Language Processing and Understanding,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,,Open Elective II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,,Professional Elective II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,,Mandatory Course,0.0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22611,Machine Learning Techniques Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22612,Natural Language Processing and Understanding Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,6,IT22613,Mini Project,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,IT22709,Cyber Forensics: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,IT22701,Distributed and Cloud Computing,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,IT22702,Big Data,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,,Professional Elective III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,,Professional Elective IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,IT22711,Distributed and Cloud Computing Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,7,IT22712,Big Data Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,8,,Professional Elective V,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,8,,Professional Elective VI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,8,IT22811,Project Work,10.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22001,Financial Statement Analysis,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22002,Introduction to Securities Market,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22003,Option Trading Strategies,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22004,Corporate Finance,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22005,Managerial Economics,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22006,Project Management,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,SE22007,Mathematics For AI & ML,3.0,SE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22021,Quantum Computing Concepts,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22022,Next Generation Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22023,Containerization Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22024,Bio Informatics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22025,Green Computing Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22026,Cognitive Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22027,Virtualization Tools and Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22020,Advance Cloud Computing Technologies Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22031,Network Design,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22032,Malware Threats in Cybersecurity,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22033,Blockchain for Finance,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22034,Digital and Mobile Forensics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22035,Ethical Laws and Policies on Cyber Security,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22036,Software Defined Networking Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22037,Edge and Mobility Network Security Solutions,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22030,Ethical Hacking Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22041,Data Science Using Python,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22042,Pattern Recognition Technologies and Applications,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22043,Deep Learning and its Application,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22044,Intelligent Decision Making,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22045,Social Network Information Analysis,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22046,Recommendation System Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22047,AI for Social Good,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22040,Data Science Exploration Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22051,Embedded and Real Time Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22052,Wearable Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22053,Industrial and Medical IoT,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22054,Cyber Physical System,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22055,Unmanned Vehicle System,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22056,Extended IoT,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22057,IoT for smart Applications,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22050,Open Source Programming for IoT Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22061,Graphics and Multimedia,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22062,Machine Vision,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22063,Digital Image Processing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22064,Game Design,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22065,AR and VR Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22066,3D Game Modelling and Rendering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22067,Human Computer Interface Design,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22060,Multimedia Tools Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22071,Free and Open Source Software,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22072,Functional Programming Using SCALA,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22073,Software Testing Tools and Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22074,GO Programming: Theory and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22075,Advanced Java Programming: Theory and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,ME22087,Principles of Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22077,Service Oriented Architecture for Enterprise and Cloud Applications,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,IT22070,Full Stack Development Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22801,IT Essentials for Engineers,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22802,Programming for IoT,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22803,Foundations of Mobile Application Development,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22804,Data Analytics using R,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22805,Ethical Hacking and IT Security,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22806,AI for Android,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22807,User Interface Design,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Information Technology,IT,R2022,,OE22808,Software Testing,3.0,OE,Open Elective,option

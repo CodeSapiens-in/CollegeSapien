@@ -1,0 +1,122 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,HS22151,Tamil Language and Heritage of Ancient Tamil Society,1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,HS22152,Communicative English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,MA22151,Applied Mathematics – I,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,PH22152,Engineering Physics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,CY22152,Engineering Chemistry,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,CS22151,Programming in C,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,ME22101,Engineering drawing,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,PH22161,Physics Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,CY22161,Chemistry Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,1.0,CS22161,Programming in C Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,HS22251,Science and Technology in Ancient Tamil Society,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,HS22252,Technical English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,MA22251,Applied Mathematics – II,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,PH22253,Engineering Materials,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,ME22201,Engineering Mechanics,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,EE22151,Basic Electrical and Electronics Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,ME22211,Production Drawing Laboratory,2.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,2.0,EE22111,Basic Electrical and Electronics Engineering Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,MA22355,Partial Differential Equations and Numerical Methods,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,MN22301,Introduction to Industrial Automation,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,ME22302,Mechanics of Materials,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,MN22302,Theory of Machines,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,MN22303,Manufacturing Technology,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,EE22359,Electrical Drives and Controls: Theory and Practices,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,ME22313,Manufacturing Technology Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,3.0,ME22314,Material Testing Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,GE22451,Environmental Science & Sustainability,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,MN22401,Design of Machine Elements,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,MN22402,Fluid Mechanics and Thermal Science,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,MN22403,Operations Research and Management,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,MN22408,Hydraulics and Pneumatics for Automation: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,MN22409,Metrology and Instrumentation: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,ME22411,Computer Aided Modelling Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,4.0,ME22412,Fluid and Thermal Engineering Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,MN22501,Industrial Robotics: Theories for Implementation,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,MN22502,Modern Manufacturing Processes,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,ME22403,Thermal Engineering,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,MN22509,Controllers for Automation: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,ME22709,Computer Aided Engineering: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,,PE-I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,,Open elective – I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,,Mandatory Course,0.0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,MN22511,Modern Manufacturing Processes Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,5.0,MN22512,Robotics Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,MN22601,Modern Material Handling Systems,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,MN22608,Industrial Internet of Things: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,MN22609,Programming and Modelling in Industrial Automation: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,,PE-II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,,PE-III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,,Open Elective-II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,MN22611,Factory Simulation Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,6.0,HS22511,Interview and Career Skills Laboratory,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,ME22701,Engineering Ethics and Human Values,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,MN22701,AI and ML for Automation,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,MN22709,Data Science for Industrial Automation: Theory and Practices,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,,PE-IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,,PE-V,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,,PE-VI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,MN22711,Comprehension,1.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,7.0,MN22712,Industrial Training/Internship,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,8.0,MN22811,Project Work All the courses,10.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22021,"Design for Manufacturing, Assembly and Environment",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22022,Failure Modes and Effects Analysis,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22023,New Product Development,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22024,Product Life Cycle Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22025,Quality and Financial Concepts in Product Development,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22026,System Design for Sustainability,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22027,Value Engineering and Process Planning,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22020,Product Life Cycle Management Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22031,Digital Manufacturing and Internet of Things,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22032,Sustainable Manufacturing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22033,Environmental Impact and Assessment,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22034,Green Manufacturing Design and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22035,Green Supply Chain Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22036,Lean Manufacturing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22037,Statistical and Quality Techniques for Manufacturing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22030,Digital Manufacturing and IoT Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22041,Business Analytics for Management Decision,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22042,Enterprise Resource Planning,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22043,Industrial Engineering and Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22044,"Logistics in Manufacturing, Supply Chain and Distribution",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22045,Sustainable Supply Chain Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22046,Total Quality Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22047,Warehousing Automation,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22040,Project Management Laboratory,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22051,Biomass Conversion and Bio- refinery,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22052,Carbon Footprint Estimation and Reduction Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22053,Energy Conservation and Waste Heat Recovery,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22054,Energy Efficient Buildings,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22055,Energy Storage Devices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22056,"Hydrogen Energy: Production, Storage, Transportation and Safety",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,CH22041,Renewable Energy Resources,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22050,Energy Auditing: Case Study,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22061,Digital Twin and Industry 5.0,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22062,Drone Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22063,Industrial Network and Protocol,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22064,Intelligent Physical Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22065,Machine vision and Image processing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22066,Robot Operating Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22067,Robotics for Smart Manufacturing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22060,Mini Project**,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22071,Computational Fluid dynamics: Theory and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,AE22602,Electric and Hybrid Vehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22072,Nanotechnology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22073,Non-Destructive Testing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22074,Production Planning and Control,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22075,Smart and Bio Materials,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22076,Welding Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,MN22077,Introduction to Heat Transfer,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22081,Automobile Engineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22082,Composite Materials and Mechanics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22083,"Heating, Ventilation and Air- Conditioning Systems",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22084,Industrial Safety Engineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22085,Instrumentation and Control Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22086,Power Plant Engineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22087,Principles of Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,ME22088,Vibrations and Noise Control,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,OE22002,3D Printing and Design: Theory and Practices,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,OE22003,Lean Six Sigma,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,OE22004,Robotics and Programming: Theory and Practices,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Mechanical and Automation Engineering,MN,R2022,,OE22001,Green Manufacturing,3.0,OE,Open Elective,option

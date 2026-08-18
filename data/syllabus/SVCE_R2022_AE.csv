@@ -1,0 +1,107 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,HS22151,TamilLanguageandHeritageof Ancient TamilSociety (CommontoallBranches),1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,HS22152,CommunicativeEnglish (CommontoallBranches),3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,MA22151,AppliedMathematics I (CommontoallBranches exceptMR),4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,PH22152,EngineeringPhysics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,CY22152,"EngineeringChemistry (CommontoAE,AM,ME,MN)",3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,BT22101,Biologyfor Engineers,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,AE22101,ComputerAidedEngineering Drawing,4.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,CY22161,"ChemistryLaboratory (CommontoallBranches exceptAD,CS, IT)",1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,1.0,ME22162,"BasicMechanical Engineering Laboratory (CommontoAE, AM,BT, CH)",1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,HS22251,ScienceandTechnology in Ancient Tamil Society (CommontoallBranches),2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,HS22252,TechnicalEnglish (CommontoallBranches),3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,MA22251,AppliedMathematics II (Commontoall Branches exceptMR) MA22151,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,PH22253,"EngineeringMaterials (CommontoAE,AM, ME,MN)",3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,EE22151,"BasicElectrical and Electronics Engineering (CommontoallBranches except CH,EE,EC)",3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,AE22201,ProductionProcesses,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,IT22251,"ComputerProgrammingand Practice(CommontoAE, AM,BT, CE,CH)",3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,PH22161,Physics Laboratory (CommontoallBranches exceptBT),1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,2.0,EE22111,BasicElectricalandElectronics Engineering Laboratory (CommontoallBranches exceptEC),1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22301,"BasicandApplied Thermodynamics (Commonto AE,AM)",4.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22302,"FluidMechanicsand Hydraulic Machines (CommontoAE, AM)",3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22303,"ManufacturingTechnology andSystems (CommontoAE, AM)",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,MA22355,"PartialDifferential Equations andNumerical Methods (CommontoAE,AM, BT, MN)",4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22308,AutomotiveFuels and Lubricants: Theory andPractices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22309,AutomotiveEngines: Theory andPractices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22311,"FluidMechanicsand HydraulicMachines Laboratory(CommontoAE, AM)",1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,3.0,AE22312,ProductionTechnology Laboratory,1.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22401,AppliedMechanics,4.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22402,"AutomotiveElectrical, Electronics andMicrocontroller Systems (CommontoAE,AM)",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22403,"ThermalEngineeringandHeat Transfer (CommontoAE, AM) AE22301",4.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22408,"AutomotiveChassis Components: Theoryand Practices (CommontoAE, AM)",4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22409,"MechanicsofSolids: Theory andPractices (CommontoAE, AM)",4.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,GE22451,Environmental Sciences and Sustainability (CommontoAllBranches),3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22411,"AutomotiveElectrical, Electronics andMicrocontroller Laboratory(CommontoAE, AM)",1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,4.0,AE22412,VehicleMaintenance LaboratoryI,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22501,Automotive Transmission,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22502,"Design of Machine Elements and Transmission Systems AE22401, AE224 09",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22503,"Human Relations, Values and Ethics",2.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22504,Mechanics of Machines AE22401,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,,Professional Elective I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,,Professional Elective II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,,Open Elective I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22511,CAD/CAM Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22512,Vehicle Maintenance Laboratory II,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,5.0,AE22513,Industrial Training / Internship,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,AE22601,AutomotiveComponents Design AE22502,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,AE22602,Hybrid and Electric Vehicles,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,,Professional Elective III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,,Professional Elective IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,,Professional ElectiveV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,,Open Elective II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,AE22611,ComprehensionI,1.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,AE22612,ElectricVehicle Laboratory I,1.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,HS22511,Interview andCareerSkills Laboratory (Commontoall branches except CE),2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,6.0,AE22613,"SimulationofEngine and ChassisComponents Laboratory (CommontoAE, AM)",1.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,AE22701,"ArtificialIntelligencefor AutomotiveApplications (CommontoAE,AM)",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,AE22702,"MobilityEngineering Management (CommontoAE, AM)",3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,AE22703,"VehicleDynamics:Theory and Practices (CommontoAE, AM) AE22401",4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,,Professional ElectiveVI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,AE22711,ComprehensionII,1.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,7.0,AE22712,ElectricVehicleLaboratory II,1.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,8.0,AE22811,ProjectWork,10.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22021,AutomotiveSafetyand Ergonomics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22022,AutomotiveSensorsand Actuators,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22023,AutonomousandConnected Vehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22024,BatteryandFuel CellTechnology forElectricVehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22025,Electric TwoandThree Wheelers,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22602,HybridandElectric Vehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22026,Electric Vehicle Management Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22027,Motors andControlsfor Hybrid andElectric Vehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22028,SolarEnergy Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22031,AdvancedTheoryofIC Engines,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22032,AlternativeFuels,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22033,AutomotiveControlSystems for Driveline,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22034,"AutomotiveNoise,Vibrationand Harshness",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22035,AutomotivePollutionand Control,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22036,DesignofExperiments,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22037,EngineandVehicle Management Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22038,VehicleBodyEngineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22041,AdditiveManufacturing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,ME22031,Digital Manufacturing and Internet ofThings,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22042,FailureAnalysis andNDT Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22043,FiniteElement Analysis for AutomobileEngineers,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22044,FundamentalsofNanoScience andTechnology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22045,ManufacturingofAutomotive Components,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22046,NewProductDevelopment,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22047,NovelAutomotiveMaterials,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22051,AutomotiveAerodynamics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22052,AutomotiveAutomation,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,CH22053,DisasterMitigationManagement,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22053,EmbeddedSystems for AutomotiveApplications,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22054,Hydraulics andPneumatics Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22055,Metrology andMeasurement System,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22056,OperationsResearch,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22057,TotalQualityManagement,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22061,AutomotiveAirConditioning,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,MN22071,ComputationalFluidDynamics: Theory andPractices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22062,IndustrialRobotics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22063,OffHighwayVehicles,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,ME22087,"PrinciplesofManagement (CommontoME, AE,EE, IT and MN)",3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22064,SimulationofIC Engines,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22065,Vehicle DesignData Characteristics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,AE22066,Virtual Instrumentationin AutomobileEngineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,OE22101,AutomotiveFault Diagnostics,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,OE22102,FundamentalsofAutomobile Engineering,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,OE22103,FundamentalsofAutomotiveAir Conditioning,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Automobile Engineering,AE,R2022,,OE22104,FundamentalsofAutomotive PollutionandControlMethods,3.0,OE,Open Elective,option
