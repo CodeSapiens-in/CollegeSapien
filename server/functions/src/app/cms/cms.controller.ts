@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import * as admin from 'firebase-admin';
+import { log } from '../../shared/logger';
 
 export const getPublicCmsContent = async (req: Request, res: Response) => {
   try {
@@ -16,6 +17,7 @@ export const getPublicCmsContent = async (req: Request, res: Response) => {
     res.setHeader('Cache-Control', 'public, max-age=3600, s-maxage=3600');
     return res.status(200).json(content);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

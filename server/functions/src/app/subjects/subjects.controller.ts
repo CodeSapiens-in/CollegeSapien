@@ -3,6 +3,7 @@ import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import { SubjectSchema } from './subjects.model';
 import * as admin from 'firebase-admin';
 import { zodError } from '../../shared/zod-error';
+import { log } from '../../shared/logger';
 
 export const createSubject = async (req: AuthRequest, res: Response) => {
   try {
@@ -67,6 +68,7 @@ export const listSubjectsForCollege = async (req: AuthRequest, res: Response) =>
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

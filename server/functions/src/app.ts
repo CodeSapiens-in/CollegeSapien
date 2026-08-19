@@ -1,10 +1,12 @@
 import express from 'express';
 import cors from 'cors';
+import helmet from 'helmet';
 import cookieParser from 'cookie-parser';
 import * as admin from 'firebase-admin';
 import swaggerUi from 'swagger-ui-express';
 import { getSpecs } from './shared/docs/swagger';
 import { enforceAppCheck } from './shared/middlewares/app-check.middleware';
+import { globalLimiter } from './shared/middlewares/rate-limit.middleware';
 import { requestLogger } from './shared/logger';
 import authRoutes from './app/auth/auth.route';
 import attendanceRoutes from './app/attendance/attendance.route';
@@ -41,17 +43,49 @@ if (admin.apps.length === 0) {
   admin.initializeApp();
 }
 
-const corsOrigins = (process.env.CORS_ORIGINS || '')
+// Known first-party origins. CORS_ORIGINS (comma-separated) overrides this list
+// in any environment without a code change — but we never fall back to
+// reflecting an arbitrary Origin, since the session cookie is credentialed
+// and that would open the door to CSRF from any website.
+const DEFAULT_CORS_ORIGINS = [
+  'https://college.codesapiens.in',
+  'https://admin.codesapiens.in',
+  'https://codesapiens.in',
+  'https://collegesapiens.web.app',
+  'https://collegesapiens.firebaseapp.com',
+  'https://admin-collegesapiens.web.app',
+  'https://admin-collegesapiens.firebaseapp.com',
+  'https://codesapiens.web.app',
+  'https://codesapiens.firebaseapp.com',
+];
+
+const envCorsOrigins = (process.env.CORS_ORIGINS || '')
   .split(',')
   .map(origin => origin.trim())
   .filter(Boolean);
 
+const corsOrigins = envCorsOrigins.length > 0 ? envCorsOrigins : DEFAULT_CORS_ORIGINS;
+
 app.use(
   cors({
-    origin: corsOrigins.length > 0 ? corsOrigins : true,
+    origin: corsOrigins,
     credentials: true,
   })
 );
+
+app.use(
+  helmet({
+    // Swagger UI needs inline scripts/styles; the API itself serves only JSON,
+    // so a strict CSP here would only break /api/docs for no security benefit.
+    contentSecurityPolicy: false,
+    crossOriginEmbedderPolicy: false,
+  })
+);
+
+// Coarse global abuse guard. Endpoint-specific limiters (auth, uploads) are
+// applied directly on their routers — see rate-limit.middleware.ts.
+app.use(globalLimiter);
+
 app.use(cookieParser());
 app.use((req: any, res, next) => {
   if (req.rawBody !== undefined) {

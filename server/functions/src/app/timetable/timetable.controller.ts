@@ -4,6 +4,7 @@ import { TimetableSchema } from './timetable.model';
 import * as admin from 'firebase-admin';
 import type { GoogleGenerativeAI } from '@google/generative-ai';
 import { zodError } from '../../shared/zod-error';
+import { log } from '../../shared/logger';
 
 // parseTimetable (the only caller) is currently disabled — see its early 503 return below.
 // Defer loading @google/generative-ai (~700KB) so it doesn't cost every cold start of this route.
@@ -74,7 +75,8 @@ export const getTimetable = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(timetableDoc.data());
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -99,7 +101,8 @@ export const deleteTimetable = async (req: AuthRequest, res: Response) => {
     await ref.delete();
     return res.status(200).json({ message: 'Timetable deleted' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -157,6 +160,7 @@ export const parseTimetable = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(resultJson);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

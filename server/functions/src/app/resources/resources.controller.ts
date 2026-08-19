@@ -9,6 +9,7 @@ import {
   getModeratorScopeError,
   resolvePendingReportsForResource,
 } from './resources.moderation';
+import { log } from '../../shared/logger';
 
 const firestore = () => admin.firestore();
 
@@ -48,7 +49,8 @@ export const getSyllabus = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -76,7 +78,8 @@ export const getHubResources = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -104,7 +107,8 @@ export const listPendingResources = async (req: AuthRequest, res: Response) => {
     );
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -132,7 +136,8 @@ export const listApprovedResources = async (req: AuthRequest, res: Response) => 
     );
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -159,7 +164,8 @@ export const listArchivedResources = async (req: AuthRequest, res: Response) => 
     );
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -192,7 +198,8 @@ export const approveResource = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json({ message: 'Resource approved' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -361,7 +368,8 @@ export const updateResourceFileUrl = async (req: AuthRequest, res: Response) => 
 
     return res.status(200).json({ message: 'Resource updated' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -421,6 +429,7 @@ export const getReports = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

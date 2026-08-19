@@ -7,6 +7,7 @@ import {
   getModeratorScopeError,
   resolvePendingReportsForResource,
 } from '../resources/resources.moderation';
+import { log } from '../../shared/logger';
 
 const firestore = () => admin.firestore();
 
@@ -38,7 +39,8 @@ export const assignRole = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json({ message: `Role ${role} assigned to user ${uid}` });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -49,7 +51,8 @@ export const listUsers = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -168,7 +171,8 @@ export const getUserById = async (req: AuthRequest, res: Response) => {
       disabled: authUser?.disabled ?? false,
     });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -184,7 +188,8 @@ export const banUser = async (req: AuthRequest, res: Response) => {
     ]);
     return res.status(200).json({ message: 'User banned' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -200,7 +205,8 @@ export const unbanUser = async (req: AuthRequest, res: Response) => {
     ]);
     return res.status(200).json({ message: 'User unbanned' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -230,7 +236,8 @@ export const unarchiveResource = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json({ message: 'Resource restored to approved' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -272,7 +279,8 @@ export const getResourceStats = async (_req: AuthRequest, res: Response) => {
       syllabus: syllabus.data().count,
     });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -282,7 +290,8 @@ export const getCmsContent = async (_req: AuthRequest, res: Response) => {
     const entries = snapshot.docs.map(doc => ({ key: doc.id, ...doc.data() }));
     return res.status(200).json(entries);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -305,6 +314,7 @@ export const updateCmsContent = async (req: AuthRequest, res: Response) => {
     if (error instanceof z.ZodError) {
       return res.status(400).json({ error: error.issues[0]?.message });
     }
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

@@ -7,6 +7,7 @@ import {
   computeAttendanceSummary,
   ensureAttendanceTrackingStartDate,
 } from '../attendance/attendance.controller';
+import { log } from '../../shared/logger';
 
 const COOKIE_OPTIONS = {
   httpOnly: true,
@@ -150,7 +151,8 @@ export const syncAuthProfile = async (req: AuthRequest, res: Response) => {
       savedSubjects: syllabusDoc.exists ? syllabusDoc.data() : null,
     });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -293,7 +295,8 @@ export const login = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json({ message: 'Login successful', user: userData });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -315,7 +318,8 @@ export const getMe = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(userDoc.data());
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -400,6 +404,7 @@ export const deleteAccount = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json({ message: 'Account and all associated data deleted.' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

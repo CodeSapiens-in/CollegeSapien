@@ -3,6 +3,7 @@ import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import { CollegeSchema } from './colleges.model';
 import * as admin from 'firebase-admin';
 import { zodError } from '../../shared/zod-error';
+import { log } from '../../shared/logger';
 
 export const createCollege = async (req: AuthRequest, res: Response) => {
   try {
@@ -30,7 +31,8 @@ export const listColleges = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -58,7 +60,8 @@ export const deleteCollege = async (req: AuthRequest, res: Response) => {
     });
     return res.status(200).json({ message: 'College soft-deleted' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -83,7 +86,8 @@ export const listCombined = async (req: AuthRequest, res: Response) => {
     
     return res.status(200).json({ colleges, departments });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -113,7 +117,8 @@ export const listDepartments = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -141,6 +146,7 @@ export const deleteDepartment = async (req: AuthRequest, res: Response) => {
     });
     return res.status(200).json({ message: 'Department soft-deleted' });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };

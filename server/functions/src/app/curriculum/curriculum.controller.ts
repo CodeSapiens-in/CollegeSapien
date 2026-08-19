@@ -159,7 +159,8 @@ export const listPendingCurricula = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -172,7 +173,8 @@ export const getPendingCurriculum = async (req: AuthRequest, res: Response) => {
     }
     return res.status(200).json({ id: doc.id, ...doc.data() });
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 
@@ -276,7 +278,8 @@ export const listCurricula = async (req: AuthRequest, res: Response) => {
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     return res.status(200).json(data);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
 

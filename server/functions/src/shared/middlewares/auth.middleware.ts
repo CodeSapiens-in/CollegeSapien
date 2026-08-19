@@ -25,7 +25,7 @@ export const authenticate = async (req: AuthRequest, res: Response, next: NextFu
   try {
     let decodedToken: admin.auth.DecodedIdToken;
 
-    if (process.env.FIREBASE_AUTH_EMULATOR_HOST) {
+    if (process.env.FIREBASE_AUTH_EMULATOR_HOST && process.env.NODE_ENV !== 'production') {
       const payload = JSON.parse(Buffer.from(idToken.split('.')[1], 'base64').toString('utf8'));
       // Emulator tokens are unsigned JWTs — decode without signature verification
       decodedToken = payload as admin.auth.DecodedIdToken;

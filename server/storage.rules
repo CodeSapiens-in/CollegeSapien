@@ -47,9 +47,13 @@ service firebase.storage {
         && (resourceDoc().data.status == 'approved'
           || resourceDoc().data.uploadedBy == request.auth.uid
           || isModeratorForCollege(resourceDoc().data.collegeId));
+      // The app always creates the hub_resources doc via the API before
+      // writing the file, so the doc must already exist — no more falling
+      // back to "unclaimed path" writes, which let any verified user squat
+      // on an arbitrary resourceId before its doc was created.
       allow write: if verified() && safeFile()
-        && (!firestore.exists(/databases/(default)/documents/hub_resources/$(resourceId))
-          || resourceDoc().data.uploadedBy == request.auth.uid
+        && firestore.exists(/databases/(default)/documents/hub_resources/$(resourceId))
+        && (resourceDoc().data.uploadedBy == request.auth.uid
           || isModeratorForCollege(resourceDoc().data.collegeId));
     }
 

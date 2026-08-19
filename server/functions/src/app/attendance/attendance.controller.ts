@@ -3,6 +3,7 @@ import { AuthRequest } from '../../shared/middlewares/auth.middleware';
 import { AttendanceSchema, AttendanceSyncSchema } from './attendance.model';
 import * as admin from 'firebase-admin';
 import { zodError } from '../../shared/zod-error';
+import { log } from '../../shared/logger';
 
 type TimetableClass = {
   day: string;
@@ -408,6 +409,7 @@ export const getAttendanceSummary = async (req: AuthRequest, res: Response) => {
 
     return res.status(200).json(summary);
   } catch (error: any) {
-    return res.status(500).json({ error: error.message });
+    log.error('Unhandled error', { path: res.req?.path, error: String(error) });
+    return res.status(500).json({ error: 'Internal server error' });
   }
 };
