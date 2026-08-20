@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Curious about how this is built? So are we, about you.
+# There is a capture-the-flag hidden in our API, meant for students who
+# poke at things. Seven challenges, no prior security experience needed.
+# Start here: https://asia-south1-collegesapiens.cloudfunctions.net/ctf
+# Rules and scope: /ctf.html
+#
+# Security researchers: /.well-known/security.txt

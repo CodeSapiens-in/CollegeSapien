@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CTF — CollegeSapien</title>
+        <meta
+            name="description"
+            content="Seven challenges hidden in the CollegeSapien API. Solve them, and we will come find you."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin=""
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=JetBrains+Mono:wght@400;600&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --bg: #feeec3;
+                --bg2: #fefcf5;
+                --yellow: #ffd966;
+                --black: #0a0a0a;
+                --ink: #2a2a2a;
+                --bdr: 2px solid #0a0a0a;
+                --sh: 4px 4px 0 #0a0a0a;
+            }
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                background: var(--bg);
+                color: var(--black);
+                font-family: "DM Sans", sans-serif;
+            }
+            h1,
+            h2,
+            h3 {
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-weight: 800;
+                letter-spacing: -0.02em;
+            }
+            a {
+                color: inherit;
+            }
+            code,
+            .mono {
+                font-family: "JetBrains Mono", ui-monospace, monospace;
+            }
+            .nav {
+                background: var(--yellow);
+                border-bottom: var(--bdr);
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 56px;
+            }
+            .nav-logo {
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-weight: 800;
+                font-size: 19px;
+                text-decoration: none;
+                color: var(--black);
+            }
+            .nav-links {
+                display: flex;
+                gap: 18px;
+                font-size: 14px;
+            }
+            .nav-links a {
+                text-decoration: none;
+                opacity: 0.7;
+            }
+            .nav-links a:hover {
+                opacity: 1;
+            }
+            .wrap {
+                max-width: 980px;
+                margin: 0 auto;
+                padding: 56px 56px 80px;
+                display: grid;
+                gap: 22px;
+            }
+            .card {
+                background: var(--bg2);
+                border: var(--bdr);
+                box-shadow: var(--sh);
+                padding: 28px;
+            }
+            .card.accent {
+                background: var(--yellow);
+            }
+            .meta {
+                color: var(--ink);
+                font-size: 13px;
+                margin-top: 8px;
+            }
+            .content {
+                margin-top: 20px;
+                display: grid;
+                gap: 16px;
+                color: var(--ink);
+                line-height: 1.6;
+                font-size: 15px;
+            }
+            .content h2 {
+                font-size: 18px;
+                margin-top: 6px;
+                color: var(--black);
+            }
+            .content ul {
+                padding-left: 18px;
+                display: grid;
+                gap: 6px;
+            }
+            .start {
+                display: block;
+                margin-top: 18px;
+                background: var(--black);
+                color: var(--bg2);
+                border: var(--bdr);
+                padding: 14px 16px;
+                font-size: 14px;
+                overflow-x: auto;
+                white-space: pre;
+            }
+            .tablewrap {
+                overflow-x: auto;
+                margin-top: 8px;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                font-size: 14px;
+                min-width: 560px;
+            }
+            th,
+            td {
+                border: var(--bdr);
+                padding: 9px 11px;
+                text-align: left;
+                vertical-align: top;
+            }
+            th {
+                background: var(--yellow);
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-weight: 700;
+            }
+            td.pts {
+                white-space: nowrap;
+                font-family: "JetBrains Mono", ui-monospace, monospace;
+            }
+            .scope {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 18px;
+                margin-top: 8px;
+            }
+            .scope > div {
+                border: var(--bdr);
+                padding: 16px;
+                background: var(--bg2);
+            }
+            .scope h3 {
+                font-size: 15px;
+                margin-bottom: 8px;
+            }
+            .yes {
+                border-left: 8px solid #1a7f37 !important;
+            }
+            .no {
+                border-left: 8px solid #b42318 !important;
+            }
+            .footer {
+                background: var(--black);
+                padding: 28px 56px;
+                color: rgba(255, 255, 255, 0.7);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+            }
+            .footer a {
+                color: rgba(255, 255, 255, 0.7);
+                text-decoration: none;
+                font-size: 13px;
+            }
+            .footer a:hover {
+                color: var(--yellow);
+            }
+            @media (max-width: 900px) {
+                .nav,
+                .wrap,
+                .footer {
+                    padding-left: 22px;
+                    padding-right: 22px;
+                }
+                .scope {
+                    grid-template-columns: 1fr;
+                }
+                .footer {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav">
+            <a class="nav-logo" href="./">CollegeSapien</a>
+            <div class="nav-links">
+                <a href="./terms.html">Terms</a>
+                <a href="./privacy.html">Privacy</a>
+                <a href="https://github.com/codesapiens-in/collegesapien"
+                    >GitHub</a
+                >
+            </div>
+        </nav>
+
+        <main class="wrap">
+            <section class="card accent">
+                <h1>There are seven flags hidden in our API.</h1>
+                <p class="meta">
+                    We would rather find people by watching them solve things
+                    than by reading their CV.
+                </p>
+                <div class="content">
+                    <p>
+                        No prior security experience needed. The first three
+                        challenges need nothing but a terminal and curiosity.
+                        The last one needs you to write actual code — which is
+                        the whole point.
+                    </p>
+                    <code class="start"
+                        >curl -i https://asia-south1-collegesapiens.cloudfunctions.net/ctf</code
+                    >
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 style="font-size: 22px">The challenges</h2>
+                <div class="content">
+                    <div class="tablewrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>What it teaches</th>
+                                    <th class="pts">Points</th>
+                                    <th>Login</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="mono">ch01</td>
+                                    <td>A response is more than its body</td>
+                                    <td class="pts">10</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch02</td>
+                                    <td>Recognising and peeling encodings</td>
+                                    <td class="pts">20</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch03</td>
+                                    <td>
+                                        HTTP conditional requests — the part of
+                                        the spec nobody reads
+                                    </td>
+                                    <td class="pts">30</td>
+                                    <td>no</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch04</td>
+                                    <td>
+                                        What is actually inside an auth token
+                                    </td>
+                                    <td class="pts">50</td>
+                                    <td>yes</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch05</td>
+                                    <td>
+                                        Driving an API from code instead of a
+                                        browser
+                                    </td>
+                                    <td class="pts">80</td>
+                                    <td>yes</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch06</td>
+                                    <td>
+                                        Writing real code against a real
+                                        constraint
+                                    </td>
+                                    <td class="pts">150</td>
+                                    <td>yes</td>
+                                </tr>
+                                <tr>
+                                    <td class="mono">ch07</td>
+                                    <td>Finishing what you started</td>
+                                    <td class="pts">200</td>
+                                    <td>yes</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>
+                        Flags look like <code>CS{...}</code>. Submit them with
+                        <code>POST /submit</code>. From
+                        <code>ch04</code> onwards each flag is minted for you
+                        specifically — so a flag pasted into a group chat still
+                        points back at whoever earned it, and on
+                        <code>ch06</code> everyone gets a different seed, which
+                        makes copying an answer pointless rather than merely
+                        dishonourable.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 style="font-size: 22px">Scope</h2>
+                <div class="content">
+                    <p>
+                        The difference between a CTF player and an incident is
+                        usually just that nobody wrote this part down. So:
+                    </p>
+                    <div class="scope">
+                        <div class="yes">
+                            <h3>Fair game</h3>
+                            <ul>
+                                <li>Every endpoint on the CTF service.</li>
+                                <li>
+                                    This site, <code>robots.txt</code> and
+                                    <code>security.txt</code>.
+                                </li>
+                                <li>The public source repository.</li>
+                            </ul>
+                        </div>
+                        <div class="no">
+                            <h3>Off limits</h3>
+                            <ul>
+                                <li>
+                                    The production API, database and storage.
+                                </li>
+                                <li>
+                                    Any other student's account or data. Ever.
+                                </li>
+                                <li>
+                                    Denial of service, floods, load testing.
+                                </li>
+                                <li>
+                                    Social engineering of students, staff or
+                                    moderators.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 style="font-size: 22px">
+                    If you find something we did not plant
+                </h2>
+                <div class="content">
+                    <p>
+                        Stop, and do not touch anyone else's data. Email
+                        <a href="mailto:security@collegesapien.com"
+                            >security@collegesapien.com</a
+                        >
+                        and tell us what you found.
+                    </p>
+                    <p>
+                        A real, responsibly disclosed vulnerability is worth
+                        more to us than every flag on this page combined, and we
+                        will say so publicly if you want us to.
+                    </p>
+                </div>
+            </section>
+
+            <section class="card">
+                <h2 style="font-size: 22px">The boring but important bit</h2>
+                <div class="content">
+                    <ul>
+                        <li>
+                            Playing is voluntary. It has nothing to do with your
+                            grades, and nothing to do with your account
+                            standing.
+                        </li>
+                        <li>
+                            We store which challenges you solved and when, so we
+                            can rank solvers and get in touch. That is the
+                            entire purpose.
+                        </li>
+                        <li>
+                            The leaderboard is opt-in and shows only the handle
+                            you choose — never your email.
+                        </li>
+                        <li>
+                            Ask us at
+                            <a href="mailto:opensource@collegesapien.com"
+                                >opensource@collegesapien.com</a
+                            >
+                            and we will erase your CTF record, no questions
+                            asked.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <span>© CollegeSapien</span>
+            <div style="display: flex; gap: 18px">
+                <a href="./privacy.html">Privacy Policy</a>
+                <a href="./terms.html">Terms of Service</a>
+                <a href="mailto:security@collegesapien.com">Security</a>
+            </div>
+        </footer>
+    </body>
+</html>

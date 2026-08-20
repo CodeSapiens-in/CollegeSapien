@@ -1,3 +1,8 @@
 .claude/
 app/.env.example
 app/*.jks
+
+# Function runtime config — holds CTF_FLAG_SECRET and AWS keys. Never commit.
+server/functions/.env
+server/functions/.env.*
+!server/functions/.env.example

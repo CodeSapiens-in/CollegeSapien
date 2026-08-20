@@ -2,6 +2,7 @@ import { onRequest } from 'firebase-functions/v2/https';
 import { onDocumentCreated } from 'firebase-functions/v2/firestore';
 import * as admin from 'firebase-admin';
 import { app } from './app';
+import { ctfApp } from './ctf-app';
 
 // Gemini API key is currently disabled — do not bind it as a secret or
 // Firebase will try to resolve it from Secret Manager at deploy time and fail.
@@ -20,6 +21,22 @@ export const api = onRequest(
     invoker: 'public',
   },
   app
+);
+
+// Talent-discovery CTF. Isolated from `api` on purpose: it is the one service
+// we actively invite people to hammer, and its instance budget is its own so a
+// busy challenge night cannot slow the app students rely on for attendance.
+export const ctf = onRequest(
+  {
+    region: 'asia-south1',
+    memory: '256MiB',
+    timeoutSeconds: 30,
+    concurrency: 40,
+    minInstances: 0,
+    maxInstances: 3,
+    invoker: 'public',
+  },
+  ctfApp
 );
 
 export const processHubResource = onDocumentCreated(

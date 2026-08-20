@@ -1,0 +1,16 @@
+Contact: mailto:security@collegesapien.com
+Preferred-Languages: en
+Canonical: https://codesapiens.in/.well-known/security.txt
+Policy: https://github.com/CodeSapiens-in/CollegeSapien/blob/main/SECURITY.md
+
+# If you found a real vulnerability in CollegeSapien, please report it to the
+# address above rather than exploiting it. We will work with you on it, and we
+# would much rather hear from you than not.
+#
+# Separately: we run a capture-the-flag for students, with seven planted
+# challenges. That is the sanctioned place to poke around.
+#   https://asia-south1-collegesapiens.cloudfunctions.net/ctf
+#   Rules and scope: https://codesapiens.in/ctf.html
+#
+# The CTF and this address are different things. Planted flags go to the
+# scoreboard; real findings go to the mailbox. Real findings are worth more.

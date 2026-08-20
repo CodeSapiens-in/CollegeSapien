@@ -108,6 +108,15 @@ service cloud.firestore {
       }
     }
 
+    // CTF scoring. Written only by the CTF function via the Admin SDK, which
+    // bypasses these rules — a client that could write here could award itself
+    // every flag. Reads are limited to your own record; the leaderboard is
+    // served by the API so opt-out players never leak.
+    match /ctf_progress/{userId} {
+      allow get: if isOwner(userId);
+      allow list, create, update, delete: if false;
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }

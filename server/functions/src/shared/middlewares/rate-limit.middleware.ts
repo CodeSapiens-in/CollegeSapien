@@ -30,3 +30,24 @@ export const uploadLimiter = rateLimit({
   legacyHeaders: false,
   message: { error: 'Too many requests, please try again later.' },
 });
+
+// CTF flag submission. Every wrong guess is a Firestore read, so this is both
+// an anti-brute-force control and a billing control. Flags are 16 hex chars,
+// so guessing was never realistic — this just keeps the cost bounded.
+export const ctfLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 60,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many submissions, please slow down.' },
+});
+
+// Proof-of-work verification is pure CPU with no database access, so it can
+// afford a looser limit than flag submission — solvers legitimately retry.
+export const ctfSolveLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  limit: 120,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: 'Too many attempts, please slow down.' },
+});

@@ -102,10 +102,17 @@ app.use((req: any, res, next) => {
   express.json({ limit: '8mb' })(req, res, next);
 });
 app.use(requestLogger);
+
+// The only breadcrumb to the CTF that lives on the production API. Anyone who
+// has ever opened a Network tab will trip over it; nobody else is affected.
+const CTF_PUBLIC_URL =
+  process.env.CTF_PUBLIC_URL || 'https://asia-south1-collegesapiens.cloudfunctions.net/ctf';
+
 app.use((req, res, next) => {
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('Referrer-Policy', 'no-referrer');
   res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('X-Codesapiens-Challenge', CTF_PUBLIC_URL);
   next();
 });
 
