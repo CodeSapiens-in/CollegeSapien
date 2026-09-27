@@ -1,0 +1,6 @@
+# All pages on this host are public. /app/data/delete/ is the Play Console
+# account-deletion URL, so it must stay crawlable for verification.
+User-agent: *
+Allow: /
+
+Sitemap: https://codesapiens.in/sitemap.xml

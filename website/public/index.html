@@ -3,7 +3,24 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="color-scheme" content="light dark" />
         <title>CodeSapiens — Explore. Evolve. Engineer.</title>
+        <script>
+            // Runs before first paint so the correct scheme is already on <html>
+            // — no flash of the wrong theme. The stored choice wins; otherwise
+            // fall back to the OS preference.
+            (() => {
+                let stored = null;
+                try {
+                    stored = localStorage.getItem("cs-theme");
+                } catch (e) {}
+                const dark =
+                    stored === "dark" ||
+                    (stored !== "light" &&
+                        matchMedia("(prefers-color-scheme: dark)").matches);
+                document.documentElement.dataset.theme = dark ? "dark" : "light";
+            })();
+        </script>
         <link rel="icon" href="./assets/codesapiens_logo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -18,6 +35,9 @@
 
         <style>
             :root {
+                color-scheme: light;
+
+                /* Palette — the tweaks panel repaints these custom properties. */
                 --bg: #feeec3;
                 --bg2: #fefcf5;
                 --yellow: #ffd966;
@@ -29,10 +49,82 @@
                 --lt-blue: #c8ebff;
                 --tag-purple: #9191ff;
                 --black: #0a0a0a;
-                --ink: #2a2a2a;
-                --bdr: 2px solid #0a0a0a;
-                --sh: 4px 4px 0 #0a0a0a;
-                --sh-lg: 6px 6px 0 #0a0a0a;
+
+                /* Semantic layer — separate from the palette so the panel never
+                   has to reason about contrast, and dark mode only overrides
+                   this block. */
+                --surface: var(--bg);
+                --surface-2: var(--bg2);
+                --nav-bg: var(--yellow);
+                --edge: #0a0a0a;
+                --fg: #0a0a0a;
+                --fg-soft: #2a2a2a;
+                --fg-faint: rgba(0, 0, 0, 0.1);
+                --fg-on-dark: #feeec3;
+                --fg-on-accent: #0a0a0a;
+                --fg-soft-on-accent: #2a2a2a;
+                --game-ink: var(--edge);
+
+                --bdr: 2px solid var(--edge);
+                --sh: 4px 4px 0 var(--edge);
+                --sh-lg: 6px 6px 0 var(--edge);
+            }
+
+            /* Accent chips keep the same pastel palette in both schemes, so text
+               sitting on them stays dark — only surfaces, body text and the
+               neobrutalist outline flip. */
+            html[data-theme="dark"] {
+                color-scheme: dark;
+                --surface: #14171e;
+                --surface-2: #1d2129;
+                --nav-bg: #1d2129;
+                --edge: #e9ebf0;
+                --fg: #e9ebf0;
+                --fg-soft: #b4bac7;
+                --fg-faint: rgba(233, 235, 240, 0.14);
+                --fg-on-dark: #e9ebf0;
+                --game-ink: var(--edge);
+            }
+
+            /* ── A11Y ── */
+            .skip-link {
+                position: absolute;
+                left: 8px;
+                top: -80px;
+                z-index: 200;
+                padding: 10px 18px;
+                font-size: 14px;
+                font-weight: 600;
+                text-decoration: none;
+                color: var(--fg-on-dark);
+                background: var(--black);
+                border: var(--bdr);
+                box-shadow: var(--sh);
+                transition: top 0.15s;
+            }
+            .skip-link:focus {
+                top: 8px;
+            }
+            a:focus-visible,
+            button:focus-visible {
+                outline: 3px solid var(--fg);
+                outline-offset: 2px;
+            }
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                    scroll-snap-type: none;
+                }
+                .snap-sec {
+                    scroll-snap-align: none;
+                }
+                *,
+                *::before,
+                *::after {
+                    animation-duration: 0.001ms !important;
+                    animation-iteration-count: 1 !important;
+                    transition-duration: 0.001ms !important;
+                }
             }
 
             *,
@@ -48,8 +140,8 @@
                 scroll-padding-top: 60px;
             }
             body {
-                background: var(--bg);
-                color: var(--black);
+                background: var(--surface);
+                color: var(--fg);
                 font-family: "DM Sans", sans-serif;
                 overflow-x: hidden;
             }
@@ -85,9 +177,10 @@
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 background: var(--yellow);
+                color: var(--fg-on-accent);
                 border: var(--bdr);
                 padding: 3px 10px;
-                box-shadow: 2px 2px 0 var(--black);
+                box-shadow: 2px 2px 0 var(--edge);
                 margin-bottom: 16px;
             }
             .btn {
@@ -115,7 +208,7 @@
             }
             .btn-dark {
                 background: var(--black);
-                color: var(--bg);
+                color: var(--fg-on-dark);
                 box-shadow: var(--sh);
             }
             .btn-dark:hover {
@@ -123,7 +216,7 @@
             }
             .btn-ghost {
                 background: transparent;
-                color: var(--black);
+                color: var(--fg);
             }
             .btn-ghost:hover {
                 background: rgba(0, 0, 0, 0.06);
@@ -135,7 +228,7 @@
                 position: sticky;
                 top: 0;
                 z-index: 100;
-                background: var(--yellow);
+                background: var(--nav-bg);
                 border-bottom: var(--bdr);
                 padding: 0 56px;
                 height: 60px;
@@ -149,7 +242,7 @@
                 font-size: 19px;
                 letter-spacing: -0.04em;
                 text-decoration: none;
-                color: var(--black);
+                color: var(--fg);
             }
             .nav-links {
                 display: flex;
@@ -176,6 +269,39 @@
                 font-size: 13px;
             }
 
+            /* ── THEME TOGGLE ── */
+            .theme-toggle {
+                appearance: none;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 38px;
+                height: 38px;
+                padding: 0;
+                font: inherit;
+                color: var(--fg);
+                background: transparent;
+                border: var(--bdr);
+                box-shadow: 2px 2px 0 var(--edge);
+                cursor: pointer;
+                transition:
+                    transform 0.12s,
+                    box-shadow 0.12s;
+            }
+            .theme-toggle:hover {
+                transform: translate(-1px, -1px);
+            }
+            .theme-toggle:active {
+                transform: translate(1px, 1px);
+                box-shadow: none;
+            }
+            html[data-theme="dark"] .theme-toggle .icon-sun {
+                display: none;
+            }
+            html[data-theme="dark"] .theme-toggle .icon-moon {
+                display: block;
+            }
+
             /* ── HERO ── */
             .hero-wrap {
                 border-bottom: var(--bdr);
@@ -200,14 +326,14 @@
                 align-items: center;
                 gap: 8px;
                 background: var(--tag-purple);
-                color: white;
+                color: var(--fg-on-accent);
                 font-size: 11px;
                 font-weight: 700;
                 letter-spacing: 0.08em;
                 text-transform: uppercase;
                 padding: 4px 12px;
                 border: var(--bdr);
-                box-shadow: 2px 2px 0 var(--black);
+                box-shadow: 2px 2px 0 var(--edge);
                 margin-bottom: clamp(14px, 3vh, 28px);
                 white-space: nowrap;
             }
@@ -234,9 +360,10 @@
                 font-family: "Bricolage Grotesque", sans-serif;
                 font-size: clamp(13px, 3.4vw, 22px);
                 font-weight: 700;
+                color: var(--fg-on-accent);
                 padding: clamp(4px, 0.8vh, 6px) clamp(8px, 2vw, 16px);
                 border: var(--bdr);
-                box-shadow: 2px 2px 0 var(--black);
+                box-shadow: 2px 2px 0 var(--edge);
                 white-space: nowrap;
             }
             .htag.a {
@@ -260,8 +387,8 @@
                 font-size: clamp(12px, 3vw, 15px);
             }
             .btn-light {
-                background: var(--bg2);
-                color: var(--black);
+                background: var(--surface-2);
+                color: var(--fg);
                 box-shadow: var(--sh);
             }
             .btn-light:hover {
@@ -282,13 +409,14 @@
                 font-family: "Bricolage Grotesque", sans-serif;
                 text-align: center;
                 flex: 0 1 auto;
+                color: var(--fg-on-accent);
             }
             .icard-label {
                 font-size: 9px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.06em;
-                opacity: 0.55;
+                opacity: 0.72;
                 margin-top: 2px;
             }
             .icard-val {
@@ -349,6 +477,7 @@
                     transform 0.2s,
                     box-shadow 0.2s;
                 position: relative;
+                color: var(--fg-on-accent);
             }
             .feat:nth-child(3n) {
                 border-right: none;
@@ -398,7 +527,7 @@
             }
             .feat-d {
                 font-size: 14px;
-                color: var(--ink);
+                color: var(--fg-soft-on-accent);
                 line-height: 1.6;
             }
 
@@ -412,7 +541,7 @@
                 border: var(--bdr);
                 box-shadow: var(--sh);
                 padding: clamp(20px, 3vh, 32px);
-                background: var(--bg2);
+                background: var(--surface-2);
                 transition:
                     transform 0.15s,
                     box-shadow 0.15s;
@@ -426,7 +555,7 @@
                 font-size: 11px;
                 font-weight: 700;
                 letter-spacing: 0.07em;
-                background: var(--bg);
+                background: var(--surface);
                 border: var(--bdr);
                 padding: 2px 8px;
                 margin-bottom: 14px;
@@ -435,6 +564,7 @@
                 width: 48px;
                 height: 48px;
                 background: var(--yellow);
+                color: var(--fg-on-accent);
                 border: var(--bdr);
                 display: flex;
                 align-items: center;
@@ -447,7 +577,7 @@
             }
             .suite-card p {
                 font-size: 14px;
-                color: var(--ink);
+                color: var(--fg-soft);
                 line-height: 1.6;
             }
 
@@ -490,7 +620,7 @@
             }
             .oss-desc {
                 font-size: 16px;
-                color: var(--ink);
+                color: var(--fg-soft);
                 line-height: 1.7;
                 margin-bottom: 28px;
             }
@@ -524,7 +654,7 @@
             }
             .oss-item p {
                 font-size: 13px;
-                color: var(--ink);
+                color: var(--fg-soft);
                 line-height: 1.5;
             }
 
@@ -541,7 +671,7 @@
             }
             .cta-out p {
                 font-size: 17px;
-                color: var(--ink);
+                color: var(--fg-soft);
                 margin-bottom: 36px;
             }
             .cta-btns {
@@ -573,7 +703,7 @@
             }
             .footer-note {
                 font-size: 13px;
-                color: rgba(255, 255, 255, 0.4);
+                color: rgba(255, 255, 255, 0.55);
             }
             .footer-links {
                 display: flex;
@@ -605,7 +735,7 @@
                 align-items: center;
                 justify-content: center;
                 background: var(--yellow);
-                color: var(--black);
+                color: var(--fg-on-accent);
                 border: var(--bdr);
                 border-radius: 3px;
                 transition: transform 0.12s;
@@ -619,8 +749,11 @@
                 display: inline-block;
                 position: relative;
             }
+            /* opacity rather than visibility: hidden — visibility removes the
+               letter from the accessibility tree, which would blank out the
+               <h1> for screen readers as soon as a monkey picks it up. */
             .ch.stolen {
-                visibility: hidden;
+                opacity: 0;
             }
             .ch.back {
                 animation: pop 0.35s cubic-bezier(0.2, 1.6, 0.4, 1);
@@ -646,6 +779,7 @@
                 z-index: 95;
                 display: none;
                 background: var(--yellow);
+                color: var(--fg-on-accent);
                 border: var(--bdr);
                 box-shadow: var(--sh);
                 padding: 6px 14px;
@@ -943,8 +1077,10 @@
         </style>
     </head>
     <body>
+        <a class="skip-link" href="#main">Skip to main content</a>
+
         <!-- NAV -->
-        <nav class="nav">
+        <nav class="nav" aria-label="Primary">
             <a
                 href="#"
                 class="nav-logo"
@@ -956,11 +1092,57 @@
                 />
                 CodeSapiens
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" aria-label="Sections">
                 <li><a href="#community">Community</a></li>
                 <li><a href="#collegesapien">CollegeSapien</a></li>
             </ul>
             <div style="display: flex; gap: 12px; align-items: center">
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-pressed="false"
+                    aria-label="Switch to dark theme"
+                >
+                    <svg
+                        class="icon-moon"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                        />
+                    </svg>
+                    <svg
+                        class="icon-sun"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        aria-hidden="true"
+                    >
+                        <circle cx="12" cy="12" r="5" />
+                        <line x1="12" y1="1" x2="12" y2="3" />
+                        <line x1="12" y1="21" x2="12" y2="23" />
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+                        <line x1="1" y1="12" x2="3" y2="12" />
+                        <line x1="21" y1="12" x2="23" y2="12" />
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+                    </svg>
+                </button>
                 <a
                     href="https://github.com/CodeSapiens-in/CollegeSapien"
                     target="_blank"
@@ -979,15 +1161,59 @@
                     </svg>
                     <span class="gh-label">GitHub</span>
                 </a>
-                <a
-                    href="https://college.codesapiens.in"
+                <a href="https://college.codesapiens.in"
                     class="btn btn-dark btn-nav"
                     >Get Started</a
                 >
             </div>
         </nav>
 
+        <script>
+            // ── Theme toggle ──
+            (() => {
+                const btn = document.getElementById("theme-toggle");
+                const root = document.documentElement;
+                const mq = matchMedia("(prefers-color-scheme: dark)");
+
+                const read = () => {
+                    try {
+                        return localStorage.getItem("cs-theme");
+                    } catch (e) {
+                        return null;
+                    }
+                };
+                const sync = () => {
+                    const dark = root.dataset.theme === "dark";
+                    btn.setAttribute("aria-pressed", String(dark));
+                    btn.setAttribute(
+                        "aria-label",
+                        dark ? "Switch to light theme" : "Switch to dark theme",
+                    );
+                };
+                sync();
+
+                btn.addEventListener("click", () => {
+                    const next =
+                        root.dataset.theme === "dark" ? "light" : "dark";
+                    root.dataset.theme = next;
+                    try {
+                        localStorage.setItem("cs-theme", next);
+                    } catch (e) {}
+                    sync();
+                });
+
+                // Track the OS only while the visitor has not chosen explicitly.
+                mq.addEventListener("change", e => {
+                    if (read()) return;
+                    root.dataset.theme = e.matches ? "dark" : "light";
+                    sync();
+                });
+            })();
+        </script>
+
+
         <!-- HERO -->
+        <main id="main">
         <div class="snap-sec" id="hero-section">
         <div class="hero-wrap">
             <div class="hero">
@@ -1181,8 +1407,8 @@
         <!-- /snap-sec closed after footer -->
 
         <!-- LETTER HEIST GAME (ambient, auto-plays, no UI) -->
-        <div id="score"></div>
-        <canvas id="game"></canvas>
+        <div id="score" aria-hidden="true"></div>
+        <canvas id="game" aria-hidden="true"></canvas>
 
         <!-- FOOTER -->
         <footer class="footer">
@@ -1285,6 +1511,7 @@
             </div>
         </footer>
         </div>
+        </main>
 
         <!-- React + Babel for Tweaks panel only -->
         <div id="tweaks-root"></div>
@@ -1494,6 +1721,13 @@
                     purple: "#9191ff",
                     paper: "#fefcf5",
                 };
+
+                // The outline colour is the one thing that has to track the
+                // theme — everything else in the drawing is its own fixed fill.
+                const outlineColor = () =>
+                    getComputedStyle(document.documentElement)
+                        .getPropertyValue("--game-ink")
+                        .trim() || C.ink;
 
                 /* letters — split into spans on first play */
                 let letters = null;
@@ -1834,7 +2068,7 @@
                             m.target.reserved = false;
                             m.target = null;
                             beep(520, 0.07, "triangle", 0.05);
-                            burst(m.x, m.y, C.ink, 6);
+                            burst(m.x, m.y, outlineColor(), 6);
                         } else {
                             flights.push({
                                 char: m.carrying.char,
@@ -1930,7 +2164,7 @@
 
                     const fur = "#4a3226";
                     const skin = "#f2d6ae";
-                    const ink = C.ink;
+                    const ink = outlineColor();
                     const hip = wig * 3;
                     const outline = (fill, path) => {
                         ctx.fillStyle = fill;
@@ -2275,7 +2509,7 @@
                     ctx.save();
                     ctx.translate(x, y);
                     ctx.rotate((1 - f.t) * 3);
-                    ctx.fillStyle = C.ink;
+                    ctx.fillStyle = outlineColor();
                     ctx.font = "800 22px 'Bricolage Grotesque', sans-serif";
                     ctx.textAlign = "center";
                     ctx.textBaseline = "middle";
@@ -2365,9 +2599,19 @@
                     }
                     draw();
                 }
-                /* auto-start — ambient, no UI, runs until every letter is gone */
-                splitLetters();
-                requestAnimationFrame(frame);
+                /* auto-start — ambient, no UI, runs until every letter is gone.
+                   Skipped under prefers-reduced-motion: the monkeys darting
+                   across the viewport is exactly the kind of motion the media
+                   query exists to suppress. The hero text simply stays put. */
+                const calm = matchMedia("(prefers-reduced-motion: reduce)");
+                if (calm.matches) {
+                    /* Keep the canvas at zero size so it never paints. */
+                    canvas.width = 0;
+                    canvas.height = 0;
+                } else {
+                    splitLetters();
+                    requestAnimationFrame(frame);
+                }
             })();
 
             // Scroll reveal

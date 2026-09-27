@@ -43,6 +43,8 @@ The codebase is organized into four main modules:
 
 ### 4. 🌐 `website/` (Landing Page)
 * **Description**: The landing page for our community codesapiens.in with a little teaser game and details about our community
+* **Features**: Light/dark theme toggle (persisted, follows the OS preference by default), a skip link and `prefers-reduced-motion` support, plus `robots.txt` and `sitemap.xml` for search engines.
+* **Security headers**: See [SECURITY_HEADERS.md](./SECURITY_HEADERS.md) before changing anything in `website/firebase.json`.
 
 ---
 
