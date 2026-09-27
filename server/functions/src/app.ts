@@ -5,6 +5,7 @@ import * as admin from 'firebase-admin';
 import swaggerUi from 'swagger-ui-express';
 import { getSpecs } from './shared/docs/swagger';
 import { enforceAppCheck } from './shared/middlewares/app-check.middleware';
+import { securityHeaders } from './shared/middlewares/security-headers.middleware';
 import { requestLogger } from './shared/logger';
 import authRoutes from './app/auth/auth.route';
 import attendanceRoutes from './app/attendance/attendance.route';
@@ -22,6 +23,7 @@ import eventsRoutes from './app/events/events.route';
 
 const app = express();
 app.set('query parser', 'extended');
+app.disable('x-powered-by');
 
 // functions-framework v5 (Cloud Functions gen2) fronts this app with Express 5, where
 // req.query is a prototype getter. Express 4 skips its own query parsing when it sees
@@ -68,12 +70,7 @@ app.use((req: any, res, next) => {
   express.json({ limit: '8mb' })(req, res, next);
 });
 app.use(requestLogger);
-app.use((req, res, next) => {
-  res.setHeader('X-Content-Type-Options', 'nosniff');
-  res.setHeader('Referrer-Policy', 'no-referrer');
-  res.setHeader('X-Frame-Options', 'DENY');
-  next();
-});
+app.use(securityHeaders);
 
 // Handle Swagger Redirect Issue in Firebase Emulator
 // We use a custom path for swagger-ui-express to prevent incorrect absolute redirects
