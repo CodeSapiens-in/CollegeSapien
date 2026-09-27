@@ -531,6 +531,28 @@
                 line-height: 1.6;
             }
 
+            /* ── MEETUPS GRID ── */
+            .home-meetups-grid {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+            }
+            @media (max-width: 1200px) {
+                .home-meetups-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+            @media (max-width: 900px) {
+                .home-meetups-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+            @media (max-width: 550px) {
+                .home-meetups-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+
             /* ── SUITE ── */
             .suite-grid {
                 display: grid;
@@ -745,6 +767,11 @@
             }
 
             /* ── LETTER HEIST GAME ── */
+            [data-steal],
+            .ch {
+                -webkit-user-select: none;
+                user-select: none;
+            }
             .ch {
                 display: inline-block;
                 position: relative;
@@ -1094,6 +1121,7 @@
             </a>
             <ul class="nav-links" aria-label="Sections">
                 <li><a href="#community">Community</a></li>
+                <li><a href="./events.html">Meetups</a></li>
                 <li><a href="#collegesapien">CollegeSapien</a></li>
             </ul>
             <div style="display: flex; gap: 12px; align-items: center">
@@ -1299,6 +1327,101 @@
             </div>
         </section>
 
+        <!-- COMMUNITY MEETUPS PREVIEW SECTION -->
+        <section class="sec snap-sec" id="meetups">
+            <div style="display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 16px; margin-bottom: clamp(20px, 4vh, 36px)">
+                <div>
+                    <div class="pill" style="background: var(--blue);">Monthly Meetups</div>
+                    <h2 class="sec-h" style="margin-bottom: 8px;">See our meetups so far.</h2>
+                    <p class="oss-desc" style="max-width: 600px; margin-bottom: 0;">
+                        Every month Sapiens assemble across campuses to learn, share project demos, and network.
+                    </p>
+                </div>
+                <a href="./events.html" class="btn btn-dark btn-lg">View All Meetups &amp; Gallery →</a>
+            </div>
+
+            <div class="home-meetups-grid">
+                <!-- JUNE -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--yellow); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">JUN 2026</span>
+                            <img src="./assets/meetups/june-meetup.jpg" alt="June Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">CodeSapiens Alumni Meetup</h3>
+                            <p style="font-size: 12px; color: var(--ink);">June 2026 · M2P</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- MAY -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--green); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">MAY 2026</span>
+                            <img src="./assets/meetups/may-meetup.jpg" alt="May Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">Summer Fest 2026</h3>
+                            <p style="font-size: 12px; color: var(--ink);">May 2026</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- APR -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--blue); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">APR 2026</span>
+                            <img src="./assets/meetups/april-meetup.jpg" alt="April Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">CodeSapiens × TamilPreneur</h3>
+                            <p style="font-size: 12px; color: var(--ink);">TamilPreneur collaboration</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- MAR -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--pink); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">MAR 2026</span>
+                            <img src="./assets/meetups/march-meetup.jpg" alt="March Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">CodeSapiens March Meetup</h3>
+                            <p style="font-size: 12px; color: var(--ink);">SheBuilds · Mako IT Labs</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- FEB -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--purple); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">FEB 2026</span>
+                            <img src="./assets/meetups/february-meetup.jpg" alt="February Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">CodeSapiens February Meetup</h3>
+                            <p style="font-size: 12px; color: var(--ink);">Free and open source · YUNIQ</p>
+                        </div>
+                    </div>
+                </a>
+                <!-- JAN -->
+                <a href="./events.html" style="text-decoration: none; color: inherit;">
+                    <div style="background: var(--bg2); border: var(--bdr); box-shadow: var(--sh); overflow: hidden; transition: transform 0.15s;" onmouseover="this.style.transform='translate(-2px,-2px)'" onmouseout="this.style.transform='none'">
+                        <div style="position: relative; aspect-ratio: 16/9; background: #000; overflow: hidden; border-bottom: var(--bdr);">
+                            <span style="position: absolute; top: 8px; left: 8px; background: var(--yellow); border: var(--bdr); font-family: 'Bricolage Grotesque'; font-weight: 800; font-size: 10px; padding: 2px 6px; text-transform: uppercase;">JAN 2026</span>
+                            <img src="./assets/meetups/january-meetup.jpg" alt="January Meetup" style="width: 100%; height: 100%; object-fit: cover; object-position: center 30%;" />
+                        </div>
+                        <div style="padding: 12px;">
+                            <h3 style="font-size: 15px; margin-bottom: 4px;">CodeSapiens January Meetup</h3>
+                            <p style="font-size: 12px; color: var(--ink);">YUNIQ</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
         <!-- COLLEGESAPIEN + FOOTER -->
         <div class="snap-sec">
         <section class="sec grow" id="collegesapien">
@@ -1498,6 +1621,7 @@
                     class="footer-links"
                     style="flex-wrap: wrap; justify-content: center"
                 >
+                    <a href="./events.html">Meetups</a>
                     <a
                         href="https://github.com/CodeSapiens-in/CollegeSapien"
                         target="_blank"
@@ -2531,37 +2655,66 @@
                 }
 
                 /* input — listens on window, not the canvas, so the canvas
-                   (pointer-events: none) never blocks clicks on real links */
-                window.addEventListener("pointerdown", (e) => {
-                    const px = e.clientX,
-                        py = e.clientY;
+                   (pointer-events: none) never blocks clicks on real links.
+                   Capture phase so a hit cancels text selection before it starts. */
+                let aimX = 0,
+                    aimY = 0;
+                function monkeyAt(px, py) {
                     let best = null,
                         bestD = 1e9;
                     for (const m of monkeys) {
-                        const r = 44 * m.scale;
+                        const r = 52 * m.scale;
                         const d = Math.hypot(m.x - px, m.y - py - 10);
                         if (d < r && d < bestD) {
                             best = m;
                             bestD = d;
                         }
                     }
-                    if (best) {
-                        const now = performance.now();
-                        if (best.lastTapTime && (now - best.lastTapTime < 380)) {
-                            best.tapCount = (best.tapCount || 1) + 1;
-                        } else {
-                            best.tapCount = 1;
-                        }
-                        best.lastTapTime = now;
-
-                        if (best.tapCount >= 2) {
-                            bonk(best, true);
-                            best.tapCount = 0;
-                        } else {
-                            bonk(best, false);
-                        }
+                    return best;
+                }
+                function clearTextSelection() {
+                    const sel = window.getSelection();
+                    if (sel && !sel.isCollapsed) sel.removeAllRanges();
+                }
+                function bonkAt(hit) {
+                    const now = performance.now();
+                    if (hit.lastTapTime && now - hit.lastTapTime < 380) {
+                        hit.tapCount = (hit.tapCount || 1) + 1;
+                    } else {
+                        hit.tapCount = 1;
                     }
+                    hit.lastTapTime = now;
+                    if (hit.tapCount >= 2) {
+                        bonk(hit, true);
+                        hit.tapCount = 0;
+                    } else {
+                        bonk(hit, false);
+                    }
+                }
+                window.addEventListener("pointermove", (e) => {
+                    aimX = e.clientX;
+                    aimY = e.clientY;
                 });
+                window.addEventListener(
+                    "pointerdown",
+                    (e) => {
+                        aimX = e.clientX;
+                        aimY = e.clientY;
+                        const hit = monkeyAt(e.clientX, e.clientY);
+                        if (!hit) return;
+                        e.preventDefault();
+                        clearTextSelection();
+                        bonkAt(hit);
+                    },
+                    true,
+                );
+                document.addEventListener(
+                    "selectstart",
+                    (e) => {
+                        if (monkeyAt(aimX, aimY)) e.preventDefault();
+                    },
+                    true,
+                );
 
                 /* loop */
                 let last = 0;
