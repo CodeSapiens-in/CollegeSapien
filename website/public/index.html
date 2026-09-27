@@ -634,6 +634,11 @@
             }
 
             /* ── LETTER HEIST GAME ── */
+            [data-steal],
+            .ch {
+                -webkit-user-select: none;
+                user-select: none;
+            }
             .ch {
                 display: inline-block;
                 position: relative;
@@ -2224,22 +2229,51 @@
                 }
 
                 /* input — listens on window, not the canvas, so the canvas
-                   (pointer-events: none) never blocks clicks on real links */
-                window.addEventListener("pointerdown", (e) => {
-                    const px = e.clientX,
-                        py = e.clientY;
+                   (pointer-events: none) never blocks clicks on real links.
+                   Capture phase so a hit cancels text selection before it starts. */
+                let aimX = 0,
+                    aimY = 0;
+                function monkeyAt(px, py) {
                     let best = null,
                         bestD = 1e9;
                     for (const m of monkeys) {
-                        const r = 44 * m.scale;
+                        const r = 52 * m.scale;
                         const d = Math.hypot(m.x - px, m.y - py - 10);
                         if (d < r && d < bestD) {
                             best = m;
                             bestD = d;
                         }
                     }
-                    if (best) bonk(best);
+                    return best;
+                }
+                function clearTextSelection() {
+                    const sel = window.getSelection();
+                    if (sel && !sel.isCollapsed) sel.removeAllRanges();
+                }
+                window.addEventListener("pointermove", (e) => {
+                    aimX = e.clientX;
+                    aimY = e.clientY;
                 });
+                window.addEventListener(
+                    "pointerdown",
+                    (e) => {
+                        aimX = e.clientX;
+                        aimY = e.clientY;
+                        const hit = monkeyAt(e.clientX, e.clientY);
+                        if (!hit) return;
+                        e.preventDefault();
+                        clearTextSelection();
+                        bonk(hit);
+                    },
+                    true,
+                );
+                document.addEventListener(
+                    "selectstart",
+                    (e) => {
+                        if (monkeyAt(aimX, aimY)) e.preventDefault();
+                    },
+                    true,
+                );
 
                 /* loop */
                 let last = 0;
