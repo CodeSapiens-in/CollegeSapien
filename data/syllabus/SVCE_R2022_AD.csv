@@ -1,0 +1,134 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,HS22151,Tamil language and Heritage of Ancient Tamil Society,1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,HS22152,Communicative English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,MA22151,Applied Mathematics I,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,PH22151,Applied Physics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,CY22151,Applied Chemistry,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,EE22151,Basic Electrical and Electronics Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,IT22101,Programming for Problem Solving,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,PH22161,Physics Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,EE22111,Basic Electrical and Electronics Engineering Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,1,IT22111,Programming for Problem Solving Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,HS22252,Technical English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,MA22251,Applied Mathematics II,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,ME22251,Technical Drawing,2.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,MA22253,Mathematics for Data Science,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,AD22201,Data Structures and Algorithm Analysis,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,AD22202,Object Oriented Paradigm and Programming,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,AD22211,Data Structures and Algorithm Analysis Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,2,AD22212,Object Oriented Paradigm and Programming Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,MA22356,Statistics for Data Science,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,AD22301,Artificial Intelligence,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,CS22301,Database Management Systems,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,CS22302,Datamining and Data warehousing,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,CS22201,Python For Data Science,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,CS22202,Digital Principles and System Design,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,CS22311,Database Management Systems Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,3,AD22311,Artificial Intelligence Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,MA22455,Queuing Theory and Optimization,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,MA22456,Mathematics for Machine Learning,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,CS22401,Operating Systems,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,CS22402,Machine Learning Techniques,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,AD22401,Web Development and Analytics,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,GE22451,Environmental Sciences and Sustainability,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,CS22411,Operating Systems Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,AD22411,Machine Learning Techniques Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,4,AD22412,Web Development and Analytics Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,CS22501,Computer Networks,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,CS22502,Software Engineering,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,AD22501,Internet of Things and Applications,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,AD22502,Automata Theory,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,,Professional Elective I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,,Open Elective I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,CS22511,Computer Networks Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,AD22511,Internet of Things and its Applications Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,5,HS22511,Interview and Career Skills Laboratory,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,CS22601,Cryptography and Network Security,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,AD22609,Deep Learning Algorithms: Theory and Practices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,AD22601,Reinforcement Learning Techniques,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,AD22602,Healthcare Analytics,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,,Professional Elective II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,,Open Elective II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,,Mandatory Course,0.0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,CS22611,Cryptography and Network Security Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,AD22611,Reinforcement Learning Techniques Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,6,AD22612,Internship,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,7,CS22701,Ethics for Computer Professionals,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,7,,Professional Elective III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,7,,Professional Elective IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,7,,Professional Elective V,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,7,,Professional Elective VI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,8,AD22811,Project Work,10.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22001,Financial Statement Analysis,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22002,Introduction to Securities Market,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22003,Option Trading Strategies,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22004,Corporate Finance,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22005,Managerial Economics,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22006,Project Management,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,SE22007,Mathematics for AI & ML,3.0,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22021,Human Computer Interaction,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22022,Business Intelligence,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22023,Fuzzy Logic Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22024,Web Mining,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22025,Kernel methods for Pattern Analysis,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22026,Agent Based Intelligent System,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22027,Evolutionary Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22028,Generative AI,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22020,Capstone Project,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22031,Finance Engineering,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22032,Fintech Payment System,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22033,Smart Contracts and Solidity,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22034,Clinical Information Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22035,AI and ML for Healthcare,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22036,Data Science in Intelligent Healthcare,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22037,Smart and Interactive Healthcare Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22038,Computer Vision in Healthcare Applications,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,AD22030,Capstone Project,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22051,Virtualization Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22052,DevOps and Containerization,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22053,Cloud Services Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22054,Cloud Application Development and Management,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22055,Edge and Fog Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22056,Software Defined Networks,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22057,Security and Privacy in Cloud,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22058,IoT Automation,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22050,Capstone Project,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22061,Principles of Multimedia Systems,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22062,Multimedia Data Compression and Storage,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22063,Multimedia Network Technology,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22064,Multimedia Databases,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22065,Digital Image Processing Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22066,Introduction to 3D Printing and Design: Theory and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22067,Pattern Recognition,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22068,Augmented and Virtual Reality Programming: Theory and Practices,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22060,Capstone Project,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22071,Agile Methodologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22072,Web Application Development and Deployment,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22073,C# and .NET Framework,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22074,Frontend and Middleware Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22075,Software Testing and Quality Assurance,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22076,Server Side Programming,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22077,Advanced User Interface Technologies,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22078,Web 3.0 and Metaverse,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22070,Capstone Project,2.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22081,Unix Internals,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22082,Distributed Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22083,Quantum Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22084,High Performance Computing,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22085,Graph Theory,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22086,Resource Management Techniques,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22087,Risk Analytics,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,CS22088,Mobile Application Development,3.0,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22501,Basic Operating Systems,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22502,Basics on Cyber Security and Ethical Hacking,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22503,Introduction to Internet of Things,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22504,Multimedia and Animation Techniques,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22505,Python Programming,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22506,Analytical Foundations,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22507,Artificial Intelligence Basics,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22508,Database Systems and Applications,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22509,Internet Programming,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22510,Introduction to Cloud and Big Data Analytics,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22511,Introduction to Data Structures,3.0,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Artificial Intelligence and Data Science,ADS,R2022,,OE22512,Machine Learning Tools and Techniques,3.0,OE,Open Elective,option

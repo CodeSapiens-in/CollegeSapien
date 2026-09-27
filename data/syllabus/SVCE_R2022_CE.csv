@@ -1,0 +1,140 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,HS22151,Tamil language and Heritage of Ancient Tamil Society,1,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,HS22152,Communicative English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,MA22151,Applied Mathematics I,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,PH22152,Engineering Physics,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,CY22153,Technical Chemistry,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,CE22101,Engineering Geology and Construction Materials,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,CE22102,Engineering Drawing for Civil Engineers,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,PH22161,Physics Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,CY22161,Chemistry Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,1,ME22161,Basic Civil and Mechanical Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,HS22252,Technical English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,MA22251,Applied Mathematics II,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,IT22251,Computer Programming and Practice,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,EE22151,Basic Electrical and Electronics Engineering,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,CE22201,Building Planning and Drawing,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,CE22202,Engineering Mechanics for Civil Engineers,4,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,EE22111,Basic Electrical and Electronics Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,2,CE22211,Construction Materials Laboratory,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22301,Soil Mechanics,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22302,Construction Techniques Equipment and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22303,Strength of Materials,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22308,Surveying: Theory and Practices,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22309,Fluid Mechanics: Theory and Practices,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22310,Highway Engineering: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,3,CE22311,Strength of Materials Laboratory,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,GE22451,Environmental Sciences and Sustainability,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,MA22453,Statistics and Numerical Methods,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22401,Structural Analysis I,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22402,Water Supply and Wastewater Engineering,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22403,Foundation Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22409,Applied Hydraulic Engineering: Theory and Practices,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22411,Survey Practical,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,4,CE22412,Soil Mechanics Laboratory,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22501,Structural Analysis II,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22502,Design of Reinforced Concrete Elements,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22503,Environmental and Social Impact Assessment,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22504,Remote Sensing and GIS,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,,Professional elective I,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,,Open elective I,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,,Mandatory Course,0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22511,Water and Wastewater Analysis Laboratory,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,5,CE22512,Structural and Applied Mechanics Laboratory,1,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,CE22601,Estimation and Quantity Surveying,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,CE22602,Transportation Systems,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,CE22603,Advanced Reinforced Concrete Design,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,CE22609,Design of Steel Structures: Theory and Practices,4,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,,Professional elective II,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,,Professional Elective III,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,,Open Elective II,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,6,CE22611,Structural Analysis and Design Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,CE22701,Hydrology and Irrigation Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,CE22702,Ethics in Civil Engineering Practice,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,CE22703,IoT in Civil Engineering,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,CE22709,Planning Scheduling and Control of Construction Projects: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,,Professional Elective IV,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,,Professional Elective V,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,,Professional Elective VI,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,7,CE22711,Industrial Training/Internship,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,8,CE22811,Project Work,10,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22001,Financial Statement Analysis,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22002,Introduction to Securities Market,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22003,Option Trading Strategies,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22004,Corporate Finance,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22005,Managerial Economics,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22006,Project Management,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,SE22007,Mathematics for AI & ML,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22021,Concrete Technology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22022,Prestressed Concrete Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22023,Prefabricated Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22024,Repair and Rehabilitation of Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22025,Advanced Strength of Materials,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22026,Structural Dynamics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22027,Earthquake Resistant Design of Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22028,Smart Materials and Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22029,Design of Bridges,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22020,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22031,Construction Materials and Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22032,Construction Equipment and Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22033,Formwork Scaffolding and Shoring,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22034,Construction Quality and Safety Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22035,Risk Management in Construction Projects,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22036,Contract Management and Dispute Resolution,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22037,Sustainable Construction,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22038,Building Services and Maintenance,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22030,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22041,Pavement Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22042,Design of Pedestrian and Bicycle Tracks,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22043,Airport and Harbour Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22044,Urban Planning and Development,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22045,Traffic Engineering and Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22046,Traffic Management Plan for Construction Site,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22047,Intelligent Transportation Systems,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22048,Smart Cities,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22040,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CH22051,Industrial Waste Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CH22052,Air Pollution Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CH22053,Disaster Mitigation and Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CH22054,Global Climate Change,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22051,Municipal Solid Waste Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22052,Environmental Policy and Legislations,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22053,Environment Health and Safety,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22054,Sustainability and Social Development,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22050,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22061,Total Station and GPS Surveying,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22062,Geoinformatics and its Applications,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22063,Geographic Information Systems,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22064,Photogrammetry,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22065,Cartography,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22066,Airborne and Terrestrial Laser Mapping,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22067,Satellite Image Processing,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22068,Cadastral and Hydrographic Surveying,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22060,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22071,Subsurface Investigation and Instrumentation,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22072,Earth Pressure and Earth Retaining Structures,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22073,Deep Foundation,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22074,Soil Dynamics and Machine Foundations,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22075,Tunneling,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22076,Rock Mechanics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22077,Ground Improvement Techniques,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22078,Geosynthetics Design and Applications,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22070,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22081,Groundwater Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22082,Participatory Water Resources Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22083,Urban Water Infrastructure,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22084,Watershed Conservation and Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22085,River Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22086,Water Resources Systems Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22087,Integrated Water Resources Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22088,Environmental Hydraulics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,CE22080,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22401,Basic Civil Engineering,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22402,Fundamentals of Remote Sensing and GIS,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22403,Electronic Waste Management,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22404,Basics and Principles of Green Building Design,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22405,Principles of Vastu in Interior Design,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22406,Integrated Solid Waste Management,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22407,Life Cycle Assessment,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Civil Engineering,CE,R2022,,OE22408,Water Pollution and its Management,3,OE,Open Elective,option
