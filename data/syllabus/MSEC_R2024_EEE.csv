@@ -1,0 +1,118 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24IP101,Induction Program- Universal Human values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24MA101,Mathematical Foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24PH104,Physics for Electrical Engineering - I,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24CY103,Chemistry for Electrical and Electronics Engineering,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24ME104,Basic Civil and Mechanical Engineering,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24TP110,Communication Skills Laboratory-I,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,1,U24ED111,Design Thinking - Building Innovation & Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24IP201,Value Added Course – II (Biology for Engineers),0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24MA204,Mathematics for Electrical Engineering,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24PH204,Physics for Electrical Engineering -II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24CY201,Green and Sustainable Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24CE204,Engineering Graphics for Electrical and Electronics Engineering,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24ME101,Engineering Practices Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24TP210,Communication Skills Laboratory-II,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,2,U24ED211,Design Thinking - Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24MA304,Transforms and Partial Differential Equations,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24EE301,Electrical Machines -I,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24MC313,Foreign Language (Japanese/French),0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24EE302,Electron Devices and Circuit,4.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24CS308,Data Structure,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24EE303,Circuit Analysis,4.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24EE304,Electrical Machines -I Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24ED311,Innovation Tool Kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,3,U24RM312,Introduction to Problem Solving,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24MA402,Linear Algebra and Numerical Methods,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24EE401,Electromagnetic Theory,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24EE402,Digital Logic Circuits,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24EE403,Electrical Machines - II,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24MC413,Indological studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24EE404,Integrated Circuits,4.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24EE405,Electrical Machines - II laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24ED411,Idea and Simulation Lab,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,4,U24RM412,Hypothesis,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24EE501,Transmission and Distribution,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24EE502,Measurements and Instrumentation,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24EE503,Microprocessor and Microcontroller,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24EE504,Control Systems,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24EE505,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24RM512,Domain Specific Experiments /Methodology/Algorithms,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24MC513,"Fitness for Life-Yoga, Food nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24EE601,Power System Analysis,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24EE602,Discrete Time System and Signal Processing,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24MC613,Integrated Disaster Management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24EE603,Power Electronics,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24RM612,"Data Collection, Analysis And Interpretation",0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24TP610,Employability Skills & Problem Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,6,U24ED611,Business Management- Go to Market & Start-up Journey,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24MG701,Engineering Economics and Finance Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24MC713,Constitution Of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24EE701,Renewable Energy Systems,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24EE702,Power System Operation and Control,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24EE703,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,7,U24RM712,Testing,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,8,U24EE801,Project Work,8,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP11,Utilisation & Conversion of Electrical Energy,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP12,HVDC & FACTS,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP13,Application of AI Techniques to Power Systems,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP14,Power Quality,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP15,Smart Grid,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP16,Power System Transients,3,Power Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP21,Analysis of Electrical Machines,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP22,Special Electrical Machines,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP23,Multilevel Power Converter Circuits,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP24,Electrical Drives,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP25,Power Electronics for Renewable Energy Sources,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP26,Control of Power Electronic Circuits,3,Converters and Drives,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP31,Embedded System Design,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP32,Embedded C Programming,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP33,Embedded Processors,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP34,Embedded Control for Electric Drives,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP35,Smart System Automation,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP36,Embedded System for Automotive Applications,3,Embedded Systems,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP41,Electric Vehicle Architecture,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP42,"Electric Vehicle Design, Mechanics & Control",3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP43,Design of Electric Vehicle Charging System,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP44,Testing of Electric Vehicle,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP45,Grid Integration of Electric Vehicles,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP46,Design of Motor & Power Converters for Electric Vehicles,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP47,Electric & Hybrid Vehicles,3,Electric Vehicle Technology,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP51,Process Modelling & Simulation,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP52,Computer Control of Processes,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP53,System Identification,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP54,Model Based Control,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP55,PLC Programming,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP56,Adaptive Control,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP57,Robotics & Automation,3,Advanced Control & Industrial Automation,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP61,Energy Storage Systems,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP62,Hybrid Energy Technology,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP63,Design & Modelling of Renewable Energy Systems,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP64,Grid Integrating Techniques & Challenges,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP65,Battery Management System,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEP66,Energy Management & Auditing,3,Energy Engineering,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEO11,Introduction to Control Systems,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEO12,Introduction to PLC Programming,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEO21,Energy Conservation and Management,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEO22,Electric Vehicle Technology,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Electrical and Electronics Engineering,EEE,R2024,,U24EEO31,Energy Auditing & Conservation,3,,Open Elective,option

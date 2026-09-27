@@ -94,6 +94,8 @@ coverage/
 .env
 .env.local
 
+# Cached browser drivers downloaded by the web integration-test runner
+.tools/
+
 # Exceptions to above rules.
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
-

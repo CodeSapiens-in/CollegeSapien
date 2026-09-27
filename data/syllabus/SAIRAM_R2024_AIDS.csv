@@ -1,29 +1,100 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24ESCS101,PROBLEM SOLVING AND LT P cpic,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24ESGE102,Engineering Practices Laboratory,2,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,1,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24BSCY201,CHEMISTRY FOR ENVIRONMENT,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24BSMA201,uly leicelc,9,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24ENTP201,Digital Dynamics,0,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24ESGE101,Engineering Graphics,3,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24HSEN201,Professional English,2,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24HSNC201,NCC Course Level 1*,0,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,2,24HSTA201,Tamils and Technology,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,3,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,4,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,4,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,4,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,4,24ESID101,Idea Engineering Lab - I,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,4,24HSNC201,NCC Course Level 1*,0,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,5,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,5,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,5,24ESMC201,MS Office (Mandatory - NC),0,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,6,24CIEL637,lol Design Protocols 3 le Technine’,4,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,7,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science,AIDS,R2024,7,24ENTP101,Functional Life Skills,1,,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24ESGE102,Engineering Practices Laboratory,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,1,24ESID101,Idea Engineering Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24BSMA201,Discrete Structures,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24HSEN201,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24ESGE101,Engineering Graphics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,2,24ESMC201,MS Office (Mandatory-NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24BSMA303,Probability and Statistical Modelling,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIPC301,Introduction to Machine Learning,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIPC302,Foundations of Data Structures and Algorithm Design,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIPW301,Biomedical Signal and Image Processing with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24HSMC301,Universal Human Values - II Understanding Harmony,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24HSNC301,NCC Course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIPT301,Operating System Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIPL302,Database Management Systems Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AITP301,Aptitude Skills - I,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24AIID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,3,24ESMC302,Programming in Java (Mandatory-NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24BSMA407,Linear Algebra and its Applications,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIPC401,Data Communication and Computer Networks,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIPC402,Data Exploration and Visualization,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIPC403,Deep Learning,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24HSNC401,NCC Course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIPL401,Deep Learning Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIPT401,Introduction to Artificial Intelligence Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AITP401,Aptitude Skills - II,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,4,24AIID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AIPC501,IoT and Sensor Technologies,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AIPC502,Big Data Analytics,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AIPW501,Natural Language Processing with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,,Professional Elective - I,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,,Professional Elective - II,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24MGMC501,Constitution of India,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AIPL501,IoT and Sensor Technologies Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AITP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,5,24AIID501,Prototype Development Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,24AIPC601,Robotics Process Automation,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,,Professional Elective - III,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,,Professional Elective - IV,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,,Professional Elective - V,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,24HSMG501,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,,Open Elective - III,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,24AIPL601,Robotics Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,24AITP601,Technical Skill,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,6,24AIID601,Prototype Development Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24AIPC701,Generative AI with Prompt Engineering,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24AIPC702,Optimization Techniques for Programming,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,,Professional Elective - VI,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,,Open Elective - IV,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24MGEL703,Creative Innovation and Entrepreneurship,2,EL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24AIPL701,Generative AI Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24AIPJ701,Project Work - Phase I,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,7,24AITP701,Company Specific Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,8,,Professional Elective - VIII,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,8,24AIPJ801,Project Work - Phase II,6,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,8,24AIIN801,Internship,3,IN,,core
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL507,AI Planning and Search Algorithms,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL508,Computability and Complexity Theory,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL512,Responsible AI,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL513,Information Security and Privacy,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL514,Embedded Sensor Networks and Middleware Architectures,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL518,IoT Based Smart Systems,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL501,Computer Graphics and Multimedia,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL502,Graph Theory,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL511,Distributed Systems,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP502,Visual Perception and Intelligent Automation Systems Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP503,AI Infrastructure and Optimization Technique Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP506,Business Visualization Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24MGEL5xx,Intellectual Property Rights,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL509,AI for Reliability Analysis,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL510,Foundation of Statistical Machine Learning,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL511,AI in Drug Design,3,Embedded AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL515,Data Privacy and Protection Techniques,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL516,Smart Building and Automation Security,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEL517,Introduction to Smart and Secure Systems,3,IoT and Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL503,Cloud Computing,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL510,Advanced Analysis of Algorithms,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24ITEL512,Parallel Algorithms,3,Computing Technologies,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP501,Software Design Patterns for Intelligent Automation Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP504,AI for Enterprise Data Analytics Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24AIEP505,Artificial Intelligence Applications in Robotics Laboratory with Theory,3,Automation Tools for AI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Artificial Intelligence and Data Science Engineering,AIDS,R2024,,24MGEL5yy,Total Quality Assurance,3,Management,Programme Elective,option

@@ -1,0 +1,221 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24IP101,Induction Program- Universal Human values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24MA101,Mathematical Foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24PH102,Physics for Information Science I,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24CY102,Chemistry for Information Science,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24CE102,Engineering Graphics and Computer Applications,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24ME101,Engineering Practices Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24TP110,Communication Skills Lab I,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,1,U24ED111,Design Thinking - Building Innovation & Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24IP201,Value Added Course – II (Biology for Engineers),0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24MA202,Probability and Statistics,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24PH202,Physics for Information Science II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24EC202,Basics of Electrical and Electronics Engineering,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24CY201,Green and Sustainable Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24TP210,Communication Skills Lab - II,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,2,U24ED211,Design Thinking - Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24MA302,Discrete Mathematics,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24CS302,Data Structures,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24CS303,Object Oriented Programming,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24MC313,Foreign Language,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24CS301,Foundations of Data Science,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24EC310,Digital Principles and Computer Organization,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24CS304,Data Structures Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24CS305,Object Oriented Programming Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24ED311,Innovation Tool Kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,3,U24RM312,Introduction to Problem Solving,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24MA401,Linear Algebra and Numerical Methods,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24CS401,Operating Systems,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24CS402,Database Management Systems,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24CS404,Design and Analysis of Algorithms,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24MC413,Indological studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24IT401,Artificial Intelligence and Machine learning,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24CS406,Operating Systems Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24CS407,Database Management Systems Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24ED411,Idea & Simulation Lab,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,4,U24RM412,Hypothesis,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24IT501,Computational Theory and Compiler Design,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24IT502,Computer Networks,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24IT503,Web Technologies,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24IT504,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24RM512,Domain Specific Experiments/Methodology/Algorithms,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,5,U24MC513,"Fitness for Life-Yoga, Food nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24IT601,Full Stack Web Development,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24MC613,Integrated Disaster Management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24CS601,Object Oriented Software Engineering,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24IT603,Embedded Systems and IOT,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24IT602,Full Stack Web Development Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24RM612,Technical Writing and Research Ethics,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24TP610,Employability Skills & Problem Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,6,U24ED611,Business Management - Go To Market & Start- up Journey,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,U24IT701,Wireless Networks,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,U24MG701,Engineering Economics and Finance Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,U24MC713,Constitution of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,U24IT702,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,7,U24RM712,"Data Collection, Analysis and Interpretation",0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,8,U24IT801,Project Work,8,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP11,Exploratory Data Analysis,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP12,Recommender Systems,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP13,Deep Learning,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP14,Text and Speech Analysis,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP15,Business Analytics,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP16,Big Data Analytics,3,Data Science & Visualization,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP21,Software Testing and Automation,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24IT22,Web Application Security,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP23,DevOps,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP24,UI & UX Design,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP25,Application Development,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP26,Health Care Analytics,3,Full Stack Development,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP31,Cloud Computing,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP32,Virtualization,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP33,Cloud Services Management,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP34,Storage Technologies,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP35,Security & Privacy in Cloud,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP36,Data Warehousing and Mining,3,Cloud Computing Data Center Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP41,Ethical Hacking,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP42,Digital & Mobile Forensics,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP43,Information Security,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP44,Modern Cryptography,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP45,Network Security,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24CSP46,Cryptocurrency & Blockchain Technologies,3,Cyber Security & Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT51,Game Design and Development,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT52,Multimedia and Animation,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT53,Video Creation and Visual Effects,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT54,Metaverse Technologies,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT55,Augmented Reality,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24PIT56,Virtual Reality,3,Creative Media,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP61,Robotic Process Automation,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP62,Cognitive science,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP63,Ethics And AI,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP64,Quantum Computing,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP65,Generative AI,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,U24ITP66,Explainable AI & Agentic AI,3,Next-Gen AI,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Information Technology,IT,R2024,,CSE,R2024,3,,Open Elective,option

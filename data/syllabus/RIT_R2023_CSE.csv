@@ -1,0 +1,63 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,HS23111,Communicative English,3,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,CY23111,Engineering Chemistry,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,MA23111,Matrices and Calculus,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,GE23111,Problem Solving and C Programming,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,GE23112,Heritage of Tamils,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,GE23131,Engineering Graphics,4,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,CY23121,Chemistry Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,1,GE23121,Problem Solving and C Programming Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,HS23211,Professional English,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,MA23211,Statistics and Numerical Methods,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,PH23211,Physics for Information Science,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,GE23211,Basic Electrical and Electronics Engineering,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,AD23211,Python for Data Science,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,GE23213,Tamils and Technology,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,PH23221,Physics Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,AD23221,Python for Data Science Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,GE23221,Communication Laboratory / Foreign Language,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,2,GE23223,Engineering Practices Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,GE23311,Environmental Science and Sustainability,2,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,MA23311,Discrete Mathematics,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,AL23311,Artificial Intelligence,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,CS23311,Data Structures,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,CS23312,Object Oriented Programming,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,EC23331,Digital Principles and Computer Organization,4,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,CS23321,Data Structures Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,CS23322,Object Oriented Programming Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,3,CS23IC1,Design Thinking for Software Engineers,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23411,Database Management Systems,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23412,Operating Systems,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23413,Theory of Computation,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23414,Software Development Practices,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,AL23432,Machine Learning Techniques,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23431,Design and Analysis of Algorithms,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23421,Database Management Systems Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23422,Operating Systems Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,4,CS23IC2,Visualization Tools,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,CS23511,Computer Networks,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,CS23512,Compiler Design,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,,Professional Elective I,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,,Professional Elective II,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,,Mandatory Course I,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,AD23531,Deep Learning Techniques,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,AD23532,Data Exploration and Visualization,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,CS23521,Computer Networks Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,5,CS23IC3,AZURE for Data Analytics,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,,Professional Elective III,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,,Professional Elective IV,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,,Open Elective-I*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,,Open Elective-II*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,,Mandatory Course II,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,EC23631,Embedded Systems and IoT,4,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,CS23631,Object Oriented Software Engineering,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,6,CS23621,Mini Project,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,GE23711,Human Values and Ethics,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,,Elective Management,3,HSMC,Management,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,CS23513,Cryptography and Cyber Security,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,,Professional Elective V,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,,Professional Elective VI,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,AL23531,Natural Language Processing,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,7,CS23721,Internship/Certification Course,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,8,,Open Elective-III*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Computer Science and Engineering,CS,R2023,8,CS23821,Project Work,10,EEC,,core

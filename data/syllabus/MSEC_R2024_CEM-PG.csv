@@ -1,0 +1,69 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24MA101,Statistical Methods for Engineers,4,FC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24CN101,Modern Construction Materials,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24CN102,Project Formulation and Appraisal,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24CN103,Construction Equipment and Management,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24RM101,Research Methodology and IPR,2,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24CN104,Advanced Construction Engineering and Experimental Techniques Laboratory,2,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,1,P24CN105,Technical Seminar,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,P24CN201,Advanced Construction Techniques,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,P24CN202,"Construction Planning, Scheduling and Control",3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,P24CN203,Civil Contract and Regulations,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,P24CN204,Construction Management Studio Laboratory,2,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,2,P24CN205,Statistical Analysis for Construction Engineers Laboratory,2,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,3,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,3,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,3,,Open Elective,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,3,P24CN301,Practical Training (4 Weeks),2,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,3,P24CN302,Project Work I,6,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,4,P24CN401,Project Work II,12,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN501,Advanced Concrete Technology,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN502,Human Resources Management in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN503,Construction Project Management,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN504,Sustainable Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN505,Economics and Finance Management in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN506,Design of Energy Efficient Buildings,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN507,Project Safety Management,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN508,Computer Applications in Construction Engineering and Planning,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN509,Quantitative Techniques in Management,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN510,Resource Management and Control in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN511,"Shoring, Scaffolding and Formwork",3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN512,System Integration in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN513,Advanced Data Analysis,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN514,Environmental Impact Assessment for Construction Engineers,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN515,"Lean Construction Concepts, Tools and Practices",3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN516,"Maintenance, Repair and Rehabilitation of Structures",3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN517,Quality Control and Assurance in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN518,Digital Design and Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN519,Organizational Behaviour,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24CN520,Supply Chain Management and Logistics in Construction,3,,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24EM133,Smart Grid,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC517,Security Practices,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC518,Cloud Computing Technologies,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC519,Design Thinking,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC520,Principles of Multimedia,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC521,Blockchain Technologies,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OC522,Deep Learning,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OE513,IoT for Smart Systems,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OE514,Machine Learning and Deep Learning,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OE515,Renewable Energy Technology,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OM523,Vibration and Noise Control Strategies,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OM524,Energy Conservation and Management in Domestic Sectors,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OM525,Additive Manufacturing,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OM526,Electric Vehicle Technology,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OM527,New Product Development,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT501,Sustainable Management,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT502,Micro and Small Business Management,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT503,Intellectual Property Rights,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT504,Ethical Management,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT505,Big Data Analytics,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT506,Internet of Things and Cloud,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT507,Medical Robotics,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT508,Embedded Automation,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT509,Environmental Sustainability,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT510,Textile Reinforced Composites,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT511,Nanocomposite Materials,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Construction Engineering and Management,CEM-PG,R2024,,P24OT512,"IPR, Biosafety and Entrepreneurship",3,,Open Elective,option

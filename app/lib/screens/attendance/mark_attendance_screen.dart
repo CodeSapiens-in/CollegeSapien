@@ -100,6 +100,31 @@ class _MarkAttendanceScreenState extends State<MarkAttendanceScreen> {
         .toList();
   }
 
+  int _toMin(String t) {
+    final parts = t.split(':').map(int.tryParse).toList();
+    if (parts.length != 2 || parts.any((p) => p == null)) return 0;
+    return parts[0]! * 60 + parts[1]!;
+  }
+
+  // Nearest slot for the given subject: in-progress slot if now falls
+  // within one, else the next upcoming slot, else the last slot of the day.
+  _SlotOption _nearestSlotFor(String subjectId, List<_SlotOption> slots) {
+    final subjectSlots =
+        slots.where((option) => option.subject.id == subjectId).toList();
+    if (subjectSlots.isEmpty) return slots.first;
+    final nowMin = DateTime.now().hour * 60 + DateTime.now().minute;
+    for (final option in subjectSlots) {
+      if (nowMin >= _toMin(option.slot.startTime) &&
+          nowMin < _toMin(option.slot.endTime)) {
+        return option;
+      }
+    }
+    for (final option in subjectSlots) {
+      if (_toMin(option.slot.startTime) > nowMin) return option;
+    }
+    return subjectSlots.last;
+  }
+
   void _selectDefaults() {
     final slots = _availableSlots;
     if (slots.isEmpty) {
@@ -108,16 +133,22 @@ class _MarkAttendanceScreenState extends State<MarkAttendanceScreen> {
       return;
     }
 
-    _selectedSlot = slots.firstWhere(
-      (option) =>
-          option.subject.id == widget.preselectedSubjectId &&
-          option.slot.startTime == widget.preselectedSlotStartTime &&
-          option.slot.endTime == widget.preselectedSlotEndTime,
-      orElse: () => slots.firstWhere(
-        (option) => option.subject.id == widget.preselectedSubjectId,
-        orElse: () => slots.first,
-      ),
-    );
+    if (widget.preselectedSubjectId != null &&
+        widget.preselectedSlotStartTime == null &&
+        slots.any((option) => option.subject.id == widget.preselectedSubjectId)) {
+      _selectedSlot = _nearestSlotFor(widget.preselectedSubjectId!, slots);
+    } else {
+      _selectedSlot = slots.firstWhere(
+        (option) =>
+            option.subject.id == widget.preselectedSubjectId &&
+            option.slot.startTime == widget.preselectedSlotStartTime &&
+            option.slot.endTime == widget.preselectedSlotEndTime,
+        orElse: () => slots.firstWhere(
+          (option) => option.subject.id == widget.preselectedSubjectId,
+          orElse: () => slots.first,
+        ),
+      );
+    }
     _selectedSubject = _selectedSlot!.subject;
   }
 
@@ -219,6 +250,37 @@ class _MarkAttendanceScreenState extends State<MarkAttendanceScreen> {
       ),
     );
 
+    Navigator.pop(context);
+  }
+
+  Future<void> _clearAttendance() async {
+    if (_selectedSubject == null || _selectedSlot == null) return;
+
+    setState(() => _isLoading = true);
+    try {
+      await _attendanceService.markAttendance(
+        subjectId: _selectedSubject!.id,
+        dateKey: _dateKey(_selectedDate),
+        slotStartTime: _selectedSlot!.slot.startTime,
+        slotEndTime: _selectedSlot!.slot.endTime,
+        status: 'None',
+      );
+    } catch (e) {
+      if (!mounted) return;
+      setState(() => _isLoading = false);
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text(e.toString()), backgroundColor: Colors.red),
+      );
+      return;
+    }
+
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      const SnackBar(
+        content: Text('Attendance entry cleared'),
+        duration: Duration(seconds: 2),
+      ),
+    );
     Navigator.pop(context);
   }
 
@@ -465,6 +527,30 @@ class _MarkAttendanceScreenState extends State<MarkAttendanceScreen> {
                   ),
                   child: const Text(
                     'Save Attendance',
+                    style: TextStyle(
+                      fontFamily: 'Inter',
+                      fontSize: 16,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 12),
+              SizedBox(
+                width: double.infinity,
+                height: 56,
+                child: OutlinedButton(
+                  onPressed:
+                      _selectedSubject == null ? null : _clearAttendance,
+                  style: OutlinedButton.styleFrom(
+                    side: const BorderSide(color: Colors.black, width: 2),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                  ),
+                  child: const Text(
+                    'Clear Attendance for this Slot',
                     style: TextStyle(
                       fontFamily: 'Inter',
                       fontSize: 16,

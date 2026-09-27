@@ -20,24 +20,16 @@ const nav = computed(() => {
       icon: "i-heroicons-building-library",
     },
     { label: "Resources", to: "/resources", icon: "i-heroicons-document-text" },
-    { label: "Syllabus", to: "/syllabus", icon: "i-heroicons-book-open" },
+    { label: "Events", to: "/events", icon: "i-heroicons-calendar-days" },
     {
       label: "Moderation",
       to: "/moderation",
       icon: "i-heroicons-shield-check",
     },
-    { label: "Events", to: "/events", icon: "i-heroicons-calendar-days" },
-    { label: "Reports", to: "/reports", icon: "i-heroicons-flag" },
-    {
-      label: "Ambassadors",
-      to: "/ambassadors",
-      icon: "i-heroicons-academic-cap",
-    },
-    { label: "CMS", to: "/cms", icon: "i-heroicons-pencil-square" },
   ];
   if (isAmbassador.value) {
     return allItems.filter((item) =>
-      ["Syllabus", "Resources", "Events"].includes(item.label),
+      ["Resources", "Moderation", "Events"].includes(item.label),
     );
   }
   return allItems;

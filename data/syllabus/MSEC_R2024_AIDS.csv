@@ -1,0 +1,220 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24IP101,Induction Program -Universal Human Values,0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24EN101,Technical English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24MA101,Mathematical Foundation for Engineers,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24PH102,Physics for Information Science I,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24CY102,Chemistry for Information Science,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24TA101,Heritage of Tamils,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24CS101,Programming in C,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24CE102,Engineering Graphics and Computer Application,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24ME101,Engineering Practices Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24TP110,Communication Skill Lab - I,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,1,U24ED111,Design Thinking -Building Innovation & Solutioning Mindset,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24IP201,Value Added Course – II (Biology for AI Engineers),0,VAC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24EN201,Professional English,2,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24MA202,Probability and Statistics,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24PH202,Physics for Information Science II,3,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24TA201,Tamils and Technology,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24EC202,Basics of Electrical and Electronics Engineering,3,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24CY201,Green and Sustainable Chemistry,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24CS201,Python Programming,4.5,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24BS101,Physics and Chemistry Laboratory,2,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24TP210,Communication Skill Lab – II,1,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,2,U24ED211,Design Thinking - Decoding Innovation Opportunity,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24MA302,Discrete Mathematics,4,BSC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24AD301,Fundamentals of Data Science and Analytics,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24MC313,Foreign Language (Japanese / French / German),0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24AD302,OOPS and Data Structures Design,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24AD303,Database Design and Management,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24EC310,Digital Principles and Computer Organization,4,ESC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24AD304,Data Science and Analytics Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24TP310,General Aptitude & Logical Reasoning,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24ED311,Innovation Tool Kits,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,3,U24RM312,Introduction To Problem Solving,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24MA402,Linear Algebra and Numerical Methods,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD401,Artificial Intelligence,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD402,Machine Learning,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24MC413,Indological Studies,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD403,Introduction to Operating Systems,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD404,Data Exploration and Visualization,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD405,Artificial Intelligence Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24AD406,Machine Learning Laboratory,1.5,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24TP410,Critical and Creative Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24ED411,Idea and Simulation Lab,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,4,U24RM412,Hypothesis,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,,Open Elective I,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,,Professional Elective I,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,,Professional Elective II,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24AD501,Deep Learning,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24AD502,Big Data Analytics,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24AD503,Introduction to Java Programming,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24AD504,Deep Learning Lab,2,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24AD505,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24TP510,Analytical and Logical Thinking Skills,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24ED511,Prototype & Market Validation,0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24RM512,Domain Specific Experiments / Methodology / Algorithms,1,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,5,U24MC513,"Fitness for Life-Yoga, Food Nutrition",0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,,Open Elective II,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,,Professional Elective III,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,,Professional Elective IV,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24CS503,Theory of Computation,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24MC613,Integrated Disaster management,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24IT603,Embedded Systems and IOT,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24AD601,Network Essentials,4,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24TP610,Employability Skills & Problem-Solving Techniques,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24ED611,"Building a Business Model, GTM & Startup Journey",0.5,EDIC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,6,U24RM612,Technical Writing and Research Ethics,0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,,Open Elective III,3,OEC,Open Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,,Professional Elective V,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,,Professional Elective VI,3,PEC,Professional Elective,elective
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,U24AD701,Information Security,3,PCC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,U24MG701,Engineering Economics and Finance Management,3,HSMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,U24MC713,Constitution of India,0,MC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,U24AD702,Summer Internship,1,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,7,U24RM712,"Data Collection, Analysis, and Interpretation",0.5,RMC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,8,U24AD801,Project Work,8,EEC,,core
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP11,Computational Intelligence,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ECP25,Computer Vision,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP12,Cognitive Models for Computing,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP13,MLOps,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ITP65,Generative AI,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP14,Explainable AI,3,Intelligent Computing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP21,Reinforcement Learning,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP22,AI for Industrial Applications,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP23,AI in IoT,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP24,AI for Robotics,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP25,Autonomous Vehicles,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP26,Responsible AI,3,AI in Industry,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP31,Business Analytics,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP32,Predictive Analytics,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP14,Text & Speech Analysis,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ITP26,Health Care Analytics,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP33,Optimization Techniques,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP34,Social Network Analytics,3,Data Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP41,Web Engineering,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP31,Cloud Computing,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP24,UI & UX Design,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP42,Software Engineering,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP23,DevOps,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP43,AI based Mobile Application Development,3,Agile Software Technologies,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP41,Ethical Hacking,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP42,Digital and Mobile Forensics,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP41,Social Network Security,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP44,Modern Cryptography,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP45,AI for Cyber Security,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24CSP46,Cryptocurrency and Block Chain Technologies,3,Cyber Security and Forensics,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP61,Quantum Computing,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ITP55,Augmented Reality,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ITP56,Virtual Reality,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP62,Game Development,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP63,Large Language Model,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,U24ADP64,Agentic AI,3,Multimodel Processing,Professional Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option
+Meenakshi Sundararajan Engineering College,MSEC,Artificial Intelligence and Data Science,AIDS,R2024,,CSE,R2024,3,,Open Elective,option

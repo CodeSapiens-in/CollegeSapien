@@ -1,0 +1,64 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,HS23111,Communicative English,3,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,MA23111,Matrices and Calculus,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,PH23112,Physics for Electronics Engineering,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,GE23111,Problem Solving and C Programming,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,EC23111,Circuit Analysis,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,GE23112,Heritage of Tamils,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,PH23121,Physics Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,GE23121,Problem Solving and C Programming Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,1,GE23122,Engineering Practices Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,HS23211,Professional English,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,CY23211,Engineering Chemistry,3,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,MA23211,Statistics and Numerical Methods,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,AD23211,Python for Data Science,3,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,GE23213,Tamils and Technology,0,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,EC23231,Electronic Devices and Circuits,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,GE23231,Engineering Graphics,4,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,CY23221,Chemistry Laboratory,1,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,AD23221,Python for Data Science Laboratory,1,ESC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,2,GE23221,Communication Laboratory / Foreign Language,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,GE23311,Environmental Science and Sustainability,2,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,CS23312,Object Oriented Programming,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,EC23311,Control Systems,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,EC23312,Digital System Design,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,EC23313,Signals and Systems,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,EC23321,Digital System Design Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,CS23322,Object Oriented Programming Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,3,EC23IC1,PCB Design,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,MA23412,Random Process and Linear Algebra,4,BSC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23411,Communication Systems,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23412,Electromagnetic Fields,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23413,Linear Integrated Circuits,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23431,Digital Signal Processing,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23432,Networks and Security,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23421,Communication Systems Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23422,Linear Integrated Circuits Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,4,EC23IC2,Cyber Security,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,EC23511,Transmission Lines and RF System,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,EC23512,VLSI and Chip Design,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,,Professional Elective I,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,,Professional Elective II,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,,Mandatory Course I,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,EC23531,Embedded Systems and IoT Design,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,AL23431,Artificial Intelligence and Machine Learning,4,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,EV23521,VLSI Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,5,EC23IC3,Introduction to Robotics,1,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,EC23611,Antenna Theory,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,EC23612,Wireless Communication,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,,Professional Elective III,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,,Professional Elective IV,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,,Open Elective-I*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,,Open Elective-II*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,,Mandatory Course II,0,MC,Mandatory,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,EC23621,Mini Project,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,6,EC23622,Wireless Communication Laboratory,1,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,GE23711,Human Values and Ethics,2,HSMC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,,Elective Management,3,HSMC,Management,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,EC23711,Ad Hoc and Wireless Sensor Networks,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,EC23712,5G Fundamentals and Architectures,3,PCC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,,Professional Elective V,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,,Professional Elective VI,3,PEC,Professional,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,7,EC23721,Internship,2,EEC,,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,8,,Open Elective-III*,3,OEC,Open,core
+Rajalakshmi Institute of Technology,RIT,B.E Electronics and Communication Engineering,EC,R2023,8,EC23821,Project Work,10,EEC,,core

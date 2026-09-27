@@ -82,6 +82,13 @@ const revoke = async (user: User) => {
 
 <template>
   <div>
+    <NuxtLink
+      to="/moderation"
+      class="text-xs text-gray-400 hover:text-gray-600 flex items-center gap-1 mb-2"
+    >
+      <Icon name="i-heroicons-arrow-left" class="w-3.5 h-3.5" />
+      Moderation
+    </NuxtLink>
     <div class="flex items-center justify-between mb-6">
       <div>
         <h1 class="text-xl font-bold text-gray-900">Campus Ambassadors</h1>

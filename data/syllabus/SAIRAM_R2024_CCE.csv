@@ -1,23 +1,119 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
 Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESCS101,PROBLEM SOLVING AND LT P cpic,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESGE102,Engineering Practices Laboratory,2,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESID101,Idea Engineering Lab - I,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSCY201,CHEMISTRY FOR ENVIRONMENT,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSMA201,uly leicelc,9,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESGE102,Engineering Practices Lab,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ENTP101,Functional Life Skills,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,1,24ESID101,Idea Engineering Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSMA241,Discrete Structures,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSEN2401,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSPH201,Physics of Electronic Devices,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSNC201,NCC Course Level 1,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24ESGE101,Engineering Graphics,3,ES,,core
 Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24ENTP201,Digital Dynamics,0,,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSEN201,Professional English,2,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSNC201,NCC Course Level 1*,0,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24HSTA201,Tamils and Technology,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24BSPH101,Engineering Physics,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24XXOEXXX,Open Elective,3,PE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24ENTP201,Digital Dynamics,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24ESID201,Idea Engineering Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,2,24ESMC201,MS Office (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24BSMA301,Statistics and Linear Algebra,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24ECPC301,Signals and Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COPC301,Digital Design and Computer Organization,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COPC302,Algorithms and Data Structures,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24HSMC301,Universal Human Values - II Understanding Harmony,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24HSNC301,NCC course Level 2,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COPL301,Digital Circuits Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COPL302,Algorithms and Data Structures Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COTP301,Aptitude Skills - I,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24COID301,Innovative Design Lab - I,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,3,24ESMC242,Joy of Computing using Python (Mandatory - NC),0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24BSMA401,Probability Theory and Random Processes,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24ECPC402,Analog and Digital Communication,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24ITPW401,Operating systems with Lab,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24COPC401,Database Systems,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24HSNC401,NCC course Level 3,0,NC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24ECPL401,Communication Systems Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24COPL401,Database Systems Laboratory,2,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24CSPT401,Object Oriented Programming Laboratory with Theory,3,PT,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24COTP401,Aptitude Skills - II,0,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,4,24COID401,Innovative Design Lab - II,1,ID,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECPC501,Digital Communication,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECPW501,Discrete Time Signal Processing with Laboratory,4,PW,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECPC502,VLSI Design,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,,Professional Elective - I,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECPL501,Communication Systems Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECPL502,VLSI Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECTE501,Live-in-Lab - III,2,TE,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,5,24ECTP501,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPC601,Transmission Lines & Antennas,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPC602,Communication Networks,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPC603,Wireless Communication,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,,Professional Elective - II,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24HSPL501,Communication and Soft Skills Laboratory,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPL601,Antennas Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPL602,Networks Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECPJ601,Innovative Design Project,1,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,6,24ECTP601,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24ECPC701,RF and Microwave Engineering,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24ECPC702,Optical Communication,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24CSPC601,Artificial Intelligence,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,,Professional Elective - III,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24HSMG601,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24ECPL701,Advanced Communication Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24CSPL601,Artificial Intelligence Laboratory,1.5,PL,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24ECPJ701,Project Phase - I,2,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,7,24ECTP701,Skill Enhancement,1,TP,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,8,,Professional Elective - IV,3,EL,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,8,24ECPJ801,Project Phase - II,4,PJ,,core
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL501,Advanced Communication Systems and Techniques,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL502,Industrial IOT,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL503,FPGA & ASIC Design,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL504,Programmable Logic Controllers,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL505,Sensors and RFID,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL506,Sustainable Energy and Energy Management,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL507,Sensors and measurements,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL508,Control Systems Engineering,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL509,Soft Computing,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL510,Biosignal and Image Processing,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24MGEL501,Intellectual Property Rights,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL601,Radio Access Networks,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL602,Wireless Sensor Networks,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL603,CMOS Analog IC Design,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL604,Software for Embedded Systems,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL605,Electromagnetic Interference and Compatibility,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL606,Green Radio Communication Networks,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL607,Biomedical Instrumentation,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL608,Pattern Recognition,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL609,Machine Learning Techniques,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL610,Medical Electronics,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24MGEL601,Total Quality Management,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL701,Cognitive Radio,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL702,Smart Antennas for Mobile Communication and GPS,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL703,Mixed Signal IC Design,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL704,Embedded Processor for Signal Processing,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL705,Antennas for Modern Communication,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL706,Microwave and Millimeter Wave Circuits and Systems,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL707,DSP Processor Architecture and Programming,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL708,Brain Computer interface and its applications,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL709,Digital Image Processing,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL710,Deep Learning Principles & Practices,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24MGEL701,Foundation Skills in Integrated Product Development,3,Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL801,5G and 6G Wireless Communication Systems,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL802,Underwater Wireless Communication Systems,3,Wireless,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL803,Electronic Packaging and Testing,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL804,Embedded Product Development,3,VLSI,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL805,RF System Design and MMIC,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL806,Photonic Networks,3,RF & Green,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL807,Telehealth Technology,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL808,Medical Informatics,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL809,Robotics and Automation,3,Signal Processing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24CCEL810,Medical Imaging Systems,3,Biomedical,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer and Communication Engineering,CCE,R2024,,24MGEL801,Professional Ethics and Values,3,Management,Programme Elective,option

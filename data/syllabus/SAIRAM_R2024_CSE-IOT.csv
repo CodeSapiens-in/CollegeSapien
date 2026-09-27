@@ -1,37 +1,157 @@
 college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24ESCS101,PROBLEM SOLVING AND LT P cpic,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24ESGE101,Engineering Graphics,3,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24ESID101,Idea Engineering Lab - I,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,1,24HSEN101,Communicative English,3,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24BSCY201,CHEMISTRY FOR ENVIRONMENT,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24BSMA201,uly leicelc,9,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24ESGE102,Engineering Practices Laboratory,2,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24HSEN201,Professional English,2,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24HSNC201,NCC Course Level 1*,0,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,2,24HSTA201,Tamils and Technology,1,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,3,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24BSMA202,Introductory Topics in Calculus,4,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24BSPH101,Engineering Physics,3,BS,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24ESMC201,MS Office (Mandatory - NC),0,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24ITPT201,OOPS Using Java Laboratory with Theory,3,PC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,4,24XXOEXXX,Open Elective,3,PE,Open Elective,elective
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,5,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,5,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,5,24ESID101,Idea Engineering Lab - I,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,5,24ESMC201,MS Office (Mandatory - NC),0,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,5,24HSMC301,""" YNiVERSAL HUMAN VALUES II",4,HUM,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,6,24CIEL637,lol Design Protocols 3 le Technine’,4,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,6,24XXEL5YY,Professional Elective - I,3,PE,Programme Elective,elective
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,6,24XXEL8YY,Professional Elective,3,PE,Programme Elective,elective
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,7,24AIPT201,Python for Data Science Laboratory with Theory,3,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,7,24ENTP101,Functional Life Skills,1,,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,7,24ESPL101,Programming in C Laboratory,1,ESC,,core
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,7,24XXEL5YY,Professional Elective - I,3,PE,Programme Elective,elective
-Sri Sairam Engineering College,SAIRAM,Computer Science Engineering (Internet of Things),CSE-IOT,R2024,7,24XXEL6ww,Professional Elective - V,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24BSMA101,Matrices and Calculus,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24HSEN101,Communicative English,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24BSPH101,Engineering Physics,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24BSCY101,Engineering Chemistry,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24ESCS101,Problem Solving and Programming in C,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24ESGE101,Engineering Graphics,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24HSTA101,Heritage of Tamils,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24BSPL101,Physics and Chemistry Laboratory,2,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24ESPL101,Programming in C Laboratory,1,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24ESID101,Ideation Engineering Lab - I,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,1,24ENTP101,Functional Life Skills,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24BSMA201,Discrete Structures,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24HSEN201,Professional English,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24BSPH203,Physics for Information Science,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24BSCY201,Chemistry for Environment and Sustainability,3,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24HSTA201,Tamils and Technology,1,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24HSNC201,"NCC Course Level 1 (Optional, NCC Cadets only)",0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24AIPT201,Python for Data Science Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24ESGE102,Engineering Practices Laboratory,2,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24ESID201,Ideation Engineering Lab - II,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,2,24ENTP201,Digital Dynamics,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24BSMA301,Statistics and Linear Algebra,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24ITPC301,Data Structures and Algorithms,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24ESCI301,Basic Electronics and Communication Engineering,3,ES,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24CIPC301,Introduction to Internet of Things,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24CIPT301,Digital Design and Computer Organisation System Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24HSMC301,Universal Human Values - II Understanding Harmony,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24HSNC301,"NCC Course Level 2 (Optional, NCC Cadets only)",0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24ITPL301,Data Structures and Algorithms Laboratory,2,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24CIPL301,IoT and Embedded Systems Laboratory,2,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24CITP301,Aptitude Skills - I,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,3,24CIID301,Innovative Design Lab - I,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24BSMA402,Probability and Queuing Theory,4,BS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24SCPT401,Operating System in Kali Linux Lab with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24CSPC401,Theoretical Computer Science,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24ITPW301,Database Management System with Laboratory,4,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,,Open Elective - I,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24HSNC401,"NCC Course Level 3 (Optional, NCC Cadets only)",0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24CSPT401,Object Oriented Programming Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24CIPT401,Communication and Networking Technologies Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24CITP401,Aptitude Skills - II,0,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,4,24CIID401,Innovative Design Lab - II,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24ITPW501,Web Technology with Laboratory,4,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,,Professional Elective - I,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,,Professional Elective - II,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24HSMG501,Principles of Engineering Management,3,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,,Open Elective - II,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24MGMC501,Constitution of India,0,MC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24CIPT501,IoT Protocols Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24CITP501,Skill Enhancement,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,5,24CIID501,Prototype Development Laboratory - I,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,24AIPW603,Machine Learning Techniques with Laboratory,4,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,,Professional Elective - III,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,,Professional Elective - IV,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,,Professional Elective - V,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,,Open Elective - III,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,24CIPT601,Artificial Intelligence for IoT Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,24CIPT602,Sensors and Actuators Laboratory with Theory,3,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,24CITP601,Technical Skill - II,0,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,6,24CIID601,Prototype Development Laboratory - II,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,24CIPW701,Data Management in IoT with Laboratory,4,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,,Professional Elective - VI,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,,Open Elective - IV,3,OE,Open Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,24MGEL703,Creative Innovation and Entrepreneurship,2,HS,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,24CIPJ701,Project Work - Phase I,4,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,24CIPL701,IoT Cloud Computing Laboratory,2,PC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,7,24CITP701,Company Specific Skills,1,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,8,,Professional Elective - VII,3,PE,Programme Elective,elective
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,8,24CIPJ801,Project Work - Phase II,6,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,8,24CIIN801,Internship,3,EEC,,core
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL501,Dynamic Paradigm in IoT,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL502,Sensors and Transducers,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AMEL504,Object Oriented Software Engineering,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL505,"Sensors, Actuators and Signal Processing",3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL506,Computer Graphics and Multimedia,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL507,4G/5G Communication Networks,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL508,Intellectual Property Rights,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ITEL511,Data Acquisition System,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL509,Brain Inspired Computing,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CSEL511,Fundamentals of Edge and Soft Computing,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL510,AI in Healthcare,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL512,Ethical Hacking,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL514,IoT Device Programming,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL515,Web of Things,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL517,Software Project Management,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL518,Digital Forensics,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL520,Virtualization Technologies,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL521,Bioinformatics,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL522,Massive MIMO Networks,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL523,Data Science for Internet of Things,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL524,Descriptive Analytics for IoT,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL525,Computational Neuroscience,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL526,Deep Learning Principles and Practices,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL527,Algorithms for DNA Sequencing,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL528,Blockchain and Cryptocurrency Technologies,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL601,Robotics and Applications,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL602,Artificial IoT,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL603,Embedded Real Time Systems,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL604,Game Programming,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL605,Virtual Reality and Augmented Reality,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL608,Software Defined Networks,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL609,Underwater Imaging Systems and Image Processing,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AMEL607,Business Intelligence and Analytics,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL611,Database Tuning,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL612,Artificial Intelligence and Edge Computing,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL613,Pattern Recognition,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL614,Human Computer Interaction,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL615,Information Security,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL618,Open Source Intelligence (OSINT),3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL619,Digital Twin Technology,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL620,"IoT Architecture, Network and Security",3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL621,Computer Vision,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL622,Green Computing,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL623,Haskell Programming,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL624,Speech Processing,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL626,6G Wireless Technologies,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL629,Advanced Data Structures and Algorithms,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL631,Data and Visual Analytics in AI,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL633,Information Theory and Coding,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL636,Sensors for Industrial Applications,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL637,IoT Design Protocols,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL638,Introduction to Industry 4.0 and Technologies,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CSEL608,Full Stack Software Development,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL640,Modern Digital Communication Techniques,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ECEL619,Photonic Integrated Circuits,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ITEL603,Data Analytics with Python,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AIEL511,Pandas for Data Analysis,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL643,NoSQL Databases,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL645,Generative AI,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AIEL601,Practical Machine Learning with TensorFlow,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL646,Social Network Security,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL701,IoT Cloud Processing and Analytics,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL702,Service Oriented Architecture,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AMEL505,Fuzzy Logic Systems,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL704,Soft Computing,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL705,App Development,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ECEL621,Signal Processing for mm Wave Communication,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL707,Millimeter Wave Personal Communication Systems,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL708,Brain Computer Interface,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24AIEL606,Data Wrangling and Cleaning,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL710,AI in Telemedicine,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL711,Deep Learning for Computer Vision,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CSEL505,Decision Support Systems,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL713,Cyber Laws and Vulnerabilities,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL715,System on Chip Architecture,3,IoT Technology,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL717,Software Testing and Automation,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL718,C++ for Embedded Systems,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ITEL501,Computer Graphics and Multimedia,3,System and Computing,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL719,5G and Beyond Communication Networks,3,Communication and Networking,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL721,Supply Chain Analytics,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL722,Computational Neuroscience,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24ITEL504,Data Warehousing and Data Mining,3,Data Management,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL723,Algorithms for DNA Sequencing,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL724,Ethics and AI,3,Artificial Intelligence,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL725,Mobile and Wireless Security,3,Cyber Security,Programme Elective,option
+Sri Sairam Engineering College,SAIRAM,Computer Science and Engineering (Internet of Things),CSE-IOT,R2024,,24CIEL727,Ransomware Defense Strategies,3,Cyber Security,Programme Elective,option
