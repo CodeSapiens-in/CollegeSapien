@@ -21,6 +21,7 @@ class ApiService {
 
   static final ApiService instance = ApiService._();
   final http.Client _client = http.Client();
+  static const _timeout = Duration(seconds: 30);
 
   Future<Map<String, String>> _headers() async {
     final headers = <String, String>{
@@ -66,16 +67,24 @@ class ApiService {
     final headers = await _headers();
 
     final response = switch (method) {
-      'GET' => await _client.get(uri, headers: headers),
+      'GET' => await _client.get(uri, headers: headers).timeout(_timeout),
       'POST' =>
-        await _client.post(uri, headers: headers, body: jsonEncode(body ?? {})),
+        await _client.post(uri, headers: headers, body: jsonEncode(body ?? {})).timeout(_timeout),
       'PATCH' => await _client.patch(uri,
-          headers: headers, body: jsonEncode(body ?? {})),
-      'DELETE' => await _client.delete(uri, headers: headers),
+          headers: headers, body: jsonEncode(body ?? {})).timeout(_timeout),
+      'DELETE' => await _client.delete(uri, headers: headers).timeout(_timeout),
       _ => throw ArgumentError('Unsupported method $method'),
     };
 
-    final decoded = response.body.isEmpty ? null : jsonDecode(response.body);
+    dynamic decoded;
+    try {
+      decoded = response.body.isEmpty ? null : jsonDecode(response.body);
+    } on FormatException {
+      if (response.statusCode >= 200 && response.statusCode < 300) {
+        return response.body;
+      }
+      decoded = null;
+    }
     if (response.statusCode < 200 || response.statusCode >= 300) {
       final message = decoded is Map<String, dynamic>
           ? decoded['error']?.toString() ?? 'Request failed'

@@ -3,10 +3,16 @@ import 'dart:typed_data';
 
 import 'api_service.dart';
 
+const _maxImageBytes = 4 * 1024 * 1024; // 4 MB — safe for Cloud Functions 10 MB limit after base64 inflation
+
 class AcademicService {
   Future<Map<String, dynamic>> calculateCgpaFromImage(Uint8List bytes) async {
+    final payload = bytes;
+    if (payload.length > _maxImageBytes) {
+      throw ApiException(413, 'Image too large (${(payload.length / 1024 / 1024).toStringAsFixed(1)} MB). Please use an image under 4 MB.');
+    }
     return await ApiService.instance.post('/cgpa/calculate', {
-      'imageBase64': base64Encode(bytes),
+      'imageBase64': base64Encode(payload),
     }) as Map<String, dynamic>;
   }
 

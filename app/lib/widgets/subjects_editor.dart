@@ -140,8 +140,8 @@ class _SubjectsEditorState extends State<SubjectsEditor> {
       // User has saved subjects — show exactly those
       for (final sv in saved.subjects) {
         final subject = CurriculumSubject(
-          collegeCode: widget.collegeCode ?? '',
-          courseCode: widget.courseCode ?? '',
+          collegeCode: widget.collegeCode ?? bundle?.collegeCode ?? '',
+          courseCode: widget.courseCode ?? bundle?.courseCode ?? '',
           regulation: _regulation ?? '',
           semester: widget.semester,
           subjectCode: sv.subjectCode,
@@ -259,8 +259,8 @@ class _SubjectsEditorState extends State<SubjectsEditor> {
                       final credits = int.tryParse(creditsCtrl.text.trim());
                       if (name.isEmpty) return;
                       final newSubject = CurriculumSubject(
-                        collegeCode: '',
-                        courseCode: '',
+                        collegeCode: widget.collegeCode ?? widget.bundle?.collegeCode ?? '',
+                        courseCode: widget.courseCode ?? widget.bundle?.courseCode ?? '',
                         regulation: _regulation ?? '',
                         semester: widget.semester,
                         subjectCode: '',

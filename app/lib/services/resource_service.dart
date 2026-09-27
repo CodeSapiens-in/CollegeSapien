@@ -110,23 +110,9 @@ class ResourceService {
     final fileSize = file.size;
     final fileName = overrideFileName ?? file.name;
 
-    // Create Firestore doc first so storage read rule can verify uploadedBy
-    final resourceId = await uploadResourceMetadata(
-      id: id,
-      name: title,
-      category: category,
-      storagePath: 'resources/$id/$fileName',
-      fileName: fileName,
-      mimeType: mimeType,
-      sizeBytes: fileSize,
-      subjectId: subjectId,
-      subjectName: subjectName,
-      regulation: regulation,
-    );
-
-    // Upload to Storage with progress tracking (resumable by default)
+    // Upload to Storage first — if this fails, no orphaned Firestore doc is left
     await FirebaseAuth.instance.currentUser?.getIdToken(true);
-    final ref = resourceFileRef(resourceId, fileName);
+    final ref = resourceFileRef(id, fileName);
     final metadata =
         SettableMetadata(contentType: mimeType ?? 'application/pdf');
 
@@ -137,13 +123,31 @@ class ResourceService {
       onProgress: onProgress,
     );
 
-    final downloadUrl = await ref.getDownloadURL();
-
-    // Update Firestore doc with the final download URL
-    await ApiService.instance
-        .patch('/resources/$resourceId', {'fileUrl': downloadUrl});
-
-    return resourceId;
+    // Only create the Firestore metadata doc after the file is safely in Storage
+    // then fetch the download URL and update the doc.
+    try {
+      final resourceId = await uploadResourceMetadata(
+        id: id,
+        name: title,
+        category: category,
+        storagePath: 'resources/$id/$fileName',
+        fileName: fileName,
+        mimeType: mimeType,
+        sizeBytes: fileSize,
+        subjectId: subjectId,
+        subjectName: subjectName,
+        regulation: regulation,
+      );
+      final downloadUrl = await ref.getDownloadURL();
+      await ApiService.instance.patch('/resources/$resourceId', {'fileUrl': downloadUrl});
+      return resourceId;
+    } catch (_) {
+      // Metadata creation failed — delete the Storage file to avoid orphans
+      try {
+        await ref.delete();
+      } catch (_) {}
+      rethrow;
+    }
   }
 
   Future<void> renameResource({

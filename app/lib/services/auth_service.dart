@@ -199,5 +199,16 @@ class AuthService {
     // second account signing in on the same device would otherwise inherit
     // this account's stale cached data until each field's TTL expires.
     AppStateNotifier.instance.invalidateAll();
+    // Clear any stale pending onboarding data from a previous account
+    await _clearPendingOnboarding();
+  }
+
+  static Future<void> _clearPendingOnboarding() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_pendingCollegeKey);
+      await prefs.remove(_pendingDeptKey);
+      await prefs.remove(_pendingSemKey);
+    } catch (_) {}
   }
 }

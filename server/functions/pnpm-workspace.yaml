@@ -1,5 +1,0 @@
-allowBuilds:
-  '@firebase/util': true
-  '@scarf/scarf': true
-  protobufjs: true
-  unrs-resolver: true

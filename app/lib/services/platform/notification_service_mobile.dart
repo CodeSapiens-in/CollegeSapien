@@ -22,7 +22,9 @@ const _testSubjectKey = 'notification_test_subject';
 
 @pragma('vm:entry-point')
 void notificationTapBackground(NotificationResponse response) {
-  DartPluginRegistrant.ensureInitialized();
+  try {
+    DartPluginRegistrant.ensureInitialized();
+  } catch (_) {}
   AttendanceNotificationService.handleNotificationResponse(response);
 }
 
@@ -36,6 +38,10 @@ class AttendanceNotificationService {
       FlutterLocalNotificationsPlugin();
   bool _initialized = false;
   static Map<String, dynamic>? _pendingNavigationPayload;
+  static const _pendingNavigationKey = 'pending_notification_navigation';
+  static const _attendanceNotifIdsKey = 'attendance_notification_ids';
+  static const _exactAlarmRequestedKey = 'exact_alarm_permission_requested';
+  bool _exactAlarmRequested = false;
 
   Future<void> initialize() async {
     if (_initialized) return;
@@ -164,9 +170,17 @@ class AttendanceNotificationService {
 
     final canExact = await android.canScheduleExactNotifications() ?? false;
     if (!canExact) {
-      // Open "Alarms & reminders" in system settings so the user can grant it.
-      // Scheduling continues with inexact mode so the notification still fires.
-      await android.requestExactAlarmsPermission();
+      // Only open settings once per session to avoid blasting the user
+      if (!_exactAlarmRequested) {
+        _exactAlarmRequested = true;
+        final prefs = await SharedPreferences.getInstance();
+        final alreadyRequested =
+            prefs.getBool(_exactAlarmRequestedKey) ?? false;
+        if (!alreadyRequested) {
+          await prefs.setBool(_exactAlarmRequestedKey, true);
+          await android.requestExactAlarmsPermission();
+        }
+      }
       return AndroidScheduleMode.inexactAllowWhileIdle;
     }
     return AndroidScheduleMode.exactAllowWhileIdle;
@@ -175,7 +189,14 @@ class AttendanceNotificationService {
   Future<void> scheduleForTimetable(List<TimetableSubject> subjects) async {
     await initialize();
     await requestPermission();
-    await _plugin.cancelAll();
+
+    // Cancel only previously scheduled attendance notifications
+    final prefs = await SharedPreferences.getInstance();
+    final savedIds = prefs.getStringList(_attendanceNotifIdsKey) ?? [];
+    for (final idStr in savedIds) {
+      final id = int.tryParse(idStr);
+      if (id != null) await _plugin.cancel(id);
+    }
 
     final firstReal = subjects.firstWhere(
       (s) => s.classes.any((c) => c.type != 'BREAK'),
@@ -184,7 +205,6 @@ class AttendanceNotificationService {
           : TimetableSubject(
               id: 'test-subject', name: 'Test', code: 'TEST101', classes: []),
     );
-    final prefs = await SharedPreferences.getInstance();
     await prefs.setString(
       _testSubjectKey,
       jsonEncode({'id': firstReal.id, 'code': firstReal.code}),
@@ -193,6 +213,7 @@ class AttendanceNotificationService {
     final scheduleMode = await _resolveScheduleMode();
     final now = DateTime.now();
     var scheduled = 0;
+    final scheduledIds = <String>[];
     for (var dayOffset = 0; dayOffset < 14; dayOffset += 1) {
       final date = DateTime(now.year, now.month, now.day).add(
         Duration(days: dayOffset),
@@ -205,22 +226,26 @@ class AttendanceNotificationService {
           if (!scheduledAt.isAfter(now)) continue;
 
           scheduled += 1;
-          await _plugin.zonedSchedule(
-            id: scheduled,
-            title: 'Mark ${subject.code} attendance',
-            body: '${slot.startTime} - ${slot.endTime}'
-                '${slot.room.isEmpty ? '' : ' · ${slot.room}'}',
-            scheduledDate: tz.TZDateTime.from(scheduledAt, tz.local),
-            notificationDetails: _notificationDetails(),
-            androidScheduleMode: scheduleMode,
-            payload: jsonEncode({
-              'subjectId': subject.id,
-              'subjectCode': subject.code,
-              'dateKey': _dateKey(date),
-              'slotStartTime': slot.startTime,
-              'slotEndTime': slot.endTime,
-            }),
-          );
+          scheduledIds.add(scheduled.toString());
+          await prefs.setStringList(_attendanceNotifIdsKey, scheduledIds);
+          try {
+            await _plugin.zonedSchedule(
+              id: scheduled,
+              title: 'Mark ${subject.code} attendance',
+              body: '${slot.startTime} - ${slot.endTime}'
+                  '${slot.room.isEmpty ? '' : ' · ${slot.room}'}',
+              scheduledDate: tz.TZDateTime.from(scheduledAt, tz.local),
+              notificationDetails: _notificationDetails(),
+              androidScheduleMode: scheduleMode,
+              payload: jsonEncode({
+                'subjectId': subject.id,
+                'subjectCode': subject.code,
+                'dateKey': _dateKey(date),
+                'slotStartTime': slot.startTime,
+                'slotEndTime': slot.endTime,
+              }),
+            );
+          } catch (_) {}
         }
       }
     }
@@ -243,10 +268,17 @@ class AttendanceNotificationService {
     await prefs.setStringList(_pendingActionsKey, remaining);
   }
 
-  void openPendingNavigation() {
+  void openPendingNavigation() async {
+    // Restore from disk if in-memory was lost (app killed & restarted)
+    if (_pendingNavigationPayload == null) {
+      await _restoreNavigationPayload();
+    }
     final payload = _pendingNavigationPayload;
     if (payload == null) return;
     _pendingNavigationPayload = null;
+    // Always clean up persisted copy — _restoreNavigationPayload only removes
+    // it when it restores from disk; the in-memory path leaves it on disk.
+    await _clearNavigationPayload();
     _openMarkAttendance(payload);
   }
 
@@ -306,6 +338,7 @@ class AttendanceNotificationService {
     final navigator = appNavigatorKey.currentState;
     if (navigator == null) {
       _pendingNavigationPayload = payload;
+      _persistNavigationPayload(payload);
       return;
     }
     navigator.push(
@@ -318,6 +351,32 @@ class AttendanceNotificationService {
         ),
       ),
     );
+  }
+
+  static Future<void> _persistNavigationPayload(
+      Map<String, dynamic> payload) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setString(_pendingNavigationKey, jsonEncode(payload));
+    } catch (_) {}
+  }
+
+  static Future<void> _restoreNavigationPayload() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final raw = prefs.getString(_pendingNavigationKey);
+      if (raw != null) {
+        _pendingNavigationPayload = jsonDecode(raw) as Map<String, dynamic>;
+        await prefs.remove(_pendingNavigationKey);
+      }
+    } catch (_) {}
+  }
+
+  static Future<void> _clearNavigationPayload() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove(_pendingNavigationKey);
+    } catch (_) {}
   }
 
   NotificationDetails _notificationDetails() {

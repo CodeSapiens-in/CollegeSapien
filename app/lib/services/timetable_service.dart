@@ -62,9 +62,10 @@ class TimetableService {
 
   Future<TimetableSubject> getSubjectById(String id) async {
     final subjects = await getAllSubjects();
-    return subjects.firstWhere(
-      (s) => s.id == id,
-      orElse: () => subjects.first,
-    );
+    try {
+      return subjects.firstWhere((s) => s.id == id);
+    } on StateError {
+      throw ApiException(404, 'Subject not found: $id');
+    }
   }
 }
