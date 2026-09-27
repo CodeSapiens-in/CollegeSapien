@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Community Meetups & Events — CodeSapiens</title>
-        <meta name="description" content="Explore all CodeSapiens community meetups so far from January to May 2026. Browse gallery photos, event highlights, talks, and join our next developer gathering." />
+        <meta name="description" content="Past CodeSapiens meetups — Alumni Meetup, TamilPreneur, SheBuilds, and the January through June 2026 gatherings." />
         <link rel="icon" href="./assets/codesapiens_logo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -415,6 +415,258 @@
                 padding: 9px 16px;
             }
 
+            /* ── PAST MEETUPS GALLERY ── */
+            .gallery {
+                max-width: 1180px;
+                margin: 0 auto;
+                padding: 8px clamp(16px, 4vw, 56px) 72px;
+                display: flex;
+                flex-direction: column;
+                gap: 28px;
+            }
+            .meetup {
+                display: grid;
+                grid-template-columns: 1.45fr 1fr;
+                background: var(--bg2);
+                border: var(--bdr);
+                box-shadow: var(--sh-lg);
+                min-height: 380px;
+                transition: transform 0.15s, box-shadow 0.15s;
+            }
+            .meetup:nth-child(even) {
+                grid-template-columns: 1fr 1.45fr;
+            }
+            .meetup:nth-child(even) .meetup-visual {
+                order: 2;
+                border-right: 0;
+                border-left: var(--bdr);
+            }
+            .meetup:hover {
+                transform: translate(-3px, -3px);
+                box-shadow: 10px 10px 0 var(--black);
+            }
+            .meetup-visual {
+                position: relative;
+                overflow: hidden;
+                background: var(--black);
+                cursor: pointer;
+                border-right: var(--bdr);
+                min-height: 280px;
+            }
+            .meetup-visual img {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 28%;
+                transition: transform 0.4s ease;
+            }
+            .meetup:hover .meetup-visual img {
+                transform: scale(1.045);
+            }
+            .meetup-body {
+                padding: clamp(22px, 3vw, 36px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .meetup[data-tone="yellow"] .meetup-body { background: var(--yellow); }
+            .meetup[data-tone="green"] .meetup-body { background: var(--green); }
+            .meetup[data-tone="blue"] .meetup-body { background: var(--blue); }
+            .meetup[data-tone="pink"] .meetup-body { background: var(--pink); }
+            .meetup[data-tone="purple"] .meetup-body { background: var(--purple); }
+            .meetup[data-tone="cream"] .meetup-body { background: var(--bg); }
+            .meetup-kicker {
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-size: 12px;
+                font-weight: 800;
+                letter-spacing: 0.16em;
+                text-transform: uppercase;
+            }
+            .meetup-title {
+                font-size: clamp(28px, 3.2vw, 42px);
+                margin: 10px 0 14px;
+            }
+            .meetup-desc {
+                font-size: 15px;
+                line-height: 1.6;
+                color: var(--ink);
+                margin-bottom: 18px;
+            }
+            .meetup-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin-bottom: 22px;
+            }
+            .meetup .btn-view-photo {
+                width: auto;
+                align-self: flex-start;
+            }
+            .meetup-actions {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+            .btn-day {
+                background: var(--bg2);
+                color: var(--black);
+                box-shadow: var(--sh);
+                font-weight: 700;
+            }
+            .btn-day:hover {
+                box-shadow: var(--sh-lg);
+                background: #fff;
+            }
+
+            /* ── INTO THAT DAY ── */
+            .day-overlay {
+                position: fixed;
+                inset: 0;
+                z-index: 1000;
+                background: rgba(10, 10, 10, 0.88);
+                backdrop-filter: blur(4px);
+                display: none;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+            }
+            .day-overlay.active {
+                display: flex;
+            }
+            .day-sheet {
+                background: var(--bg2);
+                border: var(--bdr);
+                box-shadow: 12px 12px 0 var(--yellow);
+                max-width: 980px;
+                width: 100%;
+                max-height: 90vh;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                animation: modalPop 0.25s cubic-bezier(0.2, 1.4, 0.4, 1);
+            }
+            .day-head {
+                background: var(--yellow);
+                border-bottom: var(--bdr);
+                padding: 12px 16px 12px 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 12px;
+            }
+            .day-kicker {
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-weight: 800;
+                font-size: 13px;
+                letter-spacing: 0.14em;
+                text-transform: uppercase;
+            }
+            .day-body {
+                display: grid;
+                grid-template-columns: 0.85fr 1.15fr;
+                min-height: 0;
+                overflow: auto;
+            }
+            .day-photo {
+                position: relative;
+                background: var(--black);
+                border-right: var(--bdr);
+                min-height: 320px;
+            }
+            .day-photo img {
+                position: absolute;
+                inset: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center 30%;
+            }
+            .day-copy {
+                padding: 28px 28px 32px;
+            }
+            .day-when {
+                font-size: 12px;
+                font-weight: 800;
+                letter-spacing: 0.12em;
+                text-transform: uppercase;
+            }
+            .day-copy h2 {
+                font-size: clamp(28px, 3.5vw, 40px);
+                margin: 8px 0 18px;
+            }
+            .day-stats {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-bottom: 22px;
+            }
+            .day-stats[hidden],
+            .day-block[hidden] {
+                display: none;
+            }
+            .day-stat {
+                background: var(--bg);
+                border: var(--bdr);
+                box-shadow: 3px 3px 0 var(--black);
+                padding: 10px 14px;
+                min-width: 108px;
+            }
+            .day-stat b {
+                display: block;
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-size: 20px;
+                line-height: 1.1;
+                margin-bottom: 4px;
+            }
+            .day-stat span {
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+            }
+            .day-block h3 {
+                font-size: 13px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin-bottom: 12px;
+            }
+            .day-block + .day-block {
+                margin-top: 22px;
+            }
+            .day-beats {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+            .day-beat {
+                display: grid;
+                grid-template-columns: 36px 1fr;
+                gap: 12px;
+                align-items: start;
+            }
+            .day-beat i {
+                font-family: "Bricolage Grotesque", sans-serif;
+                font-style: normal;
+                font-weight: 800;
+                font-size: 12px;
+                background: var(--green);
+                border: var(--bdr);
+                width: 36px;
+                height: 36px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .day-beat p,
+            .day-happened {
+                font-size: 15px;
+                line-height: 1.65;
+                color: var(--ink);
+            }
+
             /* ── CTA / HOST SECTION ── */
             .host-sec {
                 background: var(--purple);
@@ -613,6 +865,33 @@
                     grid-template-columns: 1fr;
                     padding-inline: 16px;
                 }
+                .meetup,
+                .meetup:nth-child(even) {
+                    grid-template-columns: 1fr;
+                    min-height: 0;
+                }
+                .meetup:nth-child(even) .meetup-visual {
+                    order: 0;
+                    border-left: 0;
+                }
+                .meetup-visual {
+                    border-right: 0;
+                    border-bottom: var(--bdr);
+                    aspect-ratio: 16 / 10;
+                    min-height: 220px;
+                }
+                .day-body {
+                    grid-template-columns: 1fr;
+                }
+                .day-photo {
+                    min-height: 0;
+                    aspect-ratio: 16 / 10;
+                    border-right: 0;
+                    border-bottom: var(--bdr);
+                }
+                .day-copy {
+                    padding: 22px 18px 26px;
+                }
                 .footer {
                     flex-direction: column;
                     text-align: center;
@@ -656,27 +935,27 @@
         <!-- HERO -->
         <section class="events-hero">
             <div class="hero-inner">
-                <div class="pill">Community Gatherings 2026</div>
-                <h1>CodeSapiens Meetups</h1>
+                <div class="pill">Past Meetups</div>
+                <h1>Rooms we filled.</h1>
                 <p>
-                    Where student developers, open-source builders, and tech enthusiasts come together every month to share knowledge, showcase projects, and connect across campuses.
+                    A look back at CodeSapiens meetups — alumni, campus gatherings, and the people who showed up.
                 </p>
                 <div class="stats-row">
                     <div class="stat-box" style="background: var(--green);">
                         <div class="stat-num">6</div>
-                        <div class="stat-lbl">Monthly Meetups</div>
+                        <div class="stat-lbl">Meetups</div>
                     </div>
                     <div class="stat-box" style="background: var(--blue);">
-                        <div class="stat-num">600+</div>
-                        <div class="stat-lbl">Sapiens Attended</div>
+                        <div class="stat-num">2026</div>
+                        <div class="stat-lbl">This year</div>
                     </div>
                     <div class="stat-box" style="background: var(--pink);">
-                        <div class="stat-num">30+</div>
-                        <div class="stat-lbl">Tech Demos</div>
+                        <div class="stat-num">Jan–Jun</div>
+                        <div class="stat-lbl">So far</div>
                     </div>
                     <div class="stat-box" style="background: var(--purple);">
-                        <div class="stat-num">12+</div>
-                        <div class="stat-lbl">Partner Clubs</div>
+                        <div class="stat-num">Alumni</div>
+                        <div class="stat-lbl">&amp; campus</div>
                     </div>
                 </div>
             </div>
@@ -696,265 +975,143 @@
             </div>
         </div>
 
-        <!-- EVENTS GRID -->
-        <main class="events-grid" id="events-grid">
+        <!-- PAST MEETUPS -->
+        <main class="gallery" id="events-grid">
 
-            <!-- JUNE MEETUP -->
-            <article class="event-card" data-month="june">
-                <div class="event-img-wrap" onclick="openModal('june')">
-                    <span class="event-month-badge" style="background: var(--yellow);">June 2026</span>
-                    <img src="./assets/meetups/june-meetup.jpg" alt="June 2026 Alumni Meetup" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+            <article class="meetup" data-month="june" data-tone="yellow">
+                <div class="meetup-visual" onclick="openModal('june')">
+                    <span class="event-month-badge">June 2026</span>
+                    <img src="./assets/meetups/june-meetup.jpg" alt="CodeSapiens Alumni Meetup, June 2026" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">June Alumni Meetup 2026</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 Tech Lounge &amp; Hub</span>
-                        <span class="meta-item">👥 90+ Alumni &amp; Students</span>
+                <div class="meetup-body">
+                    <div class="meetup-kicker">Latest · June 2026</div>
+                    <h2 class="meetup-title">CodeSapiens Alumni Meetup</h2>
+                    <p class="meetup-desc">Alumni and students together for the June 2026 Alumni Meetup at M2P.</p>
+                    <div class="meetup-tags">
+                        <span class="etag d">Alumni</span>
+                        <span class="etag a">June 2026</span>
+                        <span class="etag b">M2P</span>
                     </div>
-                    <p class="event-desc">
-                        Special alumni homecoming meetup bringing together former CodeSapiens members, industry professionals, and active student developers for career guidance and mentorship.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>Alumni panel discussion on career transitions, tech interviews &amp; open source impact</li>
-                        <li>1-on-1 mentorship breakout circles for graduating seniors</li>
-                        <li>Celebration cake-cutting &amp; networking session with senior Sapiens</li>
-                    </ul>
-                    <div class="event-tags">
-                        <span class="etag d">Alumni Meetup</span>
-                        <span class="etag a">Mentorship</span>
-                        <span class="etag b">Career Talks</span>
-                        <span class="etag c">Networking</span>
-                    </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('june')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('june')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('june')">Into that day</button>
                     </div>
                 </div>
             </article>
 
-            <!-- MAY MEETUP -->
-            <article class="event-card" data-month="may">
-                <div class="event-img-wrap" onclick="openModal('may')">
+            <article class="meetup" data-month="may" data-tone="green">
+                <div class="meetup-visual" onclick="openModal('may')">
                     <span class="event-month-badge" style="background: var(--green);">May 2026</span>
-                    <img src="./assets/meetups/may-meetup.jpg" alt="CodeSapiens Summer Fest 2026" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+                    <img src="./assets/meetups/may-meetup.jpg" alt="CodeSapiens Summer Fest 2026" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">CodeSapiens Summer Fest 2026</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 Online &amp; Hybrid</span>
-                        <span class="meta-item">👥 150+ Participants</span>
-                    </div>
-                    <p class="event-desc">
-                        Our flagship virtual summer fest bringing together student coders across Tamil Nadu with technical workshops, live code reviews, and guest sessions.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>Collaborative sessions with <strong>Namma Flutter Chennai</strong> &amp; <strong>Nexora</strong></li>
-                        <li>Clean code &amp; refactoring masterclass inspired by Martin Fowler &amp; Uncle Bob</li>
-                        <li>Google Student Ambassador keynotes &amp; open source prize announcements</li>
-                    </ul>
-                    <div class="event-tags">
+                <div class="meetup-body">
+                    <div class="meetup-kicker">May 2026</div>
+                    <h2 class="meetup-title">CodeSapiens Summer Fest</h2>
+                    <p class="meetup-desc">Summer Fest 2026, with Namma Flutter, Nexora, and Google Student Ambassadors.</p>
+                    <div class="meetup-tags">
                         <span class="etag a">Summer Fest</span>
-                        <span class="etag b">Flutter</span>
-                        <span class="etag c">Clean Code</span>
-                        <span class="etag d">Google SA</span>
+                        <span class="etag b">Namma Flutter</span>
+                        <span class="etag d">2026</span>
                     </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('may')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('may')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('may')">Into that day</button>
                     </div>
                 </div>
             </article>
 
-            <!-- APRIL MEETUP -->
-            <article class="event-card" data-month="apr">
-                <div class="event-img-wrap" onclick="openModal('apr')">
-                    <span class="event-month-badge" style="background: var(--blue);">April 2026</span>
-                    <img src="./assets/meetups/april-meetup.jpg" alt="April 2026 Mega Campus Meetup at ONE M2P" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+            <article class="meetup" data-month="apr" data-tone="blue">
+                <div class="meetup-visual" onclick="openModal('apr')">
+                    <span class="event-month-badge" style="background: var(--blue);">April</span>
+                    <img src="./assets/meetups/april-meetup.jpg" alt="CodeSapiens and TamilPreneur April meetup" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">April Mega Meetup @ ONE M2P</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 ONE M2P Auditorium</span>
-                        <span class="meta-item">👥 120+ Sapiens</span>
+                <div class="meetup-body">
+                    <div class="meetup-kicker">April meetup</div>
+                    <h2 class="meetup-title">CodeSapiens × TamilPreneur</h2>
+                    <p class="meetup-desc">TamilPreneur collaboration, gathered in person at ONE M2P.</p>
+                    <div class="meetup-tags">
+                        <span class="etag b">TamilPreneur</span>
+                        <span class="etag d">Collaboration</span>
+                        <span class="etag a">ONE M2P</span>
                     </div>
-                    <p class="event-desc">
-                        Massive in-person gathering at ONE M2P auditorium bringing together students from 15+ engineering colleges for lightning talks and networking.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>In-person tech showcase &amp; project pitch competition</li>
-                        <li>Industry mentorship breakout sessions in fintech &amp; cloud engineering</li>
-                        <li>Massive community group picture with all participating chapters</li>
-                    </ul>
-                    <div class="event-tags">
-                        <span class="etag b">ONE M2P</span>
-                        <span class="etag a">Auditorium</span>
-                        <span class="etag d">Tech Talks</span>
-                        <span class="etag c">Networking</span>
-                    </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('apr')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('apr')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('apr')">Into that day</button>
                     </div>
                 </div>
             </article>
 
-            <!-- MARCH MEETUP -->
-            <article class="event-card" data-month="mar">
-                <div class="event-img-wrap" onclick="openModal('mar')">
+            <article class="meetup" data-month="mar" data-tone="pink">
+                <div class="meetup-visual" onclick="openModal('mar')">
                     <span class="event-month-badge" style="background: var(--pink);">March 2026</span>
-                    <img src="./assets/meetups/march-meetup.jpg" alt="March 2026 Spring Builder Gathering" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+                    <img src="./assets/meetups/march-meetup.jpg" alt="CodeSapiens March meetup" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">March Spring Builder Gathering</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 Tech Innovation Hub</span>
-                        <span class="meta-item">👥 75+ Builders</span>
+                <div class="meetup-body">
+                    <div class="meetup-kicker">March 2026</div>
+                    <h2 class="meetup-title">CodeSapiens March Meetup</h2>
+                    <p class="meetup-desc">SheBuilds collaboration at Mako IT Labs.</p>
+                    <div class="meetup-tags">
+                        <span class="etag c">SheBuilds</span>
+                        <span class="etag a">Collaboration</span>
+                        <span class="etag b">Mako IT Labs</span>
                     </div>
-                    <p class="event-desc">
-                        A focused project jam and open source sprint centered around building collaborative tools for student life under the "Together" banner.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>CollegeSapien v1 feature sprint &amp; live pull request merges</li>
-                        <li>Hands-on Flutter &amp; Web development pairing sessions</li>
-                        <li>Student showcase of open source utility apps</li>
-                    </ul>
-                    <div class="event-tags">
-                        <span class="etag c">Project Jam</span>
-                        <span class="etag a">Open Source</span>
-                        <span class="etag b">CollegeSapien</span>
-                    </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('mar')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('mar')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('mar')">Into that day</button>
                     </div>
                 </div>
             </article>
 
-            <!-- FEBRUARY MEETUP -->
-            <article class="event-card" data-month="feb">
-                <div class="event-img-wrap" onclick="openModal('feb')">
-                    <span class="event-month-badge" style="background: var(--purple);">February 2026</span>
-                    <img src="./assets/meetups/february-meetup.jpg" alt="February 2026 Vanakkam Sapiens Meetup" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+            <article class="meetup" data-month="feb" data-tone="purple">
+                <div class="meetup-visual" onclick="openModal('feb')">
+                    <span class="event-month-badge" style="background: var(--purple);">February</span>
+                    <img src="./assets/meetups/february-meetup.jpg" alt="CodeSapiens February meetup, Vanakkam Sapiens" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">Vanakkam Sapiens! Feb Assembly</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 Seminar Hall &amp; Lounge</span>
-                        <span class="meta-item">👥 60+ Attendees</span>
+                <div class="meetup-body">
+                    <div class="meetup-kicker">February meetup</div>
+                    <h2 class="meetup-title">CodeSapiens February Meetup</h2>
+                    <p class="meetup-desc">Free and open source at YUNIQ. The day opened on screen with Vanakkam Sapiens.</p>
+                    <div class="meetup-tags">
+                        <span class="etag d">Free &amp; open source</span>
+                        <span class="etag">Vanakkam Sapiens</span>
+                        <span class="etag a">YUNIQ</span>
                     </div>
-                    <p class="event-desc">
-                        Our February community meetup celebrating the growing family of Sapiens with orientation, campus lead badges, and interactive games.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>"Vanakkam Sapiens!" community keynote and roadmap release</li>
-                        <li>Campus ambassador badge presentation for 10+ colleges</li>
-                        <li>Interactive technical trivia &amp; icebreaker sessions</li>
-                    </ul>
-                    <div class="event-tags">
-                        <span class="etag d">Vanakkam Sapiens</span>
-                        <span class="etag a">Orientation</span>
-                        <span class="etag c">Ambassadors</span>
-                    </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('feb')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('feb')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('feb')">Into that day</button>
                     </div>
                 </div>
             </article>
 
-            <!-- JANUARY MEETUP -->
-            <article class="event-card" data-month="jan">
-                <div class="event-img-wrap" onclick="openModal('jan')">
-                    <span class="event-month-badge" style="background: var(--yellow);">January 2026</span>
-                    <img src="./assets/meetups/january-meetup.png" alt="January 2026 Inaugural Developer Meetup" class="event-img" />
-                    <div class="zoom-hint">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            <line x1="11" y1="8" x2="11" y2="14"></line>
-                            <line x1="8" y1="11" x2="14" y2="11"></line>
-                        </svg>
-                        Click to enlarge
-                    </div>
+            <article class="meetup" data-month="jan" data-tone="cream">
+                <div class="meetup-visual" onclick="openModal('jan')">
+                    <span class="event-month-badge">January</span>
+                    <img src="./assets/meetups/january-meetup.jpg" alt="CodeSapiens January meetup" />
+                    <div class="zoom-hint">Click to enlarge</div>
                 </div>
-                <div class="event-body">
-                    <h2 class="event-title">Inaugural 2026 Jan Developer Meetup</h2>
-                    <div class="event-meta-row">
-                        <span class="meta-item">📍 Co-Working Space</span>
-                        <span class="meta-item">👥 45+ Founders &amp; Devs</span>
+                <div class="meetup-body">
+                    <div class="meetup-kicker">January meetup</div>
+                    <h2 class="meetup-title">CodeSapiens January Meetup</h2>
+                    <p class="meetup-desc">The first gathering of the year, at YUNIQ.</p>
+                    <div class="meetup-tags">
+                        <span class="etag d">January</span>
+                        <span class="etag b">Kickoff</span>
+                        <span class="etag a">YUNIQ</span>
                     </div>
-                    <p class="event-desc">
-                        The kickoff meetup for 2026 that laid the foundation for CodeSapiens community initiatives and initial architecture for CollegeSapien.
-                    </p>
-                    <ul class="event-highlights">
-                        <li>Community charter &amp; open governance setup</li>
-                        <li>Initial architecture discussion for CollegeSapien monorepo</li>
-                        <li>Group networking &amp; setting 2026 learning targets</li>
-                    </ul>
-                    <div class="event-tags">
-                        <span class="etag a">Kickoff</span>
-                        <span class="etag b">Foundation</span>
-                        <span class="etag d">Monorepo Architecture</span>
-                    </div>
-                    <div class="event-action-bar">
-                        <button class="btn btn-dark btn-view-photo" onclick="openModal('jan')">
-                            📸 View Meetup Photo
-                        </button>
+                    <div class="meetup-actions">
+                        <button class="btn btn-dark btn-view-photo" type="button" onclick="openModal('jan')">View photo</button>
+                        <button class="btn btn-day" type="button" onclick="openDay('jan')">Into that day</button>
                     </div>
                 </div>
             </article>
 
         </main>
+
 
         <!-- HOST / JOIN SECTION -->
         <section class="host-sec">
@@ -990,6 +1147,34 @@
                     <div class="modal-nav-row">
                         <button class="btn btn-ghost" style="border: var(--bdr);" onclick="prevPhoto()">← Previous</button>
                         <button class="btn btn-dark" onclick="nextPhoto()">Next Photo →</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- INTO THAT DAY -->
+        <div class="day-overlay" id="day-sheet" onclick="closeDayOnBackdrop(event)">
+            <div class="day-sheet">
+                <div class="day-head">
+                    <div class="day-kicker">Into that day</div>
+                    <button class="modal-close" type="button" onclick="closeDay()">✕</button>
+                </div>
+                <div class="day-body">
+                    <div class="day-photo">
+                        <img src="" id="day-img" alt="" />
+                    </div>
+                    <div class="day-copy">
+                        <div class="day-when" id="day-when"></div>
+                        <h2 id="day-title"></h2>
+                        <div class="day-stats" id="day-stats"></div>
+                        <div class="day-block" id="day-beats-wrap">
+                            <h3>How the day moved</h3>
+                            <ol class="day-beats" id="day-beats"></ol>
+                        </div>
+                        <div class="day-block">
+                            <h3>What happened</h3>
+                            <p class="day-happened" id="day-happened"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1040,36 +1225,71 @@
 
         <!-- JS logic for filtering and lightbox -->
         <script>
+            // Into that day — fill these for each meetup:
+            // attended: how many showed up, e.g. "90+"
+            // place: where it was
+            // beats: how the day moved, in order
+            // happened: the write-up
             const meetupsData = {
                 june: {
-                    title: "June Alumni Meetup 2026",
+                    title: "CodeSapiens Alumni Meetup",
                     img: "./assets/meetups/june-meetup.jpg",
-                    caption: "June Meetup: CodeSapiens Alumni Meetup 2026 connecting alumni, industry professionals, and active student builders."
+                    caption: "June 2026 — CodeSapiens Alumni Meetup at M2P.",
+                    when: "June 2026",
+                    attended: "",
+                    place: "M2P",
+                    happened: "Alumni and students together for the June 2026 Alumni Meetup at M2P.",
+                    beats: ["Hosted at M2P"]
                 },
                 may: {
-                    title: "CodeSapiens Summer Fest 2026 (May)",
+                    title: "CodeSapiens Summer Fest",
                     img: "./assets/meetups/may-meetup.jpg",
-                    caption: "May Meetup: CodeSapiens Summer Fest 2026 featuring Namma Flutter, Nexora, Google Student Ambassador sessions, and clean code workshops."
+                    caption: "May 2026 — CodeSapiens Summer Fest, with Namma Flutter, Nexora, and Google Student Ambassadors.",
+                    when: "May 2026",
+                    attended: "",
+                    place: "",
+                    happened: "Summer Fest 2026, with Namma Flutter, Nexora, and Google Student Ambassadors.",
+                    beats: []
                 },
                 apr: {
-                    title: "April Mega Meetup @ ONE M2P Auditorium",
+                    title: "CodeSapiens × TamilPreneur",
                     img: "./assets/meetups/april-meetup.jpg",
-                    caption: "April Meetup: 120+ student developers gathered at ONE M2P auditorium for tech talks, project demos, and inter-college networking."
+                    caption: "April meetup — TamilPreneur collaboration at ONE M2P.",
+                    when: "April",
+                    attended: "",
+                    place: "ONE M2P",
+                    happened: "A TamilPreneur collaboration, gathered in person at ONE M2P.",
+                    beats: ["TamilPreneur collaboration"]
                 },
                 mar: {
-                    title: "March Spring Builder Gathering",
+                    title: "CodeSapiens March Meetup",
                     img: "./assets/meetups/march-meetup.jpg",
-                    caption: "March Meetup: 'Together' theme project jam with live pull request contributions to CollegeSapien and Flutter development sprints."
+                    caption: "March 2026 — SheBuilds collaboration at Mako IT Labs.",
+                    when: "March 2026",
+                    attended: "",
+                    place: "Mako IT Labs",
+                    happened: "A SheBuilds collaboration at Mako IT Labs.",
+                    beats: ["SheBuilds collaboration", "Hosted at Mako IT Labs"]
                 },
                 feb: {
-                    title: "February 'Vanakkam Sapiens!' Orientation",
+                    title: "CodeSapiens February Meetup",
                     img: "./assets/meetups/february-meetup.jpg",
-                    caption: "February Meetup: Community orientation assembly presenting ambassador badges for 10+ colleges across Tamil Nadu."
+                    caption: "February meetup — free and open source at YUNIQ.",
+                    when: "February",
+                    attended: "",
+                    place: "YUNIQ",
+                    happened: "A free and open source meetup at YUNIQ. The day opened on screen with Vanakkam Sapiens.",
+                    beats: ["Free and open source", "Hosted at YUNIQ"]
                 },
                 jan: {
-                    title: "Inaugural January 2026 Developer Meetup",
-                    img: "./assets/meetups/january-meetup.png",
-                    caption: "January Meetup: The inaugural 2026 meetup laying down the CodeSapiens community charter and open-source roadmap."
+                    title: "CodeSapiens January Meetup",
+                    img: "./assets/meetups/january-meetup.jpg",
+                    caption: "January meetup at YUNIQ.",
+                    when: "January",
+                    attended: "",
+                    place: "YUNIQ",
+                    happened: "The first gathering of the year, at YUNIQ.",
+                    beats: ["Hosted at YUNIQ"]
                 }
             };
 
@@ -1078,7 +1298,7 @@
 
             // Filter Tabs
             const tabBtns = document.querySelectorAll('.tab-btn');
-            const eventCards = document.querySelectorAll('.event-card');
+            const eventCards = document.querySelectorAll('.meetup');
 
             tabBtns.forEach(btn => {
                 btn.addEventListener('click', () => {
@@ -1089,7 +1309,7 @@
                     eventCards.forEach(card => {
                         const month = card.getAttribute('data-month');
                         if (filter === 'all' || filter === month) {
-                            card.style.display = 'flex';
+                            card.style.display = '';
                         } else {
                             card.style.display = 'none';
                         }
@@ -1142,13 +1362,77 @@
                 updateModalContent();
             }
 
-            // Keyboard navigation
             document.addEventListener('keydown', (e) => {
+                const day = document.getElementById('day-sheet');
+                if (day.classList.contains('active')) {
+                    if (e.key === 'Escape') closeDay();
+                    return;
+                }
                 if (!modal.classList.contains('active')) return;
                 if (e.key === 'Escape') closeModal();
                 if (e.key === 'ArrowRight') nextPhoto();
                 if (e.key === 'ArrowLeft') prevPhoto();
             });
+
+            const daySheet = document.getElementById('day-sheet');
+
+            function dayStat(value, label) {
+                const box = document.createElement('div');
+                box.className = 'day-stat';
+                const strong = document.createElement('b');
+                strong.textContent = value;
+                const caption = document.createElement('span');
+                caption.textContent = label;
+                box.append(strong, caption);
+                return box;
+            }
+
+            function openDay(key) {
+                const data = meetupsData[key];
+                if (!data) return;
+
+                document.getElementById('day-title').textContent = data.title;
+                document.getElementById('day-when').textContent = data.when || '';
+                const img = document.getElementById('day-img');
+                img.src = data.img;
+                img.alt = data.title;
+
+                const stats = document.getElementById('day-stats');
+                stats.replaceChildren();
+                if (data.attended) stats.appendChild(dayStat(data.attended, 'Showed up'));
+                if (data.place) stats.appendChild(dayStat(data.place, 'Where'));
+                stats.hidden = stats.childElementCount === 0;
+
+                const beatsWrap = document.getElementById('day-beats-wrap');
+                const beats = document.getElementById('day-beats');
+                beats.replaceChildren();
+                (data.beats || []).forEach((text, index) => {
+                    const item = document.createElement('li');
+                    item.className = 'day-beat';
+                    const mark = document.createElement('i');
+                    mark.textContent = String(index + 1).padStart(2, '0');
+                    const line = document.createElement('p');
+                    line.textContent = text;
+                    item.append(mark, line);
+                    beats.appendChild(item);
+                });
+                beatsWrap.hidden = beats.childElementCount === 0;
+
+                document.getElementById('day-happened').textContent = data.happened || data.caption || '';
+                daySheet.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeDay() {
+                daySheet.classList.remove('active');
+                if (!modal.classList.contains('active')) {
+                    document.body.style.overflow = '';
+                }
+            }
+
+            function closeDayOnBackdrop(e) {
+                if (e.target === daySheet) closeDay();
+            }
         </script>
     </body>
 </html>
