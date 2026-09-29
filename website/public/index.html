@@ -4,20 +4,17 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="color-scheme" content="light dark" />
-        <title>CodeSapiens — Explore. Evolve. Engineer.</title>
+        <title>CodeSapiens — Explore. Evelve. Engineer.</title>
         <script>
             // Runs before first paint so the correct scheme is already on <html>
             // — no flash of the wrong theme. The stored choice wins; otherwise
-            // fall back to the OS preference.
+            // defaults to light mode.
             (() => {
                 let stored = null;
                 try {
                     stored = localStorage.getItem("cs-theme");
                 } catch (e) {}
-                const dark =
-                    stored === "dark" ||
-                    (stored !== "light" &&
-                        matchMedia("(prefers-color-scheme: dark)").matches);
+                const dark = stored === "dark";
                 document.documentElement.dataset.theme = dark ? "dark" : "light";
             })();
         </script>
@@ -137,17 +134,18 @@
             html {
                 scroll-behavior: smooth;
                 scroll-snap-type: y mandatory;
-                scroll-padding-top: 60px;
+                scroll-padding-top: 63px;
             }
             body {
                 background: var(--surface);
                 color: var(--fg);
                 font-family: "DM Sans", sans-serif;
+                font-size: 16.8px;
                 overflow-x: hidden;
             }
             .snap-sec {
-                min-height: calc(100vh - 60px);
-                min-height: calc(100svh - 60px);
+                min-height: calc(100vh - 63px);
+                min-height: calc(100svh - 63px);
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -172,25 +170,25 @@
             /* ── UTILS ── */
             .pill {
                 display: inline-block;
-                font-size: 11px;
+                font-size: 11.55px;
                 font-weight: 700;
                 letter-spacing: 0.1em;
                 text-transform: uppercase;
                 background: var(--yellow);
                 color: var(--fg-on-accent);
                 border: var(--bdr);
-                padding: 3px 10px;
+                padding: 3.5px 11px;
                 box-shadow: 2px 2px 0 var(--edge);
-                margin-bottom: 16px;
+                margin-bottom: 17px;
             }
             .btn {
                 display: inline-flex;
                 align-items: center;
-                gap: 8px;
-                padding: 11px 22px;
+                gap: 8.5px;
+                padding: 11.5px 23px;
                 font-family: "DM Sans", sans-serif;
                 font-weight: 600;
-                font-size: 14px;
+                font-size: 14.7px;
                 border: var(--bdr);
                 cursor: pointer;
                 text-decoration: none;
@@ -230,43 +228,73 @@
                 z-index: 100;
                 background: var(--nav-bg);
                 border-bottom: var(--bdr);
-                padding: 0 56px;
-                height: 60px;
-                display: flex;
+                padding: 0 42px;
+                height: 63px;
+                display: grid;
+                grid-template-columns: 1fr auto 1fr;
+                grid-template-areas: "logo links actions";
                 align-items: center;
-                justify-content: space-between;
             }
             .nav-logo {
+                grid-area: logo;
+                justify-self: start;
+                display: inline-flex;
+                align-items: center;
+                gap: 10.5px;
                 font-family: "Bricolage Grotesque", sans-serif;
                 font-weight: 800;
-                font-size: 19px;
+                font-size: 20px;
                 letter-spacing: -0.04em;
                 text-decoration: none;
                 color: var(--fg);
+                white-space: nowrap;
             }
             .nav-links {
+                grid-area: links;
+                justify-self: center;
                 display: flex;
                 align-items: center;
-                gap: 32px;
+                justify-content: center;
+                gap: 30px;
                 list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+            .nav-links li {
+                display: flex;
+                align-items: center;
             }
             .nav-links a {
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 14.7px;
                 font-weight: 500;
+                color: var(--fg);
                 opacity: 0.7;
-                transition: opacity 0.15s;
+                transition: opacity 0.15s, color 0.15s;
+                white-space: nowrap;
             }
-            .nav-links a:hover {
+            .nav-links a:hover,
+            .nav-links a.active {
                 opacity: 1;
             }
             .nav-logo img {
-                height: 40px;
+                height: 42px;
                 width: auto;
+                display: block;
+            }
+            .nav-actions {
+                grid-area: actions;
+                justify-self: end;
+                display: flex;
+                align-items: center;
+                gap: 13px;
             }
             .btn-nav {
-                padding: 9px 18px;
-                font-size: 13px;
+                padding: 9.5px 19px;
+                font-size: 13.65px;
+                display: inline-flex;
+                align-items: center;
+                gap: 6.5px;
             }
 
             /* ── THEME TOGGLE ── */
@@ -275,8 +303,8 @@
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
-                width: 38px;
-                height: 38px;
+                width: 40px;
+                height: 40px;
                 padding: 0;
                 font: inherit;
                 color: var(--fg);
@@ -316,52 +344,52 @@
                 justify-content: center;
                 text-align: center;
                 gap: 0;
-                padding: clamp(24px, 4vh, 64px) clamp(16px, 4vw, 56px);
-                max-width: 1000px;
+                padding: clamp(25px, 4.2vh, 67px) clamp(17px, 4.2vw, 59px);
+                max-width: 1180px;
                 margin: 0 auto;
                 width: 100%;
             }
             .hero-eyebrow {
                 display: inline-flex;
                 align-items: center;
-                gap: 8px;
+                gap: 8.5px;
                 background: var(--tag-purple);
                 color: var(--fg-on-accent);
-                font-size: 11px;
+                font-size: 11.55px;
                 font-weight: 700;
                 letter-spacing: 0.08em;
                 text-transform: uppercase;
-                padding: 4px 12px;
+                padding: 4.5px 13px;
                 border: var(--bdr);
                 box-shadow: 2px 2px 0 var(--edge);
-                margin-bottom: clamp(14px, 3vh, 28px);
+                margin-bottom: clamp(15px, 3.15vh, 29px);
                 white-space: nowrap;
             }
             .hero-dot {
-                width: 6px;
-                height: 6px;
+                width: 6.5px;
+                height: 6.5px;
                 background: #7bf5a0;
                 border-radius: 50%;
             }
             .hero h1 {
-                font-size: clamp(40px, 12vw, 148px);
+                font-size: clamp(48px, 14.5vw, 178px);
                 line-height: 0.98;
                 white-space: nowrap;
             }
             .hero-tags {
                 display: flex;
-                gap: clamp(6px, 1.5vw, 10px);
+                gap: clamp(6.3px, 1.6vw, 10.5px);
                 flex-wrap: nowrap;
                 justify-content: center;
-                margin-top: clamp(10px, 2vh, 14px);
-                margin-bottom: clamp(20px, 4vh, 32px);
+                margin-top: clamp(10.5px, 2.1vh, 15px);
+                margin-bottom: clamp(21px, 4.2vh, 34px);
             }
             .htag {
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: clamp(13px, 3.4vw, 22px);
+                font-size: clamp(13.65px, 3.57vw, 23.1px);
                 font-weight: 700;
                 color: var(--fg-on-accent);
-                padding: clamp(4px, 0.8vh, 6px) clamp(8px, 2vw, 16px);
+                padding: clamp(4.2px, 0.84vh, 6.3px) clamp(8.4px, 2.1vw, 17px);
                 border: var(--bdr);
                 box-shadow: 2px 2px 0 var(--edge);
                 white-space: nowrap;
@@ -377,14 +405,14 @@
             }
             .hero-btns {
                 display: flex;
-                gap: clamp(10px, 2vw, 14px);
+                gap: clamp(10.5px, 2.1vw, 15px);
                 flex-wrap: nowrap;
                 justify-content: center;
-                margin-bottom: clamp(28px, 7vh, 56px);
+                margin-bottom: clamp(29px, 7.35vh, 59px);
             }
             .btn-lg {
-                padding: clamp(10px, 1.6vh, 15px) clamp(12px, 2.6vw, 30px);
-                font-size: clamp(12px, 3vw, 15px);
+                padding: clamp(10.5px, 1.68vh, 16px) clamp(13px, 2.73vw, 32px);
+                font-size: clamp(12.6px, 3.15vw, 15.75px);
             }
             .btn-light {
                 background: var(--surface-2);
@@ -397,14 +425,14 @@
             /* Stat row */
             .hero-stats {
                 display: flex;
-                gap: clamp(8px, 1.5vw, 10px);
+                gap: clamp(8.4px, 1.58vw, 10.5px);
                 flex-wrap: nowrap;
                 justify-content: center;
             }
             .icard {
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: clamp(8px, 1.4vh, 12px) clamp(12px, 2.6vw, 22px);
+                padding: clamp(8.4px, 1.47vh, 13px) clamp(13px, 2.73vw, 23px);
                 border-radius: 3px;
                 font-family: "Bricolage Grotesque", sans-serif;
                 text-align: center;
@@ -412,7 +440,7 @@
                 color: var(--fg-on-accent);
             }
             .icard-label {
-                font-size: 9px;
+                font-size: 9.5px;
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 0.06em;
@@ -420,7 +448,7 @@
                 margin-top: 2px;
             }
             .icard-val {
-                font-size: clamp(16px, 3.2vw, 24px);
+                font-size: clamp(17px, 3.36vw, 25.5px);
                 font-weight: 800;
                 white-space: nowrap;
             }
@@ -438,10 +466,10 @@
             .value-strip {
                 background: var(--black);
                 border-bottom: var(--bdr);
-                padding: clamp(14px, 2.5vh, 18px) 16px;
+                padding: clamp(15px, 2.6vh, 19px) 17px;
             }
             .value-strip p {
-                font-size: clamp(10px, 2.6vw, 18px);
+                font-size: clamp(10.5px, 2.73vw, 19px);
                 font-weight: 500;
                 line-height: 1.4;
                 color: var(--yellow);
@@ -453,14 +481,14 @@
 
             /* ── SECTIONS ── */
             .sec {
-                padding: clamp(32px, 4vh, 88px) clamp(20px, 4vw, 56px);
-                max-width: 1360px;
+                padding: clamp(34px, 4.2vh, 92px) clamp(21px, 4.2vw, 59px);
+                max-width: 1428px;
                 margin: 0 auto;
                 width: 100%;
             }
             .sec-h {
-                font-size: clamp(28px, 3.5vw, 50px);
-                margin-bottom: clamp(20px, 4vh, 48px);
+                font-size: clamp(29.5px, 3.68vw, 52.5px);
+                margin-bottom: clamp(21px, 4.2vh, 50px);
             }
 
             /* ── FEATURES ── */
@@ -470,7 +498,7 @@
                 border: var(--bdr);
             }
             .feat {
-                padding: clamp(20px, 3vh, 32px);
+                padding: clamp(21px, 3.15vh, 34px);
                 border-right: var(--bdr);
                 border-bottom: var(--bdr);
                 transition:
@@ -511,22 +539,22 @@
             .feat-n {
                 display: inline-block;
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 42px;
+                font-size: 44px;
                 font-weight: 800;
                 color: rgba(0, 0, 0, 0.1);
                 line-height: 1;
-                margin-bottom: 10px;
+                margin-bottom: 10.5px;
                 transform-origin: left center;
                 transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), color 0.3s;
             }
             .feat-t {
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 19px;
+                font-size: 20px;
                 font-weight: 700;
-                margin-bottom: 7px;
+                margin-bottom: 7.5px;
             }
             .feat-d {
-                font-size: 14px;
+                font-size: 14.7px;
                 color: var(--fg-soft-on-accent);
                 line-height: 1.6;
             }
@@ -535,7 +563,7 @@
             .home-meetups-grid {
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
-                gap: 20px;
+                gap: 21px;
             }
             @media (max-width: 1200px) {
                 .home-meetups-grid {
@@ -557,12 +585,12 @@
             .suite-grid {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
+                gap: 21px;
             }
             .suite-card {
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: clamp(20px, 3vh, 32px);
+                padding: clamp(21px, 3.15vh, 34px);
                 background: var(--surface-2);
                 transition:
                     transform 0.15s,
@@ -574,49 +602,49 @@
             }
             .suite-badge {
                 display: inline-block;
-                font-size: 11px;
+                font-size: 11.55px;
                 font-weight: 700;
                 letter-spacing: 0.07em;
                 background: var(--surface);
                 border: var(--bdr);
-                padding: 2px 8px;
-                margin-bottom: 14px;
+                padding: 2.5px 8.5px;
+                margin-bottom: 15px;
             }
             .suite-icon {
-                width: 48px;
-                height: 48px;
+                width: 50px;
+                height: 50px;
                 background: var(--yellow);
                 color: var(--fg-on-accent);
                 border: var(--bdr);
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-bottom: 16px;
+                margin-bottom: 17px;
             }
             .suite-card h3 {
-                font-size: 21px;
-                margin-bottom: 8px;
+                font-size: 22px;
+                margin-bottom: 8.5px;
             }
             .suite-card p {
-                font-size: 14px;
+                font-size: 14.7px;
                 color: var(--fg-soft);
                 line-height: 1.6;
             }
 
             .suite-cta {
-                margin-top: clamp(20px, 4vh, 40px);
+                margin-top: clamp(21px, 4.2vh, 42px);
                 display: flex;
                 align-items: center;
-                gap: 18px;
+                gap: 19px;
                 flex-wrap: wrap;
             }
             .gh-btn {
                 display: inline-flex;
                 align-items: center;
-                gap: 10px;
+                gap: 10.5px;
             }
             .suite-cta-note {
-                font-size: 14px;
+                font-size: 14.7px;
                 font-weight: 600;
                 opacity: 0.6;
             }
@@ -626,56 +654,56 @@
                 background: var(--purple);
                 border-top: var(--bdr);
                 border-bottom: var(--bdr);
-                padding: 88px 56px;
+                padding: 92px 59px;
             }
             .oss-in {
-                max-width: 1360px;
+                max-width: 1428px;
                 margin: 0 auto;
                 display: grid;
                 grid-template-columns: 5fr 7fr;
-                gap: 72px;
+                gap: 76px;
                 align-items: start;
             }
             .oss-out .sec-h {
-                font-size: clamp(26px, 3vw, 46px);
-                margin-bottom: 20px;
+                font-size: clamp(27.3px, 3.15vw, 48.3px);
+                margin-bottom: 21px;
             }
             .oss-desc {
-                font-size: 16px;
+                font-size: 16.8px;
                 color: var(--fg-soft);
                 line-height: 1.7;
-                margin-bottom: 28px;
+                margin-bottom: 29px;
             }
             .oss-list {
                 display: flex;
                 flex-direction: column;
-                gap: 14px;
+                gap: 15px;
             }
             .oss-item {
                 background: var(--bg2);
                 border: var(--bdr);
                 box-shadow: var(--sh);
-                padding: 18px 20px;
+                padding: 19px 21px;
                 display: flex;
-                gap: 16px;
+                gap: 17px;
                 align-items: flex-start;
             }
             .oss-num {
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 22px;
+                font-size: 23px;
                 font-weight: 800;
                 color: var(--tag-purple);
-                min-width: 28px;
+                min-width: 30px;
                 line-height: 1.2;
             }
             .oss-item-t {
                 font-family: "Bricolage Grotesque", sans-serif;
-                font-size: 15px;
+                font-size: 15.75px;
                 font-weight: 700;
-                margin-bottom: 3px;
+                margin-bottom: 3.5px;
             }
             .oss-item p {
-                font-size: 13px;
+                font-size: 13.65px;
                 color: var(--fg-soft);
                 line-height: 1.5;
             }
@@ -684,55 +712,55 @@
             .cta-out {
                 background: var(--dk-yellow);
                 border-bottom: var(--bdr);
-                padding: 100px 56px;
+                padding: 105px 59px;
                 text-align: center;
             }
             .cta-out h2 {
-                font-size: clamp(32px, 4.5vw, 64px);
-                margin-bottom: 14px;
+                font-size: clamp(33.6px, 4.7vw, 67px);
+                margin-bottom: 15px;
             }
             .cta-out p {
-                font-size: 17px;
+                font-size: 17.85px;
                 color: var(--fg-soft);
-                margin-bottom: 36px;
+                margin-bottom: 38px;
             }
             .cta-btns {
                 display: flex;
-                gap: 14px;
+                gap: 15px;
                 justify-content: center;
                 flex-wrap: wrap;
             }
             .cta-btns .btn {
-                padding: 14px 30px;
-                font-size: 15px;
+                padding: 15px 32px;
+                font-size: 15.75px;
             }
 
             /* ── FOOTER ── */
             .footer {
                 background: var(--black);
-                padding: clamp(18px, 2.5vh, 36px) 56px;
+                padding: clamp(19px, 2.6vh, 38px) 59px;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                gap: 24px;
+                gap: 25px;
             }
             .footer-logo {
                 font-family: "Bricolage Grotesque", sans-serif;
                 font-weight: 800;
-                font-size: 18px;
+                font-size: 19px;
                 color: var(--yellow);
                 letter-spacing: -0.03em;
             }
             .footer-note {
-                font-size: 13px;
+                font-size: 13.65px;
                 color: rgba(255, 255, 255, 0.55);
             }
             .footer-links {
                 display: flex;
-                gap: 20px;
+                gap: 21px;
             }
             .footer-links a {
-                font-size: 13px;
+                font-size: 13.65px;
                 color: rgba(255, 255, 255, 0.6);
                 text-decoration: none;
                 transition: color 0.15s;
@@ -744,15 +772,15 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
-                gap: 14px;
+                gap: 15px;
             }
             .social-row {
                 display: flex;
-                gap: 10px;
+                gap: 10.5px;
             }
             .social-btn {
-                width: 34px;
-                height: 34px;
+                width: 36px;
+                height: 36px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -919,6 +947,7 @@
                    mandatory snap would trap the footer, so relax it */
                 html {
                     scroll-snap-type: y proximity;
+                    scroll-padding-top: 86px;
                 }
                 .snap-sec {
                     min-height: auto;
@@ -926,42 +955,72 @@
                     justify-content: flex-start;
                 }
                 #hero-section {
-                    min-height: calc(100svh - 60px);
+                    min-height: calc(100svh - 86px);
                 }
                 .grow {
                     flex: initial;
                     justify-content: flex-start;
                 }
                 .nav {
-                    padding: 0 16px;
+                    display: grid;
+                    grid-template-columns: 1fr auto;
+                    grid-template-rows: auto auto;
+                    grid-template-areas:
+                        "logo actions"
+                        "links links";
+                    height: auto;
+                    padding: 0;
                 }
-                .nav-links {
-                    display: none;
+                .nav-logo {
+                    grid-area: logo;
+                    padding: 10px 16px 8px;
+                    font-size: 17px;
+                    gap: 8.5px !important;
+                }
+                .nav-logo img {
+                    height: 31.5px;
+                }
+                .nav-actions {
+                    grid-area: actions;
+                    padding: 8px 16px;
+                    gap: 8.5px;
                 }
                 .gh-label {
                     display: none;
                 }
-                .nav-logo {
-                    font-size: 16px;
-                    gap: 8px !important;
-                }
-                .nav-logo img {
-                    height: 30px;
-                }
                 .btn-nav {
-                    padding: 8px 12px;
-                    font-size: 12px;
+                    padding: 7.5px 13px;
+                    font-size: 12.6px;
+                }
+                .theme-toggle {
+                    width: 36px;
+                    height: 36px;
+                }
+                .nav-links {
+                    grid-area: links;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    padding: 8px 12px 10px;
+                    border-top: 1px solid var(--fg-faint);
+                    gap: clamp(10px, 3.5vw, 22px);
+                    list-style: none;
+                    margin: 0;
+                }
+                .nav-links a {
+                    font-size: 13.65px;
                 }
                 .hero {
                     justify-content: flex-start;
-                    padding: clamp(34px, 6vh, 64px) 20px
-                        clamp(28px, 5vh, 72px);
+                    padding: clamp(36px, 6vh, 67px) 21px
+                        clamp(29px, 5vh, 76px);
                 }
                 .hero-eyebrow {
                     margin-top: auto;
                 }
                 .hero h1 {
-                    font-size: clamp(38px, 11.5vw, 92px);
+                    font-size: clamp(40px, 12.5vw, 108px);
                 }
                 .hero-btns {
                     flex-wrap: nowrap;
@@ -969,22 +1028,22 @@
                 }
                 .hero-stats {
                     margin-top: auto;
-                    width: min(100%, 420px);
+                    width: min(100%, 440px);
                 }
                 .icard {
                     flex: 1 1 0;
                     min-width: 0;
-                    padding: 9px 10px;
+                    padding: 9.5px 10.5px;
                 }
                 .sec {
-                    padding: 56px 20px;
+                    padding: 59px 21px;
                 }
                 .sec-h {
-                    max-width: 760px;
-                    margin-bottom: 18px;
+                    max-width: 800px;
+                    margin-bottom: 19px;
                 }
                 .oss-desc {
-                    font-size: 15px;
+                    font-size: 15.75px;
                     line-height: 1.65;
                 }
                 .feat-grid {
@@ -999,38 +1058,38 @@
                 }
                 .oss-out,
                 .cta-out {
-                    padding: 64px 24px;
+                    padding: 67px 25px;
                 }
                 .value-strip {
-                    padding: 14px 12px;
+                    padding: 15px 13px;
                 }
                 .value-strip p {
-                    max-width: 28rem;
+                    max-width: 29rem;
                     white-space: normal;
                 }
                 .suite-grid {
                     grid-template-columns: 1fr;
-                    gap: 16px;
+                    gap: 17px;
                 }
                 .suite-card {
-                    padding: 22px;
+                    padding: 23px;
                 }
                 .suite-cta {
                     align-items: flex-start;
-                    gap: 12px;
+                    gap: 13px;
                 }
                 .suite-cta-note {
-                    max-width: 28rem;
+                    max-width: 29rem;
                     line-height: 1.45;
                 }
                 .oss-in {
                     grid-template-columns: 1fr;
-                    gap: 40px;
+                    gap: 42px;
                 }
                 .footer {
                     flex-direction: column;
                     text-align: center;
-                    padding: 28px 24px;
+                    padding: 29px 25px;
                 }
                 .footer-right {
                     align-items: center;
@@ -1042,63 +1101,93 @@
 
             @media (max-width: 520px) {
                 .hero {
-                    padding-inline: 16px;
-                    padding-bottom: clamp(30px, 5vh, 58px);
+                    padding-inline: 17px;
+                    padding-bottom: clamp(31px, 5vh, 61px);
                 }
                 .hero-eyebrow {
-                    margin-bottom: 18px;
+                    margin-bottom: 19px;
                 }
                 .hero-tags {
-                    gap: 6px;
-                    margin-bottom: 22px;
+                    gap: 6.3px;
+                    margin-bottom: 23px;
                 }
                 .htag {
-                    font-size: clamp(12px, 3.6vw, 15px);
-                    padding: 4px 8px;
+                    font-size: clamp(12.6px, 3.78vw, 15.75px);
+                    padding: 4.2px 8.4px;
                 }
                 .hero-btns {
-                    width: min(100%, 360px);
+                    width: min(100%, 378px);
                     flex-wrap: nowrap;
                 }
                 .hero-btns .btn {
                     flex: 1 1 0;
                     justify-content: center;
-                    padding-inline: 10px;
+                    padding-inline: 10.5px;
                 }
                 .hero-stats {
-                    gap: 7px;
+                    gap: 7.35px;
                 }
                 .icard-val {
-                    font-size: 17px;
+                    font-size: 18px;
                 }
                 .icard-label {
-                    font-size: 8px;
+                    font-size: 8.5px;
                 }
                 .sec {
-                    padding: 48px 16px;
+                    padding: 50px 17px;
                 }
                 .sec-h {
-                    font-size: clamp(30px, 9vw, 42px);
+                    font-size: clamp(31.5px, 9.45vw, 44px);
                     line-height: 1;
                 }
                 .feat {
-                    padding: 22px 20px;
+                    padding: 23px 21px;
                 }
                 .feat-n {
-                    font-size: 34px;
-                    margin-bottom: 8px;
+                    font-size: 36px;
+                    margin-bottom: 8.5px;
                 }
                 .suite-card {
-                    padding: 20px;
+                    padding: 21px;
                 }
                 .suite-icon {
-                    width: 44px;
-                    height: 44px;
-                    margin-bottom: 14px;
+                    width: 46px;
+                    height: 46px;
+                    margin-bottom: 15px;
                 }
                 .suite-cta .btn {
                     width: 100%;
                     justify-content: center;
+                }
+            }
+
+            @media (max-width: 400px) {
+                .nav-logo {
+                    font-size: 16px;
+                    gap: 6.3px !important;
+                    padding: 8px 12px;
+                }
+                .nav-logo img {
+                    height: 27px;
+                }
+                .nav-actions {
+                    padding: 8px 12px;
+                    gap: 6.3px;
+                }
+                .btn-nav {
+                    padding: 6.5px 10.5px;
+                    font-size: 12px;
+                }
+                .theme-toggle {
+                    width: 32px;
+                    height: 32px;
+                }
+                .nav-links {
+                    padding: 7px 8px 9px;
+                    gap: clamp(8px, 2.5vw, 14px);
+                }
+                .nav-links a {
+                    font-size: 13px;
                 }
             }
         </style>
@@ -1109,9 +1198,8 @@
         <!-- NAV -->
         <nav class="nav" aria-label="Primary">
             <a
-                href="#"
+                href="./index.html"
                 class="nav-logo"
-                style="display: inline-flex; align-items: center; gap: 10px"
             >
                 <img
                     src="./assets/codesapiens_logo.png"
@@ -1120,11 +1208,12 @@
                 CodeSapiens
             </a>
             <ul class="nav-links" aria-label="Sections">
-                <li><a href="#community">Community</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./events.html">Meetups</a></li>
+                <li><a href="#community">Community</a></li>
                 <li><a href="#collegesapien">CollegeSapien</a></li>
             </ul>
-            <div style="display: flex; gap: 12px; align-items: center">
+            <div class="nav-actions">
                 <button
                     type="button"
                     class="theme-toggle"
@@ -1201,15 +1290,7 @@
             (() => {
                 const btn = document.getElementById("theme-toggle");
                 const root = document.documentElement;
-                const mq = matchMedia("(prefers-color-scheme: dark)");
 
-                const read = () => {
-                    try {
-                        return localStorage.getItem("cs-theme");
-                    } catch (e) {
-                        return null;
-                    }
-                };
                 const sync = () => {
                     const dark = root.dataset.theme === "dark";
                     btn.setAttribute("aria-pressed", String(dark));
@@ -1229,12 +1310,22 @@
                     } catch (e) {}
                     sync();
                 });
+            })();
 
-                // Track the OS only while the visitor has not chosen explicitly.
-                mq.addEventListener("change", e => {
-                    if (read()) return;
-                    root.dataset.theme = e.matches ? "dark" : "light";
-                    sync();
+            // ── Home navigation smooth scroll when already on Home page ──
+            (() => {
+                const homeLinks = document.querySelectorAll('.nav a[href="./index.html"], .nav a[href="index.html"]');
+                homeLinks.forEach(link => {
+                    link.addEventListener("click", e => {
+                        const path = window.location.pathname;
+                        if (path.endsWith("index.html") || path === "/" || path.endsWith("/")) {
+                            e.preventDefault();
+                            if (window.location.hash) {
+                                history.pushState(null, "", window.location.pathname);
+                            }
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        }
+                    });
                 });
             })();
         </script>
@@ -1251,7 +1342,7 @@
                 <h1 data-steal>CodeSapiens</h1>
                 <div class="hero-tags">
                     <span class="htag a" data-steal>Explore.</span>
-                    <span class="htag b" data-steal>Evolve.</span>
+                    <span class="htag b" data-steal>Evelve.</span>
                     <span class="htag c" data-steal>Engineer.</span>
                 </div>
 
@@ -1310,9 +1401,9 @@
                 </div>
                 <div class="feat r rd2">
                     <div class="feat-n">02</div>
-                    <div class="feat-t">Evolve</div>
+                    <div class="feat-t">Evelve</div>
                     <p class="feat-d">
-                        Discover who you are, and evolve into a better version
+                        Discover who you are, and evelve into a better version
                         of yourself.
                     </p>
                 </div>
@@ -1546,7 +1637,9 @@
                 <div class="social-row">
                 <a
                     class="social-btn"
-                    href="https://github.com/Codesapiens-in"
+                    href="https://www.instagram.com/codesapiens.in/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     aria-label="Instagram"
                     title="Instagram"
                     ><svg
