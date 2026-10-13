@@ -1,0 +1,64 @@
+﻿college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,HS23111,Technical Communication I,2,HS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,MA23112,Algebra and Calculus,4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,CY23132,Chemistry for Technologists,4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,GE23111,Engineering Graphics,4,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,GE23121,Engineering Practices - Civil and Mechanical,1,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,BT23131,Microbiology,4,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,MC23112,Environmental Science and Engineering,0,MC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,1,GE23117,Heritage of Tamils,1,HS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,HS23221,Technical Communication II / English for Professional Competence,1,HS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,MA23212,Differential Equations and Complex Variables,4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,PH23231,Physics for Bioscience,4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,GE23231,Programming using Python,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,GE23212,Basic Civil and Mechanical Engineering,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,BT23211,Biochemistry,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,MC23111,Indian Constitution and Freedom Movement,0,MC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,GE23217,Tamils and Technology,1,HS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,2,BT23221,Biochemistry Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,MA23311,Transforms and Applied Partial Differential Equations,4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23311,Enzyme Technology and Biotransformations,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23312,Stoichiometry and Fluid Mechanics,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23313,Molecular Genetics,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23314,Cell Biology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23321,Basic Food and Enzyme Technology Laboratory,1,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,3,BT23331,Analytical Techniques in Biotechnology,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,MA23431,"Probability, Statistics and Reliability",4,BS,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23411,Food Biotechnology,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23412,Genetic Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23413,Thermodynamics and Heat Transfer,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23414,Basic Industrial Biotechnology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,CS23422,Python Programming for Machine Learning,2,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23421,Chemical Engineering Laboratory for Biotechnologists,2,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,BT23422,Molecular Biology and Genetic Engineering Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,4,GE23421,Soft Skills I,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23511,Bioprocess Principles,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23512,Bioinformatics,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23513,Separation Process Principles,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23514,Immunology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,PE-I,Professional Elective I,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23521,Bioprocess Laboratory I,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23522,Bioinformatics Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,BT23523,Immunology Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,5,GE23521,Soft Skills II,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,BT23611,Bioprocess Technology,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,BT23612,Chemical Reaction Engineering,3,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,PE-II,Professional Elective II,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,PE-III,Professional Elective III,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,PE-IV,Professional Elective IV,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,OE-I,Open Elective I,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,BT23621,Bioprocess Laboratory II,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,BT23622,Numerical Programming for Biotechnologists,1,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,GE23621,Problem Solving Techniques,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,6,GE23627,Design Thinking and Innovation,2,EEC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23711,Downstream Processing,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23712,Protein Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23713,Comprehension in Biotechnology,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,PE-V,Professional Elective V,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,PE-VI,Professional Elective VI,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,OE-II,Open Elective II,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23721,Downstream Processing Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23722,Artificial Intelligence and Machine Learning for Biotechnologist,2,PC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,BT23723,Internship,1,EEC,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,7,EC23527,Microfluidics Laboratory,1,ES,,core
+Rajalakshmi Engineering College,REC,Biotechnology,BT,R2023,8,BT23821,Project Work,12,EEC,,core

@@ -1,0 +1,60 @@
+﻿college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,HS23111,Technical Communication I,2,HS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,MA23112,Algebra and Calculus,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,PH23131,Physics of Materials,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,GE23111,Engineering Graphics,4,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,GE23117,Heritage of Tamils,1,HS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,EE23133,Basic Electrical and Electronics Engineering,4,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,MC23112,Environmental Science and Engineering,0,MC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,1,GE23121,Engineering Practices - Civil and Mechanical,1,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,HS23221,Technical Communication II / English for Professional Competence,1,HS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,MA23212,Differential Equation and Complex Variables,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,CY23233,Engineering Chemistry,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,GE23211,Engineering Mechanics,3,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,AE23211,Fundamentals of Aerospace Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,GE23233,Problem Solving and Python Programming,4,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,GE23217,Tamils and Technology,1,HS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,MC23111,Indian Constitution and Freedom Movement,0,MC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,2,GE23122,Engineering Practices - Electrical and Electronics,1,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,MA23311,Transforms and Applied Partial Differential Equations,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,AE23331,Solid Mechanics,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,AE23332,Fluid Mechanics and Fluid Machinery,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,AE23333,Aero Engineering Thermodynamics,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,CS23422,Python Programming for Machine Learning,2,ES,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,OE-I,Open Elective I,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,3,AE23321,Computer Aided Modelling Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,MA23432,Statistics and Numerical Methods,4,BS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,AE23411,Aircraft Structures I,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,AE23412,Control Engineering,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,AE23431,Incompressible Aerodynamics,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,AE23432,Aircraft Materials and Processes,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,AE23433,Aircraft Systems and Instruments,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,GE23421,Soft Skills I,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,4,VAP-I,Value Added Program I,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23511,Aircraft Propulsion,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23512,Compressible Aerodynamics,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23513,Flight Dynamics,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23531,Aircraft Structures II,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,PE-I,Professional Elective I,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,OE-II,Open Elective II,3,OE,Open Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,GE23521,Soft Skills II,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23521,Computational Simulation Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,5,AE23522,Internship,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,AE23611,Rocket and Missile Propulsion,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,AE23631,Flight Vehicle Design,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,PE-II,Professional Elective II,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,PE-III,Professional Elective III,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,GE23627,Design Thinking and Innovation,2,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,AE23622,Jet Propulsion Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,AE23623,Airframe Repair and Aero Engine Laboratory,2,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,6,GE23621,Problem Solving Techniques,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,AE23731,Avionics,4,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,AE23711,Composite Materials and Structures,3,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,GE23311,Fundamentals of Management for Engineers,3,HS,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,PE-IV,Professional Elective IV,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,PE-V,Professional Elective V,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,AE23721,Project Work Phase I,2,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,AE23722,Artificial Intelligence and Machine Learning for Aeronautical Engineering,2,PC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,7,VAP-II,Value Added Program II,1,EEC,,core
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,8,PE-VI,Professional Elective VI,3,PE,Professional Elective,elective
+Rajalakshmi Engineering College,REC,Aeronautical Engineering,AE,R2023,8,AE23821,Project Work Phase II,8,EEC,,core
