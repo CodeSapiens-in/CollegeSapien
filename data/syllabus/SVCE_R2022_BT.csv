@@ -1,0 +1,128 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,HS22151,Tamil Language and Heritage of Ancient Tamil Society,1,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,HS22152,Communicative English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,MA22151,Applied Mathematics I,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,PH22153,Technical Physics,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,CY22153,Technical Chemistry,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,ME22151,Engineering Graphics,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,ME22152,Basic Mechanical Engineering,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,BT22101,Biology for Engineers,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,CY22161,Chemistry Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,1,ME22162,Basic Mechanical Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,HS22252,Technical English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,MA22251,Applied Mathematics II,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,PH22251,Physics for Biotechnologists,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,EE22151,Basic Electrical and Electronics Engineering,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,IT22251,Computer Programming and Practice,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,BT22201,Bioorganic Chemistry,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,EE22111,Basic Electrical and Electronics Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,2,BT22211,Bioorganic Chemistry Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,MA22355,Partial Differential Equations and Numerical Methods,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22301,Stoichiometry and Process Calculations,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22302,Microbiology,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22303,Biochemistry,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22308,Basic Industrial Biotechnology: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22309,Cell Biology: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22311,Microbiology Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,3,BT22312,Biochemistry Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,MA22451,Introduction to Biostatistics,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,GE22451,Environmental Sciences and Sustainability,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22401,Analytical Techniques and Instrumentation,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22402,Transport Phenomena of Bioprocesses,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22403,Chemical and Biochemical Thermodynamics,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22404,Genetics and Molecular Biology,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22411,Analytical Techniques and Instrumentation Laboratory,2,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,4,BT22412,Chemical Engineering Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,BT22501,Introduction to Enzyme Technology and Biotransformation,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,BT22502,Bioprocess Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,BT22503,Genetic Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,,Professional Elective-I,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,,Professional Elective-II,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,,Open Elective-I,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,,Mandatory Course,0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,HS22511,Interview and Career Skills Laboratory,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,5,BT22511,Molecular Biology and Genetic Engineering Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22601,Biochemical Reaction Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22602,Immunology,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22603,Genomics and Proteomics: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,,Professional Elective-III,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,,Professional Elective-IV,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,,Open Elective-II,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22611,Bioprocess Engineering Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22612,Immunology Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,6,BT22613,Industrial Training/Internship,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,BT22701,Bioseparation Technology,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,BT22702,Computational Biology,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,BT22703,Bioentrepreneurship and Bioethics,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,,Professional Elective-V,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,,Professional Elective-VI,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,BT22711,Bioseparation Technology Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,7,BT22712,Computational Biology Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,8,BT22811,Project Work,10,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22001,Financial Statement Analysis,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22002,Introduction to Securities Market,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22003,Option Trading Strategies,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22004,Corporate Finance,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22005,Managerial Economics,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22006,Project Management,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,SE22007,Mathematics for AI & ML,3,SE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22021,Microbial Fermentation and Bioreactor Design,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22022,Food Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22023,Bioprocessing for Green Environment,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22024,Bioprocess and Bioreactor Technology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22025,Bioreactor Considerations for Recombinant Products,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22026,Bioprocess Economics and Plant Design,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22027,Bioprocess Control and Instrumentation,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22028,Bioprocess Modeling and Simulation,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22020,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22031,Fundamentals of Algorithms for Biotechnologists,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22032,Programming for Computational Biotechnology Applications,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22033,Computer Aided Drug Design,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22034,Molecular Modeling in Drug Discovery,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22035,Cheminformatics and Medicinal Chemistry,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22036,Metagenomics and Metabolomics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22037,Big Data Analytics for Biotechnologists,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22038,Machine Learning and Artificial Intelligence for Biotechnologists,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22030,Computer Aided Drug Design Laboratory,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22041,Biopharmaceuticals and Biosimilars,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22042,Vaccine Design and Development,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22043,Human Genetics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22044,Cancer Biology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22045,Biomaterials and Tissue Engineering,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22046,Molecular Therapeutics and Diagnostics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22047,Biomedical Nanotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22048,Stem Cell Technology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22040,Mini Project,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22051,Plant Biochemistry and Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22052,Plant Anatomy and Embryology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22053,Plant Tissue Culture and Transformation Techniques,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22054,Fundamentals of Plant Pathology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22055,Biotechnological Approaches for Crop Improvement,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22056,Biosensors for Agriculture and Food Safety,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22057,Phytochemicals and its Therapeutic Applications,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22058,Advanced Techniques in Agro-Forestry,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22050,Plant Tissue Culture Laboratory,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22061,Animal Physiology and Metabolism,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22062,Animal Health and Nutrition,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22063,Advances in Animal Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22064,Transgenic Technology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22065,Animal Cell Culture Technology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22066,Reproductive Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22067,Veterinary Epidemiology and Zoonosis,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22068,Molecular Diagnosis of Animal Diseases,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22060,Animal Cell Culture Laboratory,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22071,Human Values and Bioethics,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22072,Good Manufacturing and Laboratory Practices,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22073,Quality Control and Assurance in Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22074,Regulatory Affairs in Pharmaceutical Industries,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22075,Clinical Trials and Healthcare Policies in Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22076,Intellectual Property Rights in Biotechnology,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22077,Total Quality Management for Biotechnologists,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22078,Biosafety and Hazard Management,3,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,BT22070,Pharmaceutical Quality Control Laboratory,2,PE,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,OE22201,Biomass Conversion and Biorefinery,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,OE22202,Fundamentals of Computational Biology,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,OE22203,Introduction to Food Process Technology,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,OE22204,Basics of Bio-nanotechnology,3,OE,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Biotechnology,BT,R2022,,OE22205,Basics of Sustainable Biomaterials,3,OE,Open Elective,option

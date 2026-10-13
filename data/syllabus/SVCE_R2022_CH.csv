@@ -1,0 +1,142 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,HS22152,Communicative English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,MA22151,Applied Mathematics I,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,PH22153,Technical Physics,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,CY22153,Technical Chemistry,3,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,ME22152,Basic Mechanical Engineering,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,ME22151,Engineering Graphics,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,HS22151,Tamil language and Heritage of Ancient Tamil Society,1,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,CY22161,Chemistry Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,1,ME22162,Basic Mechanical Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,HS22252,Technical English,3,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,MA22251,Applied Mathematics II,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,EE22251,Basic Electrical and Electronics Engineering for Chemical Engineers,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,IT22251,Computer Programming and Practice,3,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,CH22201,Introduction to Chemical Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,EE22111,Basic Electrical and Electronics Engineering Laboratory,1,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,2,PH22161,Physics Laboratory,1,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,MA22351,Applied Mathematics III,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22301,Chemical Process Calculations,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22302,Momentum Transfer,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22303,Chemical Engineering Thermodynamics I,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22304,Mechanical Operations,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22305,Mechanics of Solids for Chemical Engineering,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22311,Environmental Engineering Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,3,CH22312,Technical Analysis Laboratory,2,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,MA22452,Numerical Methods,4,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22408,Chemical Engineering Thermodynamics II: Theory and Practice,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22401,Heat Transfer,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22402,Mass Transfer I,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22403,Chemical Reaction Engineering I,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22404,Instrumental Methods of Analysis,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,GE22451,Environmental Science and Sustainability,3,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22411,Momentum Transfer Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,4,CH22412,Mechanical Operations Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22501,Mass Transfer II,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22502,Chemical Reaction Engineering II,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22503,Process Instrumentation Dynamics and Control,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22504,Chemical Process Industries,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22505,Process Equipment Design I,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,,Open Elective I,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22511,Mass Transfer Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,5,CH22512,Heat Transfer Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,CH22601,Transport Phenomena,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,CH22608,Process Modeling and Simulation: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,CH22609,Process Equipment Design II: Theory and Practices,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,,Professional Elective I,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,,Professional Elective II,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,,Open Elective II,3,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,CH22611,Chemical Reaction Engineering Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,CH22612,Process Control Laboratory,2,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,6,HS22511,Interview and Career Skills Laboratory,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,CH22701,Plant design and Economics,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,CH22702,Professional Ethics,3,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,,Professional Elective III,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,,Professional Elective IV,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,,Professional Elective V,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,,Professional Elective VI,3,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,7,CH22711,Industrial Training / Internship,2,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,8,CH22811,Project Work,10,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22001,Financial Statement Analysis,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22002,Introduction to Securities Market,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22003,Option Trading Strategies,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22004,Corporate Finance,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22005,Managerial Economics,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22006,Project Management,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,SE22007,Mathematics for AI & ML,3,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22021,Drilling Technology and well Engineering,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22022,Natural Gas Engineering,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22023,Hydrocarbon Processing Technology,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22024,Unit Processes in Petrochemical Technology,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22025,Petrochemical Derivatives,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22026,Multi-Component Distillation,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22027,Petroleum Refinery Engineering and Design,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22028,Petroleum Process Equipment Auxiliaries,3,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22020,Mini Project,2,Hydrocarbon Processing,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22031,Fire Engineering and Explosion Control,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22032,Industrial Safety Assessment,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22033,"Acts and Regulations for Health, Safety andEnvironment",3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22034,Disaster Management in Process Industries,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22035,Accident Investigation and Reporting,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22036,First Aid and Safety Precautions,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22037,Safety in process industries,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22038,Process Safety Management,3,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22030,Mini Project,2,HSE in Process Industries,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22041,Renewable energy Resources,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22042,Energy and Environment,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22043,Energy conservation in Utilities,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22044,Energy conversion and storage Techniques,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22045,Waste Management and Energy Recovery,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22046,Alternative energy resources,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22047,Measurement and Control for Energy systems,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22048,Energy Audit,3,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22040,Mini Project,2,Energy Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22051,Industrial Waste Management,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22052,Air Pollution Management,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22053,Disaster Mitigation and Management,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22054,Global Climate Change,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CE22051,Municipal Solid Waste Management,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CE22052,Environmental Policy and Legislations,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CE22053,"Environment, Health and Safety",3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CE22054,Sustainability and Social Development,3,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22050,Mini Project,2,Environmental Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22061,Materials engineering fundamentals,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22062,Surface Engineering,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22063,Frontier Materials,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22064,Biomaterials,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22065,High Temperature Materials,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22066,Particulate Processing,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22067,Polymer processing,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22068,Nano Materials and Applications,3,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22060,Mini Project,2,Material Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22071,Process Optimization,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22072,Chemical Reactor Analysis,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22073,Scale-up in Chemical Engineering,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22074,Piping Design,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22075,Chemical Process Intensification,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22076,Process Plant utilities,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22077,Computational Fluid Dynamics,3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22078,"Quality Control, Assurance and Reliability",3,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22070,Mini Project,2,Process Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22081,Biochemical Engineering,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22082,Food Processing Technology,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22083,Pulp and Paper Technology,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22084,Fluidization Engineering,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22085,Design of Experiments and Parameter Estimation,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22086,Drug and Pharmaceutical Technology,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22087,Chemical process automation,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,CH22088,Data Analytics & Machine Learning for Chemical Engineers,3,Diversified Vertical Group I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22301,Waste to Energy,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22302,Industrial Safety,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22303,Composite Materials,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22304,Industrial Wastewater Treatment,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22305,Fuel Cell Technology,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22306,Industrial Pollution Prevention,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22307,Solid Waste Management,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22308,Plant Utilities,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22309,Green Energy,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,OE22310,Energy Management,3,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,MC22001,Indian Constitution,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,MC22002,Essence of Indian Traditional Knowledge,0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Chemical Engineering,CH,R2022,,MC22003,Gender Sensitization,0,Mandatory Course,,option

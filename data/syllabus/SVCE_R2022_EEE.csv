@@ -1,0 +1,142 @@
+college,college_code,course,course_code,regulation,semester,subject_code,subject_name,credits,category,elective_type,record_type
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,HS22151,Tamil language and Heritage of Ancient Tamil Society,1.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,HS22152,Communicative English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,MA22151,Applied Mathematics I,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,PH22151,Applied Physics,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,CY22151,Applied Chemistry,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,CM22151,Basic Civil and Mechanical Engineering,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,IT22101,Programming for Problem Solving,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,EE22111,Basic Electrical and Electronics Engineering Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,ME22161,Basic Civil and Mechanical Engineering Laboratory,1.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,1,IT22111,Programming for Problem Solving Laboratory,1.5,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,HS22251,Science and Technology in Ancient Tamil Society,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,HS22252,Technical English,3.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,MA22251,Applied Mathematics II,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,PH22252,Physics of Materials,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,ME22252,Fundamentals of Engineering Graphics,3.0,ES,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,EE22201,Electric Circuit Analysis,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,PH22161,Physics Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,CY22161,Chemistry Laboratory,1.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,2,EE22211,Electric Circuits Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,MA22354,Mathematics For Electrical Engineers,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22301,Electrical Machines I,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22302,Electric Power System,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22303,Electromagnetic Theory,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22308,Digital Logic Circuits: Theory and Practices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22309,Electron Devices and Circuits: Theory and Practices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,3,EE22311,Electrical Machines I Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,MA22452,Numerical Methods,4.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,GE22451,Environmental Sciences and Sustainability,3.0,BS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22401,Analog Electronics,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22402,Control Systems,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22403,Electrical Machines II,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22404,Measurement and Instrumentation,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22411,Analog Electronics Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22412,Control Systems and Instrumentation Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,4,EE22413,Electrical Machines II Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,EE22501,Microcontrollers and Programming,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,EE22502,Power Electronics,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,EE22503,Power System Analysis,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,IT22551,Programming and Data Structures,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,,Professional Elective I,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,,Open Elective I,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,EE22511,Microcontrollers and Programming Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,EE22512,Power Electronics Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,5,IT22561,Programming and Data Structures Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,EE22601,Digital Signal Processing,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,EE22602,Industrial Automation and Networking (Industry supported),3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,EE22603,Power System Operation and Control,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,,Professional Elective II,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,,Open Elective II,3.0,OE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,,Mandatory Courses,0.0,MC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,HS22511,Interview and Career Skills Laboratory,2.0,HS,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,EE22611,Industrial Automation Laboratory,2.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,6,EE22612,Power System Laboratory,1.5,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,EE22701,Protection and Switchgear,3.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,EE22708,Smart Grid: Theory and Practices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,EE22709,Electric Vehicles: Theory and Practices,4.0,PC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,,Professional Elective III,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,,Professional Elective IV,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,EE22711,Mini Project,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,7,EE22712,Industrial Training/Internship,2.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,8,,Professional Elective V,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,8,,Professional Elective VI,3.0,PE,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,8,EE22811,Project work,8.0,EEC,,core
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22001,Financial Statement Analysis,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22002,Introduction to Securities Market,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22003,Option Trading Strategies,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22004,Corporate Finance,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22005,Managerial Economics,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22006,Project Management,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,SE22007,Mathematics for AI and ML,3.0,Special Electives,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22021,Restructured Power Systems,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22022,Substation Automation,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22023,HVDC and FACTS,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22024,Power System Dynamics,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22025,High Voltage Engineering,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22026,Soft Computing Techniques for Power Systems,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22027,Power System Management,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22028,Digital Protection of Power System,3.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22020,Power System Protection Laboratory,2.0,Power System Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22031,Modeling and Analysis of Electrical Machines,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22032,Special Electrical Machines and Drives,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22033,Computer Aided Design of Electrical Apparatus,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22034,SMPS and UPS,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22035,Analysis of Power Converters,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22036,Programming for Embedded System,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22037,Microcontroller based System Design,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22038,Control System design for Power Electronics,3.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22030,Electric Drives Laboratory,2.0,Electrical Drives and Control,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22041,Hybrid Electric Vehicles,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22042,Vehicle Dynamics,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22043,Automotive Power Electronics,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22044,Energy Storage System and Management in EV,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22045,Electric Vehicle Control,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22046,Automotive Embedded Systems,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22047,Vehicle Communication,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22048,Sustainable EV Charging Infrastructure,3.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22040,Electric Vehicle Laboratory,2.0,Electric Vehicle Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22051,Distributed Generation and Microgrid,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22052,Solar Energy Conversion System,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22053,Wind Energy Conversion System,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22054,Hybrid Renewable System and Storage Technologies,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22055,Power Quality,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22056,Electrical Safety,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22057,Energy Management and Auditing,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22058,Electrical Energy Conservation and Utilization,3.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22050,Renewable Energy System Laboratory,2.0,Renewable Energy and Engineering,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22061,Solid State Devices,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22062,Microelectronic Circuits,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22063,Semiconductor Technology,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EC22504,Physical VLSI Design,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22064,MEMS Technology,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22065,Wide Bandgap Semiconductors,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22066,Sensor Technology,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22067,Embedded System Design,3.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22060,IC Design Laboratory,2.0,Semiconductor Technology,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22071,Analog and Digital Controllers,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22072,Biomedical Instrumentation,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22073,Ethics in Electrical Engineering,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22074,IoT in Automation and Control,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,IT22201,Computer Organization and Architecture,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22075,Artificial and Computational Intelligence,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,ME22087,Principles of Management,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EC22066,Robotics and Automation,3.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,EE22070,Design Thinking Laboratory,2.0,Diversified Group-I,Programme Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22601,Biomedical Engineering,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22603,Control system Engineering,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22605,Micro and Smart Grid,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22607,Electric Vehicle Technology,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22609,Energy Conservation Practices,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22611,Industrial Electrical Systems,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22613,Autonomous Vehicle,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22602,Industrial Automation,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22604,Digital Systems,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22606,Motors for Industries,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22608,Indian Power Grid,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22610,Industrial IoT,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22612,Electrical Automation and Robotics,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,OE22614,Industrial Nanotechnology,3.0,Open Elective,Open Elective,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,MC22001,Indian Constitution,0.0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,MC22002,Essence of Indian Traditional Knowledge,0.0,Mandatory Course,,option
+Sri Venkateswara College of Engineering,SVCE,Electrical and Electronics Engineering,EEE,R2022,,MC22003,Gender Sensitization,0.0,Mandatory Course,,option
