@@ -21,6 +21,7 @@ const nav = computed(() => {
     },
     { label: "Resources", to: "/resources", icon: "i-heroicons-document-text" },
     { label: "Events", to: "/events", icon: "i-heroicons-calendar-days" },
+    { label: "Waitlist", to: "/campus/waitlist", icon: "i-heroicons-clipboard-document-list" },
     {
       label: "Moderation",
       to: "/moderation",

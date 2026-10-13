@@ -20,6 +20,8 @@ import syllabusRoutes from './app/syllabus/syllabus.route';
 import cmsRoutes from './app/cms/cms.route';
 import curriculumRoutes from './app/curriculum/curriculum.route';
 import eventsRoutes from './app/events/events.route';
+import campusRoutes from './app/campus/campus.route';
+import { joinWaitlist } from './app/campus/campus.controller';
 
 const app = express();
 app.set('query parser', 'extended');
@@ -100,6 +102,9 @@ app.get('/api/v1/health', (req, res) => {
   res.status(200).json({ status: 'ok', message: 'CodeSapiens API is healthy' });
 });
 
+// Public static-site signup (no App Check; protected by validation + per-IP rate limit).
+app.post('/api/waitlist', joinWaitlist);
+
 app.use(enforceAppCheck);
 
 app.use('/api/v1/auth', authRoutes);
@@ -114,6 +119,7 @@ app.use('/api/v1/subjects', subjectRoutes);
 app.use('/api/v1/syllabus', syllabusRoutes);
 app.use('/api/v1/curriculum', curriculumRoutes);
 app.use('/api/v1/events', eventsRoutes);
+app.use('/api/v1/campus', campusRoutes);
 
 app.use('/api/v1/cms', cmsRoutes);
 

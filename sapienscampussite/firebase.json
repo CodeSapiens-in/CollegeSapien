@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "site": "sapienscampus",
+    "public": "public",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/waitlist", "function": { "functionId": "api", "region": "asia-south1" } }
+    ]
+  }
+}

@@ -108,6 +108,14 @@ service cloud.firestore {
       }
     }
 
+    // Written only by the Admin SDK (Cloud Functions); never readable from clients.
+    match /campusWaitlist/{id} {
+      allow read, write: if false;
+    }
+    match /campusWaitlistRate/{id} {
+      allow read, write: if false;
+    }
+
     match /{document=**} {
       allow read, write: if false;
     }
