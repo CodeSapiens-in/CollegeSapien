@@ -3,8 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Community Meetups & Events — CodeSapiens</title>
-        <meta name="description" content="Past CodeSapiens meetups — Alumni Meetup, TamilPreneur, SheBuilds, and the January through June 2026 gatherings." />
+        <title>Meetups — SapienCampus</title>
+        <meta name="description" content="Upcoming Sapiens Campus meetup on Luma, plus past gatherings with TamilPreneur, SheBuilds, and alumni." />
         <link rel="icon" href="./assets/codesapiens_logo.png" type="image/png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
@@ -44,7 +44,7 @@
                 padding: 0;
             }
             html {
-                scroll-behavior: smooth;
+                scroll-padding-top: 60px;
             }
             body {
                 background: var(--bg);
@@ -693,6 +693,65 @@
                 color: var(--ink);
             }
 
+            /* ── UPCOMING EVENT ── */
+            .upcoming-sec {
+                max-width: 1180px;
+                margin: 0 auto;
+                padding: 40px clamp(16px, 4vw, 56px) 24px;
+            }
+            .upcoming-card {
+                background: var(--bg2);
+                border: var(--bdr);
+                box-shadow: var(--sh-lg);
+                overflow: hidden;
+            }
+            .upcoming-head {
+                background: var(--green);
+                border-bottom: var(--bdr);
+                padding: clamp(20px, 3vw, 28px) clamp(20px, 3vw, 32px);
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+                gap: 16px;
+                flex-wrap: wrap;
+            }
+            .upcoming-head h2 {
+                font-size: clamp(28px, 4vw, 42px);
+                margin-top: 8px;
+            }
+            .upcoming-head p {
+                font-size: 15px;
+                color: var(--ink);
+                max-width: 520px;
+                line-height: 1.5;
+            }
+            .upcoming-embed {
+                padding: clamp(16px, 3vw, 28px);
+                background: var(--bg);
+            }
+            .upcoming-frame {
+                width: 100%;
+                max-width: 920px;
+                margin: 0 auto;
+                border: var(--bdr);
+                box-shadow: var(--sh);
+                background: #111;
+                overflow: hidden;
+            }
+            .upcoming-frame iframe {
+                display: block;
+                width: 100%;
+                /* Wide enough for Luma's side-by-side card so the full event fits */
+                height: 540px;
+                border: 0;
+            }
+            @media (max-width: 760px) {
+                .upcoming-frame iframe {
+                    /* Stacked Luma layout needs the full card height */
+                    height: 900px;
+                }
+            }
+
             /* ── CTA / HOST SECTION ── */
             .host-sec {
                 background: var(--purple);
@@ -1003,8 +1062,8 @@
         <!-- NAV -->
         <nav class="nav">
             <a href="./index.html" class="nav-logo">
-                <img src="./assets/codesapiens_logo.png" alt="CodeSapiens logo" />
-                CodeSapiens
+                <img src="./assets/codesapiens_logo.png" alt="Sapiens Campus logo" />
+                Sapiens Campus
             </a>
             <ul class="nav-links">
                 <li><a href="./index.html">Home</a></li>
@@ -1031,23 +1090,23 @@
         <!-- HERO -->
         <section class="events-hero">
             <div class="hero-inner">
-                <div class="pill">Past Meetups</div>
-                <h1>Rooms we filled.</h1>
+                <div class="pill">Meetups</div>
+                <h1>Rooms we fill.</h1>
                 <p>
-                    A look back at CodeSapiens meetups — alumni, campus gatherings, and the people who showed up.
+                    Upcoming gatherings and a look back at Sapiens Campus meetups — alumni, campus sessions, and the people who showed up.
                 </p>
                 <div class="stats-row">
+                    <div class="stat-box" style="background: var(--yellow);">
+                        <div class="stat-num">1</div>
+                        <div class="stat-lbl">Upcoming</div>
+                    </div>
                     <div class="stat-box" style="background: var(--green);">
                         <div class="stat-num">6</div>
-                        <div class="stat-lbl">Meetups</div>
+                        <div class="stat-lbl">Past meetups</div>
                     </div>
                     <div class="stat-box" style="background: var(--blue);">
                         <div class="stat-num">2026</div>
                         <div class="stat-lbl">This year</div>
-                    </div>
-                    <div class="stat-box" style="background: var(--pink);">
-                        <div class="stat-num">Jan–Jun</div>
-                        <div class="stat-lbl">So far</div>
                     </div>
                     <div class="stat-box" style="background: var(--purple);">
                         <div class="stat-num">Alumni</div>
@@ -1057,9 +1116,36 @@
             </div>
         </section>
 
+        <!-- UPCOMING EVENT -->
+        <section class="upcoming-sec" id="upcoming">
+            <div class="upcoming-card">
+                <div class="upcoming-head">
+                    <div>
+                        <div class="pill" style="background: var(--yellow); margin-bottom: 0;">Upcoming Event</div>
+                        <h2>Next Sapiens Campus meetup</h2>
+                    </div>
+                    <p>Register on Luma, then join us in person for the next campus gathering.</p>
+                </div>
+                <div class="upcoming-embed">
+                    <div class="upcoming-frame">
+                        <iframe
+                            src="https://luma.com/embed/event/evt-1LvRzBUfuOd7qHC/simple"
+                            title="Upcoming Sapiens Campus event on Luma"
+                            width="920"
+                            height="540"
+                            frameborder="0"
+                            scrolling="no"
+                            allow="fullscreen; payment"
+                            loading="lazy"
+                        ></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FILTER BAR -->
         <div class="filters-sec">
-            <div class="filter-label">Filter Meetups:</div>
+            <div class="filter-label">Past Meetups:</div>
             <div class="filter-tabs">
                 <button class="tab-btn active" data-filter="all">All Meetups (6)</button>
                 <button class="tab-btn" data-filter="june">June 2026</button>
@@ -1077,12 +1163,12 @@
             <article class="meetup" data-month="june" data-tone="yellow">
                 <div class="meetup-visual" onclick="openModal('june')">
                     <span class="event-month-badge">June 2026</span>
-                    <img src="./assets/meetups/june-meetup.jpg" alt="CodeSapiens Alumni Meetup, June 2026" />
+                    <img src="./assets/meetups/june-meetup.jpg" alt="Sapiens Campus Alumni Meetup, June 2026" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">Latest · June 2026</div>
-                    <h2 class="meetup-title">CodeSapiens Alumni Meetup</h2>
+                    <h2 class="meetup-title">Sapiens Campus Alumni Meetup</h2>
                     <p class="meetup-desc">Alumni and students together for the June 2026 Alumni Meetup at M2P.</p>
                     <div class="meetup-tags">
                         <span class="etag d">Alumni</span>
@@ -1099,12 +1185,12 @@
             <article class="meetup" data-month="may" data-tone="green">
                 <div class="meetup-visual" onclick="openModal('may')">
                     <span class="event-month-badge" style="background: var(--green);">May 2026</span>
-                    <img src="./assets/meetups/may-meetup.jpg" alt="CodeSapiens Summer Fest 2026" />
+                    <img src="./assets/meetups/may-meetup.jpg" alt="Sapiens Campus Summer Fest 2026" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">May 2026</div>
-                    <h2 class="meetup-title">CodeSapiens Summer Fest</h2>
+                    <h2 class="meetup-title">Sapiens Campus Summer Fest</h2>
                     <p class="meetup-desc">Summer Fest 2026, with Namma Flutter, Nexora, and Google Student Ambassadors.</p>
                     <div class="meetup-tags">
                         <span class="etag a">Summer Fest</span>
@@ -1121,12 +1207,12 @@
             <article class="meetup" data-month="apr" data-tone="blue">
                 <div class="meetup-visual" onclick="openModal('apr')">
                     <span class="event-month-badge" style="background: var(--blue);">April</span>
-                    <img src="./assets/meetups/april-meetup.jpg" alt="CodeSapiens and TamilPreneur April meetup" />
+                    <img src="./assets/meetups/april-meetup.jpg" alt="Sapiens Campus and TamilPreneur April meetup" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">April meetup</div>
-                    <h2 class="meetup-title">CodeSapiens × TamilPreneur</h2>
+                    <h2 class="meetup-title">Sapiens Campus × TamilPreneur</h2>
                     <p class="meetup-desc">TamilPreneur collaboration, gathered in person at ONE M2P.</p>
                     <div class="meetup-tags">
                         <span class="etag b">TamilPreneur</span>
@@ -1143,12 +1229,12 @@
             <article class="meetup" data-month="mar" data-tone="pink">
                 <div class="meetup-visual" onclick="openModal('mar')">
                     <span class="event-month-badge" style="background: var(--pink);">March 2026</span>
-                    <img src="./assets/meetups/march-meetup.jpg" alt="CodeSapiens March meetup" />
+                    <img src="./assets/meetups/march-meetup.jpg" alt="Sapiens Campus March meetup" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">March 2026</div>
-                    <h2 class="meetup-title">CodeSapiens March Meetup</h2>
+                    <h2 class="meetup-title">Sapiens Campus March Meetup</h2>
                     <p class="meetup-desc">SheBuilds collaboration at Mako IT Labs.</p>
                     <div class="meetup-tags">
                         <span class="etag c">SheBuilds</span>
@@ -1165,12 +1251,12 @@
             <article class="meetup" data-month="feb" data-tone="purple">
                 <div class="meetup-visual" onclick="openModal('feb')">
                     <span class="event-month-badge" style="background: var(--purple);">February</span>
-                    <img src="./assets/meetups/february-meetup.jpg" alt="CodeSapiens February meetup, Vanakkam Sapiens" />
+                    <img src="./assets/meetups/february-meetup.jpg" alt="Sapiens Campus February meetup, Vanakkam Sapiens" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">February meetup</div>
-                    <h2 class="meetup-title">CodeSapiens February Meetup</h2>
+                    <h2 class="meetup-title">Sapiens Campus February Meetup</h2>
                     <p class="meetup-desc">Free and open source at YUNIQ. The day opened on screen with Vanakkam Sapiens.</p>
                     <div class="meetup-tags">
                         <span class="etag d">Free &amp; open source</span>
@@ -1187,12 +1273,12 @@
             <article class="meetup" data-month="jan" data-tone="cream">
                 <div class="meetup-visual" onclick="openModal('jan')">
                     <span class="event-month-badge">January</span>
-                    <img src="./assets/meetups/january-meetup.jpg" alt="CodeSapiens January meetup" />
+                    <img src="./assets/meetups/january-meetup.jpg" alt="Sapiens Campus January meetup" />
                     <div class="zoom-hint">Click to enlarge</div>
                 </div>
                 <div class="meetup-body">
                     <div class="meetup-kicker">January meetup</div>
-                    <h2 class="meetup-title">CodeSapiens January Meetup</h2>
+                    <h2 class="meetup-title">Sapiens Campus January Meetup</h2>
                     <p class="meetup-desc">The first gathering of the year, at YUNIQ.</p>
                     <div class="meetup-tags">
                         <span class="etag d">January</span>
@@ -1218,8 +1304,8 @@
                     We host monthly meetups across engineering colleges in Tamil Nadu and virtually. Whether you want to speak, showcase your project, or host a meetup at your campus hall — we'd love to collaborate!
                 </p>
                 <div class="host-btns">
-                    <a href="https://chat.whatsapp.com/IiaPFDThmGk9UEoYzvoXWU" target="_blank" rel="noopener" class="btn btn-dark">
-                        💬 Join WhatsApp Community
+                    <a href="https://whatsapp.com/channel/0029Va9H4ywDTkJyHd85GC0c" target="_blank" rel="noopener" class="btn btn-dark">
+                        💬 Join my WhatsApp channel
                     </a>
                     <a href="https://github.com/CodeSapiens-in/CollegeSapien" target="_blank" rel="noopener" class="btn btn-ghost" style="border: var(--bdr); background: var(--yellow);">
                         ⭐ Propose a Lightning Talk
@@ -1279,7 +1365,7 @@
         <!-- FOOTER -->
         <footer class="footer">
             <div>
-                <div class="footer-logo">CodeSapiens</div>
+                <div class="footer-logo">Sapiens Campus</div>
                 <p class="footer-note">
                     Licensed under MIT · Open to contributors of all experience levels.
                 </p>
@@ -1298,7 +1384,7 @@
                             <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z" />
                         </svg>
                     </a>
-                    <a class="social-btn" href="https://chat.whatsapp.com/IiaPFDThmGk9UEoYzvoXWU" aria-label="WhatsApp" title="WhatsApp">
+                    <a class="social-btn" href="https://whatsapp.com/channel/0029Va9H4ywDTkJyHd85GC0c" aria-label="WhatsApp" title="WhatsApp">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07a8.2 8.2 0 0 1-2.4-1.48 9 9 0 0 1-1.66-2.07c-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2-1.42.25-.7.25-1.3.18-1.42-.08-.13-.28-.2-.58-.35zM12.04 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 1 1 8.38 4.62zM20.5 3.5A11.8 11.8 0 0 0 12.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.16 1.6 5.97L0 24l6.25-1.64a11.93 11.93 0 0 0 5.78 1.47h.01c6.58 0 11.93-5.35 11.93-11.93 0-3.19-1.24-6.18-3.47-8.4z" />
                         </svg>
@@ -1328,9 +1414,9 @@
             // happened: the write-up
             const meetupsData = {
                 june: {
-                    title: "CodeSapiens Alumni Meetup",
+                    title: "Sapiens Campus Alumni Meetup",
                     img: "./assets/meetups/june-meetup.jpg",
-                    caption: "June 2026 — CodeSapiens Alumni Meetup at M2P.",
+                    caption: "June 2026 — Sapiens Campus Alumni Meetup at M2P.",
                     when: "June 2026",
                     attended: "",
                     place: "M2P",
@@ -1338,9 +1424,9 @@
                     beats: ["Hosted at M2P"]
                 },
                 may: {
-                    title: "CodeSapiens Summer Fest",
+                    title: "Sapiens Campus Summer Fest",
                     img: "./assets/meetups/may-meetup.jpg",
-                    caption: "May 2026 — CodeSapiens Summer Fest, with Namma Flutter, Nexora, and Google Student Ambassadors.",
+                    caption: "May 2026 — Sapiens Campus Summer Fest, with Namma Flutter, Nexora, and Google Student Ambassadors.",
                     when: "May 2026",
                     attended: "",
                     place: "",
@@ -1348,7 +1434,7 @@
                     beats: []
                 },
                 apr: {
-                    title: "CodeSapiens × TamilPreneur",
+                    title: "Sapiens Campus × TamilPreneur",
                     img: "./assets/meetups/april-meetup.jpg",
                     caption: "April meetup — TamilPreneur collaboration at ONE M2P.",
                     when: "April",
@@ -1358,7 +1444,7 @@
                     beats: ["TamilPreneur collaboration"]
                 },
                 mar: {
-                    title: "CodeSapiens March Meetup",
+                    title: "Sapiens Campus March Meetup",
                     img: "./assets/meetups/march-meetup.jpg",
                     caption: "March 2026 — SheBuilds collaboration at Mako IT Labs.",
                     when: "March 2026",
@@ -1368,7 +1454,7 @@
                     beats: ["SheBuilds collaboration", "Hosted at Mako IT Labs"]
                 },
                 feb: {
-                    title: "CodeSapiens February Meetup",
+                    title: "Sapiens Campus February Meetup",
                     img: "./assets/meetups/february-meetup.jpg",
                     caption: "February meetup — free and open source at YUNIQ.",
                     when: "February",
@@ -1378,7 +1464,7 @@
                     beats: ["Free and open source", "Hosted at YUNIQ"]
                 },
                 jan: {
-                    title: "CodeSapiens January Meetup",
+                    title: "Sapiens Campus January Meetup",
                     img: "./assets/meetups/january-meetup.jpg",
                     caption: "January meetup at YUNIQ.",
                     when: "January",
